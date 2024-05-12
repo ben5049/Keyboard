@@ -1,0 +1,136 @@
+(footprint "BGA4C50P2X2_100X100X67"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "BGA4C50P2X2_100X100X67")
+	(tags "Integrated Circuit")
+	(property "Reference" "IC**"
+		(at -4.5466 3.3528 0)
+		(layer "F.SilkS")
+		(uuid "1b513c36-908e-4359-bdfc-3810f5eb1e50")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "BGA4C50P2X2_100X100X67"
+		(at -4.5466 3.3528 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4b16a767-16f1-44e1-977e-ff8439df7adb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "70661b8b-88ef-4429-846d-1cb00dce2a47")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "acd9aa50-e184-4cad-89cf-2498c1d63c9e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2156edaf-2a5e-4c5f-b9fe-ab6596f9a71b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -0.6 -0.6)
+		(end 0.6 0.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "c776b408-7889-4179-86f3-5ffe0f293bbb")
+	)
+	(fp_circle
+		(center -0.8 -0.8)
+		(end -0.7 -0.8)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "2efe1237-cb01-437d-b3b7-f1e832d90be7")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -4.5466 3.3528 0)
+		(layer "F.Fab")
+		(uuid "376394c8-4560-415e-b492-1f62e5fc7a9b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "A1" smd circle
+		(at -0.254 -0.254 90)
+		(size 0.3048 0.3048)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "8834302f-cfd1-459d-9ad3-a9a829f4d590")
+	)
+	(pad "A2" smd circle
+		(at 0.254 -0.254 90)
+		(size 0.3048 0.3048)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "89cb20f5-5968-4a78-be88-1fd9ddd3a21b")
+	)
+	(pad "B1" smd circle
+		(at -0.254 0.254 90)
+		(size 0.3048 0.3048)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "18ba5e32-06e6-4731-9a54-61b57d0e036d")
+	)
+	(pad "B2" smd circle
+		(at 0.254 0.254 90)
+		(size 0.3048 0.3048)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "f80cf275-cc8d-41e3-8fd5-6ca729f76111")
+	)
+	(model "${KIPRJMOD}/../component_library/watch_models/21-0789_B41_MXM.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

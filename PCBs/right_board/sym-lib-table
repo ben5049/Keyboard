@@ -1,0 +1,10 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "USB2533-1080AEN")(type "KiCad")(uri "${KIPRJMOD}/../libraries/keyboard_symbols/USB2533-1080AEN.kicad_sym")(options "")(descr ""))
+  (lib (name "M24256X-FCU6T_VF")(type "KiCad")(uri "${KIPRJMOD}/../libraries/keyboard_symbols/M24256X-FCU6T_VF.kicad_sym")(options "")(descr ""))
+  (lib (name "TPS563202DRLR")(type "KiCad")(uri "${KIPRJMOD}/../libraries/keyboard_symbols/TPS563202DRLR.kicad_sym")(options "")(descr ""))
+  (lib (name "SK6812-E")(type "KiCad")(uri "${KIPRJMOD}/../libraries/keyboard_symbols/SK6812-E.kicad_sym")(options "")(descr ""))
+  (lib (name "GSB12J21C1EU")(type "KiCad")(uri "${KIPRJMOD}/../libraries/keyboard_symbols/GSB12J21C1EU.kicad_sym")(options "")(descr ""))
+  (lib (name "USB4510-03-1-A")(type "KiCad")(uri "${KIPRJMOD}/../libraries/keyboard_symbols/USB4510-03-1-A.kicad_sym")(options "")(descr ""))
+  (lib (name "LM1117LD-3_3_NOPB")(type "KiCad")(uri "${KIPRJMOD}/../libraries/keyboard_symbols/LM1117LD-3_3_NOPB.kicad_sym")(options "")(descr ""))
+)
