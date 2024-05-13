@@ -443,7 +443,7 @@
 		(solder_mask_margin 0.102)
 		(uuid "350a79ff-e469-4312-aa72-ece03fb7e9dc")
 	)
-	(model "C:/Users/bens1/Documents/Other/Projects/Keyboard/PCBs/libraries/keyboard_models/GSB12J21C1EU.step"
+	(model "${KIPRJMOD}/../libraries/keyboard_models/GSB12J21C1EU.step"
 		(offset
 			(xyz 0 1.5 1)
 		)

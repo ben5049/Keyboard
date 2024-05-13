@@ -270,7 +270,7 @@
 		(solder_mask_margin 0.102)
 		(uuid "35590cf9-e6e6-4638-bcce-d8e4f67869f3")
 	)
-	(model "C:/Users/bens1/Documents/Other/Projects/Keyboard/PCBs/libraries/keyboard_models/LED_SK6812MINI-E.step"
+	(model "${KIPRJMOD}/../libraries/keyboard_models/LED_SK6812MINI-E.step"
 		(offset
 			(xyz 0 -5.1 -1.75)
 		)

@@ -217,7 +217,7 @@
 		(layers "B.Cu" "B.Paste" "B.Mask")
 		(uuid "6e435cd4-da2b-4602-a0aa-5dd988834dff")
 	)
-	(model "C:/Users/bens1/Documents/Other/Projects/Keyboard/PCBs/libraries/keyboard_models/ks33.step"
+	(model "${KIPRJMOD}/../libraries/keyboard_models/ks33.step"
 		(offset
 			(xyz 0 0 0)
 		)
@@ -226,6 +226,17 @@
 		)
 		(rotate
 			(xyz 0 0 0)
+		)
+	)
+	(model "${KIPRJMOD}/../libraries/keyboard_models/Gateron_ks33_hotswap_socket.step"
+		(offset
+			(xyz 0 0 -1.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -180 0 0)
 		)
 	)
 )

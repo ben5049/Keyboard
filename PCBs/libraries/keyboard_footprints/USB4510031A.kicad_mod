@@ -355,7 +355,7 @@
 		(remove_unused_layers no)
 		(uuid "818b34be-0236-458a-9614-c73214547ebb")
 	)
-	(model "C:/Users/bens1/Documents/Other/Projects/Keyboard/PCBs/libraries/keyboard_models/USB4510-03-1-A.stp"
+	(model "${KIPRJMOD}/../libraries/keyboard_models/USB4510-03-1-A.stp"
 		(offset
 			(xyz 0 -3.119999839 0.2499999962)
 		)

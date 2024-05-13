@@ -28,7 +28,7 @@
 			)
 		)
 	)
-	(property "Footprint" ""
+	(property "Footprint" "BGA4C50P2X2_100X100X67"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -122,7 +122,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "f80cf275-cc8d-41e3-8fd5-6ca729f76111")
 	)
-	(model "${KIPRJMOD}/../component_library/watch_models/21-0789_B41_MXM.step"
+	(model "${KIPRJMOD}/../libraries/keyboard_models/21-0789_B41_MXM.step"
 		(offset
 			(xyz 0 0 0)
 		)

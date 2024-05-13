@@ -361,22 +361,6 @@
 		(remove_unused_layers no)
 		(uuid "9d27ed1a-8d2e-44a0-95d3-6a95bac98afe")
 	)
-	(pad "MP" thru_hole rect
-		(at 7.5 -3.1)
-		(size 3.2 2)
-		(drill oval 2.8 1.5)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "fb5c326d-33d2-4f06-ad1b-af7de80ab720")
-	)
-	(pad "MP" thru_hole rect
-		(at 7.5 8.1)
-		(size 3.2 2)
-		(drill oval 2.8 1.5)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "581c338d-e280-4cca-b269-6389c2f86f18")
-	)
 	(pad "S1" thru_hole circle
 		(at 14.5 5)
 		(size 2 2)
@@ -384,6 +368,22 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "7d67148e-6a33-40ce-8b6b-e59f7dfe7253")
+	)
+	(pad "S2" thru_hole rect
+		(at 7.5 -3.1)
+		(size 3.2 2)
+		(drill oval 2.8 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "fb5c326d-33d2-4f06-ad1b-af7de80ab720")
+	)
+	(pad "S2" thru_hole rect
+		(at 7.5 8.1)
+		(size 3.2 2)
+		(drill oval 2.8 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "581c338d-e280-4cca-b269-6389c2f86f18")
 	)
 	(pad "S2" thru_hole circle
 		(at 14.5 0)
@@ -393,7 +393,7 @@
 		(remove_unused_layers no)
 		(uuid "e4806ec9-285f-4aec-99da-67ca111daa66")
 	)
-	(model "C:/Users/bens1/Documents/Other/Projects/Keyboard/PCBs/libraries/keyboard_models/EC11-THT-15F-green.step"
+	(model "${KIPRJMOD}/../libraries/keyboard_models/EC11-THT-15F-green.step"
 		(offset
 			(xyz 7.5 -2.5 0)
 		)
