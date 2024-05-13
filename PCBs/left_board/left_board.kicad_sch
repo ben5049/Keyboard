@@ -6912,6 +6912,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 228.6) (xy 226.06 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "053a7d5a-97ba-443f-8160-d38fa539d603")
+	)
+	(wire
+		(pts
 			(xy 381 182.88) (xy 381 180.34)
 		)
 		(stroke
@@ -6969,6 +6979,16 @@
 			(type default)
 		)
 		(uuid "090ba312-f126-464b-84fc-fb42193a03e2")
+	)
+	(wire
+		(pts
+			(xy 208.28 170.18) (xy 226.06 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0915a92b-2b21-4528-ace5-a803b431e80b")
 	)
 	(wire
 		(pts
@@ -7342,6 +7362,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 172.72) (xy 170.18 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "200f343e-7927-499b-a558-7c94abeaa537")
+	)
+	(wire
+		(pts
 			(xy 337.82 167.64) (xy 335.28 167.64)
 		)
 		(stroke
@@ -7419,6 +7449,16 @@
 			(type default)
 		)
 		(uuid "2370feb1-7322-4473-a16b-683a08d7e05a")
+	)
+	(wire
+		(pts
+			(xy 226.06 243.84) (xy 208.28 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23cae5e4-7b89-457b-8647-12a7fc8f3ce9")
 	)
 	(wire
 		(pts
@@ -7682,6 +7722,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 198.12) (xy 170.18 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37fc67b7-16c4-4981-b48e-9aaea2bd3e32")
+	)
+	(wire
+		(pts
 			(xy 312.42 45.72) (xy 314.96 45.72)
 		)
 		(stroke
@@ -7862,6 +7912,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 167.64) (xy 226.06 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48275ca4-81d7-4eb5-a48b-a78e4374b5cf")
+	)
+	(wire
+		(pts
 			(xy 373.38 193.04) (xy 370.84 193.04)
 		)
 		(stroke
@@ -7909,6 +7969,16 @@
 			(type default)
 		)
 		(uuid "4dc0b797-cc36-4bb1-b2b4-a0e4edea244b")
+	)
+	(wire
+		(pts
+			(xy 208.28 233.68) (xy 226.06 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dd5d2b3-2bb1-4f4e-8e0c-17853d2fbceb")
 	)
 	(wire
 		(pts
@@ -7979,6 +8049,16 @@
 			(type default)
 		)
 		(uuid "52bd95f0-fe60-4bd5-9e1b-974c11273741")
+	)
+	(wire
+		(pts
+			(xy 152.4 195.58) (xy 170.18 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5386967e-f229-467d-80d3-e4dffc6e1c83")
 	)
 	(wire
 		(pts
@@ -8159,6 +8239,16 @@
 			(type default)
 		)
 		(uuid "5cbeba9d-e77c-44ae-af3f-7171f22ba7ed")
+	)
+	(wire
+		(pts
+			(xy 208.28 226.06) (xy 226.06 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dd5c384-3013-4fbc-a35c-2a0201ff8ebc")
 	)
 	(wire
 		(pts
@@ -8472,6 +8562,26 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 223.52) (xy 226.06 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70ee60a9-135d-429d-b019-6efc7774c6c3")
+	)
+	(wire
+		(pts
+			(xy 208.28 172.72) (xy 226.06 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7125e84f-9739-45d9-aa91-1d803ca15be9")
+	)
+	(wire
+		(pts
 			(xy 312.42 60.96) (xy 314.96 60.96)
 		)
 		(stroke
@@ -8589,6 +8699,16 @@
 			(type default)
 		)
 		(uuid "7beacfd7-d8a3-42a4-aa2a-bca070ab3f7f")
+	)
+	(wire
+		(pts
+			(xy 208.28 231.14) (xy 226.06 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d03cbfc-b67f-49af-bdb5-5ad84960e3a6")
 	)
 	(wire
 		(pts
@@ -8749,6 +8869,16 @@
 			(type default)
 		)
 		(uuid "85bc024c-fe8a-4742-be20-ef720b5a9a60")
+	)
+	(wire
+		(pts
+			(xy 208.28 220.98) (xy 226.06 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85c60ee4-167a-4141-bc7c-b6596bfe1282")
 	)
 	(wire
 		(pts
@@ -8962,6 +9092,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 271.78) (xy 165.1 271.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91585e40-fe47-477d-ae31-bf9f0756b503")
+	)
+	(wire
+		(pts
 			(xy 226.06 248.92) (xy 208.28 248.92)
 		)
 		(stroke
@@ -9059,6 +9199,16 @@
 			(type default)
 		)
 		(uuid "96ff5bfc-459c-4a6a-a8b9-5cd906ec2a5e")
+	)
+	(wire
+		(pts
+			(xy 208.28 218.44) (xy 226.06 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "978316a4-9c85-49d9-b073-389ed3651eae")
 	)
 	(wire
 		(pts
@@ -9352,6 +9502,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 193.04) (xy 226.06 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a54ef7b3-0b29-45c5-a419-404df9451955")
+	)
+	(wire
+		(pts
 			(xy 340.36 190.5) (xy 360.68 190.5)
 		)
 		(stroke
@@ -9449,6 +9609,16 @@
 			(type default)
 		)
 		(uuid "aa46508d-e86a-49a1-abf5-5898e4b7e057")
+	)
+	(wire
+		(pts
+			(xy 226.06 246.38) (xy 208.28 246.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa469ff0-9c09-49bb-85ed-80bb684ec46b")
 	)
 	(wire
 		(pts
@@ -10019,6 +10189,16 @@
 			(type default)
 		)
 		(uuid "ceb165cd-f8c5-4a91-b601-528d1fe4a01e")
+	)
+	(wire
+		(pts
+			(xy 172.72 269.24) (xy 172.72 271.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfa99431-689d-4362-b36d-c7d3e83e904a")
 	)
 	(wire
 		(pts
@@ -10632,6 +10812,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 175.26) (xy 170.18 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5f169e4-4d7e-4c1b-a4ab-ca9aca7f06b5")
+	)
+	(wire
+		(pts
 			(xy 172.72 96.52) (xy 182.88 96.52)
 		)
 		(stroke
@@ -10639,6 +10829,16 @@
 			(type default)
 		)
 		(uuid "f6167fb2-ddc6-4e9f-8a3b-2fd875ea19f6")
+	)
+	(wire
+		(pts
+			(xy 165.1 269.24) (xy 165.1 271.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f68eac65-6a84-48fb-9d0e-7ea1beab1813")
 	)
 	(wire
 		(pts
@@ -10802,6 +11002,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 200.66) (xy 170.18 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fefcff9b-906e-4217-afb6-82b8b1e37d94")
+	)
+	(wire
+		(pts
 			(xy 226.06 195.58) (xy 208.28 195.58)
 		)
 		(stroke
@@ -10852,7 +11062,7 @@
 		(uuid "ad147b29-694f-4f3f-a330-c3f9e2c2edd4")
 	)
 	(label "KEY_E2"
-		(at -30.48 193.04 180)
+		(at 226.06 233.68 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10863,7 +11073,7 @@
 		(uuid "00fd1bda-e2f4-4483-8df8-a51801c3ea1d")
 	)
 	(label "KEY_D3"
-		(at -30.48 177.8 180)
+		(at 226.06 167.64 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10896,7 +11106,7 @@
 		(uuid "03797d31-bd0c-4cdd-8a31-dfd5e3203f93")
 	)
 	(label "KEY_D4"
-		(at -30.48 180.34 180)
+		(at 226.06 170.18 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10961,8 +11171,8 @@
 		)
 		(uuid "0bf5325a-f37b-4eeb-bab8-9e367ef40527")
 	)
-	(label "KEY_C3"
-		(at -30.48 160.02 180)
+	(label "KEY_C2"
+		(at 238.76 218.44 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10971,6 +11181,17 @@
 			(justify right bottom)
 		)
 		(uuid "0c0b3a66-8abb-4eb0-9ea3-5e687a896966")
+	)
+	(label "KEY_A6"
+		(at 238.76 198.12 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0f80451e-e62b-4819-bbb1-ae332d43317a")
 	)
 	(label "LED2"
 		(at 139.7 33.02 0)
@@ -10993,17 +11214,6 @@
 			(justify right bottom)
 		)
 		(uuid "10bb9423-ef95-409b-af2c-83b872db6a43")
-	)
-	(label "KEY_A6"
-		(at -30.48 139.7 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "13e25602-2361-4ad1-8fa8-d4e7f2d1c0f8")
 	)
 	(label "USB3_DN"
 		(at 68.58 167.64 0)
@@ -11039,7 +11249,7 @@
 		(uuid "17466eb1-e096-4749-a353-3dedfdd082ce")
 	)
 	(label "KEY_C1"
-		(at -30.48 157.48 180)
+		(at 238.76 215.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11072,7 +11282,7 @@
 		(uuid "1ceb5e3c-453c-491f-89bb-fa04f8b6332f")
 	)
 	(label "ENC_B"
-		(at -30.48 203.2 180)
+		(at 226.06 223.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11137,7 +11347,7 @@
 		)
 		(uuid "22559865-a3da-4946-afd6-80cc6f210fee")
 	)
-	(label "KEY_C3"
+	(label "KEY_C2"
 		(at 182.88 109.22 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11171,7 +11381,7 @@
 		(uuid "25461a63-9950-4cd5-8d16-7012cac0abc6")
 	)
 	(label "KEY_C5"
-		(at -30.48 167.64 180)
+		(at 238.76 226.06 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11182,7 +11392,7 @@
 		(uuid "2b046dab-19c1-4ede-8011-6481b6fe2d90")
 	)
 	(label "KEY_A4"
-		(at -30.48 134.62 180)
+		(at 238.76 193.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11193,7 +11403,7 @@
 		(uuid "2bfe20f7-0aef-4f4f-95f2-87e1619a3118")
 	)
 	(label "KEY_E3"
-		(at -30.48 195.58 180)
+		(at 226.06 231.14 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11259,7 +11469,7 @@
 		(uuid "3604b095-7403-41c7-a3b6-62daa5800f00")
 	)
 	(label "KEY_C3"
-		(at -30.48 162.56 180)
+		(at 238.76 220.98 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11291,8 +11501,8 @@
 		)
 		(uuid "3a934c6c-a784-4f8f-b147-65f9a1ca334b")
 	)
-	(label "KEY_B3"
-		(at -30.48 144.78 180)
+	(label "KEY_B2"
+		(at 238.76 203.2 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11334,17 +11544,6 @@
 			(justify right bottom)
 		)
 		(uuid "414a5921-0b25-4e05-a3c8-2e2e53692d7e")
-	)
-	(label "KEY_C6"
-		(at -30.48 170.18 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "48034106-43a1-480c-87e4-e6e6e719e032")
 	)
 	(label "LED25"
 		(at 279.4 63.5 0)
@@ -11390,16 +11589,16 @@
 		)
 		(uuid "4e234634-dff4-403c-8e45-ddd828f17d02")
 	)
-	(label "SCL"
-		(at -35.56 215.9 0)
+	(label "KEY_B6"
+		(at 238.76 213.36 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "503755d7-105f-4d2f-aee3-5facb2e0dc32")
+		(uuid "4fbba165-8b73-4769-b057-730652021e6a")
 	)
 	(label "KEY_A1"
 		(at 147.32 83.82 180)
@@ -11413,13 +11612,13 @@
 		(uuid "50ad8471-ebc8-4cf8-8b93-775a2c025f96")
 	)
 	(label "LED1"
-		(at -35.56 226.06 0)
+		(at 226.06 228.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "5115fe66-5aeb-42b4-8819-711088ecd0e8")
 	)
@@ -11468,7 +11667,7 @@
 		(uuid "5a100c2a-e5bb-4fbe-aa59-71745e06fad6")
 	)
 	(label "KEY_C4"
-		(at -30.48 165.1 180)
+		(at 238.76 223.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11511,6 +11710,17 @@
 		)
 		(uuid "604491e8-85d7-4449-afa7-11992e1b0cd3")
 	)
+	(label "KEY_C6"
+		(at 238.76 228.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "64f7ecaf-612c-4812-b987-4b1d635c43e3")
+	)
 	(label "LED15"
 		(at 251.46 48.26 0)
 		(fields_autoplaced yes)
@@ -11523,7 +11733,7 @@
 		(uuid "6526d470-4006-4eb6-bd0e-2d3717996eef")
 	)
 	(label "KEY_A2"
-		(at -30.48 129.54 180)
+		(at 238.76 187.96 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11555,6 +11765,17 @@
 		)
 		(uuid "67ce797f-3a6d-4c4c-95c3-d71635cb22a9")
 	)
+	(label "KEY_D5"
+		(at 226.06 172.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6a09633d-6dcf-41b8-bbd7-0197a3a7e8f5")
+	)
 	(label "USB2_DN"
 		(at 226.06 195.58 180)
 		(fields_autoplaced yes)
@@ -11578,7 +11799,7 @@
 		(uuid "6b289864-ec08-4df2-bb31-aa186f53386c")
 	)
 	(label "KEY_A1"
-		(at -30.48 127 180)
+		(at 238.76 185.42 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11632,17 +11853,6 @@
 		)
 		(uuid "717312cf-89fd-4ffa-80b8-9f8b7739873c")
 	)
-	(label "SDA"
-		(at -35.56 213.36 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "749d5513-f0f4-4ae1-ad7c-99e61de75742")
-	)
 	(label "USB3_DP"
 		(at 68.58 165.1 0)
 		(fields_autoplaced yes)
@@ -11665,14 +11875,14 @@
 		)
 		(uuid "771cb023-231f-4158-880d-dea3df005b15")
 	)
-	(label "KEY_D3"
-		(at -30.48 175.26 180)
+	(label "KEY_D2"
+		(at 152.4 175.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "774538d9-e381-401a-bfd0-e5ceb8a665e6")
 	)
@@ -11721,7 +11931,7 @@
 		(uuid "7e241023-03db-4f3e-9528-d9001a6aed52")
 	)
 	(label "KEY_B3"
-		(at -30.48 147.32 180)
+		(at 238.76 205.74 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11776,7 +11986,7 @@
 		(uuid "832f9b4a-febc-4e4f-8776-5b8f4ad6acf4")
 	)
 	(label "ENC_A"
-		(at -30.48 200.66 180)
+		(at 226.06 220.98 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11809,7 +12019,18 @@
 		(uuid "86d3be9f-5d41-4a14-a179-51f95d21d3df")
 	)
 	(label "KEY_E1"
-		(at -30.48 190.5 180)
+		(at 152.4 200.66 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8a2f2b5d-3499-4afa-8729-dde08e07ea38")
+	)
+	(label "SDA"
+		(at 226.06 246.38 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11817,7 +12038,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "8a2f2b5d-3499-4afa-8729-dde08e07ea38")
+		(uuid "8c4f91a5-cf68-470a-80bc-a5b04a41abb4")
 	)
 	(label "CFG_SEL1"
 		(at 256.54 213.36 0)
@@ -11853,7 +12074,7 @@
 		(uuid "92e95c5d-d470-4f56-9c37-77a9fc73efed")
 	)
 	(label "KEY_D6"
-		(at -30.48 185.42 180)
+		(at 238.76 243.84 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11907,17 +12128,6 @@
 		)
 		(uuid "9ebf529f-d83c-4330-b4cd-92024b3c09b0")
 	)
-	(label "KEY_B6"
-		(at -30.48 154.94 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a02ba03b-e6a2-43b1-a8c4-2697b3580fde")
-	)
 	(label "SCL"
 		(at 43.18 210.82 0)
 		(fields_autoplaced yes)
@@ -11952,7 +12162,7 @@
 		(uuid "a6656564-c1c3-41af-ab0b-8f733b00e148")
 	)
 	(label "KEY_B5"
-		(at -30.48 152.4 180)
+		(at 238.76 210.82 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11985,7 +12195,7 @@
 		(uuid "b01ac0d0-b42a-4d44-ac2b-00a94eb5239e")
 	)
 	(label "KEY_A3"
-		(at -30.48 132.08 180)
+		(at 238.76 190.5 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11996,13 +12206,13 @@
 		(uuid "b2e8732b-0846-4c4d-9ef2-ae7060652546")
 	)
 	(label "KEY_D1"
-		(at -30.48 172.72 180)
+		(at 152.4 172.72 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "b6a59ffd-ef53-4755-a305-01db7ee3f5d4")
 	)
@@ -12039,7 +12249,7 @@
 		)
 		(uuid "bd663c35-7a70-4a2e-992d-d36bdd4b25d0")
 	)
-	(label "KEY_D3"
+	(label "KEY_D2"
 		(at 182.88 121.92 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12073,7 +12283,7 @@
 		(uuid "c4a8d610-f11c-4b9a-8c9a-ea9e914779ba")
 	)
 	(label "KEY_B1"
-		(at -30.48 142.24 180)
+		(at 238.76 200.66 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12105,6 +12315,17 @@
 		)
 		(uuid "cc17d3f3-f5f0-48fe-a821-acea56b6a73b")
 	)
+	(label "SCL"
+		(at 226.06 243.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cca331d6-9f60-4caf-b656-143bdbdae8d3")
+	)
 	(label "LED11"
 		(at 139.7 48.26 0)
 		(fields_autoplaced yes)
@@ -12116,7 +12337,7 @@
 		)
 		(uuid "d0629343-db6a-47ca-acc2-bd53b8dbb6f6")
 	)
-	(label "KEY_B3"
+	(label "KEY_B2"
 		(at 182.88 96.52 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12128,7 +12349,7 @@
 		(uuid "d0d7aa1c-d34c-40ea-b698-a303637de40e")
 	)
 	(label "KEY_A5"
-		(at -30.48 137.16 180)
+		(at 238.76 195.58 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12282,7 +12503,7 @@
 		(uuid "e390e5c0-9bd0-407a-a399-96c118c4ca28")
 	)
 	(label "KEY_B4"
-		(at -30.48 149.86 180)
+		(at 238.76 208.28 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12315,7 +12536,7 @@
 		(uuid "ebd37bee-31d9-4da0-a6bc-319bb4675e9a")
 	)
 	(label "ENC_SW"
-		(at -30.48 205.74 180)
+		(at 226.06 226.06 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12326,7 +12547,7 @@
 		(uuid "ebd8a249-2a9c-4efa-ae07-23b9642e6fb2")
 	)
 	(label "KEY_D5"
-		(at -30.48 182.88 180)
+		(at 238.76 241.3 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -15440,7 +15661,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 236.22 121.92 0)
+		(at 314.96 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15449,7 +15670,7 @@
 		(fields_autoplaced yes)
 		(uuid "390658b7-de8c-46dc-8ac7-edf253da4a0f")
 		(property "Reference" "SW116"
-			(at 236.22 114.3 0)
+			(at 314.96 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15457,7 +15678,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 236.22 116.84 0)
+			(at 314.96 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15465,7 +15686,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 236.22 121.92 0)
+			(at 314.96 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15474,7 +15695,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 236.22 121.92 0)
+			(at 314.96 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15483,7 +15704,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 236.22 121.92 0)
+			(at 314.96 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17307,7 +17528,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 314.96 137.16 0)
+		(at 236.22 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17316,7 +17537,7 @@
 		(fields_autoplaced yes)
 		(uuid "5318ea74-acf1-4165-ae36-9824d1c0d92d")
 		(property "Reference" "SW126"
-			(at 314.96 129.54 0)
+			(at 236.22 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17324,7 +17545,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 314.96 132.08 0)
+			(at 236.22 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17332,7 +17553,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 314.96 137.16 0)
+			(at 236.22 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17341,7 +17562,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 314.96 137.16 0)
+			(at 236.22 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17350,7 +17571,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 314.96 137.16 0)
+			(at 236.22 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20613,7 +20834,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 307.34 121.92 0)
+		(at 350.52 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20622,7 +20843,7 @@
 		(fields_autoplaced yes)
 		(uuid "9bc11948-a27b-4684-ae87-f7d2cac7a78e")
 		(property "Reference" "SW124"
-			(at 307.34 114.3 0)
+			(at 350.52 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20630,7 +20851,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 307.34 116.84 0)
+			(at 350.52 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20638,7 +20859,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 307.34 121.92 0)
+			(at 350.52 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20647,7 +20868,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 307.34 121.92 0)
+			(at 350.52 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20656,7 +20877,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 307.34 121.92 0)
+			(at 350.52 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21460,7 +21681,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 350.52 137.16 0)
+		(at 271.78 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21469,7 +21690,7 @@
 		(fields_autoplaced yes)
 		(uuid "a87b3618-a8f7-4998-b617-fb598083a38a")
 		(property "Reference" "SW127"
-			(at 350.52 129.54 0)
+			(at 271.78 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21477,7 +21698,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 350.52 132.08 0)
+			(at 271.78 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21485,7 +21706,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 350.52 137.16 0)
+			(at 271.78 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21494,7 +21715,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 350.52 137.16 0)
+			(at 271.78 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21503,7 +21724,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 350.52 137.16 0)
+			(at 271.78 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21787,6 +22008,71 @@
 			(project "left_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0134")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 165.1 269.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b1f8317f-e29d-4cf1-9445-1278459f69ae")
+		(property "Reference" "#PWR0169"
+			(at 165.1 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 165.1 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 165.1 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8098ae74-79b2-4606-953d-501b260829b3")
+		)
+		(instances
+			(project "left_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "#PWR0169")
 					(unit 1)
 				)
 			)
@@ -22121,7 +22407,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 271.78 121.92 0)
+		(at 307.34 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22130,7 +22416,7 @@
 		(fields_autoplaced yes)
 		(uuid "b5a1dccb-ee7f-4f03-9a57-bb484fede7c2")
 		(property "Reference" "SW120"
-			(at 271.78 114.3 0)
+			(at 307.34 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22138,7 +22424,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 271.78 116.84 0)
+			(at 307.34 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22146,7 +22432,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 271.78 121.92 0)
+			(at 307.34 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22155,7 +22441,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 271.78 121.92 0)
+			(at 307.34 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22164,7 +22450,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 271.78 121.92 0)
+			(at 307.34 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25157,6 +25443,72 @@
 			(project "left_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0133")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 172.72 269.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9758965-ba11-4745-ac74-5b8ddf0a2b9c")
+		(property "Reference" "#PWR0170"
+			(at 172.72 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 172.72 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 172.72 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1c48dd57-785d-4f10-bd1e-3222634f9f9d")
+		)
+		(instances
+			(project "left_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "#PWR0170")
 					(unit 1)
 				)
 			)
