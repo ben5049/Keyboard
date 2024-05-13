@@ -1,0 +1,3 @@
+[submodule "PCBs/libraries/fingerpunch"]
+	path = PCBs/libraries/fingerpunch
+	url = https://github.com/sadekbaroudi/fingerpunch
