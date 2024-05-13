@@ -1,3 +1,9 @@
 [submodule "PCBs/libraries/fingerpunch"]
 	path = PCBs/libraries/fingerpunch
 	url = https://github.com/sadekbaroudi/fingerpunch
+[submodule "PCBs/libraries/Keebio-Parts.pretty"]
+	path = PCBs/libraries/Keebio-Parts.pretty
+	url = https://github.com/keebio/Keebio-Parts.pretty
+[submodule "keyboard_parts.pretty"]
+	path = keyboard_parts.pretty
+	url = https://github.com/tmk/keyboard_parts.pretty
