@@ -537,6 +537,177 @@
 				)
 			)
 		)
+		(symbol "Device:LED_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at -1.27 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "LED_Small"
+				(at -4.445 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode light-emitting-diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_Small_0_1"
+				(polyline
+					(pts
+						(xy -0.762 -1.016) (xy -0.762 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy -0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy -0.508 1.27) (xy -0.254 1.27) (xy -0.508 1.27) (xy -0.508 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.27) (xy 0 1.778) (xy 0.254 1.778) (xy 0 1.778) (xy 0 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_Small_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.778)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.778)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -6277,7 +6448,7 @@
 		(uuid "01b43ac6-cb73-4844-b4af-5cc5f480f63f")
 	)
 	(junction
-		(at 154.94 109.22)
+		(at 215.9 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "020bf1ac-f831-4452-96d1-0d464c523179")
@@ -6319,13 +6490,13 @@
 		(uuid "161b93c8-3c1e-47b5-ac68-d6f32cd66ef8")
 	)
 	(junction
-		(at 226.06 96.52)
+		(at 287.02 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "16622f7f-5920-4a9a-988f-9a8d0c4a64e9")
 	)
 	(junction
-		(at 261.62 96.52)
+		(at 322.58 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1c5acc00-91c6-41db-9571-a213e05eea3b")
@@ -6337,7 +6508,7 @@
 		(uuid "1ed9f89f-0e0b-4e88-a33f-f9bf0a46b0d6")
 	)
 	(junction
-		(at 297.18 109.22)
+		(at 358.14 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2198a4bd-d13a-463a-8709-b171ca6d8e58")
@@ -6355,7 +6526,7 @@
 		(uuid "262e60bf-0c90-463b-9ac8-0a3b2386ab02")
 	)
 	(junction
-		(at 190.5 96.52)
+		(at 251.46 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2b333589-9b1a-4b51-b999-6055b88aa102")
@@ -6451,7 +6622,7 @@
 		(uuid "5ce4c480-455c-443d-8531-873862674bfa")
 	)
 	(junction
-		(at 297.18 121.92)
+		(at 358.14 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5d86d069-720f-476e-b6fe-44bde025a0ce")
@@ -6487,19 +6658,19 @@
 		(uuid "75e30bff-be43-4989-9d35-f5eb6b19a209")
 	)
 	(junction
-		(at 154.94 96.52)
+		(at 215.9 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "79bb3c78-20ef-4c7b-9d35-f666e19a1531")
 	)
 	(junction
-		(at 226.06 121.92)
+		(at 287.02 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7a14c28f-e100-4a72-b3eb-08bffccaaa88")
 	)
 	(junction
-		(at 119.38 121.92)
+		(at 180.34 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7c62a69d-0605-4340-be4c-9fe62e11edd9")
@@ -6511,13 +6682,13 @@
 		(uuid "8427b7e1-1c22-488e-bbb8-3234221b4124")
 	)
 	(junction
-		(at 154.94 121.92)
+		(at 215.9 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "892da7e3-15b4-4d38-896c-da3d71965be9")
 	)
 	(junction
-		(at 190.5 109.22)
+		(at 251.46 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8c7385c2-2cd5-408c-b431-abf93f554569")
@@ -6529,7 +6700,7 @@
 		(uuid "9196761f-b4bd-4f3c-a9aa-93ab19a95951")
 	)
 	(junction
-		(at 119.38 109.22)
+		(at 180.34 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "92d831e2-0e65-435c-ab55-df227665007b")
@@ -6565,7 +6736,7 @@
 		(uuid "9fd8e9d4-7646-4793-92f0-8abff024073e")
 	)
 	(junction
-		(at 226.06 109.22)
+		(at 287.02 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a3be32d0-d299-4951-81cd-a70d0f62b8d6")
@@ -6601,7 +6772,7 @@
 		(uuid "b9d291cf-62fe-4d57-8b75-f1801c129b6c")
 	)
 	(junction
-		(at 261.62 121.92)
+		(at 322.58 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "beb3c22c-9695-457f-9829-0ca5b56bf123")
@@ -6613,7 +6784,7 @@
 		(uuid "bfef224c-6cf6-47c7-a8fc-c60b30854142")
 	)
 	(junction
-		(at 119.38 96.52)
+		(at 180.34 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c6e7ffb0-2593-45ee-98ff-44dc1dc578a6")
@@ -6649,7 +6820,7 @@
 		(uuid "d0f5c781-8b12-4408-9b2f-ad82a1001608")
 	)
 	(junction
-		(at 261.62 109.22)
+		(at 322.58 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d638c863-e138-452b-bd3a-6651f020d924")
@@ -6697,7 +6868,7 @@
 		(uuid "e627d3df-ca9b-4953-9e78-319bfbad80f5")
 	)
 	(junction
-		(at 297.18 96.52)
+		(at 358.14 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e64adf7e-ecbe-486d-9ec2-a4c9738d2b86")
@@ -6727,7 +6898,7 @@
 		(uuid "ef9d79ac-bed0-4755-aaac-1758d683c375")
 	)
 	(junction
-		(at 190.5 121.92)
+		(at 251.46 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f0f91907-ca1c-4098-924b-72507c9ac177")
@@ -6838,6 +7009,26 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 154.94) (xy 121.92 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00817d4f-237e-4495-92f5-4a2b6f986df7")
+	)
+	(wire
+		(pts
+			(xy 134.62 162.56) (xy 134.62 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00c30ae9-b03e-4909-8fcd-56c349a46d7c")
+	)
+	(wire
+		(pts
 			(xy 139.7 63.5) (xy 147.32 63.5)
 		)
 		(stroke
@@ -6848,7 +7039,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 121.92) (xy 228.6 121.92)
+			(xy 287.02 121.92) (xy 289.56 121.92)
 		)
 		(stroke
 			(width 0)
@@ -6868,23 +7059,13 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 109.22) (xy 154.94 121.92)
+			(xy 215.9 109.22) (xy 215.9 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "03dcf284-0d70-49e1-a2fc-7ef26479709c")
-	)
-	(wire
-		(pts
-			(xy 340.36 119.38) (xy 340.36 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "047aa099-2a7e-4d01-8cb4-d7ee8ab481dd")
 	)
 	(wire
 		(pts
@@ -6918,6 +7099,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 200.66) (xy 170.18 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05dcae5b-e924-4b77-9dc6-37dae61f2f1e")
+	)
+	(wire
+		(pts
 			(xy 167.64 60.96) (xy 170.18 60.96)
 		)
 		(stroke
@@ -6938,6 +7129,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 175.26) (xy 134.62 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06fd03b2-856c-4e9b-9454-26a0ad1ca1d7")
+	)
+	(wire
+		(pts
 			(xy 279.4 48.26) (xy 287.02 48.26)
 		)
 		(stroke
@@ -6945,6 +7146,16 @@
 			(type default)
 		)
 		(uuid "07033abe-ed4b-4fb0-a300-839b890e1443")
+	)
+	(wire
+		(pts
+			(xy 144.78 127) (xy 144.78 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07dd099e-cbe8-4f9c-8706-de3be66e3ffc")
 	)
 	(wire
 		(pts
@@ -6958,7 +7169,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 109.22) (xy 119.38 121.92)
+			(xy 180.34 109.22) (xy 180.34 121.92)
 		)
 		(stroke
 			(width 0)
@@ -6985,6 +7196,26 @@
 			(type default)
 		)
 		(uuid "0a16c602-0b44-4ea4-8592-0ac873e70b63")
+	)
+	(wire
+		(pts
+			(xy 208.28 241.3) (xy 226.06 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0af64b15-9a89-4465-8789-5f3a47bae515")
+	)
+	(wire
+		(pts
+			(xy 208.28 238.76) (xy 226.06 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c9b7db8-34e1-4d47-bcb5-df5ff6c5620d")
 	)
 	(wire
 		(pts
@@ -7035,6 +7266,16 @@
 			(type default)
 		)
 		(uuid "0fc11b6c-91fa-4fbf-8145-68e1d70fe3fe")
+	)
+	(wire
+		(pts
+			(xy 208.28 175.26) (xy 226.06 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10d054b6-e6b9-43c4-9e4c-0a77df78c4f9")
 	)
 	(wire
 		(pts
@@ -7108,13 +7349,23 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 83.82) (xy 226.06 83.82)
+			(xy 289.56 83.82) (xy 287.02 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "13031030-0230-4c2a-9885-d5f6127f3405")
+	)
+	(wire
+		(pts
+			(xy 208.28 228.6) (xy 226.06 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "138dee4f-7d85-49b0-abd7-92092ea32525")
 	)
 	(wire
 		(pts
@@ -7138,23 +7389,13 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 96.52) (xy 119.38 109.22)
+			(xy 180.34 96.52) (xy 180.34 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "15520a1d-874e-4406-8684-ad301b14f153")
-	)
-	(wire
-		(pts
-			(xy 360.68 121.92) (xy 360.68 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "15906dfe-74e3-4c13-8647-1622deae6ef7")
 	)
 	(wire
 		(pts
@@ -7178,6 +7419,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 142.24) (xy 137.16 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16d4834d-d6d8-4926-bb00-1547316ea829")
+	)
+	(wire
+		(pts
 			(xy 279.4 33.02) (xy 287.02 33.02)
 		)
 		(stroke
@@ -7198,7 +7449,17 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 83.82) (xy 154.94 96.52)
+			(xy 208.28 246.38) (xy 226.06 246.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "183db071-7d66-4c3a-978c-ccbe19326031")
+	)
+	(wire
+		(pts
+			(xy 215.9 83.82) (xy 215.9 96.52)
 		)
 		(stroke
 			(width 0)
@@ -7258,7 +7519,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 96.52) (xy 157.48 96.52)
+			(xy 215.9 96.52) (xy 218.44 96.52)
 		)
 		(stroke
 			(width 0)
@@ -7338,6 +7599,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 233.68) (xy 226.06 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20dc2d4c-3bb9-410a-89fa-58e1ac9f65c8")
+	)
+	(wire
+		(pts
 			(xy 144.78 60.96) (xy 144.78 45.72)
 		)
 		(stroke
@@ -7408,6 +7679,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 127) (xy 172.72 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "239b32e8-f670-4d95-b0cc-9116f41cf8b0")
+	)
+	(wire
+		(pts
 			(xy 254 30.48) (xy 254 45.72)
 		)
 		(stroke
@@ -7458,6 +7739,26 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 170.18) (xy 226.06 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "263f476e-6297-4628-a906-5a8136ad7297")
+	)
+	(wire
+		(pts
+			(xy 208.28 220.98) (xy 226.06 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28808b8a-671f-44f7-8760-438ed5f87092")
+	)
+	(wire
+		(pts
 			(xy 172.72 45.72) (xy 172.72 30.48)
 		)
 		(stroke
@@ -7488,6 +7789,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 162.56) (xy 121.92 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a3cbde9-eb8d-478f-af72-ffbda63e116f")
+	)
+	(wire
+		(pts
 			(xy 307.34 48.26) (xy 314.96 48.26)
 		)
 		(stroke
@@ -7495,6 +7806,16 @@
 			(type default)
 		)
 		(uuid "2b3664d3-7270-450f-a3ad-f6193a30c2e8")
+	)
+	(wire
+		(pts
+			(xy 401.32 180.34) (xy 401.32 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b419928-3607-4018-9e8a-de83508ec050")
 	)
 	(wire
 		(pts
@@ -7548,7 +7869,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 83.82) (xy 218.44 83.82)
+			(xy 269.24 83.82) (xy 279.4 83.82)
 		)
 		(stroke
 			(width 0)
@@ -7598,7 +7919,17 @@
 	)
 	(wire
 		(pts
-			(xy 279.4 121.92) (xy 289.56 121.92)
+			(xy 208.28 193.04) (xy 226.06 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "321e945f-0ca6-4476-bae9-ad36f02028dc")
+	)
+	(wire
+		(pts
+			(xy 340.36 121.92) (xy 350.52 121.92)
 		)
 		(stroke
 			(width 0)
@@ -7608,7 +7939,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 83.82) (xy 254 83.82)
+			(xy 304.8 83.82) (xy 314.96 83.82)
 		)
 		(stroke
 			(width 0)
@@ -7638,7 +7969,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 83.82) (xy 154.94 83.82)
+			(xy 218.44 83.82) (xy 215.9 83.82)
 		)
 		(stroke
 			(width 0)
@@ -7658,7 +7989,17 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 96.52) (xy 254 96.52)
+			(xy 208.28 236.22) (xy 226.06 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "363cc7d5-8ec0-428d-ab8c-f226ff4f1a00")
+	)
+	(wire
+		(pts
+			(xy 304.8 96.52) (xy 314.96 96.52)
 		)
 		(stroke
 			(width 0)
@@ -7688,7 +8029,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 109.22) (xy 218.44 109.22)
+			(xy 269.24 109.22) (xy 279.4 109.22)
 		)
 		(stroke
 			(width 0)
@@ -7718,6 +8059,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 175.26) (xy 170.18 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ad783a5-3b18-463f-9962-9b411126eff6")
+	)
+	(wire
+		(pts
 			(xy 91.44 60.96) (xy 91.44 63.5)
 		)
 		(stroke
@@ -7738,16 +8089,6 @@
 	)
 	(wire
 		(pts
-			(xy 342.9 119.38) (xy 340.36 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e9b292f-3a02-4206-ba1c-2e1acc7f3f46")
-	)
-	(wire
-		(pts
 			(xy 55.88 53.34) (xy 73.66 53.34)
 		)
 		(stroke
@@ -7758,7 +8099,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 121.92) (xy 121.92 121.92)
+			(xy 180.34 121.92) (xy 182.88 121.92)
 		)
 		(stroke
 			(width 0)
@@ -7798,7 +8139,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 121.92) (xy 190.5 124.46)
+			(xy 251.46 121.92) (xy 251.46 124.46)
 		)
 		(stroke
 			(width 0)
@@ -7825,6 +8166,16 @@
 			(type default)
 		)
 		(uuid "4500ee29-d8ab-4dd5-8f30-a5835bc9e52a")
+	)
+	(wire
+		(pts
+			(xy 391.16 180.34) (xy 391.16 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45e9e24b-b4cc-4624-bb55-92545767bde1")
 	)
 	(wire
 		(pts
@@ -7858,6 +8209,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 167.64) (xy 226.06 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a4294ef-b0bc-4749-9e89-05499ef798de")
+	)
+	(wire
+		(pts
 			(xy 127 246.38) (xy 127 248.92)
 		)
 		(stroke
@@ -7875,6 +8236,16 @@
 			(type default)
 		)
 		(uuid "4ce97477-6770-4408-8c59-7a348bd2ca2b")
+	)
+	(wire
+		(pts
+			(xy 147.32 127) (xy 144.78 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cf7aba2-436e-408a-9534-030f652c1f38")
 	)
 	(wire
 		(pts
@@ -7898,13 +8269,13 @@
 	)
 	(wire
 		(pts
-			(xy 358.14 137.16) (xy 368.3 137.16)
+			(xy 208.28 218.44) (xy 226.06 218.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4f044a53-f055-414e-84da-7a18c0d5c6a2")
+		(uuid "4fde0d09-5d10-4437-956e-baf7eff80bda")
 	)
 	(wire
 		(pts
@@ -7918,7 +8289,17 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 109.22) (xy 147.32 109.22)
+			(xy 121.92 175.26) (xy 121.92 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50bd6615-8b7f-4ab6-8c73-b1d553dc0f19")
+	)
+	(wire
+		(pts
+			(xy 198.12 109.22) (xy 208.28 109.22)
 		)
 		(stroke
 			(width 0)
@@ -7928,7 +8309,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 83.82) (xy 261.62 83.82)
+			(xy 325.12 83.82) (xy 322.58 83.82)
 		)
 		(stroke
 			(width 0)
@@ -7955,6 +8336,36 @@
 			(type default)
 		)
 		(uuid "52bd95f0-fe60-4bd5-9e1b-974c11273741")
+	)
+	(wire
+		(pts
+			(xy 391.16 190.5) (xy 391.16 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53b70564-95d8-4ff4-aa7b-2b6f7b967522")
+	)
+	(wire
+		(pts
+			(xy 208.28 205.74) (xy 226.06 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5408836e-448a-4cd8-b01d-1388abc99819")
+	)
+	(wire
+		(pts
+			(xy 208.28 180.34) (xy 226.06 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "540c966c-83ec-40dc-8d59-daac196565bc")
 	)
 	(wire
 		(pts
@@ -7988,7 +8399,7 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 121.92) (xy 297.18 124.46)
+			(xy 358.14 121.92) (xy 358.14 124.46)
 		)
 		(stroke
 			(width 0)
@@ -8038,7 +8449,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 121.92) (xy 119.38 124.46)
+			(xy 180.34 121.92) (xy 180.34 124.46)
 		)
 		(stroke
 			(width 0)
@@ -8058,7 +8469,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 83.82) (xy 226.06 96.52)
+			(xy 287.02 83.82) (xy 287.02 96.52)
 		)
 		(stroke
 			(width 0)
@@ -8068,13 +8479,23 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 109.22) (xy 299.72 109.22)
+			(xy 358.14 109.22) (xy 360.68 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5ae5907f-90e7-4174-b90d-03913e086490")
+	)
+	(wire
+		(pts
+			(xy 208.28 215.9) (xy 226.06 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b656939-1505-428f-ad06-59f425337a65")
 	)
 	(wire
 		(pts
@@ -8125,6 +8546,16 @@
 			(type default)
 		)
 		(uuid "5c6877fc-0973-4a91-852d-bdf5926ed0e8")
+	)
+	(wire
+		(pts
+			(xy 172.72 274.32) (xy 165.1 274.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c95d359-0ede-49f4-9262-192e7da75693")
 	)
 	(wire
 		(pts
@@ -8238,7 +8669,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 109.22) (xy 190.5 121.92)
+			(xy 251.46 109.22) (xy 251.46 121.92)
 		)
 		(stroke
 			(width 0)
@@ -8275,16 +8706,6 @@
 			(type default)
 		)
 		(uuid "693101d7-c003-4d56-a62b-9a971bc45b4e")
-	)
-	(wire
-		(pts
-			(xy 340.36 137.16) (xy 340.36 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6bc440b0-9874-4038-bd4b-3658c64286f1")
 	)
 	(wire
 		(pts
@@ -8338,7 +8759,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 83.82) (xy 190.5 96.52)
+			(xy 251.46 83.82) (xy 251.46 96.52)
 		)
 		(stroke
 			(width 0)
@@ -8348,13 +8769,23 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 121.92) (xy 182.88 121.92)
+			(xy 233.68 121.92) (xy 243.84 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6d0b70a5-f520-4fe7-8884-54491c92fbfe")
+	)
+	(wire
+		(pts
+			(xy 152.4 198.12) (xy 170.18 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dd4f32d-a76b-4747-aaaa-99c5bc85f09e")
 	)
 	(wire
 		(pts
@@ -8448,6 +8879,26 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 142.24) (xy 236.22 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7245074e-a328-439b-9af6-f6f8b4707530")
+	)
+	(wire
+		(pts
+			(xy 218.44 142.24) (xy 208.28 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "726c02aa-57bd-4cdc-aa11-17ff333499ee")
+	)
+	(wire
+		(pts
 			(xy 312.42 60.96) (xy 314.96 60.96)
 		)
 		(stroke
@@ -8468,6 +8919,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 172.72) (xy 170.18 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "742019d8-ca0f-4bc0-91b4-b80f79a95d01")
+	)
+	(wire
+		(pts
 			(xy 58.42 33.02) (xy 58.42 35.56)
 		)
 		(stroke
@@ -8478,13 +8939,23 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 96.52) (xy 218.44 96.52)
+			(xy 269.24 96.52) (xy 279.4 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "75546e6e-28ca-4d37-9029-0e03ba52e409")
+	)
+	(wire
+		(pts
+			(xy 165.1 142.24) (xy 165.1 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75dfae66-7c3f-4f28-9203-1a019fa76759")
 	)
 	(wire
 		(pts
@@ -8528,27 +8999,27 @@
 	)
 	(wire
 		(pts
-			(xy 358.14 116.84) (xy 368.3 116.84)
+			(xy 208.28 231.14) (xy 226.06 231.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7b21f1f9-1317-4800-b622-c2bfdb0b003e")
+		(uuid "7b6c0c90-123b-464e-bc32-18c100b699c7")
 	)
 	(wire
 		(pts
-			(xy 304.8 137.16) (xy 304.8 139.7)
+			(xy 358.14 121.92) (xy 353.06 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7b8ddfd1-aa91-47a8-b131-c1ae96800274")
+		(uuid "7ba8d2b7-1f72-4b19-b3fc-57dd21c55f3b")
 	)
 	(wire
 		(pts
-			(xy 314.96 83.82) (xy 325.12 83.82)
+			(xy 375.92 83.82) (xy 386.08 83.82)
 		)
 		(stroke
 			(width 0)
@@ -8578,13 +9049,13 @@
 	)
 	(wire
 		(pts
-			(xy 358.14 121.92) (xy 360.68 121.92)
+			(xy 208.28 223.52) (xy 226.06 223.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7fc603d5-9308-449c-aed0-2e3366170083")
+		(uuid "7e06fc23-32d6-4673-93bc-a5772d86e3b0")
 	)
 	(wire
 		(pts
@@ -8598,6 +9069,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 271.78) (xy 165.1 274.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80316e0a-2539-4c3e-9011-04b9983d1733")
+	)
+	(wire
+		(pts
 			(xy 139.7 48.26) (xy 147.32 48.26)
 		)
 		(stroke
@@ -8608,13 +9089,23 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 96.52) (xy 228.6 96.52)
+			(xy 287.02 96.52) (xy 289.56 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "80b263dd-2dcd-488d-8613-879f3dfc511a")
+	)
+	(wire
+		(pts
+			(xy 152.4 190.5) (xy 170.18 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80e6d200-d166-466a-8fe7-548a725b5d8e")
 	)
 	(wire
 		(pts
@@ -8688,7 +9179,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 83.82) (xy 119.38 83.82)
+			(xy 182.88 83.82) (xy 180.34 83.82)
 		)
 		(stroke
 			(width 0)
@@ -8748,7 +9239,7 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 83.82) (xy 297.18 96.52)
+			(xy 358.14 83.82) (xy 358.14 96.52)
 		)
 		(stroke
 			(width 0)
@@ -8758,7 +9249,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 109.22) (xy 157.48 109.22)
+			(xy 215.9 109.22) (xy 218.44 109.22)
 		)
 		(stroke
 			(width 0)
@@ -8768,7 +9259,7 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 96.52) (xy 299.72 96.52)
+			(xy 358.14 96.52) (xy 360.68 96.52)
 		)
 		(stroke
 			(width 0)
@@ -8858,6 +9349,16 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 142.24) (xy 233.68 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c4506a9-3a47-4555-acb0-e28d88575ec1")
+	)
+	(wire
+		(pts
 			(xy 309.88 30.48) (xy 309.88 45.72)
 		)
 		(stroke
@@ -8865,6 +9366,16 @@
 			(type default)
 		)
 		(uuid "8c6445d3-a557-404b-b64c-b81cc3359670")
+	)
+	(wire
+		(pts
+			(xy 208.28 190.5) (xy 226.06 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c710362-0436-4573-acdb-c136539e787c")
 	)
 	(wire
 		(pts
@@ -8888,13 +9399,23 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 96.52) (xy 193.04 96.52)
+			(xy 251.46 96.52) (xy 254 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8ea90b80-1c0a-4266-b4dd-084d91ea32b9")
+	)
+	(wire
+		(pts
+			(xy 147.32 121.92) (xy 137.16 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8eaa03cd-69d2-43b8-947b-2fb08dbb608c")
 	)
 	(wire
 		(pts
@@ -8908,7 +9429,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 121.92) (xy 193.04 121.92)
+			(xy 251.46 121.92) (xy 254 121.92)
 		)
 		(stroke
 			(width 0)
@@ -8978,16 +9499,6 @@
 	)
 	(wire
 		(pts
-			(xy 322.58 137.16) (xy 332.74 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "938c9536-3715-41c7-8b72-49d097c2fb1c")
-	)
-	(wire
-		(pts
 			(xy 195.58 63.5) (xy 203.2 63.5)
 		)
 		(stroke
@@ -9008,7 +9519,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 96.52) (xy 154.94 109.22)
+			(xy 215.9 96.52) (xy 215.9 109.22)
 		)
 		(stroke
 			(width 0)
@@ -9018,7 +9529,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 121.92) (xy 261.62 124.46)
+			(xy 322.58 121.92) (xy 322.58 124.46)
 		)
 		(stroke
 			(width 0)
@@ -9028,7 +9539,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 96.52) (xy 147.32 96.52)
+			(xy 198.12 96.52) (xy 208.28 96.52)
 		)
 		(stroke
 			(width 0)
@@ -9038,7 +9549,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 121.92) (xy 154.94 124.46)
+			(xy 215.9 121.92) (xy 215.9 124.46)
 		)
 		(stroke
 			(width 0)
@@ -9098,6 +9609,36 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 213.36) (xy 226.06 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bb8f03f-4520-465c-8837-710aa3e0ab05")
+	)
+	(wire
+		(pts
+			(xy 172.72 271.78) (xy 172.72 274.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c1abee9-e303-4283-ab58-5c4b2716727a")
+	)
+	(wire
+		(pts
+			(xy 360.68 121.92) (xy 358.14 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c63f6ab-45dd-4196-b5c2-6cf874fd093d")
+	)
+	(wire
+		(pts
 			(xy 43.18 248.92) (xy 43.18 251.46)
 		)
 		(stroke
@@ -9108,13 +9649,23 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 96.52) (xy 226.06 109.22)
+			(xy 287.02 96.52) (xy 287.02 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9c951288-51be-48c8-9402-77083104390a")
+	)
+	(wire
+		(pts
+			(xy 152.4 203.2) (xy 170.18 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d661429-3418-4155-9c07-8cc02c7882ea")
 	)
 	(wire
 		(pts
@@ -9128,7 +9679,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 121.92) (xy 157.48 121.92)
+			(xy 215.9 121.92) (xy 218.44 121.92)
 		)
 		(stroke
 			(width 0)
@@ -9138,7 +9689,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 83.82) (xy 182.88 83.82)
+			(xy 233.68 83.82) (xy 243.84 83.82)
 		)
 		(stroke
 			(width 0)
@@ -9288,17 +9839,7 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 137.16) (xy 297.18 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a41a1403-11ff-4104-9db2-119a60d142ae")
-	)
-	(wire
-		(pts
-			(xy 226.06 109.22) (xy 228.6 109.22)
+			(xy 287.02 109.22) (xy 289.56 109.22)
 		)
 		(stroke
 			(width 0)
@@ -9328,7 +9869,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 109.22) (xy 264.16 109.22)
+			(xy 322.58 109.22) (xy 325.12 109.22)
 		)
 		(stroke
 			(width 0)
@@ -9338,7 +9879,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 121.92) (xy 226.06 124.46)
+			(xy 287.02 121.92) (xy 287.02 124.46)
 		)
 		(stroke
 			(width 0)
@@ -9358,7 +9899,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 109.22) (xy 226.06 121.92)
+			(xy 287.02 109.22) (xy 287.02 121.92)
 		)
 		(stroke
 			(width 0)
@@ -9378,7 +9919,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 96.52) (xy 264.16 96.52)
+			(xy 322.58 96.52) (xy 325.12 96.52)
 		)
 		(stroke
 			(width 0)
@@ -9398,7 +9939,17 @@
 	)
 	(wire
 		(pts
-			(xy 279.4 96.52) (xy 289.56 96.52)
+			(xy 134.62 154.94) (xy 134.62 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a996aab8-f579-41d3-8ddc-bff2ea74b899")
+	)
+	(wire
+		(pts
+			(xy 340.36 96.52) (xy 350.52 96.52)
 		)
 		(stroke
 			(width 0)
@@ -9448,7 +9999,7 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 96.52) (xy 297.18 109.22)
+			(xy 358.14 96.52) (xy 358.14 109.22)
 		)
 		(stroke
 			(width 0)
@@ -9468,7 +10019,7 @@
 	)
 	(wire
 		(pts
-			(xy 279.4 83.82) (xy 289.56 83.82)
+			(xy 340.36 83.82) (xy 350.52 83.82)
 		)
 		(stroke
 			(width 0)
@@ -9498,13 +10049,23 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 121.92) (xy 254 121.92)
+			(xy 304.8 121.92) (xy 314.96 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "afaf0346-68be-476e-8f76-fa1b30a15efe")
+	)
+	(wire
+		(pts
+			(xy 182.88 142.24) (xy 172.72 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b012ca50-5cbf-4555-a1b4-d4db49b59667")
 	)
 	(wire
 		(pts
@@ -9548,7 +10109,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 109.22) (xy 261.62 121.92)
+			(xy 322.58 109.22) (xy 322.58 121.92)
 		)
 		(stroke
 			(width 0)
@@ -9568,13 +10129,23 @@
 	)
 	(wire
 		(pts
-			(xy 314.96 96.52) (xy 325.12 96.52)
+			(xy 375.92 96.52) (xy 386.08 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b2ee48ca-8191-491d-bb74-baffeade3968")
+	)
+	(wire
+		(pts
+			(xy 152.4 195.58) (xy 170.18 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3aae234-f43a-4301-91da-5623c12b1d6b")
 	)
 	(wire
 		(pts
@@ -9598,13 +10169,23 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 121.92) (xy 147.32 121.92)
+			(xy 198.12 121.92) (xy 208.28 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b6683ea2-fad0-4f87-acaa-0e10ea0e8b08")
+	)
+	(wire
+		(pts
+			(xy 200.66 142.24) (xy 198.12 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b725ec53-0a4e-48be-ab65-c9b60514556a")
 	)
 	(wire
 		(pts
@@ -9698,7 +10279,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 83.82) (xy 147.32 83.82)
+			(xy 198.12 83.82) (xy 208.28 83.82)
 		)
 		(stroke
 			(width 0)
@@ -9718,7 +10299,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 109.22) (xy 193.04 109.22)
+			(xy 251.46 109.22) (xy 254 109.22)
 		)
 		(stroke
 			(width 0)
@@ -9738,7 +10319,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 96.52) (xy 121.92 96.52)
+			(xy 180.34 96.52) (xy 182.88 96.52)
 		)
 		(stroke
 			(width 0)
@@ -9748,13 +10329,23 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 121.92) (xy 218.44 121.92)
+			(xy 269.24 121.92) (xy 279.4 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c120f75b-7122-45e9-bbde-6377dd369322")
+	)
+	(wire
+		(pts
+			(xy 208.28 226.06) (xy 226.06 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1aa6234-64cd-444c-ba96-c397a858cf51")
 	)
 	(wire
 		(pts
@@ -9828,6 +10419,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 142.24) (xy 200.66 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c643a50c-754b-499e-805e-cee0c8d9f521")
+	)
+	(wire
+		(pts
 			(xy 259.08 259.08) (xy 269.24 259.08)
 		)
 		(stroke
@@ -9848,7 +10449,7 @@
 	)
 	(wire
 		(pts
-			(xy 314.96 121.92) (xy 325.12 121.92)
+			(xy 375.92 121.92) (xy 386.08 121.92)
 		)
 		(stroke
 			(width 0)
@@ -9868,7 +10469,17 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 109.22) (xy 121.92 109.22)
+			(xy 208.28 185.42) (xy 226.06 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c93ba941-be89-475d-8d8d-c51875b84f70")
+	)
+	(wire
+		(pts
+			(xy 180.34 109.22) (xy 182.88 109.22)
 		)
 		(stroke
 			(width 0)
@@ -9928,16 +10539,6 @@
 	)
 	(wire
 		(pts
-			(xy 332.74 116.84) (xy 342.9 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd07531e-cf89-4425-b162-998136d10000")
-	)
-	(wire
-		(pts
 			(xy 360.68 190.5) (xy 360.68 198.12)
 		)
 		(stroke
@@ -9968,7 +10569,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 121.92) (xy 264.16 121.92)
+			(xy 322.58 121.92) (xy 325.12 121.92)
 		)
 		(stroke
 			(width 0)
@@ -10008,6 +10609,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 124.46) (xy 165.1 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2ad7801-382a-4fce-838b-00719043bad3")
+	)
+	(wire
+		(pts
 			(xy 99.06 254) (xy 99.06 256.54)
 		)
 		(stroke
@@ -10035,6 +10646,16 @@
 			(type default)
 		)
 		(uuid "d3c07ca3-8b5a-4cd8-9463-208698241eed")
+	)
+	(wire
+		(pts
+			(xy 208.28 210.82) (xy 226.06 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d45a64e6-7bac-4cdf-9666-f3f93acdb26c")
 	)
 	(wire
 		(pts
@@ -10068,6 +10689,26 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 185.42) (xy 170.18 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5cc7611-db77-411f-ba57-0129abb7de16")
+	)
+	(wire
+		(pts
+			(xy 165.1 142.24) (xy 162.56 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5e3b0dc-5f07-4348-a078-a92adb94f518")
+	)
+	(wire
+		(pts
 			(xy 335.28 182.88) (xy 381 182.88)
 		)
 		(stroke
@@ -10075,16 +10716,6 @@
 			(type default)
 		)
 		(uuid "d7b0baae-f520-4083-b6ef-e37e21773778")
-	)
-	(wire
-		(pts
-			(xy 340.36 137.16) (xy 342.9 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9696322-8047-461e-8f85-17e35babc89c")
 	)
 	(wire
 		(pts
@@ -10168,16 +10799,6 @@
 	)
 	(wire
 		(pts
-			(xy 269.24 137.16) (xy 271.78 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e18c6e8c-8b2b-4ada-9318-ac14dda30805")
-	)
-	(wire
-		(pts
 			(xy 226.06 200.66) (xy 208.28 200.66)
 		)
 		(stroke
@@ -10188,7 +10809,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 109.22) (xy 182.88 109.22)
+			(xy 233.68 109.22) (xy 243.84 109.22)
 		)
 		(stroke
 			(width 0)
@@ -10208,13 +10829,33 @@
 	)
 	(wire
 		(pts
-			(xy 299.72 83.82) (xy 297.18 83.82)
+			(xy 360.68 83.82) (xy 358.14 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e34e0fae-1bd6-4d02-aa39-45df8902adb1")
+	)
+	(wire
+		(pts
+			(xy 208.28 172.72) (xy 226.06 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3d989d3-d818-4090-ab22-c74c9a3a39e6")
+	)
+	(wire
+		(pts
+			(xy 172.72 121.92) (xy 162.56 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e42205a1-0981-491c-9280-effed4b8e33c")
 	)
 	(wire
 		(pts
@@ -10228,7 +10869,17 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 83.82) (xy 190.5 83.82)
+			(xy 165.1 124.46) (xy 165.1 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e66d25bd-b510-4272-ad4d-a59fa5ec5db2")
+	)
+	(wire
+		(pts
+			(xy 254 83.82) (xy 251.46 83.82)
 		)
 		(stroke
 			(width 0)
@@ -10258,7 +10909,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 83.82) (xy 261.62 96.52)
+			(xy 322.58 83.82) (xy 322.58 96.52)
 		)
 		(stroke
 			(width 0)
@@ -10275,6 +10926,16 @@
 			(type default)
 		)
 		(uuid "e90974a3-1cb5-486a-b4c8-eb6c90413e5d")
+	)
+	(wire
+		(pts
+			(xy 208.28 177.8) (xy 226.06 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e97b4dfe-5b10-4a9a-8239-c68739fb79b7")
 	)
 	(wire
 		(pts
@@ -10298,23 +10959,13 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 83.82) (xy 119.38 96.52)
+			(xy 180.34 83.82) (xy 180.34 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ea05e0f9-1bec-4d8f-8458-6917dbfea752")
-	)
-	(wire
-		(pts
-			(xy 269.24 137.16) (xy 269.24 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea3e04c4-d8e1-4aa9-9e6b-1f332cb199bf")
 	)
 	(wire
 		(pts
@@ -10358,7 +11009,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 96.52) (xy 190.5 109.22)
+			(xy 251.46 96.52) (xy 251.46 109.22)
 		)
 		(stroke
 			(width 0)
@@ -10368,7 +11019,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 96.52) (xy 261.62 109.22)
+			(xy 322.58 96.52) (xy 322.58 109.22)
 		)
 		(stroke
 			(width 0)
@@ -10408,6 +11059,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 205.74) (xy 170.18 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed02b747-9306-425e-b3ce-2e37dba8597a")
+	)
+	(wire
+		(pts
 			(xy 200.66 45.72) (xy 203.2 45.72)
 		)
 		(stroke
@@ -10418,13 +11079,23 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 109.22) (xy 297.18 121.92)
+			(xy 358.14 109.22) (xy 358.14 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "eeac1b64-a07c-4e0a-b23c-00444707d6fe")
+	)
+	(wire
+		(pts
+			(xy 208.28 182.88) (xy 226.06 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eee30f66-ed1e-45eb-81f4-2b58d31518ba")
 	)
 	(wire
 		(pts
@@ -10445,6 +11116,16 @@
 			(type default)
 		)
 		(uuid "eff789eb-e363-442d-ba07-c9fe1a2ac235")
+	)
+	(wire
+		(pts
+			(xy 401.32 190.5) (xy 401.32 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f04b7bf1-0557-4120-8ae9-2b9977425017")
 	)
 	(wire
 		(pts
@@ -10528,7 +11209,7 @@
 	)
 	(wire
 		(pts
-			(xy 314.96 109.22) (xy 325.12 109.22)
+			(xy 375.92 109.22) (xy 386.08 109.22)
 		)
 		(stroke
 			(width 0)
@@ -10568,7 +11249,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 96.52) (xy 182.88 96.52)
+			(xy 233.68 96.52) (xy 243.84 96.52)
 		)
 		(stroke
 			(width 0)
@@ -10608,16 +11289,6 @@
 	)
 	(wire
 		(pts
-			(xy 304.8 137.16) (xy 307.34 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9050400-2a51-43e7-9658-3657f14ecd93")
-	)
-	(wire
-		(pts
 			(xy 340.36 45.72) (xy 342.9 45.72)
 		)
 		(stroke
@@ -10628,7 +11299,7 @@
 	)
 	(wire
 		(pts
-			(xy 279.4 109.22) (xy 289.56 109.22)
+			(xy 340.36 109.22) (xy 350.52 109.22)
 		)
 		(stroke
 			(width 0)
@@ -10648,16 +11319,6 @@
 	)
 	(wire
 		(pts
-			(xy 332.74 121.92) (xy 342.9 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb231d5e-8412-4cc1-8297-1bce241b6b35")
-	)
-	(wire
-		(pts
 			(xy 38.1 259.08) (xy 38.1 261.62)
 		)
 		(stroke
@@ -10668,13 +11329,23 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 109.22) (xy 254 109.22)
+			(xy 304.8 109.22) (xy 314.96 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fba8d365-78df-4db9-a360-815c644a28a7")
+	)
+	(wire
+		(pts
+			(xy 208.28 243.84) (xy 226.06 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc7dbb09-ec26-41d0-994b-dcb2b86a4a01")
 	)
 	(wire
 		(pts
@@ -10695,16 +11366,6 @@
 			(type default)
 		)
 		(uuid "fce4ee29-5a7e-4b2d-9387-4e58cba66d43")
-	)
-	(wire
-		(pts
-			(xy 297.18 121.92) (xy 299.72 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd18dd8a-973c-4b38-a87f-eaf70ea948e1")
 	)
 	(wire
 		(pts
@@ -10788,18 +11449,18 @@
 		(uuid "ad147b29-694f-4f3f-a330-c3f9e2c2edd4")
 	)
 	(label "KEY_E2"
-		(at -30.48 193.04 180)
+		(at 152.4 195.58 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "00fd1bda-e2f4-4483-8df8-a51801c3ea1d")
 	)
-	(label "KEY_D3"
-		(at -30.48 177.8 180)
+	(label "KEY_D1"
+		(at 226.06 175.26 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10807,7 +11468,18 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "0279795d-690c-4038-bc9c-ad00a8fd1b5c")
+		(uuid "021b433d-b0e4-40a4-a1f6-27fcf2f667dc")
+	)
+	(label "KEY_E1"
+		(at 208.28 142.24 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "02c67187-013d-4a30-9454-af4ec99615f9")
 	)
 	(label "USB3_DN"
 		(at 226.06 195.58 180)
@@ -10821,7 +11493,7 @@
 		(uuid "0345c6af-5dfa-427f-96ca-cb3e763be913")
 	)
 	(label "KEY_A5"
-		(at 289.56 83.82 180)
+		(at 350.52 83.82 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10830,17 +11502,6 @@
 			(justify right bottom)
 		)
 		(uuid "03797d31-bd0c-4cdd-8a31-dfd5e3203f93")
-	)
-	(label "KEY_D4"
-		(at -30.48 180.34 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0534c2ee-f817-4b98-a5b0-b09a3afce317")
 	)
 	(label "USB2_DP"
 		(at 68.58 157.48 180)
@@ -10854,7 +11515,7 @@
 		(uuid "071b527e-5bf0-4be9-8d91-62f44b09d861")
 	)
 	(label "KEY_D3"
-		(at 218.44 121.92 180)
+		(at 279.4 121.92 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10886,6 +11547,17 @@
 		)
 		(uuid "0aa7c19c-9129-484d-aa82-5628c5482f77")
 	)
+	(label "KEY_C4"
+		(at 226.06 210.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0bb3e9ce-38ae-4b81-bf15-fcd663c283cd")
+	)
 	(label "LED23"
 		(at 223.52 63.5 0)
 		(fields_autoplaced yes)
@@ -10897,8 +11569,8 @@
 		)
 		(uuid "0bf5325a-f37b-4eeb-bab8-9e367ef40527")
 	)
-	(label "KEY_C3"
-		(at -30.48 160.02 180)
+	(label "KEY_C2"
+		(at 226.06 172.72 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10920,7 +11592,7 @@
 		(uuid "0fd515bd-3f33-4b5c-bc01-9350ccc57496")
 	)
 	(label "KEY_B4"
-		(at 254 96.52 180)
+		(at 314.96 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10931,7 +11603,7 @@
 		(uuid "10bb9423-ef95-409b-af2c-83b872db6a43")
 	)
 	(label "KEY_A6"
-		(at -30.48 139.7 180)
+		(at 226.06 167.64 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10963,8 +11635,8 @@
 		)
 		(uuid "17466eb1-e096-4749-a353-3dedfdd082ce")
 	)
-	(label "KEY_C1"
-		(at -30.48 157.48 180)
+	(label "KEY_C6"
+		(at 226.06 215.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10972,7 +11644,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "18883363-cf36-4c2a-957c-dd74932db6c6")
+		(uuid "19571de4-027b-4cb5-aadd-21e352f39b9f")
 	)
 	(label "USB0_DP"
 		(at 66.04 73.66 0)
@@ -10996,17 +11668,6 @@
 		)
 		(uuid "1ceb5e3c-453c-491f-89bb-fa04f8b6332f")
 	)
-	(label "ENC_B"
-		(at -30.48 203.2 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1f036a9a-82a7-417c-8763-7957bc579158")
-	)
 	(label "LED6"
 		(at 251.46 33.02 0)
 		(fields_autoplaced yes)
@@ -11017,6 +11678,17 @@
 			(justify left bottom)
 		)
 		(uuid "200451ab-5c70-4946-ad67-47894866063e")
+	)
+	(label "KEY_C3"
+		(at 226.06 185.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "20e616ac-f508-4338-94fd-61e418a2256e")
 	)
 	(label "USB1_CC1"
 		(at 73.66 99.06 180)
@@ -11030,7 +11702,7 @@
 		(uuid "21ad430a-d11d-4dce-8d66-5c374da3d510")
 	)
 	(label "KEY_A2"
-		(at 182.88 83.82 180)
+		(at 243.84 83.82 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11052,7 +11724,7 @@
 		(uuid "2247317b-011b-4a93-ae3d-bc4a9bf88882")
 	)
 	(label "KEY_B3"
-		(at 218.44 96.52 180)
+		(at 279.4 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11062,8 +11734,8 @@
 		)
 		(uuid "22559865-a3da-4946-afd6-80cc6f210fee")
 	)
-	(label "KEY_C3"
-		(at 182.88 109.22 180)
+	(label "KEY_C2"
+		(at 243.84 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11095,41 +11767,30 @@
 		)
 		(uuid "25461a63-9950-4cd5-8d16-7012cac0abc6")
 	)
-	(label "KEY_C5"
-		(at -30.48 167.64 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2b046dab-19c1-4ede-8011-6481b6fe2d90")
-	)
 	(label "KEY_A4"
-		(at -30.48 134.62 180)
+		(at 152.4 172.72 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "2bfe20f7-0aef-4f4f-95f2-87e1619a3118")
 	)
 	(label "KEY_E3"
-		(at -30.48 195.58 180)
+		(at 152.4 198.12 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "2f3cf6a9-27ef-43b2-92bf-a7950f591aad")
 	)
 	(label "KEY_C6"
-		(at 325.12 109.22 180)
+		(at 386.08 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11183,17 +11844,6 @@
 		)
 		(uuid "3604b095-7403-41c7-a3b6-62daa5800f00")
 	)
-	(label "KEY_C3"
-		(at -30.48 162.56 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "365072a2-883e-46f1-b810-1d651bef1de8")
-	)
 	(label "NRST"
 		(at 152.4 177.8 0)
 		(fields_autoplaced yes)
@@ -11215,28 +11865,6 @@
 			(justify left bottom)
 		)
 		(uuid "3a934c6c-a784-4f8f-b147-65f9a1ca334b")
-	)
-	(label "KEY_B3"
-		(at -30.48 144.78 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3ce36e4f-1cb5-4200-9c0a-9722cbccc93d")
-	)
-	(label "ENC_A"
-		(at 332.74 116.84 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3d2f28b0-cb96-41d4-ac4f-97c97f0c16ab")
 	)
 	(label "LED26"
 		(at 307.34 63.5 0)
@@ -11260,16 +11888,16 @@
 		)
 		(uuid "414a5921-0b25-4e05-a3c8-2e2e53692d7e")
 	)
-	(label "KEY_C6"
-		(at -30.48 170.18 180)
+	(label "STAT1_K"
+		(at 121.92 167.64 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "48034106-43a1-480c-87e4-e6e6e719e032")
+		(uuid "486f7cf3-3d3e-4d4f-aa76-e62ed5bdd3e2")
 	)
 	(label "LED25"
 		(at 279.4 63.5 0)
@@ -11305,7 +11933,7 @@
 		(uuid "4df74484-6ddc-4fda-be04-2fd359921cb2")
 	)
 	(label "KEY_A3"
-		(at 218.44 83.82 180)
+		(at 279.4 83.82 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11315,16 +11943,16 @@
 		)
 		(uuid "4e234634-dff4-403c-8e45-ddd828f17d02")
 	)
-	(label "SCL"
-		(at -35.56 215.9 0)
+	(label "STAT1"
+		(at 226.06 220.98 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "503755d7-105f-4d2f-aee3-5facb2e0dc32")
+		(uuid "4fd6b833-e135-426f-a44d-7472db601e8a")
 	)
 	(label "USB2_DP"
 		(at 71.12 167.64 0)
@@ -11338,7 +11966,7 @@
 		(uuid "50a565cd-86c4-4b77-b957-ca31f1d52a8d")
 	)
 	(label "KEY_A1"
-		(at 147.32 83.82 180)
+		(at 208.28 83.82 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11349,13 +11977,13 @@
 		(uuid "50ad8471-ebc8-4cf8-8b93-775a2c025f96")
 	)
 	(label "LED1"
-		(at -35.56 226.06 0)
+		(at 226.06 193.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "5115fe66-5aeb-42b4-8819-711088ecd0e8")
 	)
@@ -11381,6 +12009,17 @@
 		)
 		(uuid "55b08612-4882-45fa-a7d8-683f2224a993")
 	)
+	(label "ENC_A"
+		(at 172.72 121.92 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "576212a1-686b-485f-8691-07c826254a6f")
+	)
 	(label "USB0_DN"
 		(at 256.54 175.26 0)
 		(fields_autoplaced yes)
@@ -11392,28 +12031,6 @@
 		)
 		(uuid "58005866-554d-4666-abb0-ab1fd9e65d65")
 	)
-	(label "KEY_E2"
-		(at 332.74 137.16 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5a100c2a-e5bb-4fbe-aa59-71745e06fad6")
-	)
-	(label "KEY_C4"
-		(at -30.48 165.1 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5a38e090-0f92-40c8-ae34-9818ed2a947e")
-	)
 	(label "USB0_CC2"
 		(at 66.04 71.12 0)
 		(fields_autoplaced yes)
@@ -11424,6 +12041,17 @@
 			(justify left bottom)
 		)
 		(uuid "5b2469d3-46be-4ad9-a910-0c2a8f9fbeea")
+	)
+	(label "KEY_D3"
+		(at 226.06 238.76 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5be6383c-b18d-4222-aae3-db5142a7b96a")
 	)
 	(label "LED16"
 		(at 279.4 48.26 0)
@@ -11437,7 +12065,7 @@
 		(uuid "5c104c1d-78c7-4eba-a791-9032ebf24ee0")
 	)
 	(label "KEY_B6"
-		(at 325.12 96.52 180)
+		(at 386.08 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11446,6 +12074,17 @@
 			(justify right bottom)
 		)
 		(uuid "604491e8-85d7-4449-afa7-11992e1b0cd3")
+	)
+	(label "KEY_B5"
+		(at 226.06 180.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "61641dd6-7eaf-436a-936b-85a76adad67f")
 	)
 	(label "LED15"
 		(at 251.46 48.26 0)
@@ -11458,19 +12097,8 @@
 		)
 		(uuid "6526d470-4006-4eb6-bd0e-2d3717996eef")
 	)
-	(label "KEY_A2"
-		(at -30.48 129.54 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "661f2e48-36dd-46f0-b4a2-d04db4bbdc3b")
-	)
 	(label "KEY_A4"
-		(at 254 83.82 180)
+		(at 314.96 83.82 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11481,7 +12109,7 @@
 		(uuid "66427315-37f6-4db4-8f7d-d5aa29dbb2da")
 	)
 	(label "KEY_A6"
-		(at 325.12 83.82 180)
+		(at 386.08 83.82 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11490,6 +12118,28 @@
 			(justify right bottom)
 		)
 		(uuid "67ce797f-3a6d-4c4c-95c3-d71635cb22a9")
+	)
+	(label "KEY_A1"
+		(at 226.06 226.06 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6973dd0c-a804-40b8-b20d-8c238e1206d4")
+	)
+	(label "SDA"
+		(at 226.06 233.68 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6a87b5ab-8f1b-47d0-bfea-abe2518a42fa")
 	)
 	(label "USB2_DN"
 		(at 68.58 154.94 180)
@@ -11513,16 +12163,16 @@
 		)
 		(uuid "6b289864-ec08-4df2-bb31-aa186f53386c")
 	)
-	(label "KEY_A1"
-		(at -30.48 127 180)
+	(label "ENC_SW"
+		(at 137.16 121.92 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "6b487651-4c16-4f58-9b4e-cee936671898")
+		(uuid "6c5352da-1ab5-47fd-855a-6fd71d0a8840")
 	)
 	(label "LED4"
 		(at 195.58 33.02 0)
@@ -11547,7 +12197,7 @@
 		(uuid "6ede657c-84be-4ea3-b7cc-c30218c41f21")
 	)
 	(label "KEY_C5"
-		(at 289.56 109.22 180)
+		(at 350.52 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11568,16 +12218,27 @@
 		)
 		(uuid "717312cf-89fd-4ffa-80b8-9f8b7739873c")
 	)
-	(label "SDA"
-		(at -35.56 213.36 0)
+	(label "KEY_B1"
+		(at 226.06 223.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "749d5513-f0f4-4ae1-ad7c-99e61de75742")
+		(uuid "74f57131-5fd4-492a-b1ba-69df4306d75b")
+	)
+	(label "KEY_A2"
+		(at 226.06 228.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "757bba4a-07f9-4302-b37b-251551aa2257")
 	)
 	(label "USB0_DP"
 		(at 73.66 53.34 180)
@@ -11589,17 +12250,6 @@
 			(justify right bottom)
 		)
 		(uuid "771cb023-231f-4158-880d-dea3df005b15")
-	)
-	(label "KEY_D3"
-		(at -30.48 175.26 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "774538d9-e381-401a-bfd0-e5ceb8a665e6")
 	)
 	(label "USB0_CC1"
 		(at 152.4 182.88 0)
@@ -11623,17 +12273,6 @@
 		)
 		(uuid "7ba5a49f-6195-4558-9bc9-059584e75ff2")
 	)
-	(label "ENC_SW"
-		(at 368.3 116.84 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7d36b589-e69c-4770-89e2-04c27bf8d3ff")
-	)
 	(label "USB3_DP"
 		(at 226.06 198.12 180)
 		(fields_autoplaced yes)
@@ -11646,7 +12285,7 @@
 		(uuid "7e241023-03db-4f3e-9528-d9001a6aed52")
 	)
 	(label "KEY_B3"
-		(at -30.48 147.32 180)
+		(at 226.06 170.18 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11690,7 +12329,7 @@
 		(uuid "8214e1fc-f097-48d1-9e1f-1f39ef541bf9")
 	)
 	(label "KEY_C1"
-		(at 147.32 109.22 180)
+		(at 208.28 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11700,19 +12339,8 @@
 		)
 		(uuid "832f9b4a-febc-4e4f-8776-5b8f4ad6acf4")
 	)
-	(label "ENC_A"
-		(at -30.48 200.66 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "84ee56d3-4e89-40ee-b89e-09924910c1ef")
-	)
 	(label "KEY_B5"
-		(at 289.56 96.52 180)
+		(at 350.52 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11733,8 +12361,19 @@
 		)
 		(uuid "86d3be9f-5d41-4a14-a179-51f95d21d3df")
 	)
+	(label "KEY_B2"
+		(at 152.4 203.2 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "89766f35-37cc-4811-bd0b-b9cd6bfce89b")
+	)
 	(label "KEY_E1"
-		(at -30.48 190.5 180)
+		(at 226.06 190.5 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11766,8 +12405,19 @@
 		)
 		(uuid "8fe5755b-56fe-4fbc-8ef0-7e40ec888564")
 	)
+	(label "KEY_B6"
+		(at 226.06 182.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "92cbc2ba-4540-4296-9ffb-be9ee84b0881")
+	)
 	(label "KEY_D1"
-		(at 147.32 121.92 180)
+		(at 208.28 121.92 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11777,19 +12427,8 @@
 		)
 		(uuid "92e95c5d-d470-4f56-9c37-77a9fc73efed")
 	)
-	(label "KEY_D6"
-		(at -30.48 185.42 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "951e3072-8f6d-482b-a265-32477b83211f")
-	)
 	(label "KEY_D4"
-		(at 254 121.92 180)
+		(at 314.96 121.92 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11798,6 +12437,17 @@
 			(justify right bottom)
 		)
 		(uuid "95a5a4c3-369c-41a5-8e49-66c31c751981")
+	)
+	(label "ENC_B"
+		(at 226.06 218.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "95e3c08b-8947-413a-a51f-ec9b39771637")
 	)
 	(label "XTAL1"
 		(at 337.82 187.96 0)
@@ -11822,7 +12472,7 @@
 		(uuid "9d73e861-f9dc-4a80-8979-687a3d5adf54")
 	)
 	(label "KEY_D5"
-		(at 289.56 121.92 180)
+		(at 350.52 121.92 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11831,17 +12481,6 @@
 			(justify right bottom)
 		)
 		(uuid "9ebf529f-d83c-4330-b4cd-92024b3c09b0")
-	)
-	(label "KEY_B6"
-		(at -30.48 154.94 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a02ba03b-e6a2-43b1-a8c4-2697b3580fde")
 	)
 	(label "SCL"
 		(at 43.18 210.82 0)
@@ -11887,16 +12526,27 @@
 		)
 		(uuid "a6b0fe97-3cbd-4fb9-872f-2dcf9cbfcbc4")
 	)
-	(label "KEY_B5"
-		(at -30.48 152.4 180)
+	(label "STAT1"
+		(at 121.92 154.94 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "a72148be-a073-4700-a2de-0105ecd62bd2")
+		(uuid "a8ce0a13-adb0-4934-96d7-19b6b6038a2c")
+	)
+	(label "KEY_E2"
+		(at 172.72 142.24 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aba2ffe5-156a-422e-ada2-71a9d7cb42a3")
 	)
 	(label "USB1_CC2"
 		(at 73.66 101.6 180)
@@ -11909,6 +12559,17 @@
 		)
 		(uuid "af1ba700-899e-4ff9-a2a5-8070c606bfe4")
 	)
+	(label "ENC_B"
+		(at 172.72 127 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b0134fb4-940e-4326-b585-ddb3654f750e")
+	)
 	(label "XTAL2"
 		(at 337.82 190.5 0)
 		(fields_autoplaced yes)
@@ -11920,27 +12581,16 @@
 		)
 		(uuid "b01ac0d0-b42a-4d44-ac2b-00a94eb5239e")
 	)
-	(label "KEY_A3"
-		(at -30.48 132.08 180)
+	(label "STAT2"
+		(at 134.62 154.94 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "b2e8732b-0846-4c4d-9ef2-ae7060652546")
-	)
-	(label "KEY_D1"
-		(at -30.48 172.72 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b6a59ffd-ef53-4755-a305-01db7ee3f5d4")
+		(uuid "b6f3ccb9-495f-4766-8c53-2a1f14eb68dc")
 	)
 	(label "LED13"
 		(at 195.58 48.26 0)
@@ -11964,6 +12614,28 @@
 		)
 		(uuid "b7f85923-a248-4879-adae-e797c1d3bae7")
 	)
+	(label "KEY_D4"
+		(at 226.06 241.3 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bb1902dc-96b1-4a5e-96b2-951bbfbc2c8a")
+	)
+	(label "KEY_C1"
+		(at 152.4 200.66 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bb2e4629-4dc2-44f7-9ad8-dc524f116aab")
+	)
 	(label "LED18"
 		(at 335.28 48.26 0)
 		(fields_autoplaced yes)
@@ -11975,8 +12647,19 @@
 		)
 		(uuid "bd663c35-7a70-4a2e-992d-d36bdd4b25d0")
 	)
-	(label "KEY_D3"
-		(at 182.88 121.92 180)
+	(label "KEY_D6"
+		(at 226.06 243.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bd7487ab-cfc9-43bb-90a4-c88b7a42338c")
+	)
+	(label "KEY_D2"
+		(at 243.84 121.92 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11985,17 +12668,6 @@
 			(justify right bottom)
 		)
 		(uuid "be84c618-604b-43f2-b657-a243f18b2c41")
-	)
-	(label "KEY_E3"
-		(at 368.3 137.16 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "bf44cb44-f07e-4c0a-8813-1068717b3b41")
 	)
 	(label "SWCLK"
 		(at 269.24 259.08 180)
@@ -12008,8 +12680,19 @@
 		)
 		(uuid "c4a8d610-f11c-4b9a-8c9a-ea9e914779ba")
 	)
-	(label "KEY_B1"
-		(at -30.48 142.24 180)
+	(label "STAT2_K"
+		(at 134.62 167.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c6225212-b663-47d8-a962-48c7fbe2d01d")
+	)
+	(label "KEY_C5"
+		(at 226.06 213.36 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12017,7 +12700,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "c63d9745-748c-4b98-8ba8-99c9e2fe5dbe")
+		(uuid "c664a529-e908-4153-a0e8-b46e3321d1bc")
 	)
 	(label "VREF+"
 		(at 152.4 167.64 0)
@@ -12041,6 +12724,17 @@
 		)
 		(uuid "cc17d3f3-f5f0-48fe-a821-acea56b6a73b")
 	)
+	(label "STAT2"
+		(at 152.4 190.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cc88c308-816f-4928-8328-4727f71359de")
+	)
 	(label "LED11"
 		(at 139.7 48.26 0)
 		(fields_autoplaced yes)
@@ -12052,8 +12746,8 @@
 		)
 		(uuid "d0629343-db6a-47ca-acc2-bd53b8dbb6f6")
 	)
-	(label "KEY_B3"
-		(at 182.88 96.52 180)
+	(label "KEY_B2"
+		(at 243.84 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12064,13 +12758,13 @@
 		(uuid "d0d7aa1c-d34c-40ea-b698-a303637de40e")
 	)
 	(label "KEY_A5"
-		(at -30.48 137.16 180)
+		(at 152.4 175.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "d380c89b-fc25-4171-bb92-044782a7acdc")
 	)
@@ -12107,6 +12801,17 @@
 		)
 		(uuid "d7b1a730-31cf-4391-8209-23a860d81897")
 	)
+	(label "KEY_B4"
+		(at 226.06 177.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d8dbe3b0-c0bd-4280-9902-82f2ddb93334")
+	)
 	(label "LED8"
 		(at 307.34 33.02 0)
 		(fields_autoplaced yes)
@@ -12130,7 +12835,7 @@
 		(uuid "dadf9e97-71aa-422e-bab9-44151a32a230")
 	)
 	(label "KEY_C3"
-		(at 218.44 109.22 180)
+		(at 279.4 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12150,6 +12855,28 @@
 			(justify right bottom)
 		)
 		(uuid "dc266224-5a8b-41dc-b3f6-54288ca41555")
+	)
+	(label "KEY_E3"
+		(at 137.16 142.24 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dca9608b-99b4-413c-9699-6f1676d703f6")
+	)
+	(label "KEY_D5"
+		(at 226.06 246.38 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "dd695236-8afd-46bb-bf37-55c68b3d9e73")
 	)
 	(label "SCL"
 		(at 256.54 208.28 0)
@@ -12173,17 +12900,6 @@
 		)
 		(uuid "df636e3c-0b07-4b6c-b7af-461964e933e2")
 	)
-	(label "KEY_E1"
-		(at 297.18 137.16 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e23bb37c-769d-48ab-971c-d867a156fb10")
-	)
 	(label "USB0_DP"
 		(at 256.54 172.72 0)
 		(fields_autoplaced yes)
@@ -12195,8 +12911,19 @@
 		)
 		(uuid "e303991f-63ff-49ff-95f9-91f9551f2a83")
 	)
+	(label "ENC_A"
+		(at 226.06 205.74 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e337e73e-fbe6-48df-8418-a483dc8ec526")
+	)
 	(label "KEY_C4"
-		(at 254 109.22 180)
+		(at 314.96 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12217,8 +12944,8 @@
 		)
 		(uuid "e390e5c0-9bd0-407a-a399-96c118c4ca28")
 	)
-	(label "KEY_B4"
-		(at -30.48 149.86 180)
+	(label "SCL"
+		(at 226.06 231.14 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12226,7 +12953,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "e778a685-55ee-4c5a-840a-8e113007aef1")
+		(uuid "e99317e8-9585-4f49-aa6c-7edfc7b313ec")
 	)
 	(label "LED22"
 		(at 195.58 63.5 0)
@@ -12238,6 +12965,17 @@
 			(justify left bottom)
 		)
 		(uuid "e9ab9cd1-0494-4674-b3fb-8cf2aecfaf5c")
+	)
+	(label "KEY_D2"
+		(at 226.06 236.22 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "eb628ef1-83cd-4c62-bebe-73028cbcc24e")
 	)
 	(label "USB1_DP"
 		(at 256.54 180.34 0)
@@ -12251,29 +12989,18 @@
 		(uuid "ebd37bee-31d9-4da0-a6bc-319bb4675e9a")
 	)
 	(label "ENC_SW"
-		(at -30.48 205.74 180)
+		(at 152.4 185.42 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "ebd8a249-2a9c-4efa-ae07-23b9642e6fb2")
 	)
-	(label "KEY_D5"
-		(at -30.48 182.88 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ed434bc0-948c-4044-86d0-48864f5a0cf0")
-	)
 	(label "KEY_B1"
-		(at 147.32 96.52 180)
+		(at 208.28 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12338,8 +13065,8 @@
 		)
 		(uuid "f5d1f802-a639-4836-861b-f876033fa978")
 	)
-	(label "ENC_B"
-		(at 332.74 121.92 0)
+	(label "KEY_A3"
+		(at 152.4 205.74 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12347,7 +13074,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "f672692e-04a6-442e-993c-060e58265b8f")
+		(uuid "f7b6d466-c6c3-4f1a-b480-2fa829e26159")
 	)
 	(label "LED5"
 		(at 223.52 33.02 0)
@@ -12383,7 +13110,7 @@
 		(uuid "fb449fc8-9484-4fc7-afc4-a198dcf170c4")
 	)
 	(label "KEY_D6"
-		(at 325.12 121.92 180)
+		(at 386.08 121.92 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12451,7 +13178,7 @@
 			(uuid "bfee63d2-8b22-47c5-8b11-1fbae88d3cf8")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0154")
 					(unit 1)
@@ -12461,7 +13188,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 226.06 124.46 0)
+		(at 287.02 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12470,7 +13197,7 @@
 		(fields_autoplaced yes)
 		(uuid "011e97f1-c4ef-4e0e-9a77-b89ba96b4d89")
 		(property "Reference" "#PWR0104"
-			(at 226.06 130.81 0)
+			(at 287.02 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12479,7 +13206,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 226.06 129.54 0)
+			(at 287.02 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12487,7 +13214,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 226.06 124.46 0)
+			(at 287.02 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12496,7 +13223,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 226.06 124.46 0)
+			(at 287.02 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12505,7 +13232,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 226.06 124.46 0)
+			(at 287.02 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12517,9 +13244,75 @@
 			(uuid "b279ed32-8fba-4cd9-ae6f-8da9dce00c99")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.92 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "01909a4b-ae7b-4a17-b3b8-07016959cb56")
+		(property "Reference" "#PWR0173"
+			(at 121.92 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.92 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 121.92 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d49831f8-ee52-4e35-8b8c-d071bc5304ac")
+		)
+		(instances
+			(project "right_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "#PWR0173")
 					(unit 1)
 				)
 			)
@@ -12583,7 +13376,7 @@
 			(uuid "40a5daf7-75a7-4dc7-977d-a5f5797ca0b4")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0138")
 					(unit 1)
@@ -12593,7 +13386,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 307.34 109.22 0)
+		(at 368.3 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12602,7 +13395,7 @@
 		(fields_autoplaced yes)
 		(uuid "02a6d7cb-84f3-4edc-9809-cfab24942afe")
 		(property "Reference" "SW123"
-			(at 307.34 101.6 0)
+			(at 368.3 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12610,7 +13403,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 307.34 104.14 0)
+			(at 368.3 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12618,7 +13411,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 307.34 109.22 0)
+			(at 368.3 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12627,7 +13420,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 307.34 109.22 0)
+			(at 368.3 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12636,7 +13429,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 307.34 109.22 0)
+			(at 368.3 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12651,7 +13444,7 @@
 			(uuid "325a81fc-a77e-4e26-a8ec-6990cd67b8df")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW123")
 					(unit 1)
@@ -12660,33 +13453,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_DIP_x01")
-		(at 165.1 109.22 0)
+		(lib_id "Device:R_Small")
+		(at 134.62 160.02 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "06258733-28ec-4c86-b8ea-d5084570b9fa")
-		(property "Reference" "SW107"
-			(at 165.1 101.6 0)
+		(uuid "05077888-795b-4ba2-88af-be7f15caf3ac")
+		(property "Reference" "R107"
+			(at 137.16 158.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "SW_DIP_x01"
-			(at 165.1 104.14 0)
+		(property "Value" "3k3"
+			(at 137.16 161.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 165.1 109.22 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 134.62 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12695,7 +13490,75 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 109.22 0)
+			(at 134.62 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 134.62 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6a443244-0d74-4ae7-9faf-4327db72ae17")
+		)
+		(pin "2"
+			(uuid "30ca3743-e352-4674-b1b3-d9ed3325663b")
+		)
+		(instances
+			(project "right_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "R107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DIP_x01")
+		(at 226.06 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "06258733-28ec-4c86-b8ea-d5084570b9fa")
+		(property "Reference" "SW107"
+			(at 226.06 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DIP_x01"
+			(at 226.06 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
+			(at 226.06 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 226.06 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12704,7 +13567,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 165.1 109.22 0)
+			(at 226.06 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12719,7 +13582,7 @@
 			(uuid "f6da1d95-20d9-4771-b4f8-89905b500f7c")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW107")
 					(unit 1)
@@ -12789,7 +13652,7 @@
 			(uuid "0fca7be4-cebd-4268-9ac0-4417713b58d5")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "R102")
 					(unit 1)
@@ -12984,7 +13847,7 @@
 			(uuid "262e26e7-f5a0-4b59-8074-30bba729c26e")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D125")
 					(unit 1)
@@ -13054,7 +13917,7 @@
 			(uuid "48078c92-4f54-4d79-9bfe-162bea5875dd")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "R101")
 					(unit 1)
@@ -13064,16 +13927,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 269.24 139.7 0)
+		(at 144.78 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "10f0158f-fa65-4750-af0f-f1d382b46bbe")
-		(property "Reference" "#PWR0109"
-			(at 269.24 146.05 0)
+		(uuid "10f254ab-b13c-427d-9c56-5943d3377c70")
+		(property "Reference" "#PWR0107"
+			(at 144.78 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13082,7 +13945,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 269.24 144.78 0)
+			(at 144.78 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13090,7 +13953,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 269.24 139.7 0)
+			(at 144.78 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13099,7 +13962,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 269.24 139.7 0)
+			(at 144.78 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13108,7 +13971,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 269.24 139.7 0)
+			(at 144.78 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13117,12 +13980,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "3fe2a812-2184-447e-b783-c0fa1cb57a0a")
+			(uuid "e23f4fe6-f6d7-4946-93d9-fbefc3218431")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
-					(reference "#PWR0109")
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
@@ -13189,7 +14052,7 @@
 			(uuid "65de00e7-60ed-4d13-8230-313c64445646")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "C108")
 					(unit 1)
@@ -13255,7 +14118,7 @@
 			(uuid "0c48c195-a24e-4b41-886d-f4d788fbcaca")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0117")
 					(unit 1)
@@ -13321,7 +14184,7 @@
 			(uuid "add8c08c-d66f-4d4f-a5be-bf4986063e37")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0142")
 					(unit 1)
@@ -13331,7 +14194,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 271.78 109.22 0)
+		(at 332.74 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13340,7 +14203,7 @@
 		(fields_autoplaced yes)
 		(uuid "152dd253-d96c-496b-9744-b21e81733710")
 		(property "Reference" "SW119"
-			(at 271.78 101.6 0)
+			(at 332.74 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13348,7 +14211,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 271.78 104.14 0)
+			(at 332.74 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13356,7 +14219,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 271.78 109.22 0)
+			(at 332.74 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13365,7 +14228,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 271.78 109.22 0)
+			(at 332.74 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13374,7 +14237,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 271.78 109.22 0)
+			(at 332.74 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13389,7 +14252,7 @@
 			(uuid "744c3c89-f485-4b60-bc7c-0c8399565ae1")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW119")
 					(unit 1)
@@ -13455,7 +14318,7 @@
 			(uuid "ac5af832-50df-4c90-a6c0-7b0fcf19cf81")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0135")
 					(unit 1)
@@ -13521,7 +14384,7 @@
 			(uuid "35f82017-739c-4223-9191-b746d2f4c03a")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0149")
 					(unit 1)
@@ -13590,7 +14453,7 @@
 			(uuid "bb66a0e0-3262-42f4-813d-210eba45fdf2")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "C110")
 					(unit 1)
@@ -13785,75 +14648,9 @@
 			(uuid "ce872fd7-24c7-4a42-9f6c-ba5c014d8b1a")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D102")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 304.8 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1a8865b4-bf2c-4c74-8e6d-d04bd59c0e2e")
-		(property "Reference" "#PWR0108"
-			(at 304.8 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 304.8 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 304.8 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 304.8 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 304.8 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6b4b04eb-5f92-4992-baa1-ce185985ffe6")
-		)
-		(instances
-			(project "left_board"
-				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
-					(reference "#PWR0108")
 					(unit 1)
 				)
 			)
@@ -13921,7 +14718,7 @@
 			(uuid "d96330bc-4ae3-4ca9-b948-2c06bbbad75d")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "R105")
 					(unit 1)
@@ -13987,7 +14784,7 @@
 			(uuid "9a69e826-2249-4311-95ec-5ecbf1711ccd")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0160")
 					(unit 1)
@@ -14053,7 +14850,7 @@
 			(uuid "9af9f165-3479-4951-a0fc-e07b8f474e95")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0145")
 					(unit 1)
@@ -14063,7 +14860,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 200.66 96.52 0)
+		(at 261.62 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14072,7 +14869,7 @@
 		(fields_autoplaced yes)
 		(uuid "2806b461-9ec7-4bf7-a821-7fc239b2c393")
 		(property "Reference" "SW110"
-			(at 200.66 88.9 0)
+			(at 261.62 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14080,7 +14877,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 200.66 91.44 0)
+			(at 261.62 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14088,7 +14885,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 200.66 96.52 0)
+			(at 261.62 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14097,7 +14894,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 200.66 96.52 0)
+			(at 261.62 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14106,7 +14903,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 200.66 96.52 0)
+			(at 261.62 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14121,9 +14918,75 @@
 			(uuid "58d90c73-e869-4806-8bc6-f63443f2e630")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 391.16 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "29fa0c6e-d138-4206-8013-c7d918c46e98")
+		(property "Reference" "#PWR0169"
+			(at 391.16 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 391.16 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 391.16 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 391.16 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 391.16 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d5634cc0-cb1e-4608-bef8-168f2c738350")
+		)
+		(instances
+			(project "right_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "#PWR0169")
 					(unit 1)
 				)
 			)
@@ -14190,7 +15053,7 @@
 			(uuid "53dd7201-c7b6-4948-bdc6-04d5508319ff")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "C109")
 					(unit 1)
@@ -14352,7 +15215,7 @@
 			(uuid "bba82856-822f-4bf7-8554-b17c6e9f98c9")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "J104")
 					(unit 1)
@@ -14362,7 +15225,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 236.22 96.52 0)
+		(at 297.18 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14371,7 +15234,7 @@
 		(fields_autoplaced yes)
 		(uuid "2b57daf4-5aa2-470e-8109-d314f8c31102")
 		(property "Reference" "SW114"
-			(at 236.22 88.9 0)
+			(at 297.18 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14379,7 +15242,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 236.22 91.44 0)
+			(at 297.18 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14387,7 +15250,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 236.22 96.52 0)
+			(at 297.18 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14396,7 +15259,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 236.22 96.52 0)
+			(at 297.18 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14405,7 +15268,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 236.22 96.52 0)
+			(at 297.18 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14420,7 +15283,7 @@
 			(uuid "083a59c2-7507-46c5-b5d9-cfe1283501ad")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW114")
 					(unit 1)
@@ -14486,7 +15349,7 @@
 			(uuid "0f12d16f-9296-4625-9fb8-426227d4fc1b")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0112")
 					(unit 1)
@@ -14552,7 +15415,7 @@
 			(uuid "44db7bf1-d28e-4a77-9df9-f33c1b8d0b46")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0144")
 					(unit 1)
@@ -14747,7 +15610,7 @@
 			(uuid "288defa7-1ead-41f9-bd0b-b4f43448fdea")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D101")
 					(unit 1)
@@ -14942,9 +15805,74 @@
 			(uuid "e2bea834-f145-4352-81d4-d42b38859002")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D118")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 165.1 271.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2fbf6943-f898-4e9c-8fc4-dd0754ba845d")
+		(property "Reference" "#PWR0175"
+			(at 165.1 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 165.1 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 165.1 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "69c01535-0a5c-499f-9613-07fea44070da")
+		)
+		(instances
+			(project "right_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "#PWR0175")
 					(unit 1)
 				)
 			)
@@ -15165,7 +16093,7 @@
 			(uuid "c3201dfc-4d9e-425a-a4f2-20869a9ea4b9")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "U102")
 					(unit 1)
@@ -15231,7 +16159,7 @@
 			(uuid "e8c9ae69-b2b3-4a90-869e-6963378a7057")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0114")
 					(unit 1)
@@ -15300,7 +16228,7 @@
 			(uuid "bd8d1280-63e1-4ee0-8d87-cf8500d63d3f")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "C104")
 					(unit 1)
@@ -15366,7 +16294,7 @@
 			(uuid "d72993d3-e9b5-4166-99f5-1d87213590eb")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0118")
 					(unit 1)
@@ -15376,7 +16304,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 236.22 121.92 0)
+		(at 297.18 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15385,7 +16313,7 @@
 		(fields_autoplaced yes)
 		(uuid "390658b7-de8c-46dc-8ac7-edf253da4a0f")
 		(property "Reference" "SW116"
-			(at 236.22 114.3 0)
+			(at 297.18 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15393,7 +16321,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 236.22 116.84 0)
+			(at 297.18 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15401,7 +16329,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 236.22 121.92 0)
+			(at 297.18 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15410,7 +16338,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 236.22 121.92 0)
+			(at 297.18 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15419,7 +16347,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 236.22 121.92 0)
+			(at 297.18 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15434,7 +16362,7 @@
 			(uuid "959af988-d74e-48aa-a3ce-8b0001c9ee3b")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW116")
 					(unit 1)
@@ -15500,7 +16428,7 @@
 			(uuid "ee47c9c2-d703-4614-b9a6-82bf98f107ce")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0146")
 					(unit 1)
@@ -15510,7 +16438,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 190.5 124.46 0)
+		(at 251.46 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15519,7 +16447,7 @@
 		(fields_autoplaced yes)
 		(uuid "3a4b0b18-dfb8-47cc-be47-f6e3b78b019b")
 		(property "Reference" "#PWR0103"
-			(at 190.5 130.81 0)
+			(at 251.46 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15528,7 +16456,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 190.5 129.54 0)
+			(at 251.46 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15536,7 +16464,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 124.46 0)
+			(at 251.46 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15545,7 +16473,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 124.46 0)
+			(at 251.46 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15554,7 +16482,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 190.5 124.46 0)
+			(at 251.46 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15566,7 +16494,7 @@
 			(uuid "deecba80-fca3-441f-b8a3-23578becdba8")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0103")
 					(unit 1)
@@ -15576,7 +16504,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 129.54 109.22 0)
+		(at 190.5 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15585,7 +16513,7 @@
 		(fields_autoplaced yes)
 		(uuid "3af3b4c4-6f9d-479c-b7c3-6b1d838aa399")
 		(property "Reference" "SW103"
-			(at 129.54 101.6 0)
+			(at 190.5 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15593,7 +16521,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 129.54 104.14 0)
+			(at 190.5 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15601,7 +16529,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 129.54 109.22 0)
+			(at 190.5 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15610,7 +16538,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 129.54 109.22 0)
+			(at 190.5 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15619,7 +16547,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 129.54 109.22 0)
+			(at 190.5 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15634,7 +16562,7 @@
 			(uuid "5f8b4d5a-bd8b-4e4c-bfaa-09d02d0b86f4")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW103")
 					(unit 1)
@@ -15829,7 +16757,7 @@
 			(uuid "5db76a52-92fd-43b3-a677-5770621ea086")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D127")
 					(unit 1)
@@ -16024,9 +16952,76 @@
 			(uuid "2073e26d-88f9-4dce-b338-2f0ff165fe5a")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 165.1 129.54 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d632c80-4f78-4cfe-b4ef-545dd44ffef0")
+		(property "Reference" "#PWR0108"
+			(at 165.1 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 165.1 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 165.1 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "419609a1-ee99-4338-ab0a-cb5245dec318")
+		)
+		(instances
+			(project "right_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "#PWR0108")
 					(unit 1)
 				)
 			)
@@ -16093,7 +17088,7 @@
 			(uuid "dd32ae94-db31-4060-9872-75a4b476558d")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "C111")
 					(unit 1)
@@ -16159,7 +17154,7 @@
 			(uuid "f59056e1-75b6-4f93-a11c-ee0a1d8187de")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0131")
 					(unit 1)
@@ -16229,9 +17224,78 @@
 			(uuid "cfb94437-99d9-43ce-a70a-63a9b9718849")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "C101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DIP_x01")
+		(at 190.5 142.24 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "42ceaca7-2872-4218-a116-2eb7c16038e6")
+		(property "Reference" "SW127"
+			(at 190.5 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DIP_x01"
+			(at 190.5 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
+			(at 190.5 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
+			(at 190.5 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "471828de-f7f2-4d4c-b7f4-b8e5b18b6612")
+		)
+		(pin "1"
+			(uuid "ff83ab58-ba5e-4843-bbc3-d2148f516aa4")
+		)
+		(instances
+			(project "right_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "SW127")
 					(unit 1)
 				)
 			)
@@ -16295,7 +17359,7 @@
 			(uuid "2521e144-e4e9-4ee4-80c0-b47db5da3372")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0126")
 					(unit 1)
@@ -16361,7 +17425,7 @@
 			(uuid "87e75ba3-67e5-4aa5-bb1b-c5dbdd659bea")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0159")
 					(unit 1)
@@ -16427,86 +17491,9 @@
 			(uuid "bc985aa5-ad4f-45e2-ba4c-053152394fbb")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0157")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:RotaryEncoder_Switch")
-		(at 350.52 119.38 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "46fe8c04-36d9-4f23-ae7c-e04349d1c9a2")
-		(property "Reference" "SW128"
-			(at 350.52 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RIC11-31S15.5D7-TH"
-			(at 350.52 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyboard_footprints:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
-			(at 346.71 115.316 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 350.52 112.776 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch"
-			(at 350.52 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "S1"
-			(uuid "bea02a39-3393-46f5-a118-8da3a6d6b222")
-		)
-		(pin "B"
-			(uuid "69e06b57-ca84-444c-92aa-3c1114fa935b")
-		)
-		(pin "S2"
-			(uuid "3c1417ba-c4b7-4439-bff6-9946c4e9beb1")
-		)
-		(pin "C"
-			(uuid "4d9ed015-591e-4f9e-b798-e57f9dc8224a")
-		)
-		(pin "A"
-			(uuid "c73b9e7d-be14-4f4b-b47f-c0c43b1144eb")
-		)
-		(instances
-			(project "left_board"
-				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
-					(reference "SW128")
 					(unit 1)
 				)
 			)
@@ -16570,7 +17557,7 @@
 			(uuid "7edceeb2-1849-4eff-bf72-b248cbf5e102")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0151")
 					(unit 1)
@@ -16580,7 +17567,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 165.1 96.52 0)
+		(at 226.06 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16589,7 +17576,7 @@
 		(fields_autoplaced yes)
 		(uuid "4a58a6a8-2371-4826-b9b7-92cb460ccc5e")
 		(property "Reference" "SW106"
-			(at 165.1 88.9 0)
+			(at 226.06 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16597,7 +17584,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 165.1 91.44 0)
+			(at 226.06 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16605,7 +17592,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 165.1 96.52 0)
+			(at 226.06 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16614,7 +17601,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 96.52 0)
+			(at 226.06 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16623,7 +17610,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 165.1 96.52 0)
+			(at 226.06 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16638,9 +17625,79 @@
 			(uuid "8463c3d9-127e-48b7-bdc2-7bcc67e383b2")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 391.16 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d0e63fd-be6e-4431-8c15-3cf20ed48eb7")
+		(property "Reference" "C105"
+			(at 393.7 186.6962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 393.7 189.2362 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 391.16 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 391.16 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 391.16 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c1119470-8c21-4e1c-82ab-5af8c99517cc")
+		)
+		(pin "2"
+			(uuid "2ab82812-e5d8-4640-a4b5-d7bd8fa86f1a")
+		)
+		(instances
+			(project "right_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "C105")
 					(unit 1)
 				)
 			)
@@ -16708,7 +17765,7 @@
 			(uuid "05916734-f5da-4c5d-90e7-f8d6c7db4521")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "C102")
 					(unit 1)
@@ -16777,9 +17834,79 @@
 			(uuid "e6cc3568-0e23-4d0d-b5ec-7e12301a814b")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "R103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Small")
+		(at 121.92 172.72 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f3d0937-554b-4b38-a36a-19a303d94e89")
+		(property "Reference" "D128"
+			(at 124.46 171.3864 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "WHITE"
+			(at 124.46 173.9264 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
+			(at 121.92 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, small symbol"
+			(at 121.92 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6df958ef-2ca7-4c69-a9d9-79daa7ba9a5f")
+		)
+		(pin "2"
+			(uuid "741bdd6d-a47e-4a8b-88ef-f2e2e986dcda")
+		)
+		(instances
+			(project "right_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "D128")
 					(unit 1)
 				)
 			)
@@ -16972,7 +18099,7 @@
 			(uuid "fdc6e661-26d9-4f86-abf2-1b6fc3e123af")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D124")
 					(unit 1)
@@ -17167,7 +18294,7 @@
 			(uuid "f5ffa513-d4f4-4970-9331-e129feb9b090")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D116")
 					(unit 1)
@@ -17233,77 +18360,9 @@
 			(uuid "5f006b43-6b58-44a3-bdb4-c8df5e70c15e")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0155")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DIP_x01")
-		(at 314.96 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5318ea74-acf1-4165-ae36-9824d1c0d92d")
-		(property "Reference" "SW126"
-			(at 314.96 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DIP_x01"
-			(at 314.96 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 314.96 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 314.96 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 314.96 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "97c3a8b1-f379-4030-8766-6ba574791611")
-		)
-		(pin "1"
-			(uuid "eacee1c4-5801-4490-a4d5-29b02a9e56a3")
-		)
-		(instances
-			(project "left_board"
-				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
-					(reference "SW126")
 					(unit 1)
 				)
 			)
@@ -17382,9 +18441,75 @@
 			(uuid "0b991abf-2b44-4223-9669-70524942b896")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "J102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 401.32 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "550d3ec3-7f27-4e70-8003-5c00611765be")
+		(property "Reference" "#PWR0171"
+			(at 401.32 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 401.32 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 401.32 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 401.32 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 401.32 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8b57c8b6-b4c3-44d5-8d7c-1b27ba9eb9c6")
+		)
+		(instances
+			(project "right_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "#PWR0171")
 					(unit 1)
 				)
 			)
@@ -17467,9 +18592,79 @@
 			(uuid "f37bd1b3-2f03-4caa-a961-4c7c308d55b7")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "U105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 121.92 160.02 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5540caa5-7cb5-40a4-b45c-31ac5a570bd1")
+		(property "Reference" "R106"
+			(at 124.46 158.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "3k3"
+			(at 124.46 161.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 121.92 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 121.92 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fe1c4e51-6c8b-4fd3-b594-c912923a4194")
+		)
+		(pin "2"
+			(uuid "a31031d9-5277-461a-b0dd-15c99ba8d0ee")
+		)
+		(instances
+			(project "right_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "R106")
 					(unit 1)
 				)
 			)
@@ -17533,7 +18728,7 @@
 			(uuid "749698a2-539a-4058-a997-6d136366d7f7")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0137")
 					(unit 1)
@@ -17543,7 +18738,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 200.66 83.82 0)
+		(at 261.62 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17552,7 +18747,7 @@
 		(fields_autoplaced yes)
 		(uuid "579e4723-b0dc-458a-b5d9-30c5d279fd34")
 		(property "Reference" "SW109"
-			(at 200.66 76.2 0)
+			(at 261.62 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17560,7 +18755,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 200.66 78.74 0)
+			(at 261.62 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17568,7 +18763,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 200.66 83.82 0)
+			(at 261.62 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17577,7 +18772,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 200.66 83.82 0)
+			(at 261.62 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17586,7 +18781,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 200.66 83.82 0)
+			(at 261.62 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17601,7 +18796,7 @@
 			(uuid "9b8a80c8-0273-476e-9dff-2091473c1fb0")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW109")
 					(unit 1)
@@ -17667,7 +18862,7 @@
 			(uuid "2b9bf16a-c758-4e8d-b9e8-6f3f5e3413c9")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0166")
 					(unit 1)
@@ -17677,7 +18872,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 307.34 83.82 0)
+		(at 368.3 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17686,7 +18881,7 @@
 		(fields_autoplaced yes)
 		(uuid "58eb2bce-5ce8-42ef-834f-f60a8cf6e3d3")
 		(property "Reference" "SW121"
-			(at 307.34 76.2 0)
+			(at 368.3 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17694,7 +18889,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 307.34 78.74 0)
+			(at 368.3 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17702,7 +18897,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 307.34 83.82 0)
+			(at 368.3 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17711,7 +18906,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 307.34 83.82 0)
+			(at 368.3 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17720,7 +18915,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 307.34 83.82 0)
+			(at 368.3 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17735,9 +18930,78 @@
 			(uuid "9e4276f7-29ea-42f3-adbc-bfbb594dc1a2")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW121")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DIP_x01")
+		(at 154.94 142.24 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "59189dd9-293f-4b3a-aebc-b75c111b6cf5")
+		(property "Reference" "SW126"
+			(at 154.94 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DIP_x01"
+			(at 154.94 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
+			(at 154.94 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
+			(at 154.94 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1a60e79b-3481-4639-a3df-1fee090f4f77")
+		)
+		(pin "1"
+			(uuid "e2057ac0-70d1-4850-8cd0-fdffe9c29f27")
+		)
+		(instances
+			(project "right_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "SW126")
 					(unit 1)
 				)
 			)
@@ -17801,7 +19065,7 @@
 			(uuid "c5525157-db75-4514-b627-dd36456aac47")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0128")
 					(unit 1)
@@ -17867,7 +19131,7 @@
 			(uuid "75587522-25e5-4c35-b2f3-76688adbfb87")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0161")
 					(unit 1)
@@ -17877,7 +19141,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 129.54 83.82 0)
+		(at 190.5 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17886,7 +19150,7 @@
 		(fields_autoplaced yes)
 		(uuid "5ee492bd-f965-44e9-b495-a3bd2a09bb64")
 		(property "Reference" "SW101"
-			(at 129.54 76.2 0)
+			(at 190.5 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17894,7 +19158,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 129.54 78.74 0)
+			(at 190.5 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17902,7 +19166,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 129.54 83.82 0)
+			(at 190.5 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17911,7 +19175,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 129.54 83.82 0)
+			(at 190.5 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17920,7 +19184,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 129.54 83.82 0)
+			(at 190.5 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17935,7 +19199,7 @@
 			(uuid "748e3723-8d05-431d-bf90-de56cf0b33ea")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW101")
 					(unit 1)
@@ -18001,9 +19265,75 @@
 			(uuid "37f13790-eb05-446a-b39f-4b5ea1f1cb71")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0132")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 401.32 193.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "623b1a31-a0e4-438c-be7f-8f556cd3b91b")
+		(property "Reference" "#PWR0172"
+			(at 401.32 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 401.32 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 401.32 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 401.32 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 401.32 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc30b082-0617-409d-aef4-f662928ba998")
+		)
+		(instances
+			(project "right_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "#PWR0172")
 					(unit 1)
 				)
 			)
@@ -18071,7 +19401,7 @@
 			(uuid "14c7efeb-e4e1-4af3-9d02-a257ba16b2de")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "R104")
 					(unit 1)
@@ -18137,7 +19467,7 @@
 			(uuid "78a7cf60-1261-4fb6-8237-e61b1ba7d5de")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0167")
 					(unit 1)
@@ -18203,7 +19533,7 @@
 			(uuid "a84da5af-0ab2-4e87-bec2-e2bbd3871885")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0123")
 					(unit 1)
@@ -18213,7 +19543,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 236.22 109.22 0)
+		(at 297.18 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18222,7 +19552,7 @@
 		(fields_autoplaced yes)
 		(uuid "6871fd27-a061-43c9-9c41-3330cf9c887e")
 		(property "Reference" "SW115"
-			(at 236.22 101.6 0)
+			(at 297.18 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18230,7 +19560,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 236.22 104.14 0)
+			(at 297.18 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18238,7 +19568,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 236.22 109.22 0)
+			(at 297.18 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18247,7 +19577,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 236.22 109.22 0)
+			(at 297.18 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18256,7 +19586,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 236.22 109.22 0)
+			(at 297.18 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18271,7 +19601,7 @@
 			(uuid "f9a8869e-73f9-4c40-b81d-6ec402332d58")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW115")
 					(unit 1)
@@ -18466,7 +19796,7 @@
 			(uuid "f5fc9dbd-ecbb-4323-af33-064391dcbbd1")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D112")
 					(unit 1)
@@ -18532,7 +19862,7 @@
 			(uuid "38256fe7-8522-402a-ae7c-97686554cdd2")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0147")
 					(unit 1)
@@ -18727,7 +20057,7 @@
 			(uuid "6aecf570-598b-4846-9a42-f9ca260733d8")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D114")
 					(unit 1)
@@ -18793,7 +20123,7 @@
 			(uuid "995edda1-5c23-420a-b0c6-8f0869498806")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0141")
 					(unit 1)
@@ -18988,7 +20318,7 @@
 			(uuid "813ffd47-6eb6-4a17-89b5-291580c5211a")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D120")
 					(unit 1)
@@ -19183,7 +20513,7 @@
 			(uuid "0291d616-3a95-4672-b857-e40d6ed6997c")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D109")
 					(unit 1)
@@ -19249,7 +20579,7 @@
 			(uuid "2b1298ee-de07-4880-8f9c-e4fba9447f43")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0113")
 					(unit 1)
@@ -19315,7 +20645,7 @@
 			(uuid "dfa459a8-d99f-4af8-a6e8-59fd540edd6a")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0153")
 					(unit 1)
@@ -19324,8 +20654,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 401.32 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d506f29-3ca6-4106-984a-e6d634ec18d4")
+		(property "Reference" "C106"
+			(at 403.86 186.6962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 403.86 189.2362 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 401.32 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 401.32 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 401.32 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e8097b7b-d2bb-4d1b-bb81-9067e7908ff4")
+		)
+		(pin "2"
+			(uuid "052d0367-4713-4d00-87ac-f762a7b78e17")
+		)
+		(instances
+			(project "right_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "C106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 261.62 124.46 0)
+		(at 322.58 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19334,7 +20734,7 @@
 		(fields_autoplaced yes)
 		(uuid "7e0ebfca-4fbc-4b19-ad39-a42f1e7a1272")
 		(property "Reference" "#PWR0105"
-			(at 261.62 130.81 0)
+			(at 322.58 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19343,7 +20743,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 261.62 129.54 0)
+			(at 322.58 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19351,7 +20751,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 261.62 124.46 0)
+			(at 322.58 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19360,7 +20760,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 261.62 124.46 0)
+			(at 322.58 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19369,7 +20769,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 261.62 124.46 0)
+			(at 322.58 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19381,7 +20781,7 @@
 			(uuid "49876bad-af48-4468-ab4f-7edb0ad8b13c")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0105")
 					(unit 1)
@@ -19466,9 +20866,79 @@
 			(uuid "6f1fc70f-2a70-4df2-96a3-3dc487612357")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "U106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Small")
+		(at 134.62 172.72 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "810fccc4-f56f-4084-857b-9609e673824a")
+		(property "Reference" "D129"
+			(at 137.16 171.3864 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "WHITE"
+			(at 137.16 173.9264 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
+			(at 134.62 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, small symbol"
+			(at 134.62 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8a7b55c4-2282-49af-b2cb-ee020ebd784d")
+		)
+		(pin "2"
+			(uuid "81338bd6-60a3-4666-804c-95f503d2b092")
+		)
+		(instances
+			(project "right_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "D129")
 					(unit 1)
 				)
 			)
@@ -19661,7 +21131,7 @@
 			(uuid "7ce07975-707d-4181-8090-d4c764f311c0")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D105")
 					(unit 1)
@@ -19671,7 +21141,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 307.34 96.52 0)
+		(at 368.3 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19680,7 +21150,7 @@
 		(fields_autoplaced yes)
 		(uuid "858e8c04-d96d-4f19-9db2-905b18d5be46")
 		(property "Reference" "SW122"
-			(at 307.34 88.9 0)
+			(at 368.3 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19688,7 +21158,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 307.34 91.44 0)
+			(at 368.3 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19696,7 +21166,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 307.34 96.52 0)
+			(at 368.3 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19705,7 +21175,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 307.34 96.52 0)
+			(at 368.3 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19714,7 +21184,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 307.34 96.52 0)
+			(at 368.3 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19729,7 +21199,7 @@
 			(uuid "90076359-f151-45a3-a363-ec56deea5f0f")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW122")
 					(unit 1)
@@ -19941,7 +21411,7 @@
 			(uuid "bdc21802-ba12-4908-9514-a66540b6942b")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "U101")
 					(unit 1)
@@ -20007,7 +21477,7 @@
 			(uuid "ca485029-a87a-4923-822f-15d5b8d45987")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0158")
 					(unit 1)
@@ -20016,75 +21486,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 360.68 124.46 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "95786d66-cc93-4b31-bfd8-3dc378a8e0ea")
-		(property "Reference" "#PWR0110"
-			(at 360.68 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 360.68 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 360.68 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 360.68 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 360.68 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1e0c7449-8e31-4f33-9ce3-c625b60a89ce")
-		)
-		(instances
-			(project "left_board"
-				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
-					(reference "#PWR0110")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 271.78 83.82 0)
+		(at 332.74 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20093,7 +21496,7 @@
 		(fields_autoplaced yes)
 		(uuid "961020fa-7ed7-431a-95aa-0de8112f042e")
 		(property "Reference" "SW117"
-			(at 271.78 76.2 0)
+			(at 332.74 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20101,7 +21504,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 271.78 78.74 0)
+			(at 332.74 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20109,7 +21512,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 271.78 83.82 0)
+			(at 332.74 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20118,7 +21521,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 271.78 83.82 0)
+			(at 332.74 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20127,7 +21530,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 271.78 83.82 0)
+			(at 332.74 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20142,7 +21545,7 @@
 			(uuid "c7214d61-5116-4b07-bc38-11f5c19b6b38")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW117")
 					(unit 1)
@@ -20212,7 +21615,7 @@
 			(uuid "95961a5f-bde7-4b26-9144-d393f0939965")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "C103")
 					(unit 1)
@@ -20407,7 +21810,7 @@
 			(uuid "062e5208-24c4-4111-b938-adfc777832ea")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D103")
 					(unit 1)
@@ -20417,7 +21820,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 297.18 124.46 0)
+		(at 358.14 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20426,7 +21829,7 @@
 		(fields_autoplaced yes)
 		(uuid "991756fd-dc4e-4b30-a4af-4737fe85feed")
 		(property "Reference" "#PWR0106"
-			(at 297.18 130.81 0)
+			(at 358.14 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20435,7 +21838,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 297.18 129.54 0)
+			(at 358.14 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20443,7 +21846,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 297.18 124.46 0)
+			(at 358.14 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20452,7 +21855,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 297.18 124.46 0)
+			(at 358.14 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20461,7 +21864,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 297.18 124.46 0)
+			(at 358.14 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20473,7 +21876,7 @@
 			(uuid "7c963ae0-bd23-49ae-a1ca-77980f7a2873")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0106")
 					(unit 1)
@@ -20539,7 +21942,7 @@
 			(uuid "cc1df438-3d72-40a9-9f4f-0c48ca44b80d")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0168")
 					(unit 1)
@@ -20549,7 +21952,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 307.34 121.92 0)
+		(at 368.3 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20558,7 +21961,7 @@
 		(fields_autoplaced yes)
 		(uuid "9bc11948-a27b-4684-ae87-f7d2cac7a78e")
 		(property "Reference" "SW124"
-			(at 307.34 114.3 0)
+			(at 368.3 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20566,7 +21969,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 307.34 116.84 0)
+			(at 368.3 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20574,7 +21977,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 307.34 121.92 0)
+			(at 368.3 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20583,7 +21986,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 307.34 121.92 0)
+			(at 368.3 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20592,7 +21995,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 307.34 121.92 0)
+			(at 368.3 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20607,75 +22010,9 @@
 			(uuid "efc2ce8a-c643-4e70-8077-1f0add54bde5")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW124")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 340.36 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9df533d0-e131-4b5c-aa69-04a337f6f5a3")
-		(property "Reference" "#PWR0107"
-			(at 340.36 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 340.36 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 340.36 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 340.36 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 340.36 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "59ce9f1e-7e9a-47eb-99e1-7ea7d7c5c2b8")
-		)
-		(instances
-			(project "left_board"
-				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
-					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
@@ -20739,7 +22076,7 @@
 			(uuid "94679d7a-0632-4b16-918c-0f86f1fe38d4")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0129")
 					(unit 1)
@@ -20865,9 +22202,144 @@
 			(uuid "f4705711-efb5-4fab-84a4-7cbdfb6b9fd4")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "U103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 391.16 193.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a2aeb997-f669-41fb-91a4-e272fd0534af")
+		(property "Reference" "#PWR0170"
+			(at 391.16 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 391.16 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 391.16 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 391.16 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 391.16 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e28b4978-7b58-4cf4-b7b8-f7f51056f3cf")
+		)
+		(instances
+			(project "right_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "#PWR0170")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DIP_x01")
+		(at 226.06 142.24 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a334316a-569d-4225-9c71-61942a855f2e")
+		(property "Reference" "SW125"
+			(at 226.06 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DIP_x01"
+			(at 226.06 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
+			(at 226.06 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 226.06 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
+			(at 226.06 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "69124c79-58c1-45da-8580-95a1b3d947d6")
+		)
+		(pin "1"
+			(uuid "1bb250a2-a199-498f-b174-acb16383ec94")
+		)
+		(instances
+			(project "right_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "SW125")
 					(unit 1)
 				)
 			)
@@ -20931,7 +22403,7 @@
 			(uuid "72cdf1bf-de26-4015-aa08-d8a22c6d53f0")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0130")
 					(unit 1)
@@ -21126,7 +22598,7 @@
 			(uuid "403d1d62-ed9c-4603-bce0-e546a16d3fe7")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D107")
 					(unit 1)
@@ -21191,7 +22663,7 @@
 			(uuid "0c865dc1-4189-4ee3-91e9-bdd09ae461dd")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0121")
 					(unit 1)
@@ -21386,77 +22858,9 @@
 			(uuid "64399b0f-5c37-45d1-8a9f-39958931fbe7")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D126")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DIP_x01")
-		(at 350.52 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a87b3618-a8f7-4998-b617-fb598083a38a")
-		(property "Reference" "SW127"
-			(at 350.52 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DIP_x01"
-			(at 350.52 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 350.52 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 350.52 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 350.52 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "de71ef20-afbb-4e89-b6e5-fd251c8098a8")
-		)
-		(pin "1"
-			(uuid "7b68f428-3970-4341-a49c-65e6fa4a2656")
-		)
-		(instances
-			(project "left_board"
-				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
-					(reference "SW127")
 					(unit 1)
 				)
 			)
@@ -21520,7 +22924,7 @@
 			(uuid "f5f4732a-172f-44a0-9c9e-fdd1cb944383")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0162")
 					(unit 1)
@@ -21530,7 +22934,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 129.54 121.92 0)
+		(at 190.5 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21539,7 +22943,7 @@
 		(fields_autoplaced yes)
 		(uuid "ac966554-add2-48e7-b760-e58827eee049")
 		(property "Reference" "SW104"
-			(at 129.54 114.3 0)
+			(at 190.5 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21547,7 +22951,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 129.54 116.84 0)
+			(at 190.5 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21555,7 +22959,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 129.54 121.92 0)
+			(at 190.5 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21564,7 +22968,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 129.54 121.92 0)
+			(at 190.5 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21573,7 +22977,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 129.54 121.92 0)
+			(at 190.5 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21588,7 +22992,7 @@
 			(uuid "a612bc9d-dc8b-4d79-b99f-7f15ab15ab74")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW104")
 					(unit 1)
@@ -21654,7 +23058,7 @@
 			(uuid "66df2b9e-315c-4647-b31b-5582c0c10b12")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0136")
 					(unit 1)
@@ -21720,7 +23124,7 @@
 			(uuid "b02cf59a-21c8-41ac-b39d-5e9eeb847531")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0134")
 					(unit 1)
@@ -21786,7 +23190,7 @@
 			(uuid "c07db43f-65a9-498d-a6ff-e941b7369b32")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0116")
 					(unit 1)
@@ -21852,7 +23256,7 @@
 			(uuid "ab40d3ce-b394-4184-b889-cafc1b5d85e8")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0150")
 					(unit 1)
@@ -22047,7 +23451,7 @@
 			(uuid "eeeaf238-3470-4f55-a57a-1808286e3d40")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D110")
 					(unit 1)
@@ -22057,7 +23461,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 271.78 121.92 0)
+		(at 332.74 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22066,7 +23470,7 @@
 		(fields_autoplaced yes)
 		(uuid "b5a1dccb-ee7f-4f03-9a57-bb484fede7c2")
 		(property "Reference" "SW120"
-			(at 271.78 114.3 0)
+			(at 332.74 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22074,7 +23478,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 271.78 116.84 0)
+			(at 332.74 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22082,7 +23486,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 271.78 121.92 0)
+			(at 332.74 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22091,7 +23495,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 271.78 121.92 0)
+			(at 332.74 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22100,7 +23504,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 271.78 121.92 0)
+			(at 332.74 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22115,7 +23519,7 @@
 			(uuid "34e2da4a-3f28-472c-9d0e-e5c712af3de9")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW120")
 					(unit 1)
@@ -22197,7 +23601,7 @@
 			(uuid "ca366ed9-0977-4faf-bacb-8bea463b2775")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "Y101")
 					(unit 1)
@@ -22392,7 +23796,7 @@
 			(uuid "78ae0009-b06b-47be-90d4-554121f6323a")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D111")
 					(unit 1)
@@ -22462,7 +23866,7 @@
 			(uuid "26688f88-6b70-4984-b7ab-c1a99e7d0bbe")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "R108")
 					(unit 1)
@@ -22528,7 +23932,7 @@
 			(uuid "cab98c9b-44a4-45da-806a-b35cfc6a83f9")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0127")
 					(unit 1)
@@ -22538,7 +23942,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 129.54 96.52 0)
+		(at 190.5 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22547,7 +23951,7 @@
 		(fields_autoplaced yes)
 		(uuid "b8a742ca-5d84-410e-86a5-d9908984482e")
 		(property "Reference" "SW102"
-			(at 129.54 88.9 0)
+			(at 190.5 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22555,7 +23959,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 129.54 91.44 0)
+			(at 190.5 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22563,7 +23967,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 129.54 96.52 0)
+			(at 190.5 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22572,7 +23976,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 129.54 96.52 0)
+			(at 190.5 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22581,7 +23985,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 129.54 96.52 0)
+			(at 190.5 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22596,9 +24000,76 @@
 			(uuid "21de907e-318d-4fda-8799-537fceea2e0a")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 236.22 144.78 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b8f0c16c-0bfb-46d8-93ca-462f1d4d2261")
+		(property "Reference" "#PWR0111"
+			(at 236.22 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 236.22 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 236.22 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "15249a30-a484-4267-8606-afffbf9c8466")
+		)
+		(instances
+			(project "right_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "#PWR0111")
 					(unit 1)
 				)
 			)
@@ -22662,7 +24133,7 @@
 			(uuid "e15aa3e1-7a8f-4e7d-ab94-9c91056ddddf")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0115")
 					(unit 1)
@@ -22824,7 +24295,7 @@
 			(uuid "444f4bc1-8020-466d-9b56-9238a3935bc7")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "J101")
 					(unit 1)
@@ -23042,7 +24513,7 @@
 			(uuid "2cfdd2b3-f2e0-4051-898a-69c1c2e42e87")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "J103")
 					(unit 1)
@@ -23052,7 +24523,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 200.66 109.22 0)
+		(at 261.62 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23061,7 +24532,7 @@
 		(fields_autoplaced yes)
 		(uuid "c27b1e7b-f0bc-4275-a886-2dcd5afe4f47")
 		(property "Reference" "SW111"
-			(at 200.66 101.6 0)
+			(at 261.62 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23069,7 +24540,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 200.66 104.14 0)
+			(at 261.62 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23077,7 +24548,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 200.66 109.22 0)
+			(at 261.62 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23086,7 +24557,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 200.66 109.22 0)
+			(at 261.62 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23095,7 +24566,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 200.66 109.22 0)
+			(at 261.62 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23110,7 +24581,7 @@
 			(uuid "5140b553-5720-40c3-a82a-84401ff987db")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW111")
 					(unit 1)
@@ -23120,7 +24591,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 236.22 83.82 0)
+		(at 297.18 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23129,7 +24600,7 @@
 		(fields_autoplaced yes)
 		(uuid "c7caf213-1d05-4378-bf1e-8a35431c36de")
 		(property "Reference" "SW113"
-			(at 236.22 76.2 0)
+			(at 297.18 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23137,7 +24608,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 236.22 78.74 0)
+			(at 297.18 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23145,7 +24616,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 236.22 83.82 0)
+			(at 297.18 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23154,7 +24625,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 236.22 83.82 0)
+			(at 297.18 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23163,7 +24634,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 236.22 83.82 0)
+			(at 297.18 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23178,9 +24649,75 @@
 			(uuid "c4f26461-fff6-44c5-a852-3aeaf142b3cf")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 172.72 271.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c7dd2b9a-b8f9-4230-a0d4-b1e37fc896ed")
+		(property "Reference" "#PWR0176"
+			(at 172.72 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 172.72 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 172.72 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1c011724-bcd2-4e2e-90a9-81f39784da51")
+		)
+		(instances
+			(project "right_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "#PWR0176")
 					(unit 1)
 				)
 			)
@@ -23244,7 +24781,7 @@
 			(uuid "a487126d-cd31-43cf-962a-ab70dcadab24")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0139")
 					(unit 1)
@@ -23254,7 +24791,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 271.78 96.52 0)
+		(at 332.74 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23263,7 +24800,7 @@
 		(fields_autoplaced yes)
 		(uuid "ca9f14dc-517d-4980-afee-f1d191ae6538")
 		(property "Reference" "SW118"
-			(at 271.78 88.9 0)
+			(at 332.74 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23271,7 +24808,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 271.78 91.44 0)
+			(at 332.74 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23279,7 +24816,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 271.78 96.52 0)
+			(at 332.74 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23288,7 +24825,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 271.78 96.52 0)
+			(at 332.74 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23297,7 +24834,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 271.78 96.52 0)
+			(at 332.74 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23312,7 +24849,7 @@
 			(uuid "64174dc4-509c-4b37-be4d-68bfe94e29d9")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW118")
 					(unit 1)
@@ -23378,7 +24915,7 @@
 			(uuid "273619ee-0704-4ad8-9875-072af970bfa6")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0140")
 					(unit 1)
@@ -23573,7 +25110,7 @@
 			(uuid "e1785c63-1c4e-4066-b2f2-276e3a035820")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D119")
 					(unit 1)
@@ -23583,7 +25120,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 200.66 121.92 0)
+		(at 261.62 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23592,7 +25129,7 @@
 		(fields_autoplaced yes)
 		(uuid "cdd9795f-6300-44f4-9a25-b913b2be0340")
 		(property "Reference" "SW112"
-			(at 200.66 114.3 0)
+			(at 261.62 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23600,7 +25137,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 200.66 116.84 0)
+			(at 261.62 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23608,7 +25145,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 200.66 121.92 0)
+			(at 261.62 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23617,7 +25154,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 200.66 121.92 0)
+			(at 261.62 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23626,7 +25163,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 200.66 121.92 0)
+			(at 261.62 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23641,7 +25178,7 @@
 			(uuid "d664bb16-7259-4c55-8834-42dcf76721fb")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW112")
 					(unit 1)
@@ -23707,7 +25244,7 @@
 			(uuid "b24aa7ae-ee5f-467b-a839-988eb17ca00a")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0152")
 					(unit 1)
@@ -23717,7 +25254,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 165.1 83.82 0)
+		(at 226.06 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23726,7 +25263,7 @@
 		(fields_autoplaced yes)
 		(uuid "d0a96180-142f-4cb8-9a59-f9136acdb357")
 		(property "Reference" "SW105"
-			(at 165.1 76.2 0)
+			(at 226.06 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23734,7 +25271,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 165.1 78.74 0)
+			(at 226.06 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23742,7 +25279,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 165.1 83.82 0)
+			(at 226.06 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23751,7 +25288,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 83.82 0)
+			(at 226.06 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23760,7 +25297,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 165.1 83.82 0)
+			(at 226.06 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23775,7 +25312,7 @@
 			(uuid "aa2e21fd-9cb8-4667-b679-f256acd26eac")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW105")
 					(unit 1)
@@ -23841,7 +25378,7 @@
 			(uuid "d3190b29-39be-4ce1-9fa8-6e7aa182c448")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0156")
 					(unit 1)
@@ -23907,7 +25444,7 @@
 			(uuid "8ec3214d-f264-4678-9e0b-e0b2114b0d46")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0122")
 					(unit 1)
@@ -24102,7 +25639,7 @@
 			(uuid "011bdf88-b87d-40d6-b9de-92b6666761ce")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D123")
 					(unit 1)
@@ -24168,7 +25705,7 @@
 			(uuid "83418e09-7e39-4224-a960-c60f4c9544a8")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0119")
 					(unit 1)
@@ -24234,7 +25771,7 @@
 			(uuid "774cbcb3-a5b4-485c-b1ef-f01d1a5c81c8")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0125")
 					(unit 1)
@@ -24429,7 +25966,7 @@
 			(uuid "8c95e6da-97ec-4f91-b35d-d88ef6c782f7")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D115")
 					(unit 1)
@@ -24499,7 +26036,7 @@
 			(uuid "d1fcbe1d-1286-4a58-a5fb-3bbf219a2b0b")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "C107")
 					(unit 1)
@@ -24509,7 +26046,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 119.38 124.46 0)
+		(at 180.34 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24518,7 +26055,7 @@
 		(fields_autoplaced yes)
 		(uuid "deb1d316-e7a7-47ec-8057-afcb67cfb82e")
 		(property "Reference" "#PWR0101"
-			(at 119.38 130.81 0)
+			(at 180.34 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24527,7 +26064,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.38 129.54 0)
+			(at 180.34 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24535,7 +26072,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 124.46 0)
+			(at 180.34 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24544,7 +26081,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 124.46 0)
+			(at 180.34 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24553,7 +26090,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 119.38 124.46 0)
+			(at 180.34 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24565,7 +26102,7 @@
 			(uuid "69adfb60-1892-49af-8974-bd51bcbdd605")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0101")
 					(unit 1)
@@ -24631,7 +26168,7 @@
 			(uuid "470aac06-97cc-4cab-b029-89456ab8ba9a")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0124")
 					(unit 1)
@@ -24826,9 +26363,76 @@
 			(uuid "0d0ee72c-e522-4380-8ceb-c70faf97f9e3")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D117")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 200.66 144.78 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e3e919b5-4343-42f7-984c-feb834d6663c")
+		(property "Reference" "#PWR0110"
+			(at 200.66 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 200.66 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 200.66 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "939b9275-580f-4077-bc73-2bcf49d9835a")
+		)
+		(instances
+			(project "right_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "#PWR0110")
 					(unit 1)
 				)
 			)
@@ -24892,9 +26496,76 @@
 			(uuid "16fc0770-b4e1-47d9-8ee0-676d47586abd")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0143")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 165.1 144.78 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e6662da6-c64f-4d32-9a2f-9f7c55956069")
+		(property "Reference" "#PWR0109"
+			(at 165.1 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 165.1 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 165.1 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7c703a1d-83af-4717-b9d5-c9115e2971e4")
+		)
+		(instances
+			(project "right_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "#PWR0109")
 					(unit 1)
 				)
 			)
@@ -24958,7 +26629,7 @@
 			(uuid "937d0db8-5529-41a0-bdc4-6a3e427f63b8")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0164")
 					(unit 1)
@@ -24968,7 +26639,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 154.94 124.46 0)
+		(at 215.9 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24977,7 +26648,7 @@
 		(fields_autoplaced yes)
 		(uuid "e6da009b-a0af-4248-b189-5fa3fcbf4c3f")
 		(property "Reference" "#PWR0102"
-			(at 154.94 130.81 0)
+			(at 215.9 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24986,7 +26657,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 154.94 129.54 0)
+			(at 215.9 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24994,7 +26665,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 154.94 124.46 0)
+			(at 215.9 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25003,7 +26674,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 124.46 0)
+			(at 215.9 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25012,7 +26683,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 154.94 124.46 0)
+			(at 215.9 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25024,9 +26695,87 @@
 			(uuid "91172fd9-87d7-4eb5-9907-8e59202362fd")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:RotaryEncoder_Switch")
+		(at 154.94 124.46 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7deb01a-a591-4093-9f33-e5ec56892f91")
+		(property "Reference" "SW128"
+			(at 154.94 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RIC11-31S15.5D7-TH"
+			(at 154.94 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "keyboard_footprints:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
+			(at 158.75 120.396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 117.856 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch"
+			(at 154.94 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "S1"
+			(uuid "3132e650-60a9-4933-b994-37a688dd6a7d")
+		)
+		(pin "B"
+			(uuid "d2cb0c65-ed4b-4e4b-8644-2a82be419674")
+		)
+		(pin "S2"
+			(uuid "723b1b3d-a62c-4caa-8149-f4859295ddb1")
+		)
+		(pin "C"
+			(uuid "3e7168f5-e8d8-4890-ab71-3a9584b4bfbd")
+		)
+		(pin "A"
+			(uuid "1825d323-0cd8-4285-ab82-8bd8cac095d3")
+		)
+		(instances
+			(project "right_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "SW128")
 					(unit 1)
 				)
 			)
@@ -25090,7 +26839,7 @@
 			(uuid "9c89cdf8-9a09-4865-8822-ab7e3874f19b")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0133")
 					(unit 1)
@@ -25175,7 +26924,7 @@
 			(uuid "00a26ca9-2677-4c8c-9f95-1a77b1088fd5")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "U104")
 					(unit 1)
@@ -25370,7 +27119,7 @@
 			(uuid "82570137-e4f1-4e68-bdbb-405d0e422c28")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D113")
 					(unit 1)
@@ -25510,7 +27259,7 @@
 			(uuid "60e268af-a58e-423c-a910-e2e6e3365d3b")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "PS101")
 					(unit 1)
@@ -25576,7 +27325,7 @@
 			(uuid "46d2c62f-6289-45af-b535-8c51de3b018b")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0165")
 					(unit 1)
@@ -25642,7 +27391,7 @@
 			(uuid "a11eb4f0-a3f9-4947-a2c6-d8e4f692216f")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0120")
 					(unit 1)
@@ -25837,77 +27586,9 @@
 			(uuid "699b717a-492b-4c08-ba10-0f2d6b8578fd")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D108")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DIP_x01")
-		(at 279.4 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f18d09f1-846d-4bde-9a19-9508ba289094")
-		(property "Reference" "SW125"
-			(at 279.4 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DIP_x01"
-			(at 279.4 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 279.4 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 279.4 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 279.4 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a30bd499-621a-4613-a170-fd1ae5ef32ee")
-		)
-		(pin "1"
-			(uuid "d31a800b-4d40-445f-b280-7dc1f1b63c61")
-		)
-		(instances
-			(project "left_board"
-				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
-					(reference "SW125")
 					(unit 1)
 				)
 			)
@@ -26100,7 +27781,7 @@
 			(uuid "facbf90c-0a0a-44f3-8cf1-b49ddc319e4c")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D104")
 					(unit 1)
@@ -26295,75 +27976,9 @@
 			(uuid "c392e802-cf01-4515-a229-41a8789049c5")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D121")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 340.36 124.46 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f701bea3-0197-4c09-b8aa-0cccd369792c")
-		(property "Reference" "#PWR0111"
-			(at 340.36 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 340.36 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 340.36 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 340.36 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 340.36 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cb2eda8b-0182-43dd-8427-d7f2e2703158")
-		)
-		(instances
-			(project "left_board"
-				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
-					(reference "#PWR0111")
 					(unit 1)
 				)
 			)
@@ -26556,7 +28171,7 @@
 			(uuid "0bafdb14-89a5-4ca9-a206-a6419914fc3d")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "D122")
 					(unit 1)
@@ -26622,7 +28237,7 @@
 			(uuid "bbe13ed6-a659-425f-8665-157679ac75e3")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0148")
 					(unit 1)
@@ -26688,7 +28303,7 @@
 			(uuid "3e226afa-2ca3-4d6f-8cfe-c2508cef5f81")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "#PWR0163")
 					(unit 1)
@@ -26697,8 +28312,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 134.62 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe8e4ba1-8e2c-4651-8c56-3afa87aa0033")
+		(property "Reference" "#PWR0174"
+			(at 134.62 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 134.62 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 134.62 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 134.62 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 134.62 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b6e8c177-289c-4bda-a8b8-2fd4558f326c")
+		)
+		(instances
+			(project "right_board"
+				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
+					(reference "#PWR0174")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_DIP_x01")
-		(at 165.1 121.92 0)
+		(at 226.06 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26707,7 +28388,7 @@
 		(fields_autoplaced yes)
 		(uuid "ff935e80-d82a-45d8-bcc4-23d8faf6d855")
 		(property "Reference" "SW108"
-			(at 165.1 114.3 0)
+			(at 226.06 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26715,7 +28396,7 @@
 			)
 		)
 		(property "Value" "SW_DIP_x01"
-			(at 165.1 116.84 0)
+			(at 226.06 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26723,7 +28404,7 @@
 			)
 		)
 		(property "Footprint" "keyboard_footprints:gateron-ks27-hotswap"
-			(at 165.1 121.92 0)
+			(at 226.06 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26732,7 +28413,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 121.92 0)
+			(at 226.06 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26741,7 +28422,7 @@
 			)
 		)
 		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 165.1 121.92 0)
+			(at 226.06 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26756,7 +28437,7 @@
 			(uuid "de26d697-ad00-41e2-917d-92fc72fe9778")
 		)
 		(instances
-			(project "left_board"
+			(project "right_board"
 				(path "/0898a69b-26ab-41e4-9541-27e699f33045"
 					(reference "SW108")
 					(unit 1)

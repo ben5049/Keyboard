@@ -21990,7 +21990,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED_Small")
-		(at 119.38 157.48 90)
+		(at 119.38 170.18 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21999,7 +21999,7 @@
 		(fields_autoplaced yes)
 		(uuid "a5475daa-84d0-4c40-b0fe-3c9755e45b59")
 		(property "Reference" "D128"
-			(at 121.92 156.1464 90)
+			(at 121.92 168.8464 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22008,7 +22008,7 @@
 			)
 		)
 		(property "Value" "WHITE"
-			(at 121.92 158.6864 90)
+			(at 121.92 171.3864 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22017,7 +22017,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
-			(at 119.38 157.48 90)
+			(at 119.38 170.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22026,7 +22026,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 119.38 157.48 90)
+			(at 119.38 170.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22035,7 +22035,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode, small symbol"
-			(at 119.38 157.48 0)
+			(at 119.38 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24304,7 +24304,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 119.38 170.18 0)
+		(at 119.38 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24313,7 +24313,7 @@
 		(fields_autoplaced yes)
 		(uuid "c51483e7-8e6c-47e2-b3b7-561168bd61e9")
 		(property "Reference" "R106"
-			(at 121.92 168.9099 0)
+			(at 121.92 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24322,7 +24322,7 @@
 			)
 		)
 		(property "Value" "3k3"
-			(at 121.92 171.4499 0)
+			(at 121.92 158.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24331,7 +24331,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 119.38 170.18 0)
+			(at 119.38 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24340,7 +24340,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 119.38 170.18 0)
+			(at 119.38 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24349,7 +24349,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 119.38 170.18 0)
+			(at 119.38 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27437,7 +27437,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 132.08 170.18 0)
+		(at 132.08 157.48 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -27446,25 +27446,25 @@
 		(fields_autoplaced yes)
 		(uuid "f1946715-8933-4e8a-ae63-bf1910db4044")
 		(property "Reference" "R107"
-			(at 134.62 168.9099 0)
+			(at 134.62 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "3k3"
-			(at 134.62 171.4499 0)
+			(at 134.62 158.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 132.08 170.18 0)
+			(at 132.08 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27473,7 +27473,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 132.08 170.18 0)
+			(at 132.08 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27482,7 +27482,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 132.08 170.18 0)
+			(at 132.08 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28356,7 +28356,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED_Small")
-		(at 132.08 157.48 90)
+		(at 132.08 170.18 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -28365,7 +28365,7 @@
 		(fields_autoplaced yes)
 		(uuid "fe28fb14-bd4c-43ca-b0b9-755a304120e9")
 		(property "Reference" "D129"
-			(at 134.62 156.1464 90)
+			(at 134.62 168.8464 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28374,7 +28374,7 @@
 			)
 		)
 		(property "Value" "WHITE"
-			(at 134.62 158.6864 90)
+			(at 134.62 171.3864 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28383,7 +28383,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
-			(at 132.08 157.48 90)
+			(at 132.08 170.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28392,7 +28392,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 132.08 157.48 90)
+			(at 132.08 170.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28401,7 +28401,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode, small symbol"
-			(at 132.08 157.48 0)
+			(at 132.08 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
