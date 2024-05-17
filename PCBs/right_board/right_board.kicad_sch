@@ -11448,7 +11448,7 @@
 		)
 		(uuid "ad147b29-694f-4f3f-a330-c3f9e2c2edd4")
 	)
-	(label "KEY_E2"
+	(label "KEY_E5"
 		(at 152.4 195.58 0)
 		(fields_autoplaced yes)
 		(effects
@@ -11459,7 +11459,7 @@
 		)
 		(uuid "00fd1bda-e2f4-4483-8df8-a51801c3ea1d")
 	)
-	(label "KEY_D1"
+	(label "KEY_D7"
 		(at 226.06 175.26 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11470,7 +11470,7 @@
 		)
 		(uuid "021b433d-b0e4-40a4-a1f6-27fcf2f667dc")
 	)
-	(label "KEY_E1"
+	(label "KEY_E6"
 		(at 208.28 142.24 0)
 		(fields_autoplaced yes)
 		(effects
@@ -11492,7 +11492,7 @@
 		)
 		(uuid "0345c6af-5dfa-427f-96ca-cb3e763be913")
 	)
-	(label "KEY_A5"
+	(label "KEY_A11"
 		(at 350.52 83.82 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11514,7 +11514,7 @@
 		)
 		(uuid "071b527e-5bf0-4be9-8d91-62f44b09d861")
 	)
-	(label "KEY_D3"
+	(label "KEY_D9"
 		(at 279.4 121.92 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11547,7 +11547,7 @@
 		)
 		(uuid "0aa7c19c-9129-484d-aa82-5628c5482f77")
 	)
-	(label "KEY_C4"
+	(label "KEY_C10"
 		(at 226.06 210.82 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11569,7 +11569,7 @@
 		)
 		(uuid "0bf5325a-f37b-4eeb-bab8-9e367ef40527")
 	)
-	(label "KEY_C2"
+	(label "KEY_C8"
 		(at 226.06 172.72 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11591,7 +11591,7 @@
 		)
 		(uuid "0fd515bd-3f33-4b5c-bc01-9350ccc57496")
 	)
-	(label "KEY_B4"
+	(label "KEY_B10"
 		(at 314.96 96.52 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11602,7 +11602,7 @@
 		)
 		(uuid "10bb9423-ef95-409b-af2c-83b872db6a43")
 	)
-	(label "KEY_A6"
+	(label "KEY_A12"
 		(at 226.06 167.64 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11635,7 +11635,7 @@
 		)
 		(uuid "17466eb1-e096-4749-a353-3dedfdd082ce")
 	)
-	(label "KEY_C6"
+	(label "KEY_C12"
 		(at 226.06 215.9 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11679,7 +11679,7 @@
 		)
 		(uuid "200451ab-5c70-4946-ad67-47894866063e")
 	)
-	(label "KEY_C3"
+	(label "KEY_C9"
 		(at 226.06 185.42 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11701,7 +11701,7 @@
 		)
 		(uuid "21ad430a-d11d-4dce-8d66-5c374da3d510")
 	)
-	(label "KEY_A2"
+	(label "KEY_A8"
 		(at 243.84 83.82 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11723,7 +11723,7 @@
 		)
 		(uuid "2247317b-011b-4a93-ae3d-bc4a9bf88882")
 	)
-	(label "KEY_B3"
+	(label "KEY_B9"
 		(at 279.4 96.52 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11734,7 +11734,7 @@
 		)
 		(uuid "22559865-a3da-4946-afd6-80cc6f210fee")
 	)
-	(label "KEY_C2"
+	(label "KEY_C8"
 		(at 243.84 109.22 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11767,7 +11767,7 @@
 		)
 		(uuid "25461a63-9950-4cd5-8d16-7012cac0abc6")
 	)
-	(label "KEY_A4"
+	(label "KEY_A10"
 		(at 152.4 172.72 0)
 		(fields_autoplaced yes)
 		(effects
@@ -11778,7 +11778,7 @@
 		)
 		(uuid "2bfe20f7-0aef-4f4f-95f2-87e1619a3118")
 	)
-	(label "KEY_E3"
+	(label "KEY_E4"
 		(at 152.4 198.12 0)
 		(fields_autoplaced yes)
 		(effects
@@ -11789,7 +11789,7 @@
 		)
 		(uuid "2f3cf6a9-27ef-43b2-92bf-a7950f591aad")
 	)
-	(label "KEY_C6"
+	(label "KEY_C12"
 		(at 386.08 109.22 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11932,7 +11932,7 @@
 		)
 		(uuid "4df74484-6ddc-4fda-be04-2fd359921cb2")
 	)
-	(label "KEY_A3"
+	(label "KEY_A9"
 		(at 279.4 83.82 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11965,7 +11965,7 @@
 		)
 		(uuid "50a565cd-86c4-4b77-b957-ca31f1d52a8d")
 	)
-	(label "KEY_A1"
+	(label "KEY_A7"
 		(at 208.28 83.82 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12042,7 +12042,7 @@
 		)
 		(uuid "5b2469d3-46be-4ad9-a910-0c2a8f9fbeea")
 	)
-	(label "KEY_D3"
+	(label "KEY_D9"
 		(at 226.06 238.76 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12064,7 +12064,7 @@
 		)
 		(uuid "5c104c1d-78c7-4eba-a791-9032ebf24ee0")
 	)
-	(label "KEY_B6"
+	(label "KEY_B12"
 		(at 386.08 96.52 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12075,7 +12075,7 @@
 		)
 		(uuid "604491e8-85d7-4449-afa7-11992e1b0cd3")
 	)
-	(label "KEY_B5"
+	(label "KEY_B11"
 		(at 226.06 180.34 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12097,7 +12097,7 @@
 		)
 		(uuid "6526d470-4006-4eb6-bd0e-2d3717996eef")
 	)
-	(label "KEY_A4"
+	(label "KEY_A10"
 		(at 314.96 83.82 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12108,7 +12108,7 @@
 		)
 		(uuid "66427315-37f6-4db4-8f7d-d5aa29dbb2da")
 	)
-	(label "KEY_A6"
+	(label "KEY_A12"
 		(at 386.08 83.82 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12119,7 +12119,7 @@
 		)
 		(uuid "67ce797f-3a6d-4c4c-95c3-d71635cb22a9")
 	)
-	(label "KEY_A1"
+	(label "KEY_A7"
 		(at 226.06 226.06 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12196,7 +12196,7 @@
 		)
 		(uuid "6ede657c-84be-4ea3-b7cc-c30218c41f21")
 	)
-	(label "KEY_C5"
+	(label "KEY_C11"
 		(at 350.52 109.22 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12218,7 +12218,7 @@
 		)
 		(uuid "717312cf-89fd-4ffa-80b8-9f8b7739873c")
 	)
-	(label "KEY_B1"
+	(label "KEY_B7"
 		(at 226.06 223.52 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12229,7 +12229,7 @@
 		)
 		(uuid "74f57131-5fd4-492a-b1ba-69df4306d75b")
 	)
-	(label "KEY_A2"
+	(label "KEY_A8"
 		(at 226.06 228.6 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12284,7 +12284,7 @@
 		)
 		(uuid "7e241023-03db-4f3e-9528-d9001a6aed52")
 	)
-	(label "KEY_B3"
+	(label "KEY_B9"
 		(at 226.06 170.18 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12328,7 +12328,7 @@
 		)
 		(uuid "8214e1fc-f097-48d1-9e1f-1f39ef541bf9")
 	)
-	(label "KEY_C1"
+	(label "KEY_C7"
 		(at 208.28 109.22 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12339,7 +12339,7 @@
 		)
 		(uuid "832f9b4a-febc-4e4f-8776-5b8f4ad6acf4")
 	)
-	(label "KEY_B5"
+	(label "KEY_B11"
 		(at 350.52 96.52 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12361,7 +12361,7 @@
 		)
 		(uuid "86d3be9f-5d41-4a14-a179-51f95d21d3df")
 	)
-	(label "KEY_B2"
+	(label "KEY_B8"
 		(at 152.4 203.2 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12372,7 +12372,7 @@
 		)
 		(uuid "89766f35-37cc-4811-bd0b-b9cd6bfce89b")
 	)
-	(label "KEY_E1"
+	(label "KEY_E6"
 		(at 226.06 190.5 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12405,7 +12405,7 @@
 		)
 		(uuid "8fe5755b-56fe-4fbc-8ef0-7e40ec888564")
 	)
-	(label "KEY_B6"
+	(label "KEY_B12"
 		(at 226.06 182.88 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12416,7 +12416,7 @@
 		)
 		(uuid "92cbc2ba-4540-4296-9ffb-be9ee84b0881")
 	)
-	(label "KEY_D1"
+	(label "KEY_D7"
 		(at 208.28 121.92 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12427,7 +12427,7 @@
 		)
 		(uuid "92e95c5d-d470-4f56-9c37-77a9fc73efed")
 	)
-	(label "KEY_D4"
+	(label "KEY_D10"
 		(at 314.96 121.92 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12471,7 +12471,7 @@
 		)
 		(uuid "9d73e861-f9dc-4a80-8979-687a3d5adf54")
 	)
-	(label "KEY_D5"
+	(label "KEY_D11"
 		(at 350.52 121.92 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12537,7 +12537,7 @@
 		)
 		(uuid "a8ce0a13-adb0-4934-96d7-19b6b6038a2c")
 	)
-	(label "KEY_E2"
+	(label "KEY_E5"
 		(at 172.72 142.24 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12614,7 +12614,7 @@
 		)
 		(uuid "b7f85923-a248-4879-adae-e797c1d3bae7")
 	)
-	(label "KEY_D4"
+	(label "KEY_D10"
 		(at 226.06 241.3 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12625,7 +12625,7 @@
 		)
 		(uuid "bb1902dc-96b1-4a5e-96b2-951bbfbc2c8a")
 	)
-	(label "KEY_C1"
+	(label "KEY_C7"
 		(at 152.4 200.66 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12647,7 +12647,7 @@
 		)
 		(uuid "bd663c35-7a70-4a2e-992d-d36bdd4b25d0")
 	)
-	(label "KEY_D6"
+	(label "KEY_D12"
 		(at 226.06 243.84 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12658,7 +12658,7 @@
 		)
 		(uuid "bd7487ab-cfc9-43bb-90a4-c88b7a42338c")
 	)
-	(label "KEY_D2"
+	(label "KEY_D8"
 		(at 243.84 121.92 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12691,7 +12691,7 @@
 		)
 		(uuid "c6225212-b663-47d8-a962-48c7fbe2d01d")
 	)
-	(label "KEY_C5"
+	(label "KEY_C11"
 		(at 226.06 213.36 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12746,7 +12746,7 @@
 		)
 		(uuid "d0629343-db6a-47ca-acc2-bd53b8dbb6f6")
 	)
-	(label "KEY_B2"
+	(label "KEY_B8"
 		(at 243.84 96.52 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12757,7 +12757,7 @@
 		)
 		(uuid "d0d7aa1c-d34c-40ea-b698-a303637de40e")
 	)
-	(label "KEY_A5"
+	(label "KEY_A11"
 		(at 152.4 175.26 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12801,7 +12801,7 @@
 		)
 		(uuid "d7b1a730-31cf-4391-8209-23a860d81897")
 	)
-	(label "KEY_B4"
+	(label "KEY_B10"
 		(at 226.06 177.8 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12834,7 +12834,7 @@
 		)
 		(uuid "dadf9e97-71aa-422e-bab9-44151a32a230")
 	)
-	(label "KEY_C3"
+	(label "KEY_C9"
 		(at 279.4 109.22 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12856,7 +12856,7 @@
 		)
 		(uuid "dc266224-5a8b-41dc-b3f6-54288ca41555")
 	)
-	(label "KEY_E3"
+	(label "KEY_E4"
 		(at 137.16 142.24 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12867,7 +12867,7 @@
 		)
 		(uuid "dca9608b-99b4-413c-9699-6f1676d703f6")
 	)
-	(label "KEY_D5"
+	(label "KEY_D11"
 		(at 226.06 246.38 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12922,7 +12922,7 @@
 		)
 		(uuid "e337e73e-fbe6-48df-8418-a483dc8ec526")
 	)
-	(label "KEY_C4"
+	(label "KEY_C10"
 		(at 314.96 109.22 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12966,7 +12966,7 @@
 		)
 		(uuid "e9ab9cd1-0494-4674-b3fb-8cf2aecfaf5c")
 	)
-	(label "KEY_D2"
+	(label "KEY_D8"
 		(at 226.06 236.22 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12999,7 +12999,7 @@
 		)
 		(uuid "ebd8a249-2a9c-4efa-ae07-23b9642e6fb2")
 	)
-	(label "KEY_B1"
+	(label "KEY_B7"
 		(at 208.28 96.52 180)
 		(fields_autoplaced yes)
 		(effects
@@ -13065,7 +13065,7 @@
 		)
 		(uuid "f5d1f802-a639-4836-861b-f876033fa978")
 	)
-	(label "KEY_A3"
+	(label "KEY_A9"
 		(at 152.4 205.74 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13109,7 +13109,7 @@
 		)
 		(uuid "fb449fc8-9484-4fc7-afc4-a198dcf170c4")
 	)
-	(label "KEY_D6"
+	(label "KEY_D12"
 		(at 386.08 121.92 180)
 		(fields_autoplaced yes)
 		(effects
