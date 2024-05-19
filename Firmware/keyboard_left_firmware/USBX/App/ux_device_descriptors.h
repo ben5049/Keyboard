@@ -41,7 +41,7 @@ extern "C" {
 #define USBD_MAX_CLASS_INTERFACES                      9U
 
 #define USBD_HID_CLASS_ACTIVATED                       1U
-#define USBD_CDC_ACM_CLASS_ACTIVATED                   1U
+#define USBD_MSC_CLASS_ACTIVATED                       1U
 
 #define USBD_CONFIG_MAXPOWER                           25U
 #define USBD_COMPOSITE_USE_IAD                         1U
@@ -213,47 +213,6 @@ typedef struct
 /* USER CODE END HID_CLASS */
 #endif /* USBD_HID_CLASS_ACTIVATED == 1U */
 
-#if (USBD_CDC_ACM_CLASS_ACTIVATED == 1) || (USBD_CMPSIT_ACTIVATE_RNDIS == 1) || (USBD_CDC_ECM_CLASS_ACTIVATED == 1)
-typedef struct
-{
-  /* Header Functional Descriptor*/
-  uint8_t           bLength;
-  uint8_t           bDescriptorType;
-  uint8_t           bDescriptorSubtype;
-  uint16_t          bcdCDC;
-} __PACKED USBD_CDCHeaderFuncDescTypedef;
-
-typedef struct
-{
-  /* Call Management Functional Descriptor*/
-  uint8_t           bLength;
-  uint8_t           bDescriptorType;
-  uint8_t           bDescriptorSubtype;
-  uint8_t           bmCapabilities;
-  uint8_t           bDataInterface;
-} __PACKED USBD_CDCCallMgmFuncDescTypedef;
-
-typedef struct
-{
-  /* ACM Functional Descriptor*/
-  uint8_t           bLength;
-  uint8_t           bDescriptorType;
-  uint8_t           bDescriptorSubtype;
-  uint8_t           bmCapabilities;
-} __PACKED USBD_CDCACMFuncDescTypedef;
-
-typedef struct
-{
-  /* Union Functional Descriptor*/
-  uint8_t           bLength;
-  uint8_t           bDescriptorType;
-  uint8_t           bDescriptorSubtype;
-  uint8_t           bMasterInterface;
-  uint8_t           bSlaveInterface;
-} __PACKED USBD_CDCUnionFuncDescTypedef;
-
-#endif /* (USBD_CDC_ACM_CLASS_ACTIVATED == 1) || (USBD_CMPSIT_ACTIVATE_RNDIS == 1)  || (USBD_CDC_ECM_CLASS_ACTIVATED == 1)*/
-
 /* Private defines -----------------------------------------------------------*/
 /* USER CODE BEGIN Private_defines */
 
@@ -315,18 +274,14 @@ uint8_t *USBD_Get_Device_HID_MOUSE_ReportDesc(void);
 #define USBD_HID_EPIN_FS_BINTERVAL                    5U
 #define USBD_HID_EPIN_HS_BINTERVAL                    5U
 
-/* Device CDC-ACM Class */
-#define USBD_CDCACM_EPINCMD_ADDR                      0x81U
-#define USBD_CDCACM_EPINCMD_FS_MPS                    8U
-#define USBD_CDCACM_EPINCMD_HS_MPS                    8U
-#define USBD_CDCACM_EPIN_ADDR                         0x81U
-#define USBD_CDCACM_EPOUT_ADDR                        0x01U
-#define USBD_CDCACM_EPIN_FS_MPS                       64U
-#define USBD_CDCACM_EPIN_HS_MPS                       512U
-#define USBD_CDCACM_EPOUT_FS_MPS                      64U
-#define USBD_CDCACM_EPOUT_HS_MPS                      512U
-#define USBD_CDCACM_EPINCMD_FS_BINTERVAL              5U
-#define USBD_CDCACM_EPINCMD_HS_BINTERVAL              5U
+/* Device Storage Class */
+#define USBD_MSC_EPOUT_ADDR                            0x03U
+#define USBD_MSC_EPIN_ADDR                             0x82U
+
+#define USBD_MSC_EPOUT_FS_MPS                          64U
+#define USBD_MSC_EPOUT_HS_MPS                          512U
+#define USBD_MSC_EPIN_FS_MPS                           64U
+#define USBD_MSC_EPIN_HS_MPS                           512U
 
 #define HID_DESCRIPTOR_TYPE                           0x21U
 #define USBD_HID_DESC_SIZE                            9U

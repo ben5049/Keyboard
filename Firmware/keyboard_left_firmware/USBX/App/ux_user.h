@@ -91,7 +91,7 @@
 
 /* Defined, this value is the maximum number of classes in the device stack that can be loaded by
    USBX.  */
-#define UX_MAX_SLAVE_CLASS_DRIVER                         1
+/* #define UX_MAX_SLAVE_CLASS_DRIVER	2 */
 
 /* Defined, this value is the maximum number of interfaces in the device framework.  */
 

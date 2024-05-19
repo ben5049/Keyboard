@@ -40,7 +40,7 @@ S_UPPER_DEPS += \
 
 # Each subdirectory must supply rules for building sources it contributes
 Middlewares/ST/threadx/ports/cortex_m0/gnu/src/%.o: ../Middlewares/ST/threadx/ports/cortex_m0/gnu/src/%.S Middlewares/ST/threadx/ports/cortex_m0/gnu/src/subdir.mk
-	arm-none-eabi-gcc -mcpu=cortex-m0plus -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m0plus -g3 -DDEBUG -c -I../Application/Inc -x assembler-with-cpp -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@" "$<"
 
 clean: clean-Middlewares-2f-ST-2f-threadx-2f-ports-2f-cortex_m0-2f-gnu-2f-src
 
