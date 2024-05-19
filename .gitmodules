@@ -7,3 +7,6 @@
 [submodule "PCBs/libraries/keyboard_parts.pretty"]
 	path = PCBs/libraries/keyboard_parts.pretty
 	url = https://github.com/tmk/keyboard_parts.pretty
+[submodule "Examples/stm32-usbx-examples"]
+	path = Examples/stm32-usbx-examples
+	url = https://github.com/STMicroelectronics/stm32-usbx-examples
