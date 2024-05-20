@@ -8,8 +8,7 @@
 #ifndef INC_APP_INIT_H_
 #define INC_APP_INIT_H_
 
-/* Call this function from App_ThreadX_Init() to create threads */
+/* Place this function under "USER CODE BEGIN App_ThreadX_Init" */
 void create_threads(void);
-
 
 #endif /* INC_APP_INIT_H_ */

@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "app_usbx_device.h": "c",
+        "ux_device_mouse.h": "c",
+        "ux_device_keyboard.h": "c"
+    }
+}

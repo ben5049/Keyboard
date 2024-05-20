@@ -58,7 +58,7 @@
 @
 @
 SYSTEM_CLOCK      =   64000000
-SYSTICK_CYCLES    =   ((SYSTEM_CLOCK / 100) -1)
+SYSTICK_CYCLES    =   ((SYSTEM_CLOCK / 1000) -1)
 
     .text
     .align 4
@@ -235,7 +235,7 @@ SysTick_Handler:
 ;
 ;
 SYSTEM_CLOCK      EQU   64000000
-SYSTICK_CYCLES    EQU   ((SYSTEM_CLOCK / 100) -1)
+SYSTICK_CYCLES    EQU   ((SYSTEM_CLOCK / 1000) -1)
 
 #ifdef USE_DYNAMIC_MEMORY_ALLOCATION
     RSEG    FREE_MEM:DATA
@@ -431,7 +431,7 @@ SysTick_Handler:
 @
 
 SYSTEM_CLOCK      =   64000000
-SYSTICK_CYCLES    =   ((SYSTEM_CLOCK / 100) -1)
+SYSTICK_CYCLES    =   ((SYSTEM_CLOCK / 1000) -1)
 
     .text 32
     .align 4

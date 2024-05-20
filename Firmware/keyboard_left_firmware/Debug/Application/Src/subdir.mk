@@ -6,15 +6,30 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Application/Src/app_init.c \
-../Application/Src/scan_keys_thread.c 
+../Application/Src/hid_keyboard_thread.c \
+../Application/Src/hid_mouse_thread.c \
+../Application/Src/msc_thread.c \
+../Application/Src/scan_keys_thread.c \
+../Application/Src/ux_init.c \
+../Application/Src/ux_thread.c 
 
 OBJS += \
 ./Application/Src/app_init.o \
-./Application/Src/scan_keys_thread.o 
+./Application/Src/hid_keyboard_thread.o \
+./Application/Src/hid_mouse_thread.o \
+./Application/Src/msc_thread.o \
+./Application/Src/scan_keys_thread.o \
+./Application/Src/ux_init.o \
+./Application/Src/ux_thread.o 
 
 C_DEPS += \
 ./Application/Src/app_init.d \
-./Application/Src/scan_keys_thread.d 
+./Application/Src/hid_keyboard_thread.d \
+./Application/Src/hid_mouse_thread.d \
+./Application/Src/msc_thread.d \
+./Application/Src/scan_keys_thread.d \
+./Application/Src/ux_init.d \
+./Application/Src/ux_thread.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -24,7 +39,7 @@ Application/Src/%.o Application/Src/%.su Application/Src/%.cyclo: ../Application
 clean: clean-Application-2f-Src
 
 clean-Application-2f-Src:
-	-$(RM) ./Application/Src/app_init.cyclo ./Application/Src/app_init.d ./Application/Src/app_init.o ./Application/Src/app_init.su ./Application/Src/scan_keys_thread.cyclo ./Application/Src/scan_keys_thread.d ./Application/Src/scan_keys_thread.o ./Application/Src/scan_keys_thread.su
+	-$(RM) ./Application/Src/app_init.cyclo ./Application/Src/app_init.d ./Application/Src/app_init.o ./Application/Src/app_init.su ./Application/Src/hid_keyboard_thread.cyclo ./Application/Src/hid_keyboard_thread.d ./Application/Src/hid_keyboard_thread.o ./Application/Src/hid_keyboard_thread.su ./Application/Src/hid_mouse_thread.cyclo ./Application/Src/hid_mouse_thread.d ./Application/Src/hid_mouse_thread.o ./Application/Src/hid_mouse_thread.su ./Application/Src/msc_thread.cyclo ./Application/Src/msc_thread.d ./Application/Src/msc_thread.o ./Application/Src/msc_thread.su ./Application/Src/scan_keys_thread.cyclo ./Application/Src/scan_keys_thread.d ./Application/Src/scan_keys_thread.o ./Application/Src/scan_keys_thread.su ./Application/Src/ux_init.cyclo ./Application/Src/ux_init.d ./Application/Src/ux_init.o ./Application/Src/ux_init.su ./Application/Src/ux_thread.cyclo ./Application/Src/ux_thread.d ./Application/Src/ux_thread.o ./Application/Src/ux_thread.su
 
 .PHONY: clean-Application-2f-Src
 
