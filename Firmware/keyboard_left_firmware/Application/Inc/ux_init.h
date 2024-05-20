@@ -8,7 +8,8 @@
 #ifndef INC_UX_INIT_H_
 #define INC_UX_INIT_H_
 
-/* Place this function under "USER CODE BEGIN MX_USBX_Device_Init" */
-UINT usbx_device_init(TX_BYTE_POOL *byte_pool);
+#include "ux_api.h"
+
+UINT MX_USBX_Device_Init(VOID *memory_ptr);
 
 #endif /* INC_UX_INIT_H_ */

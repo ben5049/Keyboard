@@ -36,5 +36,4 @@ Middlewares/ST/usbx/common/usbx_device_classes/src \
 Middlewares/ST/usbx/common/usbx_stm32_device_controllers \
 USBPD/App \
 USBPD/Target \
-USBX/App \
 

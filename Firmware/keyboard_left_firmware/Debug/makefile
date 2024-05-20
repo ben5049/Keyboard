@@ -9,7 +9,6 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include USBX/App/subdir.mk
 -include USBPD/Target/subdir.mk
 -include USBPD/App/subdir.mk
 -include Middlewares/ST/usbx/common/usbx_stm32_device_controllers/subdir.mk

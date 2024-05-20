@@ -12,8 +12,6 @@
 #include "main.h"
 #include "app_azure_rtos.h"
 
-#include "ux_device_descriptors.h"
-
 #include "ux_api.h"
 #include "ux_device_class_hid.h"
 #include "ux_device_class_storage.h"
@@ -39,14 +37,6 @@
 #define STORAGE_NUMBER_LUN   1
 #define STORAGE_REMOVABLE_FLAG   0x80U
 #define STORAGE_READ_ONLY    UX_FALSE
-
-/* Enum HID Interface Type */
-typedef enum
-{
-  INTERFACE_HID_CUSTOM     = 0,
-  INTERFACE_HID_KEYBOARD   = 1,
-  INTERFACE_HID_MOUSE      = 2,
-} USBD_HIDInterfaceTypeDef;
 
 void ux_thread(uint32_t thread_input);
 void hid_mouse_thread(uint32_t thread_input);

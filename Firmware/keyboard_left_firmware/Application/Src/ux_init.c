@@ -6,11 +6,11 @@
  */
 
 #include "app_azure_rtos.h"
-#include "app_usbx_device.h"
 #include "stdint.h"
 
 #include "ux_init.h"
 #include "ux_threads.h"
+#include "ux_device_descriptors.h"
 
 
 TX_THREAD ux_thread_ptr;
@@ -30,9 +30,10 @@ ULONG storage_configuration_number;
 UX_SLAVE_CLASS_STORAGE_PARAMETER storage_parameter;
 
 
-UINT usbx_device_init(TX_BYTE_POOL *byte_pool){
-
+UINT MX_USBX_Device_Init(VOID *memory_ptr)
+{
 	UINT ret = UX_SUCCESS;
+	TX_BYTE_POOL *byte_pool = (TX_BYTE_POOL*)memory_ptr;
 	UCHAR *device_framework_high_speed;
 	UCHAR *device_framework_full_speed;
 	ULONG device_framework_hs_length;
@@ -42,6 +43,8 @@ UINT usbx_device_init(TX_BYTE_POOL *byte_pool){
 	UCHAR *string_framework;
 	UCHAR *language_id_framework;
 	UCHAR *pointer;
+
+	(void)byte_pool;
 
 	/* Allocate the stack for USBX Memory */
 	if (tx_byte_allocate(byte_pool, (VOID **) &pointer, USBX_MEMORY_SIZE, TX_NO_WAIT) != TX_SUCCESS)

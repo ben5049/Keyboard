@@ -348,7 +348,7 @@
 
 /* Defined, this macro enables device bi-directional endpoint support.  */
 
-#define UX_DEVICE_BIDIRECTIONAL_ENDPOINT_SUPPORT
+/* #define UX_DEVICE_BIDIRECTIONAL_ENDPOINT_SUPPORT  */
 
 /* Defined, this macro disables CDC ACM non-blocking transmission support. */
 
