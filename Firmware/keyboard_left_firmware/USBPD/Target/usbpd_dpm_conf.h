@@ -65,9 +65,9 @@ USBPD_SettingsTypeDef       DPM_Settings[USBPD_PORT_COUNT] =
     .PE_SpecRevision = USBPD_SPECIFICATION_REV3,/* spec revision value                                     */
     .PE_DefaultRole = USBPD_PORTPOWERROLE_SNK,  /* Default port role                                       */
     .PE_RoleSwap = USBPD_TRUE,                  /* support port role swap                                  */
-    .PE_VDMSupport = USBPD_FALSE,
-    .PE_RespondsToDiscovSOP = USBPD_FALSE,      /*!< Can respond successfully to a Discover Identity */
-    .PE_AttemptsDiscovSOP = USBPD_FALSE,        /*!< Can send a Discover Identity */
+    .PE_VDMSupport = USBPD_TRUE,
+    .PE_RespondsToDiscovSOP = USBPD_TRUE,      /*!< Can respond successfully to a Discover Identity */
+    .PE_AttemptsDiscovSOP = USBPD_TRUE,        /*!< Can send a Discover Identity */
     .PE_PingSupport = USBPD_FALSE,              /* support Ping (only for PD3.0)                                            */
     .PE_CapscounterSupport = USBPD_FALSE,       /* support caps counter                                    */
     .CAD_RoleToggle = USBPD_FALSE,               /* CAD role toggle                                         */
@@ -99,7 +99,7 @@ USBPD_SettingsTypeDef       DPM_Settings[USBPD_PORT_COUNT] =
     .PE_SpecRevision = USBPD_SPECIFICATION_REV3,/* spec revision value                                     */
     .PE_DefaultRole = USBPD_PORTPOWERROLE_SNK,  /* Default port role                                       */
     .PE_RoleSwap = USBPD_TRUE,                 /* support port role swap                                  */
-    .PE_VDMSupport = USBPD_FALSE,
+    .PE_VDMSupport = USBPD_TRUE,
     .PE_RespondsToDiscovSOP = USBPD_FALSE,      /*!< Can respond successfully to a Discover Identity */
     .PE_AttemptsDiscovSOP = USBPD_FALSE,        /*!< Can send a Discover Identity */
     .PE_PingSupport = USBPD_FALSE,              /* support Ping (only for PD3.0)                                     */
@@ -149,7 +149,7 @@ USBPD_IdSettingsTypeDef          DPM_ID_Settings[USBPD_PORT_COUNT] =
 USBPD_USER_SettingsTypeDef       DPM_USER_Settings[USBPD_PORT_COUNT] =
 {
   {
-    .PE_DataSwap = USBPD_FALSE,                  /* support data swap                                       */
+    .PE_DataSwap = USBPD_TRUE,                  /* support data swap                                       */
     .PE_VconnSwap = USBPD_FALSE,                 /* support VCONN swap                                  */
     .PE_DR_Swap_To_DFP = USBPD_TRUE,                  /*  Support of DR Swap to DFP                                  */
     .PE_DR_Swap_To_UFP = USBPD_TRUE,                  /*  Support of DR Swap to UFP                                  */
@@ -196,7 +196,7 @@ USBPD_USER_SettingsTypeDef       DPM_USER_Settings[USBPD_PORT_COUNT] =
   },
 #if USBPD_PORT_COUNT >= 2
   {
-    .PE_DataSwap = USBPD_FALSE,                  /* support data swap                                       */
+    .PE_DataSwap = USBPD_TRUE,                  /* support data swap                                       */
     .PE_VconnSwap = USBPD_FALSE,                /* support VCONN swap                                  */
     .PE_DR_Swap_To_DFP = USBPD_TRUE,                  /*  Support of DR Swap to DFP                                  */
     .PE_DR_Swap_To_UFP = USBPD_TRUE,                  /*  Support of DR Swap to UFP                                  */

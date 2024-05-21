@@ -26,14 +26,14 @@ AZURE_RTOS/App \
 Application/Src \
 Core/Src \
 Core/Startup \
-Drivers/STM32G0xx_HAL_Driver/Src \
-Middlewares/ST/STM32_USBPD_Library/Core/src \
-Middlewares/ST/STM32_USBPD_Library/Devices/STM32G0XX/src \
-Middlewares/ST/threadx/common/src \
-Middlewares/ST/threadx/ports/cortex_m0/gnu/src \
-Middlewares/ST/usbx/common/core/src \
-Middlewares/ST/usbx/common/usbx_device_classes/src \
-Middlewares/ST/usbx/common/usbx_stm32_device_controllers \
+Drivers/STM32G0xx_HAL_Driver \
+Middlewares/ThreadX/RTOS/ThreadX/Core \
+Middlewares/USBPD \
+Middlewares/USBX/USB/USBX/CoreSystem \
+Middlewares/USBX/USB/USBX/UX\ Device\ Class\ HID \
+Middlewares/USBX/USB/USBX/UX\ Device\ Class\ STORAGE \
+Middlewares/USBX/USB/USBX/UX\ Device\ Controllers \
+Middlewares/USBX/USB/USBX/UX\ Device\ CoreStack \
 USBPD/App \
 USBPD/Target \
 

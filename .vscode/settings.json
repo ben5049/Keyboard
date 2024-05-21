@@ -3,6 +3,7 @@
         "app_usbx_device.h": "c",
         "ux_device_mouse.h": "c",
         "ux_device_keyboard.h": "c",
-        "ux_device_descriptors.h": "c"
+        "ux_device_descriptors.h": "c",
+        "app_azure_rtos.h": "c"
     }
 }

@@ -11,14 +11,14 @@ RM := rm -rf
 -include sources.mk
 -include USBPD/Target/subdir.mk
 -include USBPD/App/subdir.mk
--include Middlewares/ST/usbx/common/usbx_stm32_device_controllers/subdir.mk
--include Middlewares/ST/usbx/common/usbx_device_classes/src/subdir.mk
--include Middlewares/ST/usbx/common/core/src/subdir.mk
--include Middlewares/ST/threadx/ports/cortex_m0/gnu/src/subdir.mk
--include Middlewares/ST/threadx/common/src/subdir.mk
--include Middlewares/ST/STM32_USBPD_Library/Devices/STM32G0XX/src/subdir.mk
--include Middlewares/ST/STM32_USBPD_Library/Core/src/subdir.mk
--include Drivers/STM32G0xx_HAL_Driver/Src/subdir.mk
+-include Middlewares/USBX/USB/USBX/UX\ Device\ CoreStack/subdir.mk
+-include Middlewares/USBX/USB/USBX/UX\ Device\ Controllers/subdir.mk
+-include Middlewares/USBX/USB/USBX/UX\ Device\ Class\ STORAGE/subdir.mk
+-include Middlewares/USBX/USB/USBX/UX\ Device\ Class\ HID/subdir.mk
+-include Middlewares/USBX/USB/USBX/CoreSystem/subdir.mk
+-include Middlewares/USBPD/subdir.mk
+-include Middlewares/ThreadX/RTOS/ThreadX/Core/subdir.mk
+-include Drivers/STM32G0xx_HAL_Driver/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
 -include Application/Src/subdir.mk
@@ -72,7 +72,7 @@ main-build: keyboard_left_firmware.elf secondary-outputs
 
 # Tool invocations
 keyboard_left_firmware.elf keyboard_left_firmware.map: $(OBJS) $(USER_OBJS) C:\Users\bens1\Documents\Other\Projects\Keyboard\Firmware\keyboard_left_firmware\STM32G0C1CEUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "keyboard_left_firmware.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\bens1\Documents\Other\Projects\Keyboard\Firmware\keyboard_left_firmware\STM32G0C1CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="keyboard_left_firmware.map" -Wl,--gc-sections -static -L../Middlewares/ST/STM32_USBPD_Library/Core/lib --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+	arm-none-eabi-gcc -o "keyboard_left_firmware.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\bens1\Documents\Other\Projects\Keyboard\Firmware\keyboard_left_firmware\STM32G0C1CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="keyboard_left_firmware.map" -Wl,--gc-sections -static -LC:/Users/bens1/STM32Cube/Repository/STM32Cube_FW_G0_V1.6.2/Middlewares/ST/STM32_USBPD_Library/Core/lib --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

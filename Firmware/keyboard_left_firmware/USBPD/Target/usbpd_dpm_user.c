@@ -331,8 +331,10 @@ void USBPD_DPM_GetDataInfo(uint8_t PortNum, USBPD_CORE_DataInfoType_TypeDef Data
   /* Check type of information targeted by request */
   switch(DataId)
   {
-//  case USBPD_CORE_DATATYPE_SNK_PDO:           /*!< Handling of port Sink PDO, requested by get sink capa*/
-    // break;
+  case USBPD_CORE_DATATYPE_SNK_PDO:           /*!< Handling of port Sink PDO, requested by get sink capa*/
+	  USBPD_PWR_IF_GetPortPDOs(PortNum, DataId, Ptr, Size);
+	  *Size *= 4;
+	  break;
 //  case USBPD_CORE_EXTENDED_CAPA:              /*!< Source Extended capability message content          */
     // break;
 //  case USBPD_CORE_DATATYPE_REQ_VOLTAGE:       /*!< Get voltage value requested for BIST tests, expect 5V*/
