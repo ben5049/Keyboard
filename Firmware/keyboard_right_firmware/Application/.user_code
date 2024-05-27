@@ -1,0 +1,20 @@
+
+
+/*
+    @ACTION: USER_CODE_INSERT
+    @FILE: "Core/Src/app_threadx.c"
+    @SECTION: "USER CODE BEGIN Includes"
+    @INSERT: #include "app_init.h"
+    @SECTION: "USER CODE BEGIN App_ThreadX_Init"
+    @INSERT: create_threads();
+*/
+
+
+/*
+    @ACTION: USER_CODE_INSERT
+    @FILE: "USBX/App/app_usbx_device.c"
+    @SECTION: "USER CODE BEGIN Includes"
+    @INSERT: #include "usb_init.h"
+    @SECTION: "USER CODE BEGIN MX_USBX_Device_Init"
+    @INSERT: usb_init(memory_ptr);
+*/

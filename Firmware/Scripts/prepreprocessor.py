@@ -39,13 +39,22 @@ def insert_user_code(file_name, section, text):
     previous_contents = ""
     new_contents = ""
 
-    start = "USER CODE BEGIN " + section
-    end = "USER CODE END " + section
+    start = "/* USER CODE BEGIN " + section + " */"
+    end = "/* USER CODE END " + section + " */"
     
     with open(PATH_TO_PROJECT_HOME + file_name, "r") as file:
         previous_contents = file.read()
 
-    new_contents = previous_contents.split(start,1)[0] + start + " */\n" + text + "\n/* " + end + previous_contents.split(start,1)[1].split(end,1)[1]
+    start_content = previous_contents.split(start,1)[0]
+    middle_content = [item for item in previous_contents.split(start,1)[1].split(end,1)[0].split("\n") if item.strip() != ""]
+    end_content = previous_contents.split(start,1)[1].split(end,1)[1]
+
+    if text not in middle_content:
+        middle_content.insert(len(middle_content)-1, text)
+
+    middle_content = "\n".join(middle_content)
+
+    new_contents = start_content + start + "\n" + middle_content + "\n" + end + end_content
 
     with open(PATH_TO_PROJECT_HOME + file_name, "w") as file:
         file.write(new_contents)
