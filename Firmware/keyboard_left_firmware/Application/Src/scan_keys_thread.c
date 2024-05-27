@@ -6,6 +6,7 @@
  */
 
 #include "threads.h"
+#include "i2c.h"
 
 #define PORT_A_PINS (KEY_C1_Pin | KEY_C2_Pin | KEY_C3_Pin | KEY_C4_Pin | KEY_D5_Pin | KEY_B1_Pin | KEY_B2_Pin | KEY_B3_Pin | KEY_D6_Pin | KEY_A6_Pin | KEY_B6_Pin)
 #define PORT_B_PINS (KEY_B4_Pin | KEY_A1_Pin | KEY_C5_Pin | ENC_SW_Pin | KEY_E3_Pin | KEY_E2_Pin | KEY_A2_Pin | KEY_B5_Pin | KEY_A3_Pin)
@@ -39,11 +40,22 @@ void scan_keys_thread(uint32_t initial_input){
 		// TODO: Stuff goes here
 
 
+
+
+
+
+
+
+		if (keys_pressed_port_a_prev != keys_pressed_port_a){
+			HAL_GPIO_TogglePin(STAT1_LED_GPIO_Port, STAT1_LED_Pin);
+		}
+
 		keys_pressed_port_a_prev = keys_pressed_port_a;
 		keys_pressed_port_b_prev = keys_pressed_port_b;
 		keys_pressed_port_c_prev = keys_pressed_port_c;
 		keys_pressed_port_d_prev = keys_pressed_port_d;
 		keys_pressed_port_f_prev = keys_pressed_port_f;
+
 		tx_thread_sleep(10); // TODO: Remove sleep and do proper timing
 	}
 }

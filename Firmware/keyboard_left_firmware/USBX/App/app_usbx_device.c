@@ -1,9 +1,9 @@
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file    app_threadx.c
+  * @file    app_usbx_device.c
   * @author  MCD Application Team
-  * @brief   ThreadX applicative file
+  * @brief   USBX Device applicative file
   ******************************************************************************
   * @attention
   *
@@ -19,11 +19,11 @@
 /* USER CODE END Header */
 
 /* Includes ------------------------------------------------------------------*/
-#include "app_threadx.h"
+#include "app_usbx_device.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "app_init.h"
+#include "usb_init.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -50,44 +50,25 @@
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
-
 /**
-  * @brief  Application ThreadX Initialization.
+  * @brief  Application USBX Device Initialization.
   * @param memory_ptr: memory pointer
   * @retval int
   */
-UINT App_ThreadX_Init(VOID *memory_ptr)
+UINT MX_USBX_Device_Init(VOID *memory_ptr)
 {
-  UINT ret = TX_SUCCESS;
+  UINT ret = UX_SUCCESS;
   TX_BYTE_POOL *byte_pool = (TX_BYTE_POOL*)memory_ptr;
 
-  /* USER CODE BEGIN App_ThreadX_MEM_POOL */
+  /* USER CODE BEGIN MX_USBX_Device_MEM_POOL */
   (void)byte_pool;
-  /* USER CODE END App_ThreadX_MEM_POOL */
+  /* USER CODE END MX_USBX_Device_MEM_POOL */
 
-  /* USER CODE BEGIN App_ThreadX_Init */
-create_threads();
-/* USER CODE END App_ThreadX_Init */
+  /* USER CODE BEGIN MX_USBX_Device_Init */
+usb_init(memory_ptr);
+/* USER CODE END MX_USBX_Device_Init */
 
   return ret;
-}
-
-/**
-  * @brief  MX_ThreadX_Init
-  * @param  None
-  * @retval None
-  */
-void MX_ThreadX_Init(void)
-{
-  /* USER CODE BEGIN  Before_Kernel_Start */
-
-  /* USER CODE END  Before_Kernel_Start */
-
-  tx_kernel_enter();
-
-  /* USER CODE BEGIN  Kernel_Start_Error */
-
-  /* USER CODE END  Kernel_Start_Error */
 }
 
 /* USER CODE BEGIN 1 */

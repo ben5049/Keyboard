@@ -5,7 +5,7 @@
  *      Author: bens1
  */
 
-#include "ux_threads.h"
+#include "usb_threads.h"
 
 
 UX_SLAVE_CLASS_HID *hid_mouse;

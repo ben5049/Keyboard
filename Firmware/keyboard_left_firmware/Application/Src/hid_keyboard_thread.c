@@ -5,9 +5,11 @@
  *      Author: bens1
  */
 
-#include "ux_threads.h"
+#include "usb_threads.h"
 
 UX_SLAVE_CLASS_HID *hid_keyboard;
+
+static VOID GetKeyData(UX_SLAVE_CLASS_HID_EVENT *hid_event);
 
 
 /**
@@ -100,6 +102,9 @@ void hid_keyboard_thread(uint32_t thread_input){
 	UX_SLAVE_DEVICE *device;
 	UX_SLAVE_CLASS_HID_EVENT hid_event;
 
+	GPIO_PinState current_state, previous_state;
+
+
 	TX_PARAMETER_NOT_USED(thread_input);
 
 	/* Get the pointer to the device */
@@ -115,6 +120,45 @@ void hid_keyboard_thread(uint32_t thread_input){
 		{
 			/* Sleep Thread for 20ms */
 			tx_thread_sleep(MS_TO_TICK(20));
+
+			current_state = HAL_GPIO_ReadPin(KEY_A6_GPIO_Port, KEY_A6_Pin);
+
+			if (current_state == GPIO_PIN_RESET && previous_state == GPIO_PIN_SET){
+
+				hid_event.ux_device_class_hid_event_length = 8;
+
+				/* This byte is a modifier byte */
+				hid_event.ux_device_class_hid_event_buffer[0] = 0;
+
+				/* This byte is reserved */
+				hid_event.ux_device_class_hid_event_buffer[1] = 0;
+
+				/* Update key button byte */
+				hid_event.ux_device_class_hid_event_buffer[2] = 34;
+
+				/* Send keyboard event */
+				ux_device_class_hid_event_set(hid_keyboard, &hid_event);
+			}
+
+
+			if (current_state == GPIO_PIN_SET && previous_state == GPIO_PIN_RESET){
+
+				hid_event.ux_device_class_hid_event_length = 8;
+
+				/* This byte is a modifier byte */
+				hid_event.ux_device_class_hid_event_buffer[0] = 0;
+
+				/* This byte is reserved */
+				hid_event.ux_device_class_hid_event_buffer[1] = 0;
+
+				/* Update key button byte */
+				hid_event.ux_device_class_hid_event_buffer[2] = 0;
+
+				/* Send keyboard event */
+				ux_device_class_hid_event_set(hid_keyboard, &hid_event);
+			}
+
+			previous_state = current_state;
 
 			//      /* Check if user button is pressed */
 			//      if (User_Button_State)
@@ -146,31 +190,29 @@ void hid_keyboard_thread(uint32_t thread_input){
 	}
 }
 
-///**
-//  * @brief  GetKeyData
-//  *         Gets Pointer Data.
-//  * @param  hid_event: Pointer to hid event buffer.
-//  * @retval none
-//  */
-//static VOID GetKeyData(UX_SLAVE_CLASS_HID_EVENT *hid_event)
-//{
-//  if (key_button == 30)
-//  {
-//    key_button = 0x04;
-//  }
-//
-//  /* Set hid envent length to 8 */
-//  hid_event->ux_device_class_hid_event_length = 8;
-//
-//  /* This byte is a modifier byte */
-//  hid_event->ux_device_class_hid_event_buffer[0] = 0;
-//
-//  /* This byte is reserved */
-//  hid_event->ux_device_class_hid_event_buffer[1] = 0;
-//
-//  /* Update key button byte */
-//  hid_event->ux_device_class_hid_event_buffer[2] = key_button;
-//
-//  /* Increment counter */
-//  key_button++;
-//}
+/**
+ * @brief  GetKeyData
+ *         Gets Pointer Data.
+ * @param  hid_event: Pointer to hid event buffer.
+ * @retval none
+ */
+static VOID GetKeyData(UX_SLAVE_CLASS_HID_EVENT *hid_event)
+{
+
+	uint32_t key_button = 0x05;
+
+	/* Set hid event length to 8 */
+	hid_event->ux_device_class_hid_event_length = 8;
+
+	/* This byte is a modifier byte */
+	hid_event->ux_device_class_hid_event_buffer[0] = 0;
+
+	/* This byte is reserved */
+	hid_event->ux_device_class_hid_event_buffer[1] = 0;
+
+	/* Update key button byte */
+	hid_event->ux_device_class_hid_event_buffer[2] = key_button;
+
+	/* Increment counter */
+	//  key_button++;
+}

@@ -1,10 +1,9 @@
-
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file    app_azure_rtos.h
+  * @file    ux_device_msc.h
   * @author  MCD Application Team
-  * @brief   azure_rtos application header file
+  * @brief   USBX Device MSC header file
   ******************************************************************************
   * @attention
   *
@@ -18,23 +17,20 @@
   ******************************************************************************
   */
 /* USER CODE END Header */
-
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef APP_AZURE_RTOS_H
-#define APP_AZURE_RTOS_H
+#ifndef __UX_DEVICE_MSC_H__
+#define __UX_DEVICE_MSC_H__
+
 #ifdef __cplusplus
 extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "app_azure_rtos_config.h"
+#include "ux_api.h"
 
-#include "app_threadx.h"
-
-#include "app_usbx_device.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include <usb_init.h>
+
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -53,6 +49,7 @@ extern "C" {
 /* USER CODE END EM */
 
 /* Exported functions prototypes ---------------------------------------------*/
+
 /* USER CODE BEGIN EFP */
 
 /* USER CODE END EFP */
@@ -62,8 +59,11 @@ extern "C" {
 
 /* USER CODE END PD */
 
+/* USER CODE BEGIN 1 */
+
+/* USER CODE END 1 */
+
 #ifdef __cplusplus
 }
 #endif
-
-#endif /* APP_AZURE_RTOS_H */
+#endif  /* __UX_DEVICE_MSC_H__ */

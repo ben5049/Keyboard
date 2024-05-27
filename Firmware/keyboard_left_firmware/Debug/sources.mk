@@ -36,4 +36,5 @@ Middlewares/USBX/USB/USBX/UX\ Device\ Controllers \
 Middlewares/USBX/USB/USBX/UX\ Device\ CoreStack \
 USBPD/App \
 USBPD/Target \
+USBX/App \
 

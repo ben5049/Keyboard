@@ -5,7 +5,7 @@
  *      Author: bens1
  */
 
-#include "ux_threads.h"
+#include "usb_threads.h"
 
 /**
   * @brief  USBD_STORAGE_Activate

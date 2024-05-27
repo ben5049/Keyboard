@@ -1,9 +1,9 @@
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file    app_threadx.c
+  * @file    ux_device_msc.c
   * @author  MCD Application Team
-  * @brief   ThreadX applicative file
+  * @brief   USBX Device applicative file
   ******************************************************************************
   * @attention
   *
@@ -19,11 +19,11 @@
 /* USER CODE END Header */
 
 /* Includes ------------------------------------------------------------------*/
-#include "app_threadx.h"
+#include "ux_device_msc.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "app_init.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -51,44 +51,10 @@
 
 /* USER CODE END PFP */
 
-/**
-  * @brief  Application ThreadX Initialization.
-  * @param memory_ptr: memory pointer
-  * @retval int
-  */
-UINT App_ThreadX_Init(VOID *memory_ptr)
-{
-  UINT ret = TX_SUCCESS;
-  TX_BYTE_POOL *byte_pool = (TX_BYTE_POOL*)memory_ptr;
+/* Private user code ---------------------------------------------------------*/
+/* USER CODE BEGIN 0 */
 
-  /* USER CODE BEGIN App_ThreadX_MEM_POOL */
-  (void)byte_pool;
-  /* USER CODE END App_ThreadX_MEM_POOL */
-
-  /* USER CODE BEGIN App_ThreadX_Init */
-create_threads();
-/* USER CODE END App_ThreadX_Init */
-
-  return ret;
-}
-
-/**
-  * @brief  MX_ThreadX_Init
-  * @param  None
-  * @retval None
-  */
-void MX_ThreadX_Init(void)
-{
-  /* USER CODE BEGIN  Before_Kernel_Start */
-
-  /* USER CODE END  Before_Kernel_Start */
-
-  tx_kernel_enter();
-
-  /* USER CODE BEGIN  Kernel_Start_Error */
-
-  /* USER CODE END  Kernel_Start_Error */
-}
+/* USER CODE END 0 */
 
 /* USER CODE BEGIN 1 */
 
