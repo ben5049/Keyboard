@@ -5,8 +5,8 @@
  *      Author: bens1
  */
 
-#include "keys.h"
-#include "system.h"
+#include <key.h>
+#include <system_state.h>
 
 void key_init(key_HandleTypeDef *key){
 
@@ -20,7 +20,7 @@ void key_init(key_HandleTypeDef *key){
 void key_poll(key_HandleTypeDef *key){
 
 	/* Get the current layer. No wait version used to reduce system mutex taking overhead. */
-	key->current_layer = system_layer_get_no_wait();
+	system_layer_get_no_wait(&key->current_layer);
 
 	/* Get the current pin state */
 	if (HAL_GPIO_ReadPin(key->port, key->pin) == GPIO_PIN_RESET){
@@ -30,29 +30,41 @@ void key_poll(key_HandleTypeDef *key){
 		key->current_state = KEY_RELEASED;
 	}
 
-
 	/* Determine action to be taken */
 
 	/* Key pressed */
 	if (key->current_state == KEY_PRESSED && key->previous_state == KEY_RELEASED){
 
 		/* Mod key pressed, immediate action */
-		if (key->layers[key->current_layer].mod_enable && key->layers[key->current_layer].mod_delay == 0){
+		if (key->layers[key->current_layer].mod_key && key->layers[key->current_layer].mod_delay == 0){
 
-			/* Execute mod key press (layer changes are done on release) */
+			/* Execute mod key press */
 			key->holding_mod_key = true;
-			if (key->layers[key->current_layer].mod_key != KEY_MOD_LAYER_CHANGE){
-				system_modifier_set(key->layers[key->current_layer].mod_key);
 
+			switch (key->layers[key->current_layer].mod_key) {
+
+			case KEY_MOD_LAYER_CHANGE_MOMENTARY:
+				system_layer_change(key->layers[key->current_layer].layer_change, true);
+				break;
+
+			case KEY_MOD_LAYER_CHANGE_TOGGLE:
+				system_layer_change(key->layers[key->current_layer].layer_change, false);
+				/* TODO: This needs to invalidate the associated key hold and release */
+				break;
+
+			default:
+				system_modifier_set(key->layers[key->current_layer].mod_key);
 				keyEvent_TypeDef event;
 				event.key = KEY_NAME_NONE;
 				event.state = KEY_PRESSED;
 				tx_queue_send(key->key_queue, &event, TX_NO_WAIT);
+				break;
 			}
 		}
 
+
 		/* Normal/mod key pressed, delayed action (probably a home row mod) */
-		else if (key->layers[key->current_layer].mod_enable && key->layers[key->current_layer].mod_delay > 0){
+		else if (key->layers[key->current_layer].mod_key && key->layers[key->current_layer].mod_delay > 0){
 			key->holding_mod_key = false;
 			key->press_timestamp = tx_time_get();
 		}
@@ -74,12 +86,10 @@ void key_poll(key_HandleTypeDef *key){
 		/* Mod key released */
 		if (key->holding_mod_key){
 
-			/* Layer change */
-			if (key->layers[key->current_layer].mod_key == KEY_MOD_LAYER_CHANGE){
-				system_layer_change(key->layers[key->current_layer].layer_change);
+			if (key->layers[key->current_layer].mod_key == KEY_MOD_LAYER_CHANGE_MOMENTARY) {
+				system_layer_revert();
 			}
 
-			/* Release mod key */
 			else {
 				system_modifier_reset(key->layers[key->current_layer].mod_key);
 				keyEvent_TypeDef event;
@@ -90,7 +100,7 @@ void key_poll(key_HandleTypeDef *key){
 		}
 
 		/* Normal/mod key released before mod key triggered. Send press and release messages in quick succession */
-		else if (key->layers[key->current_layer].mod_enable){
+		else if (key->layers[key->current_layer].mod_key){
 			keyEvent_TypeDef event;
 			event.key = key->layers[key->current_layer].key_name;
 
@@ -115,7 +125,7 @@ void key_poll(key_HandleTypeDef *key){
 	else if (key->current_state == KEY_PRESSED && key->previous_state == KEY_PRESSED){
 
 		/* Delayed mod key reaches trigger time */
-		if ((key->layers[key->current_layer].mod_enable) && ((tx_time_get() - key->press_timestamp) > key->layers[key->current_layer].mod_delay) && (key->holding_mod_key == false)){
+		if ((key->layers[key->current_layer].mod_key) && ((tx_time_get() - key->press_timestamp) > key->layers[key->current_layer].mod_delay) && (key->holding_mod_key == false)){
 			key->holding_mod_key = true;
 			system_modifier_set(key->layers[key->current_layer].mod_key);
 

@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "system.h"
+#include "system_state.h"
 #include "init.h"
 /* USER CODE END Includes */
 

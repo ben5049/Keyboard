@@ -5,8 +5,8 @@
  *      Author: bens1
  */
 
-#ifndef INC_KEYS_H_
-#define INC_KEYS_H_
+#ifndef INC_KEY_H_
+#define INC_KEY_H_
 
 #include "stm32g0xx_hal.h"
 #include "tx_api.h"
@@ -24,7 +24,8 @@ typedef enum {
 	KEY_MOD_RSHIFT = 0x20,
 	KEY_MOD_RALT =   0x40,
 	KEY_MOD_RMETA =  0x80,
-	KEY_MOD_LAYER_CHANGE = 0xFF
+	KEY_MOD_LAYER_CHANGE_MOMENTARY = 0xf0,
+	KEY_MOD_LAYER_CHANGE_TOGGLE = 0xf1
 } keyMod_TypeDef;
 
 	typedef enum {
@@ -39,12 +40,12 @@ typedef enum {
 	KEY_NAME_D = 0x07,
 	KEY_NAME_E = 0x08,
 	KEY_NAME_F = 0x09,
-	KEY_NAME_G = 0x0A,
-	KEY_NAME_H = 0x0B,
-	KEY_NAME_I = 0x0C,
-	KEY_NAME_J = 0x0D,
-	KEY_NAME_K = 0x0E,
-	KEY_NAME_L = 0x0F,
+	KEY_NAME_G = 0x0a,
+	KEY_NAME_H = 0x0b,
+	KEY_NAME_I = 0x0c,
+	KEY_NAME_J = 0x0d,
+	KEY_NAME_K = 0x0e,
+	KEY_NAME_L = 0x0f,
 	KEY_NAME_M = 0x10,
 	KEY_NAME_N = 0x11,
 	KEY_NAME_O = 0x12,
@@ -55,13 +56,13 @@ typedef enum {
 	KEY_NAME_T = 0x17,
 	KEY_NAME_U = 0x18,
 	KEY_NAME_V = 0x19,
-	KEY_NAME_W = 0x1A,
-	KEY_NAME_X = 0x1B,
-	KEY_NAME_Y = 0x1C,
-	KEY_NAME_Z = 0x1D,
+	KEY_NAME_W = 0x1a,
+	KEY_NAME_X = 0x1b,
+	KEY_NAME_Y = 0x1c,
+	KEY_NAME_Z = 0x1d,
 
-	KEY_NAME_1 = 0x1E,
-	KEY_NAME_2 = 0x1F,
+	KEY_NAME_1 = 0x1e,
+	KEY_NAME_2 = 0x1f,
 	KEY_NAME_3 = 0x20,
 	KEY_NAME_4 = 0x21,
 	KEY_NAME_5 = 0x22,
@@ -282,17 +283,9 @@ typedef enum {
 } keyName_TypeDef;
 
 typedef enum {
-	KEY_PRESSED,
-	KEY_RELEASED
+	KEY_RELEASED = 0x00,
+	KEY_PRESSED  = 0x01
 } keyState_TypeDef;
-
-typedef enum {
-	KEY_ACTION_NONE,
-	KEY_ACTION_PRESS,
-	KEY_ACTION_HOLD_WAIT,
-	KEY_ACTION_HOLD_DONE,
-	KEY_ACTION_RELEASE
-} keyAction_TypeDef;
 
 typedef struct {
 	keyName_TypeDef key;
@@ -300,14 +293,21 @@ typedef struct {
 } keyEvent_TypeDef;
 
 typedef enum {
-	LAYER_CHANGE_FIRST,
-	LAYER_CHANGE_LAST,
-	LAYER_CHANGE_NEXT,
-	LAYER_CHANGE_PREV
+	KEY_LAYER_0 = 0x00,
+	KEY_LAYER_1 = 0x01,
+	KEY_LAYER_2 = 0x02,
+	KEY_LAYER_3 = 0x03,
+	KEY_LAYER_4 = 0x04,
+	KEY_LAYER_5 = 0x05,
+	KEY_LAYER_6 = 0x06,
+	KEY_LAYER_7 = 0x07,
+	KEY_LAYER_8 = 0x08,
+	KEY_LAYER_9 = 0x09,
+	KEY_LAYER_NEXT = 0xf0,
+	KEY_LAYER_PREV = 0xf1
 } keyLayerChange_TypeDef;
 
 typedef struct {
-	bool mod_enable;
 	keyName_TypeDef key_name;
 	keyMod_TypeDef mod_key;
 	keyLayerChange_TypeDef layer_change; /* Layer to change to if key_mod == KEY_MOD_LAYER_CHANGE */
@@ -334,4 +334,4 @@ void key_init(key_HandleTypeDef *key);
 void key_poll(key_HandleTypeDef *key);
 void key_update_layer(key_HandleTypeDef *key, uint8_t layer);
 
-#endif /* INC_KEYS_H_ */
+#endif /* INC_KEY_H_ */

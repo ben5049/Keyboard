@@ -5,8 +5,8 @@
  *      Author: bens1
  */
 
+#include <key.h>
 #include "usb_threads.h"
-#include "keys.h"
 #include "threads.h"
 
 UX_SLAVE_CLASS_HID *hid_keyboard;
@@ -124,24 +124,14 @@ void hid_keyboard_thread(uint32_t thread_input){
 
 			tx_queue_receive(&keyboard_queue_ptr, &key_event, TX_WAIT_FOREVER);
 
-			if (key_event.key > 0x00FF){
+			system_modifiers_get(&hid_event.ux_device_class_hid_event_buffer[0]);
 
-				if (key_event.state == KEY_PRESSED){
-					modifier |= (uint8_t) (key_event.key & 0xff);
-				}
-
-				else if (key_event.state == KEY_RELEASED){
-					modifier &= (uint8_t) ~(key_event.key & 0xff);
-				}
-
-			}
-			else{
 			if (key_event.state == KEY_PRESSED){
 
 				hid_event.ux_device_class_hid_event_length = 8;
 
-				/* This byte is a modifier byte */
-				hid_event.ux_device_class_hid_event_buffer[0] = modifier;
+//				/* This byte is a modifier byte */
+//				hid_event.ux_device_class_hid_event_buffer[0] = modifier;
 
 				/* This byte is reserved */
 				hid_event.ux_device_class_hid_event_buffer[1] = 0;
@@ -158,8 +148,8 @@ void hid_keyboard_thread(uint32_t thread_input){
 
 				hid_event.ux_device_class_hid_event_length = 8;
 
-				/* This byte is a modifier byte */
-				hid_event.ux_device_class_hid_event_buffer[0] = modifier;
+//				/* This byte is a modifier byte */
+//				hid_event.ux_device_class_hid_event_buffer[0] = modifier;
 
 				/* This byte is reserved */
 				hid_event.ux_device_class_hid_event_buffer[1] = 0;
@@ -171,7 +161,7 @@ void hid_keyboard_thread(uint32_t thread_input){
 				ux_device_class_hid_event_set(hid_keyboard, &hid_event);
 			}
 		}
-		}
+
 		else
 		{
 			/* Sleep thread for 10ms */
