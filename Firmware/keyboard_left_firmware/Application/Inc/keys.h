@@ -10,8 +10,24 @@
 
 #include "stm32g0xx_hal.h"
 #include "tx_api.h"
+#include "stdbool.h"
+#include "config.h"
+
 
 typedef enum {
+	KEY_MOD_NONE =   0x00,
+	KEY_MOD_LCTRL =  0x01,
+	KEY_MOD_LSHIFT = 0x02,
+	KEY_MOD_LALT =   0x04,
+	KEY_MOD_LMETA =  0x08,
+	KEY_MOD_RCTRL =  0x10,
+	KEY_MOD_RSHIFT = 0x20,
+	KEY_MOD_RALT =   0x40,
+	KEY_MOD_RMETA =  0x80,
+	KEY_MOD_LAYER_CHANGE = 0xFF
+} keyMod_TypeDef;
+
+	typedef enum {
 	KEY_NAME_NONE = 0x00, // No key pressed
 	KEY_NAME_ERR_OVF = 0x01, // Keyboard Error Roll Over - used for all slots if too many keys are pressed ("Phantom key")
 	KEY_NAME_POST_FAIL = 0x02, //  Keyboard POST Fail
@@ -263,16 +279,6 @@ typedef enum {
 	KEY_NAME_MEDIA_COFFEE = 0xf9,
 	KEY_NAME_MEDIA_REFRESH = 0xfa,
 	KEY_NAME_MEDIA_CALC = 0xfb,
-
-	KEY_MOD_NONE =   0x100,
-	KEY_MOD_LCTRL =  0x101,
-	KEY_MOD_LSHIFT = 0x102,
-	KEY_MOD_LALT =   0x104,
-	KEY_MOD_LMETA =  0x108,
-	KEY_MOD_RCTRL =  0x110,
-	KEY_MOD_RSHIFT = 0x120,
-	KEY_MOD_RALT =   0x140,
-	KEY_MOD_RMETA =  0x180
 } keyName_TypeDef;
 
 typedef enum {
@@ -280,25 +286,52 @@ typedef enum {
 	KEY_RELEASED
 } keyState_TypeDef;
 
+typedef enum {
+	KEY_ACTION_NONE,
+	KEY_ACTION_PRESS,
+	KEY_ACTION_HOLD_WAIT,
+	KEY_ACTION_HOLD_DONE,
+	KEY_ACTION_RELEASE
+} keyAction_TypeDef;
+
 typedef struct {
 	keyName_TypeDef key;
 	keyState_TypeDef state;
 } keyEvent_TypeDef;
 
+typedef enum {
+	LAYER_CHANGE_FIRST,
+	LAYER_CHANGE_LAST,
+	LAYER_CHANGE_NEXT,
+	LAYER_CHANGE_PREV
+} keyLayerChange_TypeDef;
+
+typedef struct {
+	bool mod_enable;
+	keyName_TypeDef key_name;
+	keyMod_TypeDef mod_key;
+	keyLayerChange_TypeDef layer_change; /* Layer to change to if key_mod == KEY_MOD_LAYER_CHANGE */
+	uint32_t mod_delay; /* Amount of time the key needs to be held down before the mod key triggers in ms. Used for home row mods. */
+} keyLayer_TypeDef;
+
 typedef struct {
 
 	uint16_t pin;
 	GPIO_TypeDef *port;
-	GPIO_PinState current_state, previous_state;
-	keyName_TypeDef key_name;
-	TX_QUEUE *queue;
+	keyState_TypeDef current_state, previous_state; /* Used to determine presses and releases */
+	uint32_t press_timestamp;
+	bool holding_mod_key;
 
-	keyEvent_TypeDef event;
+	uint8_t current_layer;
+	keyLayer_TypeDef layers[NUMBER_OF_LAYERS];
+
+	TX_QUEUE *key_queue;
 
 } key_HandleTypeDef;
 
 
-void key_init(key_HandleTypeDef *key, keyName_TypeDef key_name, GPIO_TypeDef *port, uint16_t pin, TX_QUEUE *queue);
-void key_update(key_HandleTypeDef *key);
+void key_init(key_HandleTypeDef *key);
+void key_poll(key_HandleTypeDef *key);
+void key_update_layer(key_HandleTypeDef *key, uint8_t layer);
 
 #endif /* INC_KEYS_H_ */

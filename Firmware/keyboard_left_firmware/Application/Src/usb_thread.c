@@ -20,8 +20,6 @@ void STM32_USB_Init(void);
 
 void usb_thread(uint32_t thread_input){
 
-	HAL_StatusTypeDef status;
-
 	USB2533_Init(&usb2533, &hi2c2);
 	STM32_USB_Init();
 

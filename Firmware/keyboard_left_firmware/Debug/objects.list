@@ -6,6 +6,7 @@
 "./Application/Src/keys.o"
 "./Application/Src/msc_thread.o"
 "./Application/Src/scan_keys_thread.o"
+"./Application/Src/system.o"
 "./Application/Src/usb_device_descriptors.o"
 "./Application/Src/usb_init.o"
 "./Application/Src/usb_thread.o"

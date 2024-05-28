@@ -6,20 +6,17 @@
  */
 
 #include "usb_threads.h"
-#include "usb_init.h"
+#include "init.h"
 #include "app_azure_rtos.h"
 #include "stdint.h"
 
 #include "ux_device_descriptors.h"
 
 
-
-
 TX_THREAD usb_thread_ptr;
 TX_THREAD hid_mouse_thread_ptr;
 TX_THREAD hid_keyboard_thread_ptr;
 TX_THREAD msc_thread_ptr;
-
 
 uint32_t hid_mouse_interface_number;
 uint32_t hid_mouse_configuration_number;

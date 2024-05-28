@@ -25,6 +25,9 @@ void scan_keys_thread(uint32_t initial_input);
 #define KEYBOARD_QUEUE_STACK_SIZE 128
 #define KEYBOARD_QUEUE_NAME "Keyboard_queue"
 
+#define MOUSE_QUEUE_STACK_SIZE 128
+#define MOUSE_QUEUE_NAME "Mouse_queue"
+
 extern TX_QUEUE keyboard_queue_ptr;
 
 

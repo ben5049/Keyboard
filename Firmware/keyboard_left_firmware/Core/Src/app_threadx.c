@@ -23,7 +23,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "app_init.h"
+#include "system.h"
+#include "init.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -67,6 +68,7 @@ UINT App_ThreadX_Init(VOID *memory_ptr)
 
   /* USER CODE BEGIN App_ThreadX_Init */
 create_queues();
+system_init();
 create_threads();
 /* USER CODE END App_ThreadX_Init */
 
