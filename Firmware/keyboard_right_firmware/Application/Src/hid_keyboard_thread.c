@@ -5,11 +5,11 @@
  *      Author: bens1
  */
 
-#include "usb_threads.h"
 #include "keys.h"
+#include "usb_threads.h"
 #include "threads.h"
 
-UX_SLAVE_CLASS_HID *hid_keyboard;
+UX_SLAVE_CLASS_HID *hid_keyboard = UX_NULL;
 
 
 /**
@@ -100,80 +100,26 @@ UINT USBD_HID_Keyboard_GetReport(UX_SLAVE_CLASS_HID *hid_instance,
  */
 void hid_keyboard_thread(uint32_t thread_input){
 	UX_SLAVE_DEVICE *device;
-	UX_SLAVE_CLASS_HID_EVENT hid_event;
-
-	uint8_t modifier = 0;
-	keyEvent_TypeDef key_event;
-
+	keyboardHID_HandleTypeDef keyboard;
 
 	TX_PARAMETER_NOT_USED(thread_input);
 
 	/* Get the pointer to the device */
 	device = &_ux_system_slave -> ux_system_slave_device;
 
-	/* Reset the HID event structure */
-	ux_utility_memory_set(&hid_event, 0, sizeof(UX_SLAVE_CLASS_HID_EVENT));
+	while (1) {
 
-	while (1)
-	{
 		/* Check if the device state already configured */
+		if ((device->ux_slave_device_state == UX_DEVICE_CONFIGURED) && (hid_keyboard != UX_NULL)) {
 
-
-		if ((device->ux_slave_device_state == UX_DEVICE_CONFIGURED) && (hid_keyboard != UX_NULL))
-		{
-
-			tx_queue_receive(&keyboard_queue_ptr, &key_event, TX_WAIT_FOREVER);
-
-			if (key_event.key > 0x00FF){
-
-				if (key_event.state == KEY_PRESSED){
-					modifier |= (uint8_t) (key_event.key & 0xff);
-				}
-
-				else if (key_event.state == KEY_RELEASED){
-					modifier &= (uint8_t) ~(key_event.key & 0xff);
-				}
-
-			}
-			else{
-			if (key_event.state == KEY_PRESSED){
-
-				hid_event.ux_device_class_hid_event_length = 8;
-
-				/* This byte is a modifier byte */
-				hid_event.ux_device_class_hid_event_buffer[0] = modifier;
-
-				/* This byte is reserved */
-				hid_event.ux_device_class_hid_event_buffer[1] = 0;
-
-				/* Update key button byte */
-				hid_event.ux_device_class_hid_event_buffer[2] = key_event.key;
-
-				/* Send keyboard event */
-				ux_device_class_hid_event_set(hid_keyboard, &hid_event);
-			}
-
-
-			else if (key_event.state == KEY_RELEASED){
-
-				hid_event.ux_device_class_hid_event_length = 8;
-
-				/* This byte is a modifier byte */
-				hid_event.ux_device_class_hid_event_buffer[0] = modifier;
-
-				/* This byte is reserved */
-				hid_event.ux_device_class_hid_event_buffer[1] = 0;
-
-				/* Update key button byte */
-				hid_event.ux_device_class_hid_event_buffer[2] = 0;
-
-				/* Send keyboard event */
-				ux_device_class_hid_event_set(hid_keyboard, &hid_event);
+			if (!keyboard.initialised){
+				keyboardHID_init(&keyboard, &key_event_queue_ptr, hid_keyboard);
+			} else  {
+				keyboardHID_process(&keyboard);
 			}
 		}
-		}
-		else
-		{
+
+		else {
 			/* Sleep thread for 10ms */
 			tx_thread_sleep(MS_TO_TICK(10));
 		}

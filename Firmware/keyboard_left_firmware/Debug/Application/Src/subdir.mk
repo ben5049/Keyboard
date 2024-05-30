@@ -9,7 +9,7 @@ C_SRCS += \
 ../Application/Src/app_init.c \
 ../Application/Src/hid_keyboard_thread.c \
 ../Application/Src/hid_mouse_thread.c \
-../Application/Src/key.c \
+../Application/Src/keys.c \
 ../Application/Src/msc_thread.c \
 ../Application/Src/scan_keys_thread.c \
 ../Application/Src/system_state.c \
@@ -22,7 +22,7 @@ OBJS += \
 ./Application/Src/app_init.o \
 ./Application/Src/hid_keyboard_thread.o \
 ./Application/Src/hid_mouse_thread.o \
-./Application/Src/key.o \
+./Application/Src/keys.o \
 ./Application/Src/msc_thread.o \
 ./Application/Src/scan_keys_thread.o \
 ./Application/Src/system_state.o \
@@ -35,7 +35,7 @@ C_DEPS += \
 ./Application/Src/app_init.d \
 ./Application/Src/hid_keyboard_thread.d \
 ./Application/Src/hid_mouse_thread.d \
-./Application/Src/key.d \
+./Application/Src/keys.d \
 ./Application/Src/msc_thread.d \
 ./Application/Src/scan_keys_thread.d \
 ./Application/Src/system_state.d \
@@ -51,7 +51,7 @@ Application/Src/%.o Application/Src/%.su Application/Src/%.cyclo: ../Application
 clean: clean-Application-2f-Src
 
 clean-Application-2f-Src:
-	-$(RM) ./Application/Src/USB2533.cyclo ./Application/Src/USB2533.d ./Application/Src/USB2533.o ./Application/Src/USB2533.su ./Application/Src/app_init.cyclo ./Application/Src/app_init.d ./Application/Src/app_init.o ./Application/Src/app_init.su ./Application/Src/hid_keyboard_thread.cyclo ./Application/Src/hid_keyboard_thread.d ./Application/Src/hid_keyboard_thread.o ./Application/Src/hid_keyboard_thread.su ./Application/Src/hid_mouse_thread.cyclo ./Application/Src/hid_mouse_thread.d ./Application/Src/hid_mouse_thread.o ./Application/Src/hid_mouse_thread.su ./Application/Src/key.cyclo ./Application/Src/key.d ./Application/Src/key.o ./Application/Src/key.su ./Application/Src/msc_thread.cyclo ./Application/Src/msc_thread.d ./Application/Src/msc_thread.o ./Application/Src/msc_thread.su ./Application/Src/scan_keys_thread.cyclo ./Application/Src/scan_keys_thread.d ./Application/Src/scan_keys_thread.o ./Application/Src/scan_keys_thread.su ./Application/Src/system_state.cyclo ./Application/Src/system_state.d ./Application/Src/system_state.o ./Application/Src/system_state.su ./Application/Src/usb_device_descriptors.cyclo ./Application/Src/usb_device_descriptors.d ./Application/Src/usb_device_descriptors.o ./Application/Src/usb_device_descriptors.su ./Application/Src/usb_init.cyclo ./Application/Src/usb_init.d ./Application/Src/usb_init.o ./Application/Src/usb_init.su ./Application/Src/usb_thread.cyclo ./Application/Src/usb_thread.d ./Application/Src/usb_thread.o ./Application/Src/usb_thread.su
+	-$(RM) ./Application/Src/USB2533.cyclo ./Application/Src/USB2533.d ./Application/Src/USB2533.o ./Application/Src/USB2533.su ./Application/Src/app_init.cyclo ./Application/Src/app_init.d ./Application/Src/app_init.o ./Application/Src/app_init.su ./Application/Src/hid_keyboard_thread.cyclo ./Application/Src/hid_keyboard_thread.d ./Application/Src/hid_keyboard_thread.o ./Application/Src/hid_keyboard_thread.su ./Application/Src/hid_mouse_thread.cyclo ./Application/Src/hid_mouse_thread.d ./Application/Src/hid_mouse_thread.o ./Application/Src/hid_mouse_thread.su ./Application/Src/keys.cyclo ./Application/Src/keys.d ./Application/Src/keys.o ./Application/Src/keys.su ./Application/Src/msc_thread.cyclo ./Application/Src/msc_thread.d ./Application/Src/msc_thread.o ./Application/Src/msc_thread.su ./Application/Src/scan_keys_thread.cyclo ./Application/Src/scan_keys_thread.d ./Application/Src/scan_keys_thread.o ./Application/Src/scan_keys_thread.su ./Application/Src/system_state.cyclo ./Application/Src/system_state.d ./Application/Src/system_state.o ./Application/Src/system_state.su ./Application/Src/usb_device_descriptors.cyclo ./Application/Src/usb_device_descriptors.d ./Application/Src/usb_device_descriptors.o ./Application/Src/usb_device_descriptors.su ./Application/Src/usb_init.cyclo ./Application/Src/usb_init.d ./Application/Src/usb_init.o ./Application/Src/usb_init.su ./Application/Src/usb_thread.cyclo ./Application/Src/usb_thread.d ./Application/Src/usb_thread.o ./Application/Src/usb_thread.su
 
 .PHONY: clean-Application-2f-Src
 

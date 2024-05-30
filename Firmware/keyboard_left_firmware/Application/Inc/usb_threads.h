@@ -16,7 +16,7 @@
 #include "ux_device_class_hid.h"
 #include "ux_device_class_storage.h"
 
-#define USBX_MEMORY_SIZE (15104)
+#define USBX_MEMORY_SIZE (20*1024)
 
 //#define UX_THREAD_STACK_SIZE 1024
 #define USB_THREAD_NAME "usbx thread"
@@ -26,7 +26,7 @@
 #define USBX_HID_MOUSE_THREAD_NAME "mouse thread"
 #define USBX_HID_MOUSE_THREAD_PRIORITY 20
 
-#define USBX_HID_KEYBOARD_THREAD_STACK_SIZE 1024
+#define USBX_HID_KEYBOARD_THREAD_STACK_SIZE (1024*2)
 #define USBX_HID_KEYBOARD_THREAD_NAME "keyboard thread"
 #define USBX_HID_KEYBOARD_THREAD_PRIORITY 20
 

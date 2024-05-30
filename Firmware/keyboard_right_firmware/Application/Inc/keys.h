@@ -10,6 +10,26 @@
 
 #include "stm32g0xx_hal.h"
 #include "tx_api.h"
+#include "ux_api.h"
+#include "ux_device_class_hid.h"
+#include "stdbool.h"
+#include "config.h"
+
+#define MAX_CONCURRENT_KEYS 6 // (UX_DEVICE_CLASS_HID_MAX_EVENTS_QUEUE - 2)
+
+typedef enum {
+	KEY_MOD_NONE =   0x00,
+	KEY_MOD_LCTRL =  0x01,
+	KEY_MOD_LSHIFT = 0x02,
+	KEY_MOD_LALT =   0x04,
+	KEY_MOD_LMETA =  0x08,
+	KEY_MOD_RCTRL =  0x10,
+	KEY_MOD_RSHIFT = 0x20,
+	KEY_MOD_RALT =   0x40,
+	KEY_MOD_RMETA =  0x80,
+	KEY_MOD_LAYER_CHANGE_MOMENTARY = 0xf0,
+	KEY_MOD_LAYER_CHANGE_TOGGLE = 0xf1
+} keyMod_TypeDef;
 
 typedef enum {
 	KEY_NAME_NONE = 0x00, // No key pressed
@@ -23,12 +43,12 @@ typedef enum {
 	KEY_NAME_D = 0x07,
 	KEY_NAME_E = 0x08,
 	KEY_NAME_F = 0x09,
-	KEY_NAME_G = 0x0A,
-	KEY_NAME_H = 0x0B,
-	KEY_NAME_I = 0x0C,
-	KEY_NAME_J = 0x0D,
-	KEY_NAME_K = 0x0E,
-	KEY_NAME_L = 0x0F,
+	KEY_NAME_G = 0x0a,
+	KEY_NAME_H = 0x0b,
+	KEY_NAME_I = 0x0c,
+	KEY_NAME_J = 0x0d,
+	KEY_NAME_K = 0x0e,
+	KEY_NAME_L = 0x0f,
 	KEY_NAME_M = 0x10,
 	KEY_NAME_N = 0x11,
 	KEY_NAME_O = 0x12,
@@ -39,13 +59,13 @@ typedef enum {
 	KEY_NAME_T = 0x17,
 	KEY_NAME_U = 0x18,
 	KEY_NAME_V = 0x19,
-	KEY_NAME_W = 0x1A,
-	KEY_NAME_X = 0x1B,
-	KEY_NAME_Y = 0x1C,
-	KEY_NAME_Z = 0x1D,
+	KEY_NAME_W = 0x1a,
+	KEY_NAME_X = 0x1b,
+	KEY_NAME_Y = 0x1c,
+	KEY_NAME_Z = 0x1d,
 
-	KEY_NAME_1 = 0x1E,
-	KEY_NAME_2 = 0x1F,
+	KEY_NAME_1 = 0x1e,
+	KEY_NAME_2 = 0x1f,
 	KEY_NAME_3 = 0x20,
 	KEY_NAME_4 = 0x21,
 	KEY_NAME_5 = 0x22,
@@ -263,21 +283,12 @@ typedef enum {
 	KEY_NAME_MEDIA_COFFEE = 0xf9,
 	KEY_NAME_MEDIA_REFRESH = 0xfa,
 	KEY_NAME_MEDIA_CALC = 0xfb,
-
-	KEY_MOD_NONE =   0x100,
-	KEY_MOD_LCTRL =  0x101,
-	KEY_MOD_LSHIFT = 0x102,
-	KEY_MOD_LALT =   0x104,
-	KEY_MOD_LMETA =  0x108,
-	KEY_MOD_RCTRL =  0x110,
-	KEY_MOD_RSHIFT = 0x120,
-	KEY_MOD_RALT =   0x140,
-	KEY_MOD_RMETA =  0x180
 } keyName_TypeDef;
 
 typedef enum {
-	KEY_PRESSED,
-	KEY_RELEASED
+	KEY_RELEASED = 0x00,
+	KEY_PRESSED  = 0x01,
+	KEY_TAP		 = 0x02
 } keyState_TypeDef;
 
 typedef struct {
@@ -285,20 +296,80 @@ typedef struct {
 	keyState_TypeDef state;
 } keyEvent_TypeDef;
 
+typedef enum {
+	KEY_LAYER_0 = 0x00,
+	KEY_LAYER_1 = 0x01,
+	KEY_LAYER_2 = 0x02,
+	KEY_LAYER_3 = 0x03,
+	KEY_LAYER_4 = 0x04,
+	KEY_LAYER_5 = 0x05,
+	KEY_LAYER_6 = 0x06,
+	KEY_LAYER_7 = 0x07,
+	KEY_LAYER_8 = 0x08,
+	KEY_LAYER_9 = 0x09,
+	KEY_LAYER_NEXT = 0xf0,
+	KEY_LAYER_PREV = 0xf1
+} keyLayerChange_TypeDef;
+
+typedef struct {
+	keyName_TypeDef key_name;
+	keyMod_TypeDef mod_key;
+	keyLayerChange_TypeDef layer_change; /* Layer to change to if key_mod == KEY_MOD_LAYER_CHANGE */
+	uint32_t mod_delay; /* Amount of time the key needs to be held down before the mod key triggers in ms. Used for home row mods. */
+} keyLayer_TypeDef;
+
 typedef struct {
 
 	uint16_t pin;
 	GPIO_TypeDef *port;
-	GPIO_PinState current_state, previous_state;
-	keyName_TypeDef key_name;
-	TX_QUEUE *queue;
+	keyState_TypeDef current_state, previous_state; /* Used to determine presses and releases */
+	uint32_t press_timestamp;
+	bool holding_mod_key;
 
-	keyEvent_TypeDef event;
+	uint8_t current_layer;
+	keyLayer_TypeDef layers[NUMBER_OF_LAYERS];
+
+	TX_QUEUE *event_queue;
 
 } key_HandleTypeDef;
 
 
-void key_init(key_HandleTypeDef *key, keyName_TypeDef key_name, GPIO_TypeDef *port, uint16_t pin, TX_QUEUE *queue);
-void key_update(key_HandleTypeDef *key);
+void key_init(key_HandleTypeDef *key);
+void key_poll(key_HandleTypeDef *key);
+
+
+
+typedef enum {
+	KEYBOARD_HID_OK              = 0x00U,
+	KEYBOARD_HID_ERROR           = 0x01U,
+	KEYBOARD_HID_BUSY            = 0x02U,
+	KEYBOARD_HID_TIMEOUT         = 0x03U,
+	KEYBOARD_HID_QUEUE_EMPTY     = 0x04U,
+	KEYBOARD_HID_NONE_TAPPED     = 0x05U,
+	KEYBOARD_HID_FOUND_TAPPED    = 0x06U,
+	KEYBOARD_HID_ALREADY_PRESSED = 0x07U,
+	KEYBOARD_HID_KEY_NOT_FOUND   = 0x08U,
+	KEYBOARD_HID_LIST_FULL       = 0x09U
+} keyboardHID_StatusTypeDef;
+
+/* Linked list node structure. For keeping track of which keys are pressed and which need to be released */
+typedef struct KeyNode {
+    keyName_TypeDef key;
+    bool tap;
+    struct KeyNode* next;
+} keyNode_TypeDef;
+
+typedef struct {
+	bool initialised;
+	UX_SLAVE_CLASS_HID *hid_class;
+	UX_SLAVE_CLASS_HID_EVENT hid_event;
+	uint8_t num_keys_pressed;
+	keyNode_TypeDef *keys_pressed;
+	TX_QUEUE *event_queue;
+	keyEvent_TypeDef key_event;
+} keyboardHID_HandleTypeDef;
+
+keyboardHID_StatusTypeDef keyboardHID_init(keyboardHID_HandleTypeDef *keyboard, TX_QUEUE *event_queue, UX_SLAVE_CLASS_HID *hid_class);
+keyboardHID_StatusTypeDef keyboardHID_process(keyboardHID_HandleTypeDef *keyboard);
 
 #endif /* INC_KEYS_H_ */

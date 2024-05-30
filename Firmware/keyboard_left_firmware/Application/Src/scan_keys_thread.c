@@ -6,7 +6,7 @@
  */
 
 
-#include <key.h>
+#include <keys.h>
 #include "threads.h"
 
 static key_HandleTypeDef keys[NUMBER_OF_KEYS];
@@ -40,7 +40,7 @@ void scan_keys_thread(uint32_t initial_input){
 
 	keys[6].pin = KEY_B1_Pin;
 	keys[6].port = KEY_B1_GPIO_Port;
-	keys[6].layers[0].key_name = KEY_NAME_NONE;
+	keys[6].layers[0].key_name = KEY_NAME_GRAVE;
 
 	keys[7].pin = KEY_B2_Pin;
 	keys[7].port = KEY_B2_GPIO_Port;
@@ -63,9 +63,9 @@ void scan_keys_thread(uint32_t initial_input){
 	keys[11].layers[0].key_name = KEY_NAME_T;
 
 
-	keys[12].pin = KEY_A1_Pin;
-	keys[12].port = KEY_A1_GPIO_Port;
-	keys[12].layers[0].key_name = KEY_NAME_NONE;
+	keys[12].pin = KEY_C1_Pin;
+	keys[12].port = KEY_C1_GPIO_Port;
+	keys[12].layers[0].key_name = KEY_NAME_TAB;
 
 	keys[13].pin = KEY_C2_Pin;
 	keys[13].port = KEY_C2_GPIO_Port;
@@ -95,9 +95,10 @@ void scan_keys_thread(uint32_t initial_input){
 	keys[17].port = KEY_C6_GPIO_Port;
 	keys[17].layers[0].key_name = KEY_NAME_G;
 
+
 	keys[18].pin = KEY_D1_Pin;
 	keys[18].port = KEY_D1_GPIO_Port;
-	keys[18].layers[0].key_name = KEY_NAME_NONE;
+	keys[18].layers[0].key_name = KEY_NAME_BACKSLASH;
 
 	keys[19].pin = KEY_D2_Pin;
 	keys[19].port = KEY_D2_GPIO_Port;
@@ -115,8 +116,8 @@ void scan_keys_thread(uint32_t initial_input){
 	keys[22].port = KEY_D5_GPIO_Port;
 	keys[22].layers[0].key_name = KEY_NAME_V;
 
-	keys[23].pin = KEY_A6_Pin;
-	keys[23].port = KEY_A6_GPIO_Port;
+	keys[23].pin = KEY_D6_Pin;
+	keys[23].port = KEY_D6_GPIO_Port;
 	keys[23].layers[0].key_name = KEY_NAME_B;
 
 
@@ -138,7 +139,7 @@ void scan_keys_thread(uint32_t initial_input){
 
 
 	for (uint8_t i = 0; i < NUMBER_OF_KEYS; i++){
-		keys[i].key_queue = &keyboard_queue_ptr;
+		keys[i].event_queue = &key_event_queue_ptr;
 		key_init(&keys[i]);
 	}
 

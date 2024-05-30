@@ -6,37 +6,149 @@
  */
 
 
+#include <keys.h>
 #include "threads.h"
-#include "keys.h"
 
-key_HandleTypeDef keys[NUMBER_OF_KEYS];
+static key_HandleTypeDef keys[NUMBER_OF_KEYS];
 
 void scan_keys_thread(uint32_t initial_input){
 
-	key_init(&keys[0], KEY_NAME_6, KEY_A7_GPIO_Port, KEY_A7_Pin, &keyboard_queue_ptr);
-	key_init(&keys[1], KEY_NAME_7, KEY_A8_GPIO_Port, KEY_A8_Pin, &keyboard_queue_ptr);
-	key_init(&keys[2], KEY_NAME_8, KEY_A9_GPIO_Port, KEY_A9_Pin, &keyboard_queue_ptr);
-	key_init(&keys[3], KEY_NAME_9, KEY_A10_GPIO_Port, KEY_A10_Pin, &keyboard_queue_ptr);
-	key_init(&keys[4], KEY_NAME_0, KEY_A11_GPIO_Port, KEY_A11_Pin, &keyboard_queue_ptr);
-	key_init(&keys[5], KEY_NAME_Y, KEY_B7_GPIO_Port, KEY_B7_Pin, &keyboard_queue_ptr);
-	key_init(&keys[6], KEY_NAME_U, KEY_B8_GPIO_Port, KEY_B8_Pin, &keyboard_queue_ptr);
-	key_init(&keys[7], KEY_NAME_I, KEY_B9_GPIO_Port, KEY_B9_Pin, &keyboard_queue_ptr);
-	key_init(&keys[8], KEY_NAME_O, KEY_B10_GPIO_Port, KEY_B10_Pin, &keyboard_queue_ptr);
-	key_init(&keys[9], KEY_NAME_P, KEY_B11_GPIO_Port, KEY_B11_Pin, &keyboard_queue_ptr);
-	key_init(&keys[10], KEY_NAME_H, KEY_C7_GPIO_Port, KEY_C7_Pin, &keyboard_queue_ptr);
-	key_init(&keys[11], KEY_NAME_J, KEY_C8_GPIO_Port, KEY_C8_Pin, &keyboard_queue_ptr);
-	key_init(&keys[12], KEY_NAME_K, KEY_C9_GPIO_Port, KEY_C9_Pin, &keyboard_queue_ptr);
-	key_init(&keys[13], KEY_NAME_L, KEY_C10_GPIO_Port, KEY_C10_Pin, &keyboard_queue_ptr);
-	key_init(&keys[14], KEY_NAME_N, KEY_D7_GPIO_Port, KEY_D7_Pin, &keyboard_queue_ptr);
-	key_init(&keys[15], KEY_NAME_M, KEY_D8_GPIO_Port, KEY_D8_Pin, &keyboard_queue_ptr);
-	key_init(&keys[16], KEY_MOD_LCTRL, KEY_E4_GPIO_Port, KEY_E4_Pin, &keyboard_queue_ptr);
-	key_init(&keys[17], KEY_NAME_ENTER, KEY_E5_GPIO_Port, KEY_E5_Pin, &keyboard_queue_ptr);
+	keys[0].pin = KEY_A7_Pin;
+	keys[0].port = KEY_A7_GPIO_Port;
+	keys[0].layers[0].key_name = KEY_NAME_6;
+
+	keys[1].pin = KEY_A8_Pin;
+	keys[1].port = KEY_A8_GPIO_Port;
+	keys[1].layers[0].key_name = KEY_NAME_7;
+
+	keys[2].pin = KEY_A9_Pin;
+	keys[2].port = KEY_A9_GPIO_Port;
+	keys[2].layers[0].key_name = KEY_NAME_8;
+
+	keys[3].pin = KEY_A10_Pin;
+	keys[3].port = KEY_A10_GPIO_Port;
+	keys[3].layers[0].key_name = KEY_NAME_9;
+
+	keys[4].pin = KEY_A11_Pin;
+	keys[4].port = KEY_A11_GPIO_Port;
+	keys[4].layers[0].key_name = KEY_NAME_0;
+
+	keys[5].pin = KEY_A12_Pin;
+	keys[5].port = KEY_A12_GPIO_Port;
+	keys[5].layers[0].key_name = KEY_NAME_MINUS;
+
+
+	keys[6].pin = KEY_B7_Pin;
+	keys[6].port = KEY_B7_GPIO_Port;
+	keys[6].layers[0].key_name = KEY_NAME_Y;
+
+	keys[7].pin = KEY_B8_Pin;
+	keys[7].port = KEY_B8_GPIO_Port;
+	keys[7].layers[0].key_name = KEY_NAME_U;
+
+	keys[8].pin = KEY_B9_Pin;
+	keys[8].port = KEY_B9_GPIO_Port;
+	keys[8].layers[0].key_name = KEY_NAME_I;
+
+	keys[9].pin = KEY_B10_Pin;
+	keys[9].port = KEY_B10_GPIO_Port;
+	keys[9].layers[0].key_name = KEY_NAME_O;
+
+	keys[10].pin = KEY_B11_Pin;
+	keys[10].port = KEY_B11_GPIO_Port;
+	keys[10].layers[0].key_name = KEY_NAME_P;
+
+	keys[11].pin = KEY_B12_Pin;
+	keys[11].port = KEY_B12_GPIO_Port;
+	keys[11].layers[0].key_name = KEY_NAME_EQUAL;
+
+
+	keys[12].pin = KEY_C7_Pin;
+	keys[12].port = KEY_C7_GPIO_Port;
+	keys[12].layers[0].key_name = KEY_NAME_H;
+
+	keys[13].pin = KEY_C8_Pin;
+	keys[13].port = KEY_C8_GPIO_Port;
+	keys[13].layers[0].key_name = KEY_NAME_J;
+	keys[13].layers[0].mod_key = KEY_MOD_RCTRL;
+	keys[13].layers[0].mod_delay = HOME_ROW_MOD_DELAY;
+
+	keys[14].pin = KEY_C9_Pin;
+	keys[14].port = KEY_C9_GPIO_Port;
+	keys[14].layers[0].key_name = KEY_NAME_K;
+	keys[14].layers[0].mod_key = KEY_MOD_RSHIFT;
+	keys[14].layers[0].mod_delay = HOME_ROW_MOD_DELAY;
+
+	keys[15].pin = KEY_C10_Pin;
+	keys[15].port = KEY_C10_GPIO_Port;
+	keys[15].layers[0].key_name = KEY_NAME_L;
+	keys[15].layers[0].mod_key = KEY_MOD_RALT;
+	keys[15].layers[0].mod_delay = HOME_ROW_MOD_DELAY;
+
+	keys[16].pin = KEY_C11_Pin;
+	keys[16].port = KEY_C11_GPIO_Port;
+	keys[16].layers[0].key_name = KEY_NAME_SEMICOLON;
+	keys[16].layers[0].mod_key = KEY_MOD_RMETA;
+	keys[16].layers[0].mod_delay = HOME_ROW_MOD_DELAY;
+
+	keys[17].pin = KEY_C12_Pin;
+	keys[17].port = KEY_C12_GPIO_Port;
+	keys[17].layers[0].key_name = KEY_NAME_LEFTBRACE;
+
+
+	keys[18].pin = KEY_D7_Pin;
+	keys[18].port = KEY_D7_GPIO_Port;
+	keys[18].layers[0].key_name = KEY_NAME_N;
+
+	keys[19].pin = KEY_D8_Pin;
+	keys[19].port = KEY_D8_GPIO_Port;
+	keys[19].layers[0].key_name = KEY_NAME_M;
+
+	keys[20].pin = KEY_D9_Pin;
+	keys[20].port = KEY_D9_GPIO_Port;
+	keys[20].layers[0].key_name = KEY_NAME_COMMA;
+
+	keys[21].pin = KEY_D10_Pin;
+	keys[21].port = KEY_D10_GPIO_Port;
+	keys[21].layers[0].key_name = KEY_NAME_DOT;
+
+	keys[22].pin = KEY_D11_Pin;
+	keys[22].port = KEY_D11_GPIO_Port;
+	keys[22].layers[0].key_name = KEY_NAME_SLASH;
+
+	keys[23].pin = KEY_D12_Pin;
+	keys[23].port = KEY_D12_GPIO_Port;
+	keys[23].layers[0].key_name = KEY_NAME_RIGHTBRACE;
+
+
+	keys[24].pin = KEY_E4_Pin;
+	keys[24].port = KEY_E4_GPIO_Port;
+	keys[24].layers[0].mod_key = KEY_MOD_RCTRL;
+	keys[24].layers[1].mod_key = KEY_MOD_RCTRL;
+
+	keys[25].pin = KEY_E5_Pin;
+	keys[25].port = KEY_E5_GPIO_Port;
+	keys[25].layers[0].key_name = KEY_NAME_ENTER;
+	keys[25].layers[1].key_name = KEY_NAME_ENTER;
+
+	keys[26].pin = KEY_E6_Pin;
+	keys[26].port = KEY_E6_GPIO_Port;
+	keys[26].layers[0].mod_key = KEY_MOD_LAYER_CHANGE_TOGGLE;
+	keys[26].layers[0].layer_change = KEY_LAYER_1;
+	keys[26].layers[1].mod_key = KEY_MOD_LAYER_CHANGE_TOGGLE;
+	keys[26].layers[1].layer_change = KEY_LAYER_0;
+
+
+	for (uint8_t i = 0; i < NUMBER_OF_KEYS; i++){
+		keys[i].event_queue = &key_event_queue_ptr;
+		key_init(&keys[i]);
+	}
 
 
 	while (1){
 
 		for (uint8_t i = 0; i < NUMBER_OF_KEYS; i++){
-			key_update(&keys[i]);
+			key_poll(&keys[i]);
 		}
 
 

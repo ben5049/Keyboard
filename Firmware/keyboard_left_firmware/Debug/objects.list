@@ -3,7 +3,7 @@
 "./Application/Src/app_init.o"
 "./Application/Src/hid_keyboard_thread.o"
 "./Application/Src/hid_mouse_thread.o"
-"./Application/Src/key.o"
+"./Application/Src/keys.o"
 "./Application/Src/msc_thread.o"
 "./Application/Src/scan_keys_thread.o"
 "./Application/Src/system_state.o"

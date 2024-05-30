@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "usb_init.h"
+#include "init.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

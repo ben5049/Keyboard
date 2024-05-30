@@ -11,6 +11,7 @@
 #include "ux_dcd_stm32.h"
 #include "usb_drd_fs.h"
 #include "ux_device_descriptors.h"
+#include "config.h"
 
 USB2533_HandleTypeDef usb2533;
 
@@ -20,7 +21,7 @@ void STM32_USB_Init(void);
 
 void usb_thread(uint32_t thread_input){
 
-	USB2533_Init(&usb2533, &hi2c2);
+	USB2533_Init(&usb2533, &I2C_HANDLE);
 	STM32_USB_Init();
 
 	while (1){

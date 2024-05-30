@@ -58,8 +58,7 @@
 /* This value is the size of the stack in bytes for the USBX threads. It can be typically 1024 bytes
    or 2048 bytes depending on the processor used and the host controller. */
 
-/* #define UX_THREAD_STACK_SIZE                                (2 * 1024)
-*/
+#define UX_THREAD_STACK_SIZE                                2*1024
 
 /* Define USBX Host Enum Thread Stack Size. The default is to use UX_THREAD_STACK_SIZE */
 /*
@@ -250,7 +249,7 @@
    that can be queued at once.
  */
 
-/* #define UX_DEVICE_CLASS_HID_MAX_EVENTS_QUEUE                                           8 */
+#define UX_DEVICE_CLASS_HID_MAX_EVENTS_QUEUE                                   32
 
 /* Defined, this macro will disable DFU_UPLOAD support.  */
 

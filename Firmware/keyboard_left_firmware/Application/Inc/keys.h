@@ -5,14 +5,17 @@
  *      Author: bens1
  */
 
-#ifndef INC_KEY_H_
-#define INC_KEY_H_
+#ifndef INC_KEYS_H_
+#define INC_KEYS_H_
 
 #include "stm32g0xx_hal.h"
 #include "tx_api.h"
+#include "ux_api.h"
+#include "ux_device_class_hid.h"
 #include "stdbool.h"
 #include "config.h"
 
+#define MAX_CONCURRENT_KEYS 6 // (UX_DEVICE_CLASS_HID_MAX_EVENTS_QUEUE - 2)
 
 typedef enum {
 	KEY_MOD_NONE =   0x00,
@@ -28,7 +31,7 @@ typedef enum {
 	KEY_MOD_LAYER_CHANGE_TOGGLE = 0xf1
 } keyMod_TypeDef;
 
-	typedef enum {
+typedef enum {
 	KEY_NAME_NONE = 0x00, // No key pressed
 	KEY_NAME_ERR_OVF = 0x01, // Keyboard Error Roll Over - used for all slots if too many keys are pressed ("Phantom key")
 	KEY_NAME_POST_FAIL = 0x02, //  Keyboard POST Fail
@@ -284,7 +287,8 @@ typedef enum {
 
 typedef enum {
 	KEY_RELEASED = 0x00,
-	KEY_PRESSED  = 0x01
+	KEY_PRESSED  = 0x01,
+	KEY_TAP		 = 0x02
 } keyState_TypeDef;
 
 typedef struct {
@@ -325,13 +329,47 @@ typedef struct {
 	uint8_t current_layer;
 	keyLayer_TypeDef layers[NUMBER_OF_LAYERS];
 
-	TX_QUEUE *key_queue;
+	TX_QUEUE *event_queue;
 
 } key_HandleTypeDef;
 
 
 void key_init(key_HandleTypeDef *key);
 void key_poll(key_HandleTypeDef *key);
-void key_update_layer(key_HandleTypeDef *key, uint8_t layer);
 
-#endif /* INC_KEY_H_ */
+
+
+typedef enum {
+	KEYBOARD_HID_OK              = 0x00U,
+	KEYBOARD_HID_ERROR           = 0x01U,
+	KEYBOARD_HID_BUSY            = 0x02U,
+	KEYBOARD_HID_TIMEOUT         = 0x03U,
+	KEYBOARD_HID_QUEUE_EMPTY     = 0x04U,
+	KEYBOARD_HID_NONE_TAPPED     = 0x05U,
+	KEYBOARD_HID_FOUND_TAPPED    = 0x06U,
+	KEYBOARD_HID_ALREADY_PRESSED = 0x07U,
+	KEYBOARD_HID_KEY_NOT_FOUND   = 0x08U,
+	KEYBOARD_HID_LIST_FULL       = 0x09U
+} keyboardHID_StatusTypeDef;
+
+/* Linked list node structure. For keeping track of which keys are pressed and which need to be released */
+typedef struct KeyNode {
+    keyName_TypeDef key;
+    bool tap;
+    struct KeyNode* next;
+} keyNode_TypeDef;
+
+typedef struct {
+	bool initialised;
+	UX_SLAVE_CLASS_HID *hid_class;
+	UX_SLAVE_CLASS_HID_EVENT hid_event;
+	uint8_t num_keys_pressed;
+	keyNode_TypeDef *keys_pressed;
+	TX_QUEUE *event_queue;
+	keyEvent_TypeDef key_event;
+} keyboardHID_HandleTypeDef;
+
+keyboardHID_StatusTypeDef keyboardHID_init(keyboardHID_HandleTypeDef *keyboard, TX_QUEUE *event_queue, UX_SLAVE_CLASS_HID *hid_class);
+keyboardHID_StatusTypeDef keyboardHID_process(keyboardHID_HandleTypeDef *keyboard);
+
+#endif /* INC_KEYS_H_ */

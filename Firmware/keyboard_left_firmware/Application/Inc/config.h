@@ -11,6 +11,8 @@
 #define NUMBER_OF_KEYS 27
 #define NUMBER_OF_LAYERS 2
 
-#define HOME_ROW_MOD_DELAY 200 /* ms */
+#define HOME_ROW_MOD_DELAY 180 /* ms */
+
+#define I2C_HANDLE hi2c2
 
 #endif /* INC_CONFIG_H_ */
