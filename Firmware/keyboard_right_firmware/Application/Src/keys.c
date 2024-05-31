@@ -9,9 +9,9 @@
 #include <system_state.h>
 
 /* Private function prototypes */
-keyboardHID_StatusTypeDef keyboardHID_recieve_event(keyboardHID_HandleTypeDef *keyboard);
+keyboardHID_StatusTypeDef keyboardHID_recieve_event(keyboardHID_HandleTypeDef *keyboard, uint32_t timeout);
 keyboardHID_StatusTypeDef keyboardHID_recieve_event_no_wait(keyboardHID_HandleTypeDef *keyboard);
-keyboardHID_StatusTypeDef keyboardHID_send_report(keyboardHID_HandleTypeDef *keyboard);
+keyboardHID_StatusTypeDef keyboardHID_send_report(keyboardHID_HandleTypeDef *keyboard, bool send_taps);
 keyboardHID_StatusTypeDef keyboardHID_add_key(keyboardHID_HandleTypeDef *keyboard, keyName_TypeDef key, bool tap);
 keyboardHID_StatusTypeDef keyboardHID_remove_key(keyboardHID_HandleTypeDef *keyboard, keyName_TypeDef key);
 keyboardHID_StatusTypeDef keyboardHID_untap_keys(keyboardHID_HandleTypeDef *keyboard);
@@ -146,6 +146,63 @@ void key_poll(key_HandleTypeDef *key){
 
 
 
+
+
+void knob_init(knob_HandleTypeDef *knob, TIM_HandleTypeDef *htim, TX_QUEUE *event_queue){
+	knob->current_layer = 0;
+	knob->event_queue = event_queue;
+
+	knob->htim = htim;
+	HAL_TIM_Encoder_Start(knob->htim, TIM_CHANNEL_ALL);
+
+	knob->current_count = knob->htim->Instance->CNT;
+	knob->previous_count = knob->current_count;
+}
+
+void knob_poll(knob_HandleTypeDef *knob){
+
+	/* Get the current layer. No wait version used to reduce system mutex taking overhead. */
+	system_layer_get_no_wait(&knob->current_layer);
+
+	/*  */
+	__atomic_load((int16_t*) &knob->htim->Instance->CNT, &knob->current_count, __ATOMIC_RELAXED);
+
+	//	knob->current_count = knob->htim->Instance->CNT;
+
+	if (((knob->current_count - knob->previous_count) % 4) == 0){
+
+
+		if (knob->current_count > knob->previous_count){
+
+			keyEvent_TypeDef event;
+			event.key = knob->layers[knob->current_layer].up_key_name;
+			event.state = KEY_TAP;
+
+			for (uint8_t i = 0; i < (knob->current_count - knob->previous_count) >> 2; i++){
+				tx_queue_send(knob->event_queue, &event, TX_WAIT_FOREVER);
+			}
+		}
+
+		else if (knob->current_count < knob->previous_count) {
+
+			keyEvent_TypeDef event;
+			event.key = knob->layers[knob->current_layer].down_key_name;
+			event.state = KEY_TAP;
+
+			for (uint8_t i = 0; i < (knob->previous_count - knob->current_count) >> 2; i++){
+				tx_queue_send(knob->event_queue, &event, TX_WAIT_FOREVER);
+			}
+		}
+
+		knob->previous_count = knob->current_count;
+
+	}
+}
+
+
+
+
+
 keyboardHID_StatusTypeDef keyboardHID_init(keyboardHID_HandleTypeDef *keyboard, TX_QUEUE *event_queue, UX_SLAVE_CLASS_HID *hid_class){
 
 	keyboard->event_queue = event_queue;
@@ -153,6 +210,7 @@ keyboardHID_StatusTypeDef keyboardHID_init(keyboardHID_HandleTypeDef *keyboard, 
 	keyboard->key_event.key = KEY_NAME_NONE;
 	keyboard->key_event.state = KEY_RELEASED;
 	keyboard->keys_pressed = NULL;
+	keyboard->send_immediately = false;
 
 	/* Reset the HID event structure */
 	ux_utility_memory_set(&keyboard->hid_event, 0, sizeof(UX_SLAVE_CLASS_HID_EVENT));
@@ -164,51 +222,60 @@ keyboardHID_StatusTypeDef keyboardHID_init(keyboardHID_HandleTypeDef *keyboard, 
 
 keyboardHID_StatusTypeDef keyboardHID_process(keyboardHID_HandleTypeDef *keyboard){
 
-	/* Get a key event, this is blocking so will wait forever */
-	keyboardHID_recieve_event(keyboard);
+	/* Properly implement status */
+	keyboardHID_StatusTypeDef status = KEYBOARD_HID_OK;
 
-	/* Process the event */
-	bool queue_empty = false;
-	do {
-		switch (keyboard->key_event.state) {
-
-		case KEY_PRESSED:
-			keyboardHID_add_key(keyboard, keyboard->key_event.key, false);
-			break;
-
-		case KEY_RELEASED:
-			keyboardHID_remove_key(keyboard, keyboard->key_event.key);
-			break;
-
-		case KEY_TAP:
-			keyboardHID_add_key(keyboard, keyboard->key_event.key, true);
-			break;
-
-		default:
-			break;
+	/* If the next report doesn't need to be send immediately then get a new key event */
+	if (!keyboard->send_immediately){
+		status = keyboardHID_recieve_event(keyboard, 100);
+		if (status != KEYBOARD_HID_OK){
+			return status;
 		}
 
-		/* Try to get another event */
-		if (keyboardHID_recieve_event_no_wait(keyboard) == KEYBOARD_HID_QUEUE_EMPTY){
-			queue_empty = true;
-		}
+		/* Process the event */
+		bool queue_empty = false;
+		do {
+			switch (keyboard->key_event.state) {
 
-	} while (!queue_empty);
+			case KEY_PRESSED:
+				keyboardHID_add_key(keyboard, keyboard->key_event.key, false);
+				break;
+
+			case KEY_RELEASED:
+				keyboardHID_remove_key(keyboard, keyboard->key_event.key);
+				break;
+
+			case KEY_TAP:
+				keyboardHID_add_key(keyboard, keyboard->key_event.key, true);
+				break;
+
+			default:
+				break;
+			}
+
+			/* Try to get another event */
+			if (keyboardHID_recieve_event_no_wait(keyboard) == KEYBOARD_HID_QUEUE_EMPTY){
+				queue_empty = true;
+			}
+
+		} while (!queue_empty);
+
+	}
 
 	/* Send the report */
-	keyboardHID_send_report(keyboard);
+	keyboardHID_send_report(keyboard, true);
 
 	/* Untap keys and send another report if necessary */
 	if (keyboardHID_untap_keys(keyboard) == KEYBOARD_HID_FOUND_TAPPED){
-		keyboardHID_send_report(keyboard);
+		keyboardHID_send_report(keyboard, false);
 	}
 
-	return KEYBOARD_HID_OK;
+	return status;
 }
 
 
-keyboardHID_StatusTypeDef keyboardHID_recieve_event(keyboardHID_HandleTypeDef *keyboard){
-	if (tx_queue_receive(keyboard->event_queue, &keyboard->key_event, TX_WAIT_FOREVER) == TX_SUCCESS){
+keyboardHID_StatusTypeDef keyboardHID_recieve_event(keyboardHID_HandleTypeDef *keyboard, uint32_t timeout){
+	if (tx_queue_receive(keyboard->event_queue, &keyboard->key_event, timeout) == TX_SUCCESS){
 		return KEYBOARD_HID_OK;
 	}
 	return KEYBOARD_HID_ERROR;
@@ -221,7 +288,7 @@ keyboardHID_StatusTypeDef keyboardHID_recieve_event_no_wait(keyboardHID_HandleTy
 	return KEYBOARD_HID_QUEUE_EMPTY;
 }
 
-keyboardHID_StatusTypeDef keyboardHID_send_report(keyboardHID_HandleTypeDef *keyboard){
+keyboardHID_StatusTypeDef keyboardHID_send_report(keyboardHID_HandleTypeDef *keyboard, bool send_taps){
 
 	/* Get modifier byte */
 	system_modifiers_get(&keyboard->hid_event.ux_device_class_hid_event_buffer[0]);
@@ -237,14 +304,14 @@ keyboardHID_StatusTypeDef keyboardHID_send_report(keyboardHID_HandleTypeDef *key
 	keyboard->num_keys_pressed = 0;
 	keyNode_TypeDef** current = &keyboard->keys_pressed;
 	while ((*current != NULL) && (keyboard->num_keys_pressed <= MAX_CONCURRENT_KEYS)) {
-		keyboard->hid_event.ux_device_class_hid_event_buffer[keyboard->num_keys_pressed + 2] = (*current)->key;
-		keyboard->num_keys_pressed++;
+
+		/* Only copy the key to the buffer if it isn't tapped, or if it is tapped and we want to send tapped keys */
+		if (!(*current)->tap || (*current)->tap == send_taps){
+			keyboard->hid_event.ux_device_class_hid_event_buffer[keyboard->num_keys_pressed + 2] = (*current)->key;
+			keyboard->num_keys_pressed++;
+		}
 		current = &((*current)->next);
 	}
-
-	//	for (uint8_t i = keyboard->num_keys_pressed + 2; i < MAX_CONCURRENT_KEYS + 2; i++){
-
-	//	}
 
 	/* Set the length of the message */
 	keyboard->hid_event.ux_device_class_hid_event_length = keyboard->num_keys_pressed + 2;
@@ -268,8 +335,16 @@ keyboardHID_StatusTypeDef keyboardHID_add_key(keyboardHID_HandleTypeDef *keyboar
 	while (*current != NULL) {
 		if ((*current)->key == key){
 
-			/* If key is already pressed then update it */
-			(*current)->tap = tap;
+			/* If the key is already tapped and new event is another tap then increment the taps */
+			if ((*current)->tap && tap){
+				(*current)->taps++;
+			}
+
+			/* Otherwise update the key and return */
+			else {
+				(*current)->tap = tap;
+				(*current)->taps = 0;
+			}
 			return KEYBOARD_HID_ALREADY_PRESSED;
 		}
 		current = &((*current)->next);
@@ -286,6 +361,7 @@ keyboardHID_StatusTypeDef keyboardHID_add_key(keyboardHID_HandleTypeDef *keyboar
 	/* Populate the new node */
 	new_node->key = key;
 	new_node->tap = tap;
+	new_node->taps = 0;
 
 	/* Assign the old head to this node's "next" pointer, and make this node the new head */
 	new_node->next = keyboard->keys_pressed;
@@ -320,17 +396,26 @@ keyboardHID_StatusTypeDef keyboardHID_untap_keys(keyboardHID_HandleTypeDef *keyb
 
 	keyboardHID_StatusTypeDef status = KEYBOARD_HID_NONE_TAPPED;
 
+	keyboard->send_immediately = false;
+
 	/* Go through linked list */
 	keyNode_TypeDef** current = &keyboard->keys_pressed;
 	while (*current != NULL) {
 
 		/* If the current node is tapped (or none) then copy the current node to a temporary node, set the current node to be the one after the temporary node, and free the temporary node */
-		if (((*current)->tap) || ((*current)->key == KEY_NAME_NONE)) {
+		if ((*current)->tap && (*current)->taps == 0) {
 			keyNode_TypeDef* temp = *current;
 			*current = (*current)->next;
 			free(temp);
 			keyboard->num_keys_pressed--;
 			status = KEYBOARD_HID_FOUND_TAPPED;
+		}
+
+		else if ((*current)->tap){
+			(*current)->taps--;
+			current = &((*current)->next);
+			status = KEYBOARD_HID_FOUND_TAPPED;
+			keyboard->send_immediately = true;
 		}
 		else {
 			current = &((*current)->next);

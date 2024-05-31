@@ -14,5 +14,6 @@
 #define HOME_ROW_MOD_DELAY 180 /* ms */
 
 #define I2C_HANDLE hi2c2
+#define ENCODER_HANDLE htim3
 
 #endif /* INC_CONFIG_H_ */

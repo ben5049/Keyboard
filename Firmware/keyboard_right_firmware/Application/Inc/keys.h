@@ -14,6 +14,7 @@
 #include "ux_device_class_hid.h"
 #include "stdbool.h"
 #include "config.h"
+#include "tim.h"
 
 #define MAX_CONCURRENT_KEYS 6 // (UX_DEVICE_CLASS_HID_MAX_EVENTS_QUEUE - 2)
 
@@ -339,6 +340,32 @@ void key_poll(key_HandleTypeDef *key);
 
 
 
+
+
+typedef struct {
+	keyName_TypeDef up_key_name;
+	keyName_TypeDef down_key_name;
+} knobLayer_TypeDef;
+
+typedef struct {
+
+	TIM_HandleTypeDef *htim;
+	int16_t current_count, previous_count;
+
+	uint8_t current_layer;
+	knobLayer_TypeDef layers[NUMBER_OF_LAYERS];
+
+	TX_QUEUE *event_queue;
+
+} knob_HandleTypeDef;
+
+void knob_init(knob_HandleTypeDef *knob, TIM_HandleTypeDef *htim, TX_QUEUE *event_queue);
+void knob_poll(knob_HandleTypeDef *knob);
+
+
+
+
+
 typedef enum {
 	KEYBOARD_HID_OK              = 0x00U,
 	KEYBOARD_HID_ERROR           = 0x01U,
@@ -356,11 +383,13 @@ typedef enum {
 typedef struct KeyNode {
     keyName_TypeDef key;
     bool tap;
+    uint8_t taps;
     struct KeyNode* next;
 } keyNode_TypeDef;
 
 typedef struct {
 	bool initialised;
+	bool send_immediately; /* When a key is tapped multiple times, send another report immediately to pulse the key */
 	UX_SLAVE_CLASS_HID *hid_class;
 	UX_SLAVE_CLASS_HID_EVENT hid_event;
 	uint8_t num_keys_pressed;

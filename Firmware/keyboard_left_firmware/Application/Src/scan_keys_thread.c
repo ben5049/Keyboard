@@ -10,6 +10,7 @@
 #include "threads.h"
 
 static key_HandleTypeDef keys[NUMBER_OF_KEYS];
+static knob_HandleTypeDef knob;
 
 void scan_keys_thread(uint32_t initial_input){
 
@@ -143,6 +144,9 @@ void scan_keys_thread(uint32_t initial_input){
 		key_init(&keys[i]);
 	}
 
+	knob.layers[0].up_key_name = KEY_NAME_RIGHT;
+	knob.layers[0].down_key_name = KEY_NAME_LEFT;
+	knob_init(&knob, &ENCODER_HANDLE, &key_event_queue_ptr);
 
 	while (1){
 
@@ -150,6 +154,7 @@ void scan_keys_thread(uint32_t initial_input){
 			key_poll(&keys[i]);
 		}
 
+		knob_poll(&knob);
 
 		tx_thread_sleep(10); // TODO: Remove sleep and do proper timing
 	}

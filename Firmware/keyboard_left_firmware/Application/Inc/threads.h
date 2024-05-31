@@ -30,6 +30,4 @@ void scan_keys_thread(uint32_t initial_input);
 
 extern TX_QUEUE key_event_queue_ptr;
 
-
-
 #endif /* THREADS_H_ */
