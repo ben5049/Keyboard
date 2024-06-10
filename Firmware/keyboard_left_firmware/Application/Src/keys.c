@@ -164,38 +164,37 @@ void knob_poll(knob_HandleTypeDef *knob){
 	/* Get the current layer. No wait version used to reduce system mutex taking overhead. */
 	system_layer_get_no_wait(&knob->current_layer);
 
-	/*  */
+	/* Load the timer's count into current_count. Note CNT has to be cast from a uint32_t to an int16_t. This is fine as long as the timer's period is 65535. */
 	__atomic_load((int16_t*) &knob->htim->Instance->CNT, &knob->current_count, __ATOMIC_RELAXED);
 
-	//	knob->current_count = knob->htim->Instance->CNT;
+	/* Only register an input every ENCODER_PULSES_PER_INDENT pulses. */
+	if (((knob->current_count - knob->previous_count) % ENCODER_PULSES_PER_INDENT) == 0){
 
-	if (((knob->current_count - knob->previous_count) % 4) == 0){
-
-
+		/* If the counter incremented send the current layer's up key */
 		if (knob->current_count > knob->previous_count){
 
 			keyEvent_TypeDef event;
 			event.key = knob->layers[knob->current_layer].up_key_name;
 			event.state = KEY_TAP;
 
-			for (uint8_t i = 0; i < (knob->current_count - knob->previous_count) >> 2; i++){
-				tx_queue_send(knob->event_queue, &event, TX_WAIT_FOREVER);
+			for (uint8_t i = 0; i < (knob->current_count - knob->previous_count) / ENCODER_PULSES_PER_INDENT; i++){
+				tx_queue_send(knob->event_queue, &event, TX_NO_WAIT);
 			}
 		}
 
+		/* If the counter decremented send the current layer's down key */
 		else if (knob->current_count < knob->previous_count) {
 
 			keyEvent_TypeDef event;
 			event.key = knob->layers[knob->current_layer].down_key_name;
 			event.state = KEY_TAP;
 
-			for (uint8_t i = 0; i < (knob->previous_count - knob->current_count) >> 2; i++){
-				tx_queue_send(knob->event_queue, &event, TX_WAIT_FOREVER);
+			for (uint8_t i = 0; i < (knob->previous_count - knob->current_count) / ENCODER_PULSES_PER_INDENT; i++){
+				tx_queue_send(knob->event_queue, &event, TX_NO_WAIT);
 			}
 		}
 
 		knob->previous_count = knob->current_count;
-
 	}
 }
 
@@ -296,11 +295,12 @@ keyboardHID_StatusTypeDef keyboardHID_send_report(keyboardHID_HandleTypeDef *key
 	/* This byte is reserved */
 	keyboard->hid_event.ux_device_class_hid_event_buffer[1] = 0;
 
-	/* Go through the linked list of keys and copy them to the message buffer */
+	/* Clear the buffer */
 	for (uint8_t i = 2; i < 8; i++){
 		keyboard->hid_event.ux_device_class_hid_event_buffer[i] = 0;
 	}
 
+	/* Go through the linked list of keys and copy them to the message buffer */
 	keyboard->num_keys_pressed = 0;
 	keyNode_TypeDef** current = &keyboard->keys_pressed;
 	while ((*current != NULL) && (keyboard->num_keys_pressed <= MAX_CONCURRENT_KEYS)) {
@@ -314,7 +314,7 @@ keyboardHID_StatusTypeDef keyboardHID_send_report(keyboardHID_HandleTypeDef *key
 	}
 
 	/* Set the length of the message */
-	keyboard->hid_event.ux_device_class_hid_event_length = keyboard->num_keys_pressed + 2;
+//	keyboard->hid_event.ux_device_class_hid_event_length = keyboard->num_keys_pressed + 2; /*TODO: Figure out device descriptors to send a longer message */
 	keyboard->hid_event.ux_device_class_hid_event_length = 8;
 
 	/* Send keyboard event */
@@ -402,7 +402,7 @@ keyboardHID_StatusTypeDef keyboardHID_untap_keys(keyboardHID_HandleTypeDef *keyb
 	keyNode_TypeDef** current = &keyboard->keys_pressed;
 	while (*current != NULL) {
 
-		/* If the current node is tapped (or none) then copy the current node to a temporary node, set the current node to be the one after the temporary node, and free the temporary node */
+		/* If the current node is tapped and has no taps left then remove it: copy the current node to a temporary node, set the current node to be the one after the temporary node, and free the temporary node */
 		if ((*current)->tap && (*current)->taps == 0) {
 			keyNode_TypeDef* temp = *current;
 			*current = (*current)->next;
@@ -411,6 +411,7 @@ keyboardHID_StatusTypeDef keyboardHID_untap_keys(keyboardHID_HandleTypeDef *keyb
 			status = KEYBOARD_HID_FOUND_TAPPED;
 		}
 
+		/* If the current node is tapped but has taps left then decrement the number of taps and set send_immediately to true to send the next tap */
 		else if ((*current)->tap){
 			(*current)->taps--;
 			current = &((*current)->next);

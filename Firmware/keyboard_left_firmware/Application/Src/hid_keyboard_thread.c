@@ -10,7 +10,7 @@
 #include "threads.h"
 
 UX_SLAVE_CLASS_HID *hid_keyboard = UX_NULL;
-
+static keyboardHID_HandleTypeDef keyboard;
 
 /**
  * @brief  USBD_HID_Keyboard_Activate
@@ -20,12 +20,11 @@ UX_SLAVE_CLASS_HID *hid_keyboard = UX_NULL;
  */
 VOID USBD_HID_Keyboard_Activate(VOID *hid_instance)
 {
-	/* USER CODE BEGIN USBD_HID_Keyboard_Activate */
-
 	/* Save the HID keyboard instance */
 	hid_keyboard = (UX_SLAVE_CLASS_HID*) hid_instance;
 
-	/* USER CODE END USBD_HID_Keyboard_Activate */
+	/* Initialise the keyboard struct */
+	keyboardHID_init(&keyboard, &key_event_queue_ptr, hid_keyboard);
 
 	return;
 }
@@ -100,7 +99,6 @@ UINT USBD_HID_Keyboard_GetReport(UX_SLAVE_CLASS_HID *hid_instance,
  */
 void hid_keyboard_thread(uint32_t thread_input){
 	UX_SLAVE_DEVICE *device;
-	keyboardHID_HandleTypeDef keyboard;
 
 	TX_PARAMETER_NOT_USED(thread_input);
 
@@ -110,17 +108,12 @@ void hid_keyboard_thread(uint32_t thread_input){
 	while (1) {
 
 		/* Check if the device state already configured */
-		if ((device->ux_slave_device_state == UX_DEVICE_CONFIGURED) && (hid_keyboard != UX_NULL)) {
-
-			if (!keyboard.initialised){
-				keyboardHID_init(&keyboard, &key_event_queue_ptr, hid_keyboard);
-			} else  {
-				keyboardHID_process(&keyboard);
-			}
+		if ((device->ux_slave_device_state == UX_DEVICE_CONFIGURED) && (hid_keyboard != UX_NULL) && keyboard.initialised) {
+			keyboardHID_process(&keyboard);
 		}
 
+		/* Sleep thread for 10ms */
 		else {
-			/* Sleep thread for 10ms */
 			tx_thread_sleep(MS_TO_TICK(10));
 		}
 	}

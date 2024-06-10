@@ -16,4 +16,6 @@
 #define I2C_HANDLE hi2c2
 #define ENCODER_HANDLE htim3
 
+#define ENCODER_PULSES_PER_INDENT 4
+
 #endif /* INC_CONFIG_H_ */
