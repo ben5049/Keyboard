@@ -70,7 +70,7 @@ USBPD_SettingsTypeDef       DPM_Settings[USBPD_PORT_COUNT] =
     .PE_AttemptsDiscovSOP = USBPD_TRUE,        /*!< Can send a Discover Identity */
     .PE_PingSupport = USBPD_FALSE,              /* support Ping (only for PD3.0)                                            */
     .PE_CapscounterSupport = USBPD_FALSE,       /* support caps counter                                    */
-    .CAD_RoleToggle = USBPD_FALSE,               /* CAD role toggle                                         */
+    .CAD_RoleToggle = USBPD_TRUE,               /* CAD role toggle                                         */
     .CAD_DefaultResistor = 0x00u,
     .CAD_TryFeature = 0,              /* CAD try feature                                         */
     .CAD_AccesorySupport = USBPD_FALSE,         /* CAD accessory support                                   */
@@ -90,8 +90,8 @@ USBPD_SettingsTypeDef       DPM_Settings[USBPD_PORT_COUNT] =
       .Is_GetBattery_Supported          = USBPD_FALSE,  /*!< Get Battery Capabitity and Status messages supported by PE */
     },
 
-    .CAD_SRCToggleTime = 0,                    /* uint8_t CAD_SRCToggleTime; */
-    .CAD_SNKToggleTime = 0,                    /* uint8_t CAD_SNKToggleTime; */
+    .CAD_SRCToggleTime = 40,                    /* uint8_t CAD_SRCToggleTime; */
+    .CAD_SNKToggleTime = 40,                    /* uint8_t CAD_SNKToggleTime; */
 #if USBPD_PORT_COUNT >= 2
   },
   {
@@ -104,7 +104,7 @@ USBPD_SettingsTypeDef       DPM_Settings[USBPD_PORT_COUNT] =
     .PE_AttemptsDiscovSOP = USBPD_FALSE,        /*!< Can send a Discover Identity */
     .PE_PingSupport = USBPD_FALSE,              /* support Ping (only for PD3.0)                                     */
     .PE_CapscounterSupport = USBPD_FALSE,       /* support caps counter                                    */
-    .CAD_RoleToggle = USBPD_FALSE,              /* CAD role toggle                                         */
+    .CAD_RoleToggle = USBPD_TRUE,              /* CAD role toggle                                         */
     .CAD_DefaultResistor = 0x00u,
     .CAD_TryFeature = 0,              /* CAD try feature                                         */
     .CAD_AccesorySupport = USBPD_FALSE,         /* CAD accessory support                                   */
@@ -124,8 +124,8 @@ USBPD_SettingsTypeDef       DPM_Settings[USBPD_PORT_COUNT] =
       .Is_GetBattery_Supported          = USBPD_FALSE,  /*!< Get Battery Capabitity and Status messages supported by PE */
     },
 
-    .CAD_SRCToggleTime = 0,                    /* uint8_t CAD_SRCToggleTime; */
-    .CAD_SNKToggleTime = 0,                    /* uint8_t CAD_SNKToggleTime; */
+    .CAD_SRCToggleTime = 40,                    /* uint8_t CAD_SRCToggleTime; */
+    .CAD_SNKToggleTime = 40,                    /* uint8_t CAD_SNKToggleTime; */
 #endif
   }
 };

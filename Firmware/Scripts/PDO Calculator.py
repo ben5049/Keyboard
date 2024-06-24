@@ -29,6 +29,10 @@ def pdo_decode(pdo):
 
     
 
+##pdo_decode("0x2201912C")
+##pdo_decode("0x26019096")
+##pdo_decode("0x02019096")
+
+
 pdo_decode("0x2201912C")
 pdo_decode("0x26019096")
-pdo_decode("0x02019096")

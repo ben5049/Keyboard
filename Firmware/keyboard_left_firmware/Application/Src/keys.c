@@ -42,9 +42,10 @@ void key_poll(key_HandleTypeDef *key){
 
 	/* Key pressed */
 	if (key->current_state == KEY_PRESSED && key->previous_state == KEY_RELEASED){
+		key->press_timestamp = tx_time_get();
 
 		/* Mod key pressed, immediate action */
-		if (key->layers[key->current_layer].mod_key && key->layers[key->current_layer].mod_delay == 0){
+		if (key->layers[key->current_layer].mod_key){
 
 			/* Execute mod key press */
 			key->holding_mod_key = true;
@@ -60,6 +61,45 @@ void key_poll(key_HandleTypeDef *key){
 				/* TODO: This needs to invalidate the associated key hold and release */
 				break;
 
+			case KEY_MOD_LMETA:
+				if (key->layers[key->current_layer].mod_delay == 0){
+					system_modifier_set(key->layers[key->current_layer].mod_key);
+					keyEvent_TypeDef event;
+					event.key = KEY_NAME_NONE;
+					event.state = KEY_TAP;
+					tx_queue_send(key->event_queue, &event, TX_NO_WAIT);
+				}
+				else {
+					key->holding_mod_key = false;
+				}
+				break;
+
+			case KEY_MOD_RMETA:
+				if (key->layers[key->current_layer].mod_delay == 0){
+					system_modifier_set(key->layers[key->current_layer].mod_key);
+					keyEvent_TypeDef event;
+					event.key = KEY_NAME_NONE;
+					event.state = KEY_TAP;
+					tx_queue_send(key->event_queue, &event, TX_NO_WAIT);
+				}
+				else {
+					key->holding_mod_key = false;
+				}
+				break;
+
+			case KEY_MOD_LALT:
+				if (key->layers[key->current_layer].mod_delay == 0){
+					system_modifier_set(key->layers[key->current_layer].mod_key);
+					keyEvent_TypeDef event;
+					event.key = KEY_NAME_NONE;
+					event.state = KEY_TAP;
+					tx_queue_send(key->event_queue, &event, TX_NO_WAIT);
+				}
+				else {
+					key->holding_mod_key = false;
+				}
+				break;
+
 			default:
 				system_modifier_set(key->layers[key->current_layer].mod_key);
 				keyEvent_TypeDef event;
@@ -68,13 +108,6 @@ void key_poll(key_HandleTypeDef *key){
 				tx_queue_send(key->event_queue, &event, TX_NO_WAIT);
 				break;
 			}
-		}
-
-
-		/* Normal/mod key pressed, delayed action (probably a home row mod) */
-		else if (key->layers[key->current_layer].mod_key && key->layers[key->current_layer].mod_delay > 0){
-			key->holding_mod_key = false;
-			key->press_timestamp = tx_time_get();
 		}
 
 		/* Normal key pressed */
@@ -92,12 +125,36 @@ void key_poll(key_HandleTypeDef *key){
 	else if (key->current_state == KEY_RELEASED && key->previous_state == KEY_PRESSED){
 
 		/* Mod key released */
-		if (key->holding_mod_key){
+		if (key->holding_mod_key || key->layers[key->current_layer].mod_delay > 0){
 
-			if (key->layers[key->current_layer].mod_key == KEY_MOD_LAYER_CHANGE_MOMENTARY) {
-				system_layer_revert();
+			key->holding_mod_key = false;
+
+			/* Normal mod key (not home row mod) */
+			if (key->layers[key->current_layer].mod_delay == 0){
+
+				if (key->layers[key->current_layer].mod_key == KEY_MOD_LAYER_CHANGE_MOMENTARY) {
+					system_layer_revert();
+				}
+
+				else {
+					system_modifier_reset(key->layers[key->current_layer].mod_key);
+					keyEvent_TypeDef event;
+					event.key = KEY_NAME_NONE;
+					event.state = KEY_TAP;
+					tx_queue_send(key->event_queue, &event, TX_WAIT_FOREVER);
+				}
 			}
 
+			/* Home row mod less than threshold time */
+			else if ((((tx_time_get() - key->press_timestamp) * 1000) / TX_TIMER_TICKS_PER_SECOND) < key->layers[key->current_layer].mod_delay){
+				system_modifier_reset(key->layers[key->current_layer].mod_key);
+				keyEvent_TypeDef event;
+				event.key = key->layers[key->current_layer].key_name;
+				event.state = KEY_TAP;
+				tx_queue_send(key->event_queue, &event, TX_WAIT_FOREVER);
+			}
+
+			/* Home row mod more than threshold time */
 			else {
 				system_modifier_reset(key->layers[key->current_layer].mod_key);
 				keyEvent_TypeDef event;
@@ -105,14 +162,6 @@ void key_poll(key_HandleTypeDef *key){
 				event.state = KEY_TAP;
 				tx_queue_send(key->event_queue, &event, TX_WAIT_FOREVER);
 			}
-		}
-
-		/* Normal/mod key released before mod key triggered. Send press and release messages in quick succession */
-		else if (key->layers[key->current_layer].mod_key){
-			keyEvent_TypeDef event;
-			event.key = key->layers[key->current_layer].key_name;
-			event.state = KEY_TAP;
-			tx_queue_send(key->event_queue, &event, TX_NO_WAIT);
 		}
 
 		/* Normal key released */
@@ -124,19 +173,17 @@ void key_poll(key_HandleTypeDef *key){
 		}
 	}
 
-
 	/* Key held */
 	else if (key->current_state == KEY_PRESSED && key->previous_state == KEY_PRESSED){
 
-		/* Delayed mod key reaches trigger time */
-		if ((key->layers[key->current_layer].mod_key) && ((((tx_time_get() - key->press_timestamp) * 1000) / TX_TIMER_TICKS_PER_SECOND) > key->layers[key->current_layer].mod_delay) && (key->holding_mod_key == false)){
+		/* If there is a timed mod key that hasn't been fired then wait and fire when delay expires. (Usually meta keys) */
+		if ((!key->holding_mod_key) && (key->layers[key->current_layer].mod_delay > 0) && ((((tx_time_get() - key->press_timestamp) * 1000) / TX_TIMER_TICKS_PER_SECOND) > key->layers[key->current_layer].mod_delay)){
 			key->holding_mod_key = true;
 			system_modifier_set(key->layers[key->current_layer].mod_key);
-
 			keyEvent_TypeDef event;
 			event.key = KEY_NAME_NONE;
-			event.state = KEY_PRESSED;
-			tx_queue_send(key->event_queue, &event, TX_WAIT_FOREVER);
+			event.state = KEY_TAP;
+			tx_queue_send(key->event_queue, &event, TX_NO_WAIT);
 		}
 	}
 
@@ -314,7 +361,7 @@ keyboardHID_StatusTypeDef keyboardHID_send_report(keyboardHID_HandleTypeDef *key
 	}
 
 	/* Set the length of the message */
-//	keyboard->hid_event.ux_device_class_hid_event_length = keyboard->num_keys_pressed + 2; /*TODO: Figure out device descriptors to send a longer message */
+	//	keyboard->hid_event.ux_device_class_hid_event_length = keyboard->num_keys_pressed + 2; /*TODO: Figure out device descriptors to send a longer message */
 	keyboard->hid_event.ux_device_class_hid_event_length = 8;
 
 	/* Send keyboard event */

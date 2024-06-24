@@ -140,7 +140,7 @@ typedef enum {
 	KEY_NAME_KP0 = 0x62, // Keypad 0 and Insert
 	KEY_NAME_KPDOT = 0x63, // Keypad . and Delete
 
-	KEY_NAME_102ND = 0x64, // Keyboard Non-US \ and |
+	KEY_NAME_BACKSLASH_EN = 0x64, // Keyboard Non-US \ and |
 	KEY_NAME_COMPOSE = 0x65, // Keyboard Application
 	KEY_NAME_POWER = 0x66, // Keyboard Power
 	KEY_NAME_KPEQUAL = 0x67, // Keypad =

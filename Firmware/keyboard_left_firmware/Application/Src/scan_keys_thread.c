@@ -46,23 +46,27 @@ void scan_keys_thread(uint32_t initial_input){
 	keys[7].pin = KEY_B2_Pin;
 	keys[7].port = KEY_B2_GPIO_Port;
 	keys[7].layers[0].key_name = KEY_NAME_Q;
+	keys[7].layers[1].key_name = KEY_NAME_1;
 
 	keys[8].pin = KEY_B3_Pin;
 	keys[8].port = KEY_B3_GPIO_Port;
 	keys[8].layers[0].key_name = KEY_NAME_W;
+	keys[8].layers[1].key_name = KEY_NAME_2;
 
 	keys[9].pin = KEY_B4_Pin;
 	keys[9].port = KEY_B4_GPIO_Port;
 	keys[9].layers[0].key_name = KEY_NAME_E;
+	keys[9].layers[1].key_name = KEY_NAME_3;
 
 	keys[10].pin = KEY_B5_Pin;
 	keys[10].port = KEY_B5_GPIO_Port;
 	keys[10].layers[0].key_name = KEY_NAME_R;
+	keys[10].layers[1].key_name = KEY_NAME_4;
 
 	keys[11].pin = KEY_B6_Pin;
 	keys[11].port = KEY_B6_GPIO_Port;
 	keys[11].layers[0].key_name = KEY_NAME_T;
-
+	keys[11].layers[1].key_name = KEY_NAME_5;
 
 	keys[12].pin = KEY_C1_Pin;
 	keys[12].port = KEY_C1_GPIO_Port;
@@ -99,7 +103,7 @@ void scan_keys_thread(uint32_t initial_input){
 
 	keys[18].pin = KEY_D1_Pin;
 	keys[18].port = KEY_D1_GPIO_Port;
-	keys[18].layers[0].key_name = KEY_NAME_BACKSLASH;
+	keys[18].layers[0].key_name = KEY_NAME_BACKSLASH_EN;
 
 	keys[19].pin = KEY_D2_Pin;
 	keys[19].port = KEY_D2_GPIO_Port;

@@ -22,14 +22,12 @@
 void scan_keys_thread(uint32_t initial_input);
 
 /* Queue parameters */
-#define KEY_EVENT_QUEUE_STACK_SIZE 128
+#define KEY_EVENT_QUEUE_STACK_SIZE 256
 #define KEY_EVENT_QUEUE_NAME "Keyboard_queue"
 
 #define MOUSE_QUEUE_STACK_SIZE 128
 #define MOUSE_QUEUE_NAME "Mouse_queue"
 
 extern TX_QUEUE key_event_queue_ptr;
-
-
 
 #endif /* THREADS_H_ */

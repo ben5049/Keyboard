@@ -20,16 +20,6 @@ typedef enum {
   SYSTEM_MUTEX_ERROR = 0x04U
 } systemState_StatusTypeDef;
 
-
-
-/*
-	@ACTION: USER_CODE_INSERT
-    @FILE: "Core/Src/app_threadx.c"
-    @SECTION: "Includes"
-    @INSERT: "#include "system_state.h""
-	@SECTION: "App_ThreadX_Init"
-    @INSERT: "system_init();"
- */
 systemState_StatusTypeDef system_init(void);
 
 systemState_StatusTypeDef system_modifier_set(keyMod_TypeDef modifier);

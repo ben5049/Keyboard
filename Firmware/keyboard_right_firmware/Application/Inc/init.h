@@ -42,4 +42,13 @@ void create_queues(void);
 */
 UINT usb_init(VOID *memory_ptr);
 
+/*
+	@ACTION: USER_CODE_INSERT
+    @FILE: "Core/Src/app_threadx.c"
+    @SECTION: "Includes"
+    @INSERT: "#include "system_state.h""
+	@SECTION: "App_ThreadX_Init"
+    @INSERT: "system_init();"
+ */
+
 #endif /* INC_INIT_H_ */
