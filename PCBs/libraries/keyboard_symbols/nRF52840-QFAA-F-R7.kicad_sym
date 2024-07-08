@@ -134,7 +134,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -30.48 180)
+				(at 22.86 -50.8 180)
 				(length 5.08)
 				(name "DEC1"
 					(effects
@@ -188,7 +188,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -58.42 180)
+				(at 22.86 -66.04 180)
 				(length 5.08)
 				(name "VDD_1"
 					(effects
@@ -278,7 +278,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -60.96 180)
+				(at 22.86 -68.58 180)
 				(length 5.08)
 				(name "VDD_2"
 					(effects
@@ -440,7 +440,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -63.5 180)
+				(at 22.86 -71.12 180)
 				(length 5.08)
 				(name "VDD_3"
 					(effects
@@ -494,7 +494,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 22.86 -73.66 180)
+				(at 22.86 -25.4 180)
 				(length 5.08)
 				(name "NC"
 					(effects
@@ -620,7 +620,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -35.56 180)
+				(at 22.86 -53.34 180)
 				(length 5.08)
 				(name "DEC3"
 					(effects
@@ -638,7 +638,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -12.7 180)
+				(at 22.86 -10.16 180)
 				(length 5.08)
 				(name "XC1"
 					(effects
@@ -656,7 +656,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -17.78 180)
+				(at 22.86 -20.32 180)
 				(length 5.08)
 				(name "XC2"
 					(effects
@@ -674,7 +674,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -66.04 180)
+				(at 22.86 -73.66 180)
 				(length 5.08)
 				(name "VDD_4"
 					(effects
@@ -854,7 +854,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -38.1 180)
+				(at 22.86 -40.64 180)
 				(length 5.08)
 				(name "DEC4"
 					(effects
@@ -872,7 +872,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -50.8 180)
+				(at 22.86 -35.56 180)
 				(length 5.08)
 				(name "DCC"
 					(effects
@@ -890,7 +890,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -68.58 180)
+				(at 22.86 -76.2 180)
 				(length 5.08)
 				(name "VDD_5"
 					(effects
