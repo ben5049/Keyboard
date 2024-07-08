@@ -1,0 +1,236 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "efc0159f-4aad-467b-a3f7-ea8744a129c3")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 127 50.8)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3f6891f6-a1b6-4bde-ae5f-d2abc12d04a0")
+		(property "Sheetname" "USB"
+			(at 127 50.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "usb.kicad_sch"
+			(at 127 76.7846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "keyboard_v2"
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6"
+					(page "15")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 203.2 50.8)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "434714c7-475a-4e7a-95b8-de0bbee6f731")
+		(property "Sheetname" "Keys Left"
+			(at 203.2 50.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "keys_left.kicad_sch"
+			(at 203.2 76.7846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "keyboard_v2"
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 76.2 50.8)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "477316a5-f8d9-40b1-a704-da1d199f3a0b")
+		(property "Sheetname" "Display"
+			(at 76.2 50.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "display.kicad_sch"
+			(at 76.2 76.7846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "keyboard_v2"
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 76.2 101.6)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4d620f55-5374-460e-a3f0-45f826e2308d")
+		(property "Sheetname" "Power"
+			(at 76.2 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 76.2 127.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "keyboard_v2"
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6"
+					(page "14")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 127 101.6)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d174db9b-07f6-4c79-87e9-921db730cdfb")
+		(property "Sheetname" "Bluetooth"
+			(at 127 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "bluetooth.kicad_sch"
+			(at 127 127.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "keyboard_v2"
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 203.2 101.6)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "da671bd4-cd3d-4d12-8289-05f535b8e6a4")
+		(property "Sheetname" "Main MCU Left"
+			(at 203.2 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "main_mcu_left.kicad_sch"
+			(at 203.2 127.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "keyboard_v2"
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6"
+					(page "13")
+				)
+			)
+		)
+	)
+)

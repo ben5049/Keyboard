@@ -11,7 +11,8 @@
 * Move status LEDs.
 * Solder Neopixels correctly >:(.
 * Wireless?
-* Use SBU channels for communication between keyboards? This would require swapping the channels to account for different cable rotations.
+* Use UART over SBU channels for communication between keyboards? This would require swapping the channels to account for different cable rotations.
+* BIOS mode where USB hubs are bypassed
 
 ### Case V2:
 
@@ -22,3 +23,4 @@
 * Make edges follow PCB precisely.
 * Make sure tag connect is fully accessible.
 * Create raised area around the base of the encoder.
+* Make the metal base solid

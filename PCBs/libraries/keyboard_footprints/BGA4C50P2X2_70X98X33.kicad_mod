@@ -1,0 +1,231 @@
+(footprint "BGA4C50P2X2_70X98X33"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "M24256X-FCU6T/VF*3")
+	(tags "Integrated Circuit")
+	(property "Reference" "IC**"
+		(at 0 2.675 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c215668d-aea2-4895-aeac-7bb2f44f1564")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "BGA4C50P2X2_70X98X33"
+		(at 0 2.675 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "36ac9b6b-61e2-44d7-a99a-2ca75ec65323")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d8622f3f-027c-4d78-a79a-1118ed0d5aa4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7e346967-a769-4079-aef7-7dab7df1dc58")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e1d447ae-0bcd-431f-95b1-00f4e2103100")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -0.45 -0.6)
+		(end 0.45 0.6)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "7d2e56ed-297c-4960-88e9-cfd1397b9889")
+	)
+	(fp_circle
+		(center -0.3 -0.8)
+		(end -0.25 -0.8)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "44a1becd-9698-4eb2-bedf-16cf17433d20")
+	)
+	(fp_line
+		(start -0.864 -1)
+		(end 0.863 -1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9bdb98cd-23d8-4aef-ab3f-30081527729b")
+	)
+	(fp_line
+		(start -0.864 1.001)
+		(end -0.864 -1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "eb5ccdd6-4663-4793-9ce3-b8355bd333b6")
+	)
+	(fp_line
+		(start 0.863 -1)
+		(end 0.863 1.001)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "06a750f4-5a9a-4630-99df-f961a8b87bc6")
+	)
+	(fp_line
+		(start 0.863 1.001)
+		(end -0.864 1.001)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "6548a35e-7866-498a-acb3-020ac00ef6b5")
+	)
+	(fp_line
+		(start -0.352 -0.488)
+		(end 0.351 -0.488)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "30843ca2-7274-492e-bb76-52b52ed83c5e")
+	)
+	(fp_line
+		(start -0.352 -0.238)
+		(end -0.102 -0.488)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e19ba1b8-e473-42fc-99e0-a227eded666e")
+	)
+	(fp_line
+		(start -0.352 0.489)
+		(end -0.352 -0.488)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f2aa1c90-4f11-4872-9c9e-121b18234787")
+	)
+	(fp_line
+		(start 0.351 -0.488)
+		(end 0.351 0.489)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d5192f32-f0bb-457c-be69-8df52ca6b2ea")
+	)
+	(fp_line
+		(start 0.351 0.489)
+		(end -0.352 0.489)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7989ee64-4b50-4e94-b797-f28ca5dead5c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.05 1.4 0)
+		(layer "F.Fab")
+		(uuid "1d740df3-eba9-420d-97cb-96ea7c297e24")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "A1" smd roundrect
+		(at -0.2 -0.25 90)
+		(size 0.2 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "00aa1486-8931-4e96-8749-0c5b8dfb40f6")
+	)
+	(pad "A2" smd roundrect
+		(at 0.2 -0.25 90)
+		(size 0.2 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "67648bbb-c212-4c41-9e03-d054d68c3caa")
+	)
+	(pad "B1" smd roundrect
+		(at -0.2 0.25 90)
+		(size 0.2 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "5ad9cf2e-3c2c-4cc2-8bf2-5ef2ad85bb1b")
+	)
+	(pad "B2" smd roundrect
+		(at 0.2 0.25 90)
+		(size 0.2 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "e43a76ac-c9fb-4922-b3e7-76ed9d26baa5")
+	)
+	(model "${KIPRJMOD}/../component_library/watch_models/M24256X-FCU6T_VF.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

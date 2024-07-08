@@ -1,0 +1,7 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "keyboard_footprints")(type "KiCad")(uri "${KIPRJMOD}/../libraries/keyboard_footprints")(options "")(descr ""))
+  (lib (name "fingerpunch")(type "KiCad")(uri "${KIPRJMOD}/../libraries/fingerpunch/kicad/fingerpunch.pretty")(options "")(descr ""))
+  (lib (name "keyboard_parts")(type "KiCad")(uri "${KIPRJMOD}/../libraries/keyboard_parts.pretty")(options "")(descr ""))
+  (lib (name "Keebio-Parts")(type "KiCad")(uri "${KIPRJMOD}/../libraries/Keebio-Parts.pretty")(options "")(descr ""))
+)
