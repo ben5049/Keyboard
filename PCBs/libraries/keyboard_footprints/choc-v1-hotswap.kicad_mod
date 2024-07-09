@@ -238,4 +238,15 @@
 		(layers "B.Cu" "B.Paste" "B.Mask")
 		(uuid "99332785-d9f1-4363-9377-26ddc18e6d2c")
 	)
+	(model "C:/Users/bens1/OneDrive/Documents/Projects/Keyboard/PCBs/libraries/keyboard_models/Kailh Choc Low Profile Switch.step"
+		(offset
+			(xyz 0 0 2.1)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

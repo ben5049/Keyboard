@@ -6468,6 +6468,18 @@
 		)
 		(uuid "08a652d8-bd44-4642-929a-2560adf26ea6")
 	)
+	(hierarchical_label "DSI_D0P"
+		(shape bidirectional)
+		(at 185.42 139.7 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0f683b7c-51ba-481c-bc7c-67f75c9149f2")
+	)
 	(hierarchical_label "KEY_B9"
 		(shape input)
 		(at 381 76.2 0)
@@ -6539,6 +6551,18 @@
 			(justify left)
 		)
 		(uuid "322db7d7-6143-43e4-846d-7b0cc56dd8e5")
+	)
+	(hierarchical_label "DSI_CKN"
+		(shape output)
+		(at 185.42 137.16 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "36527aa0-807f-4df1-95b1-93fb90cec385")
 	)
 	(hierarchical_label "KEY_B11"
 		(shape input)
@@ -6612,6 +6636,18 @@
 		)
 		(uuid "6ffd9b0a-f956-4cdd-be97-b3e0cf0fb332")
 	)
+	(hierarchical_label "DSI_TE"
+		(shape input)
+		(at 185.42 132.08 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "76697985-f15d-4e38-b8c9-0839b3e0f975")
+	)
 	(hierarchical_label "KEY_A11"
 		(shape input)
 		(at 381 63.5 0)
@@ -6623,6 +6659,18 @@
 			(justify left)
 		)
 		(uuid "801fede3-a1f6-45e1-855e-6405c428bf72")
+	)
+	(hierarchical_label "USB_DN"
+		(shape bidirectional)
+		(at 185.42 119.38 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8969fc1f-4e72-4970-8d28-bebd4a7afbc7")
 	)
 	(hierarchical_label "KEY_A10"
 		(shape input)
@@ -6684,6 +6732,18 @@
 		)
 		(uuid "a29056ed-35f3-4014-a15c-d6230cc2af14")
 	)
+	(hierarchical_label "DSI_D0N"
+		(shape bidirectional)
+		(at 185.42 142.24 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a404a090-c8f4-4480-ae27-1bd1b2d79eb6")
+	)
 	(hierarchical_label "KEY_A12"
 		(shape input)
 		(at 381 66.04 0)
@@ -6707,6 +6767,18 @@
 			(justify left)
 		)
 		(uuid "ba53bf5d-2064-4856-8585-147d138e66ce")
+	)
+	(hierarchical_label "USB_DP"
+		(shape bidirectional)
+		(at 185.42 116.84 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ba590095-5b52-4ff3-82ad-9ab567f28b32")
 	)
 	(hierarchical_label "KEY_B10"
 		(shape input)
@@ -6779,6 +6851,18 @@
 			(justify left)
 		)
 		(uuid "d564719f-5e2d-4df7-994b-f2cd6672bdf3")
+	)
+	(hierarchical_label "DSI_CKP"
+		(shape output)
+		(at 185.42 134.62 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d62333b7-6972-443d-a338-337366b0ee03")
 	)
 	(hierarchical_label "SWCLK"
 		(shape input)

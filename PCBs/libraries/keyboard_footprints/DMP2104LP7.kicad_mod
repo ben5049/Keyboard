@@ -1,44 +1,203 @@
-(footprint "DMP2104LP7" (version 20221018) (generator pcbnew)
-  (layer "F.Cu")
-  (descr "DFN1411-3")
-  (tags "MOSFET (P-Channel)")
-  (attr smd)
-  (fp_text reference "Q**" (at -0.027 0.25) (layer "F.SilkS") hide
-      (effects (font (size 1.27 1.27) (thickness 0.254)))
-    (tstamp a2bfb9f2-f3ee-4520-91b7-039eef39fde6)
-  )
-  (fp_text value "DMP2104LP7" (at -0.027 0.25) (layer "F.SilkS") hide
-      (effects (font (size 1.27 1.27) (thickness 0.254)))
-    (tstamp fe5e46e4-d2db-4fc7-98dd-3146b51af1af)
-  )
-  (fp_text user "${REFERENCE}" (at -0.027 0.25) (layer "F.Fab") hide
-      (effects (font (size 1.27 1.27) (thickness 0.254)))
-    (tstamp aeebaf48-fa6a-4d42-beb0-1913c5499d4f)
-  )
-  (fp_line (start 0.4 1) (end 0.4 1)
-    (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 500625b9-40b0-41c1-a848-4073b0ac0a51))
-  (fp_line (start 0.5 1) (end 0.5 1)
-    (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 219a0390-570b-471b-a73e-11c3d34a6700))
-  (fp_arc (start 0.4 1) (mid 0.45 0.95) (end 0.5 1)
-    (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp b78900cf-c0d4-4a1f-8921-dc102a6034d1))
-  (fp_arc (start 0.5 1) (mid 0.45 1.05) (end 0.4 1)
-    (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 7f333df8-155b-4b79-983d-e6166f78c54f))
-  (fp_rect (start -1 -0.75) (end 1 0.75)
-    (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd") (tstamp 16c488a1-9064-4d03-b0ff-bbc7da665460))
-  (fp_line (start -0.7 -0.55) (end 0.7 -0.55)
-    (stroke (width 0.2) (type solid)) (layer "F.Fab") (tstamp 17f98252-41af-4458-9b3e-9568ff9c4358))
-  (fp_line (start -0.7 0.55) (end -0.7 -0.55)
-    (stroke (width 0.2) (type solid)) (layer "F.Fab") (tstamp 4c1d5cac-a8f6-4c40-80b1-55643d632d3e))
-  (fp_line (start 0.7 -0.55) (end 0.7 0.55)
-    (stroke (width 0.2) (type solid)) (layer "F.Fab") (tstamp 20e0d7cb-8efa-4dff-995d-550f27981d48))
-  (fp_line (start 0.7 0.55) (end -0.7 0.55)
-    (stroke (width 0.2) (type solid)) (layer "F.Fab") (tstamp e8104296-0aee-42d7-9c5e-492cd2b2a585))
-  (pad "1" smd rect (at 0.38 0.275 90) (size 0.4 0.48) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 90d3be7c-40fd-472a-b4fe-d5c8d9d6c1c9))
-  (pad "2" smd rect (at -0.38 0 90) (size 0.75 0.75) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 2ea11051-e0c4-4620-8a2f-a333faff32f1))
-  (pad "3" smd rect (at 0.38 -0.275 90) (size 0.4 0.48) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp cb16833b-25e0-438c-af97-18c239ddc67e))
-  (model "${KIPRJMOD}/../component_library/watch_models/DMP2104LP-7.stp"
-    (offset (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
+(footprint "DMP2104LP7"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "DFN1411-3")
+	(tags "MOSFET (P-Channel)")
+	(property "Reference" "Q**"
+		(at -0.027 0.25 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a2bfb9f2-f3ee-4520-91b7-039eef39fde6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "DMP2104LP7"
+		(at -0.027 0.25 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "fe5e46e4-d2db-4fc7-98dd-3146b51af1af")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4bf6efaa-6125-4bca-aa54-a8baf8844176")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e8b992d3-9f11-4008-8218-8882c83258ab")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "46d1d221-fcc1-4a97-a8d2-ea07112de810")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 0.4 1)
+		(end 0.4 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "500625b9-40b0-41c1-a848-4073b0ac0a51")
+	)
+	(fp_line
+		(start 0.5 1)
+		(end 0.5 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "219a0390-570b-471b-a73e-11c3d34a6700")
+	)
+	(fp_arc
+		(start 0.4 1)
+		(mid 0.45 0.95)
+		(end 0.5 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b78900cf-c0d4-4a1f-8921-dc102a6034d1")
+	)
+	(fp_arc
+		(start 0.5 1)
+		(mid 0.45 1.05)
+		(end 0.4 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7f333df8-155b-4b79-983d-e6166f78c54f")
+	)
+	(fp_rect
+		(start -1 -0.75)
+		(end 1 0.75)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "16c488a1-9064-4d03-b0ff-bbc7da665460")
+	)
+	(fp_line
+		(start -0.7 -0.55)
+		(end 0.7 -0.55)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "17f98252-41af-4458-9b3e-9568ff9c4358")
+	)
+	(fp_line
+		(start -0.7 0.55)
+		(end -0.7 -0.55)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4c1d5cac-a8f6-4c40-80b1-55643d632d3e")
+	)
+	(fp_line
+		(start 0.7 -0.55)
+		(end 0.7 0.55)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "20e0d7cb-8efa-4dff-995d-550f27981d48")
+	)
+	(fp_line
+		(start 0.7 0.55)
+		(end -0.7 0.55)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e8104296-0aee-42d7-9c5e-492cd2b2a585")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.027 0.25 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aeebaf48-fa6a-4d42-beb0-1913c5499d4f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0.38 0.275 90)
+		(size 0.4 0.48)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "90d3be7c-40fd-472a-b4fe-d5c8d9d6c1c9")
+	)
+	(pad "2" smd rect
+		(at -0.38 0 90)
+		(size 0.75 0.75)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "2ea11051-e0c4-4620-8a2f-a333faff32f1")
+	)
+	(pad "3" smd rect
+		(at 0.38 -0.275 90)
+		(size 0.4 0.48)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "cb16833b-25e0-438c-af97-18c239ddc67e")
+	)
+	(model "${KIPRJMOD}/../libraries/keyboard_models/DMP2104LP-7.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

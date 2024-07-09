@@ -217,7 +217,7 @@
 		(roundrect_rratio 0.25)
 		(uuid "e43a76ac-c9fb-4922-b3e7-76ed9d26baa5")
 	)
-	(model "${KIPRJMOD}/../component_library/watch_models/M24256X-FCU6T_VF.stp"
+	(model "${KIPRJMOD}/../libraries/keyboard_models/M24256X-FCU6T_VF.stp"
 		(offset
 			(xyz 0 0 0)
 		)

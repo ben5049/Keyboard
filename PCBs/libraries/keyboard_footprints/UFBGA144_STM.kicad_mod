@@ -2820,7 +2820,7 @@
 		)
 		(uuid "9c53a9de-3e77-4599-bdb7-779167fa47e3")
 	)
-	(model "${KIPRJMOD}/../component_library/watch_models/STM32U5G9ZJJ.stp"
+	(model "${KIPRJMOD}/../libraries/keyboard_models/STM32U5G9ZJJ.stp"
 		(offset
 			(xyz 0 0 0)
 		)

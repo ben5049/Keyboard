@@ -12,4 +12,5 @@
   (lib (name "USB4510-03-1-A")(type "KiCad")(uri "${KIPRJMOD}/../libraries/keyboard_symbols/USB4510-03-1-A.kicad_sym")(options "")(descr ""))
   (lib (name "DMP2104LP-7")(type "KiCad")(uri "${KIPRJMOD}/../libraries/keyboard_symbols/DMP2104LP-7.kicad_sym")(options "")(descr ""))
   (lib (name "MAX9938TEBS+TG45")(type "KiCad")(uri "${KIPRJMOD}/../libraries/keyboard_symbols/MAX9938TEBS+TG45.kicad_sym")(options "")(descr ""))
+  (lib (name "FH26W-27S-0_3SHW_60_")(type "KiCad")(uri "${KIPRJMOD}/../libraries/keyboard_symbols/FH26W-27S-0_3SHW_60_.kicad_sym")(options "")(descr ""))
 )

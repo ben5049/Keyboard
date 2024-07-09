@@ -1,4 +1,4 @@
-23157690278630360
+23159410840761186
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -94772,6 +94772,13 @@ MOSFET (P-Channel)
 0
 3
 3
+keyboard_footprints
+FH26W27S03SHW60
+FH26W-27S-0.3SHW(60)-1
+Connector
+0
+29
+29
 keyboard_footprints
 Keyboard v1
 
