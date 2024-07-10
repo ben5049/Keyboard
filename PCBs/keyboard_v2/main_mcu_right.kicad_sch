@@ -3921,6 +3921,12 @@
 		(uuid "24165d53-2485-4022-8ad8-4c5bfe84d5de")
 	)
 	(junction
+		(at 205.74 226.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "357de0fd-8c42-4ea8-aaa3-d1999d27d474")
+	)
+	(junction
 		(at 195.58 233.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4041,6 +4047,12 @@
 		(uuid "7e4fa3e3-55ea-4e96-a22e-01d12a6f8259")
 	)
 	(junction
+		(at 205.74 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7f4c2d25-41c2-43a9-8ff3-51b1599b1558")
+	)
+	(junction
 		(at 256.54 215.9)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4137,12 +4149,6 @@
 		(uuid "d53433cd-0c3c-4bbf-875b-dc955c86c12f")
 	)
 	(junction
-		(at 205.74 226.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d5a7a40b-0a10-4490-9e8f-656843d65d9a")
-	)
-	(junction
 		(at 53.34 246.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4167,22 +4173,10 @@
 		(uuid "e0489a74-720d-41c9-9217-7ec7b0cfa090")
 	)
 	(junction
-		(at 205.74 218.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e0aa272f-acb0-4041-acdc-5bb8f4832d18")
-	)
-	(junction
 		(at 256.54 243.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e412ae92-b818-4a75-8f48-cbaf73762bfb")
-	)
-	(junction
-		(at 205.74 223.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e48d41eb-0a84-4e7b-a08e-deebc2c69d08")
 	)
 	(junction
 		(at 205.74 233.68)
@@ -4337,6 +4331,16 @@
 			(type default)
 		)
 		(uuid "1664fdc0-de82-4ab1-8223-19f3b633efa5")
+	)
+	(wire
+		(pts
+			(xy 205.74 226.06) (xy 205.74 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1797ae9b-eb30-44bf-9ee2-877eb702f846")
 	)
 	(wire
 		(pts
@@ -4670,6 +4674,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 226.06) (xy 205.74 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48c1f8d8-491f-4ef6-802f-a3cfc498eed5")
+	)
+	(wire
+		(pts
 			(xy 256.54 218.44) (xy 256.54 220.98)
 		)
 		(stroke
@@ -4797,16 +4811,6 @@
 			(type default)
 		)
 		(uuid "55fe1ad5-9f8c-45f2-8996-b17b07d5f82e")
-	)
-	(wire
-		(pts
-			(xy 205.74 226.06) (xy 205.74 228.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "566c14ab-e896-42f3-b19c-3cefa3e0ef79")
 	)
 	(wire
 		(pts
@@ -4967,16 +4971,6 @@
 			(type default)
 		)
 		(uuid "67279311-b1a5-4a49-944f-6d254c768a8a")
-	)
-	(wire
-		(pts
-			(xy 205.74 223.52) (xy 205.74 226.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "687cebb3-e4be-4137-ab31-4078f65a8ea6")
 	)
 	(wire
 		(pts
@@ -5490,6 +5484,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 223.52) (xy 208.28 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a555fb37-6496-4a82-807d-73d70e5f3f08")
+	)
+	(wire
+		(pts
 			(xy 205.74 205.74) (xy 208.28 205.74)
 		)
 		(stroke
@@ -5550,13 +5554,13 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 223.52) (xy 208.28 223.52)
+			(xy 205.74 218.44) (xy 205.74 226.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ad9eb1e4-e177-4863-8b98-8eeae981fdb6")
+		(uuid "abd18986-cfb0-4751-adf0-4dd3d8a468f7")
 	)
 	(wire
 		(pts
@@ -5720,6 +5724,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 220.98) (xy 200.66 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6fd2f03-9efa-4716-a0ad-9af74b3ebe16")
+	)
+	(wire
+		(pts
 			(xy 256.54 228.6) (xy 256.54 233.68)
 		)
 		(stroke
@@ -5807,16 +5821,6 @@
 			(type default)
 		)
 		(uuid "d0408558-b92a-4872-a11e-f8935fbc854a")
-	)
-	(wire
-		(pts
-			(xy 205.74 218.44) (xy 205.74 223.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2ea3186-5dc0-4e62-93d0-f4a7a84fa1fe")
 	)
 	(wire
 		(pts
@@ -5987,16 +5991,6 @@
 			(type default)
 		)
 		(uuid "ebfb32b0-b01c-4b76-9f2e-66c135c8a7ce")
-	)
-	(wire
-		(pts
-			(xy 205.74 226.06) (xy 208.28 226.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ece4b72f-ad7d-46c4-b820-e4869cbc159d")
 	)
 	(wire
 		(pts
@@ -7830,6 +7824,72 @@
 			(project "keyboard_v2"
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/c45c2f49-4b68-419d-a43d-2f217736a467"
 					(reference "C821")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 200.66 220.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2e228523-2b75-4aae-ac37-e74f29a0839c")
+		(property "Reference" "#PWR0805"
+			(at 200.66 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 200.66 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 200.66 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d4f09448-7abe-4399-b0d6-8e573c7bd042")
+		)
+		(instances
+			(project "keyboard_v2"
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/c45c2f49-4b68-419d-a43d-2f217736a467"
+					(reference "#PWR0805")
 					(unit 1)
 				)
 			)
@@ -10312,6 +10372,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+1V8")
+		(at 388.62 233.68 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a3be6cad-3b30-4704-8115-e9f479b09163")
+		(property "Reference" "#PWR0803"
+			(at 388.62 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+1V8"
+			(at 388.62 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 388.62 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 388.62 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V8\""
+			(at 388.62 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b9c29fc1-ce5f-4f86-b76c-6294aa906874")
+		)
+		(instances
+			(project "keyboard_v2"
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/c45c2f49-4b68-419d-a43d-2f217736a467"
+					(reference "#PWR0803")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "M24256X-FCU6T_VF:M24256X-FCU6T_VF")
 		(at 373.38 236.22 0)
 		(unit 1)
@@ -10903,72 +11030,6 @@
 			(project "keyboard_v2"
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/c45c2f49-4b68-419d-a43d-2f217736a467"
 					(reference "#PWR0825")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 388.62 233.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c0b52113-cbde-4905-9b00-38ecdd55b062")
-		(property "Reference" "#PWR0803"
-			(at 388.62 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 388.62 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 388.62 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 388.62 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 388.62 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "199a32b5-2e26-431a-971d-55e99c4bb258")
-		)
-		(instances
-			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/c45c2f49-4b68-419d-a43d-2f217736a467"
-					(reference "#PWR0803")
 					(unit 1)
 				)
 			)

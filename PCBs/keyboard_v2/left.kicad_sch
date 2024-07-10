@@ -77,7 +77,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 134.62) (xy 152.4 134.62)
+			(xy 101.6 127) (xy 152.4 127)
 		)
 		(stroke
 			(width 0)
@@ -94,6 +94,16 @@
 			(type default)
 		)
 		(uuid "6d554f07-6ab1-4fb0-8e8e-2e66fc02f7fd")
+	)
+	(wire
+		(pts
+			(xy 101.6 73.66) (xy 152.4 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f233ac1-7cb2-417b-9204-9a3e946ace3a")
 	)
 	(wire
 		(pts
@@ -227,7 +237,17 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 127) (xy 152.4 127)
+			(xy 101.6 71.12) (xy 152.4 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2ebe91c-cf77-4e42-b7c8-6c6475d5b67e")
+	)
+	(wire
+		(pts
+			(xy 101.6 119.38) (xy 152.4 119.38)
 		)
 		(stroke
 			(width 0)
@@ -257,7 +277,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 129.54) (xy 152.4 129.54)
+			(xy 101.6 121.92) (xy 152.4 121.92)
 		)
 		(stroke
 			(width 0)
@@ -317,7 +337,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 137.16) (xy 152.4 137.16)
+			(xy 101.6 129.54) (xy 152.4 129.54)
 		)
 		(stroke
 			(width 0)
@@ -337,7 +357,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 132.08) (xy 152.4 132.08)
+			(xy 101.6 124.46) (xy 152.4 124.46)
 		)
 		(stroke
 			(width 0)
@@ -367,7 +387,7 @@
 	)
 	(sheet
 		(at 76.2 50.8)
-		(size 25.4 33.02)
+		(size 25.4 25.4)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -387,7 +407,7 @@
 			)
 		)
 		(property "Sheetfile" "usb.kicad_sch"
-			(at 76.2 84.4046 0)
+			(at 76.2 76.7846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -425,26 +445,6 @@
 			)
 			(uuid "37a11b25-1ed6-4286-9055-6ab42c9d9152")
 		)
-		(pin "SCL" bidirectional
-			(at 101.6 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "a4787c98-b37c-409f-ae23-5e6c3b1d8e54")
-		)
-		(pin "SDA" input
-			(at 101.6 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "f9cdab84-1bf7-48f6-92db-e8a2d4a0dc2b")
-		)
 		(pin "SWDIO" bidirectional
 			(at 101.6 55.88 0)
 			(effects
@@ -466,7 +466,7 @@
 			(uuid "62f330a2-6103-47e4-9438-4f139c76b5a6")
 		)
 		(pin "USB_DP" bidirectional
-			(at 101.6 78.74 0)
+			(at 101.6 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -476,7 +476,7 @@
 			(uuid "aec34df7-6cfb-43ec-965a-5aca556c672d")
 		)
 		(pin "USB_DN" bidirectional
-			(at 101.6 81.28 0)
+			(at 101.6 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -842,8 +842,8 @@
 		)
 	)
 	(sheet
-		(at 76.2 124.46)
-		(size 25.4 30.48)
+		(at 76.2 116.84)
+		(size 25.4 38.1)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -854,7 +854,7 @@
 		)
 		(uuid "477316a5-f8d9-40b1-a704-da1d199f3a0b")
 		(property "Sheetname" "Display"
-			(at 76.2 123.7484 0)
+			(at 76.2 116.1284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -872,7 +872,7 @@
 			)
 		)
 		(pin "DSI_CKN" input
-			(at 101.6 129.54 0)
+			(at 101.6 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -882,7 +882,7 @@
 			(uuid "983585a2-e328-4759-8f54-bf2463bb1d74")
 		)
 		(pin "DSI_CKP" input
-			(at 101.6 127 0)
+			(at 101.6 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -892,7 +892,7 @@
 			(uuid "3aed3677-750d-4f33-a717-0742e7ee630c")
 		)
 		(pin "DSI_D0N" bidirectional
-			(at 101.6 134.62 0)
+			(at 101.6 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -902,7 +902,7 @@
 			(uuid "b4805982-a08a-442b-a1da-2b82269001b0")
 		)
 		(pin "DSI_D0P" bidirectional
-			(at 101.6 132.08 0)
+			(at 101.6 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -912,7 +912,7 @@
 			(uuid "32dbd82c-c54f-4346-902b-05e8f08540fd")
 		)
 		(pin "DSI_TE" output
-			(at 101.6 137.16 0)
+			(at 101.6 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -922,7 +922,7 @@
 			(uuid "f0d25a7b-1818-4b79-bfdb-e611f1eaceaa")
 		)
 		(pin "AVDDEN" input
-			(at 101.6 142.24 0)
+			(at 101.6 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -930,6 +930,66 @@
 				(justify right)
 			)
 			(uuid "6e5dc540-df06-4ed9-aa2d-ff339eac70a5")
+		)
+		(pin "IM0" input
+			(at 101.6 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "0d05bbe4-039e-49d3-a774-a39be17c486b")
+		)
+		(pin "INT_TP" output
+			(at 101.6 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a3340997-84cb-433e-8d28-c2a1de906fad")
+		)
+		(pin "RST_DISP" input
+			(at 101.6 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "87389569-e8f4-44a2-aadf-a89a500ff89c")
+		)
+		(pin "RST_TP" input
+			(at 101.6 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "30adf9a7-3338-4fb3-a4f6-299208bc5c0b")
+		)
+		(pin "SCL_TP" input
+			(at 101.6 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "edca64fb-c4ce-4e4f-86d3-0ebc5a21effe")
+		)
+		(pin "SDA_TP" bidirectional
+			(at 101.6 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "eb97d74d-5779-4930-8208-4672af63deee")
 		)
 		(instances
 			(project "keyboard_v2"
@@ -940,7 +1000,7 @@
 		)
 	)
 	(sheet
-		(at 76.2 91.44)
+		(at 76.2 83.82)
 		(size 25.4 25.4)
 		(fields_autoplaced yes)
 		(stroke
@@ -952,7 +1012,7 @@
 		)
 		(uuid "4d620f55-5374-460e-a3f0-45f826e2308d")
 		(property "Sheetname" "Power"
-			(at 76.2 90.7284 0)
+			(at 76.2 83.1084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -961,7 +1021,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 76.2 117.4246 0)
+			(at 76.2 109.8046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -970,7 +1030,7 @@
 			)
 		)
 		(pin "+3V3" output
-			(at 76.2 101.6 180)
+			(at 76.2 93.98 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -980,7 +1040,7 @@
 			(uuid "a158f0ab-ba05-40eb-b379-a2905ecc0acf")
 		)
 		(pin "BTN" input
-			(at 101.6 109.22 0)
+			(at 101.6 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -990,7 +1050,7 @@
 			(uuid "1efd5851-e66e-4b68-b5f6-15c5b67efa86")
 		)
 		(pin "+1V8" output
-			(at 76.2 104.14 180)
+			(at 76.2 96.52 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1000,7 +1060,7 @@
 			(uuid "7e82a9cc-e06a-4aa2-b02c-4bd87a3d3e21")
 		)
 		(pin "+VSYS" output
-			(at 76.2 96.52 180)
+			(at 76.2 88.9 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1010,7 +1070,7 @@
 			(uuid "5327de2b-87f1-4f34-9d32-7a4d165bb3ef")
 		)
 		(pin "ISYS" output
-			(at 101.6 114.3 0)
+			(at 101.6 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1020,7 +1080,7 @@
 			(uuid "4250cabe-aa72-4ee3-98d8-7608d55a0725")
 		)
 		(pin "+VBAT" input
-			(at 76.2 93.98 180)
+			(at 76.2 86.36 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1030,7 +1090,7 @@
 			(uuid "fe7a8181-93e0-4f3d-b0b9-621f2940f8bc")
 		)
 		(pin "INT" output
-			(at 101.6 101.6 0)
+			(at 101.6 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1040,7 +1100,7 @@
 			(uuid "76044922-dd77-4511-b5e5-5857346db02b")
 		)
 		(pin "SDA" input
-			(at 101.6 96.52 0)
+			(at 101.6 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1050,7 +1110,7 @@
 			(uuid "c62d0f2b-a342-4a2a-86d9-1355d40d5eb7")
 		)
 		(pin "ENCHG" input
-			(at 101.6 104.14 0)
+			(at 101.6 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1060,7 +1120,7 @@
 			(uuid "a64d2095-6bdd-4158-9ac2-c8a042036f06")
 		)
 		(pin "SCL" bidirectional
-			(at 101.6 93.98 0)
+			(at 101.6 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1506,7 +1566,7 @@
 			(uuid "e03c19e0-8f80-4d2b-9746-dc91f276a637")
 		)
 		(pin "DSI_CKP" output
-			(at 152.4 127 180)
+			(at 152.4 119.38 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1516,7 +1576,7 @@
 			(uuid "1f133c09-0cd9-424b-b001-343817ac4fe1")
 		)
 		(pin "DSI_D0P" bidirectional
-			(at 152.4 132.08 180)
+			(at 152.4 124.46 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1526,7 +1586,7 @@
 			(uuid "f56b26b1-79a5-4d02-9cbf-509a31313dac")
 		)
 		(pin "DSI_CKN" output
-			(at 152.4 129.54 180)
+			(at 152.4 121.92 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1536,7 +1596,7 @@
 			(uuid "e62478fe-5e38-41fb-8214-a6edf302dc63")
 		)
 		(pin "USB_DP" bidirectional
-			(at 152.4 78.74 180)
+			(at 152.4 71.12 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1546,7 +1606,7 @@
 			(uuid "c2d1ac58-e440-4cb5-bde8-e39afa70a377")
 		)
 		(pin "USB_DN" bidirectional
-			(at 152.4 81.28 180)
+			(at 152.4 73.66 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1556,7 +1616,7 @@
 			(uuid "c658e948-9155-4853-aed9-1ef8d5d8839f")
 		)
 		(pin "DSI_D0N" bidirectional
-			(at 152.4 134.62 180)
+			(at 152.4 127 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1566,7 +1626,7 @@
 			(uuid "5432ca4a-aea8-41a6-81f9-4648ea3350f2")
 		)
 		(pin "DSI_TE" input
-			(at 152.4 137.16 180)
+			(at 152.4 129.54 180)
 			(effects
 				(font
 					(size 1.27 1.27)

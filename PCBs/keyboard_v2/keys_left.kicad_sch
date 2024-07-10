@@ -2458,7 +2458,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 35.56) (xy 27.94 35.56)
+			(xy 17.78 35.56) (xy 27.94 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3596,6 +3596,26 @@
 		)
 		(uuid "fe0e20f9-1c4e-449d-b45d-783b42fece54")
 	)
+	(text "level shifter"
+		(exclude_from_sim no)
+		(at 43.18 170.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "83e31d4e-4ea0-446b-8c77-85509addf397")
+	)
+	(text "encoder should use 3.3V"
+		(exclude_from_sim no)
+		(at 190.5 170.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8b6737d1-06db-465f-b1b2-d4b4de3837aa")
+	)
 	(label "LED25"
 		(at 187.96 66.04 0)
 		(fields_autoplaced yes)
@@ -3683,6 +3703,17 @@
 			(justify left bottom)
 		)
 		(uuid "35cfe003-f402-45fe-92c5-5d71009d84a7")
+	)
+	(label "LED1"
+		(at 50.8 170.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3774a765-c594-4a9d-b0e9-fb9291a77405")
 	)
 	(label "LED24"
 		(at 160.02 66.04 0)
@@ -3838,6 +3869,17 @@
 		)
 		(uuid "c4de74de-fb74-4113-a5ff-d86a3d9e256e")
 	)
+	(label "LED1"
+		(at 17.78 35.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c5321427-e89f-4cf5-ab9f-c259ba4e2abd")
+	)
 	(label "LED10"
 		(at 281.94 35.56 180)
 		(fields_autoplaced yes)
@@ -3963,18 +4005,6 @@
 			(justify left)
 		)
 		(uuid "28da141c-712c-48ec-a55a-31312165c3cf")
-	)
-	(hierarchical_label "LED1"
-		(shape input)
-		(at 22.86 35.56 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "36ac403e-de78-4dde-b451-b0eb20489c39")
 	)
 	(hierarchical_label "KEY_D6"
 		(shape output)
@@ -4119,6 +4149,18 @@
 			(justify left)
 		)
 		(uuid "aabf4106-a448-476c-808f-a72df666a605")
+	)
+	(hierarchical_label "NEOPIXEL"
+		(shape input)
+		(at 35.56 170.18 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b0c7d3d3-06e7-4769-be53-0994aaadee6a")
 	)
 	(hierarchical_label "KEY_E2"
 		(shape output)
@@ -13169,6 +13211,72 @@
 			(project "keyboard_v2"
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/434714c7-475a-4e7a-95b8-de0bbee6f731"
 					(reference "#PWR01209")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 43.18 165.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc15dcf7-f8b9-4552-90d0-c9e42ce036a2")
+		(property "Reference" "#PWR01230"
+			(at 43.18 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 43.18 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 43.18 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "354bec64-1e31-4c25-bde9-2bc9c4718f3d")
+		)
+		(instances
+			(project "keyboard_v2"
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/434714c7-475a-4e7a-95b8-de0bbee6f731"
+					(reference "#PWR01230")
 					(unit 1)
 				)
 			)
