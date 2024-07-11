@@ -5,114 +5,6 @@
 	(uuid "a44752e4-3dc0-459e-bb5d-e33d5cd2d538")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:Antenna"
-			(pin_numbers hide)
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "AE"
-				(at -1.905 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Value" "Antenna"
-				(at -1.905 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Antenna"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "antenna"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Antenna_0_1"
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 -3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 2.54) (xy 0 -2.54) (xy -1.27 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Antenna_1_1"
-				(pin input line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:C_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -2023,10 +1915,6 @@
 		(uuid "233a5981-df9e-4054-a516-d547a4d1247a")
 	)
 	(no_connect
-		(at 149.86 76.2)
-		(uuid "31dd9e7f-76b3-4d5a-9760-118de5ff8ef7")
-	)
-	(no_connect
 		(at 104.14 101.6)
 		(uuid "366fb7f4-a748-40d8-952f-4b7a45322b37")
 	)
@@ -2170,7 +2058,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 53.34) (xy 210.82 53.34)
+			(xy 200.66 53.34) (xy 208.28 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2900,16 +2788,6 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 50.8) (xy 210.82 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f44fc870-0257-46b7-b112-d3af61537fef")
-	)
-	(wire
-		(pts
 			(xy 157.48 129.54) (xy 157.48 127)
 		)
 		(stroke
@@ -3098,6 +2976,18 @@
 		)
 		(uuid "ec181d8f-d6c6-4a36-abaf-ad422adf61d7")
 	)
+	(hierarchical_label "ANT"
+		(shape output)
+		(at 208.28 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "047a5ce8-8c14-4077-a3c9-21d90ec896e2")
+	)
 	(hierarchical_label "UART_RX"
 		(shape input)
 		(at 55.88 91.44 180)
@@ -3168,7 +3058,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0510f2d2-e3c2-42e4-9d74-979991cdade5")
-		(property "Reference" "#PWR0907"
+		(property "Reference" "#PWR01007"
 			(at 167.64 123.19 0)
 			(effects
 				(font
@@ -3217,12 +3107,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "#PWR0907")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "#PWR01007")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "#PWR0907")
 					(unit 1)
 				)
 			)
@@ -3238,7 +3128,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30b6731b-dcb4-44cd-8b9f-81e4301b07ff")
-		(property "Reference" "C913"
+		(property "Reference" "C1013"
 			(at 160.02 107.9562 0)
 			(effects
 				(font
@@ -3291,12 +3181,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "C913")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "C1013")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "C913")
 					(unit 1)
 				)
 			)
@@ -3311,7 +3201,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3203532b-8760-4fca-ad20-3b27e436aea4")
-		(property "Reference" "C905"
+		(property "Reference" "C1005"
 			(at 190.5 57.1562 0)
 			(effects
 				(font
@@ -3364,12 +3254,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "C905")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "C1005")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "C905")
 					(unit 1)
 				)
 			)
@@ -3385,7 +3275,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "424880b8-6dff-4bcc-b1d4-93d571752e17")
-		(property "Reference" "#PWR0904"
+		(property "Reference" "#PWR01004"
 			(at 175.26 80.01 0)
 			(effects
 				(font
@@ -3434,12 +3324,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "#PWR0904")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "#PWR01004")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "#PWR0904")
 					(unit 1)
 				)
 			)
@@ -3455,7 +3345,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4a45b68c-a1dd-42ba-8d56-003fdbd14908")
-		(property "Reference" "C906"
+		(property "Reference" "C1006"
 			(at 203.2 57.1562 0)
 			(effects
 				(font
@@ -3508,12 +3398,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "C906")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "C1006")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "C906")
 					(unit 1)
 				)
 			)
@@ -3814,7 +3704,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4ce71bf6-8cfb-4040-820e-62a977427e33")
-		(property "Reference" "#PWR0903"
+		(property "Reference" "#PWR01003"
 			(at 160.02 80.01 0)
 			(effects
 				(font
@@ -3863,12 +3753,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "#PWR0903")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "#PWR01003")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "#PWR0903")
 					(unit 1)
 				)
 			)
@@ -3885,7 +3775,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4eeb0006-4750-4113-8c24-dced92a6faf4")
-		(property "Reference" "#PWR0908"
+		(property "Reference" "#PWR01008"
 			(at 198.12 128.27 0)
 			(effects
 				(font
@@ -3934,12 +3824,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "#PWR0908")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "#PWR01008")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "#PWR0908")
 					(unit 1)
 				)
 			)
@@ -3955,7 +3845,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5c85c2cb-8f5b-4299-9f36-8ec5fba361c2")
-		(property "Reference" "L902"
+		(property "Reference" "L1002"
 			(at 180.34 48.26 90)
 			(effects
 				(font
@@ -4006,12 +3896,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "L902")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "L1002")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "L902")
 					(unit 1)
 				)
 			)
@@ -4027,7 +3917,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "71d196c5-cd1f-432c-b920-b22ac183a845")
-		(property "Reference" "L906"
+		(property "Reference" "L1006"
 			(at 167.64 81.28 90)
 			(effects
 				(font
@@ -4078,12 +3968,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "L906")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "L1006")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "L906")
 					(unit 1)
 				)
 			)
@@ -4099,7 +3989,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7ac1f541-8399-4070-9a81-a92305476c08")
-		(property "Reference" "#PWR0906"
+		(property "Reference" "#PWR01006"
 			(at 187.96 110.49 0)
 			(effects
 				(font
@@ -4148,12 +4038,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "#PWR0906")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "#PWR01006")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "#PWR0906")
 					(unit 1)
 				)
 			)
@@ -4169,7 +4059,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "80a04bf3-489b-43d8-980e-4aefe11227be")
-		(property "Reference" "C904"
+		(property "Reference" "C1004"
 			(at 170.18 73.66 90)
 			(effects
 				(font
@@ -4220,12 +4110,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "C904")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "C1004")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "C904")
 					(unit 1)
 				)
 			)
@@ -4241,7 +4131,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9595c518-83ad-4ed0-bc9b-6468b095674d")
-		(property "Reference" "C912"
+		(property "Reference" "C1012"
 			(at 200.66 130.8162 0)
 			(effects
 				(font
@@ -4294,12 +4184,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "C912")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "C1012")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "C912")
 					(unit 1)
 				)
 			)
@@ -4315,7 +4205,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a292849b-1c24-435d-bc91-d7bb0325ee52")
-		(property "Reference" "C915"
+		(property "Reference" "C1015"
 			(at 190.5 95.2562 0)
 			(effects
 				(font
@@ -4368,12 +4258,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "C915")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "C1015")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "C915")
 					(unit 1)
 				)
 			)
@@ -4388,7 +4278,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a2cfb898-e313-4e95-bf87-1e2624b24fd5")
-		(property "Reference" "C903"
+		(property "Reference" "C1003"
 			(at 170.1736 55.88 90)
 			(effects
 				(font
@@ -4439,12 +4329,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "C903")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "C1003")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "C903")
 					(unit 1)
 				)
 			)
@@ -4460,7 +4350,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af48d86a-6e37-412f-b6bb-63751a60bcff")
-		(property "Reference" "#PWR0902"
+		(property "Reference" "#PWR01002"
 			(at 200.66 69.85 0)
 			(effects
 				(font
@@ -4509,12 +4399,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "#PWR0902")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "#PWR01002")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "#PWR0902")
 					(unit 1)
 				)
 			)
@@ -4530,7 +4420,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b929b2b9-4f48-4703-9bc9-33c619268f9b")
-		(property "Reference" "C910"
+		(property "Reference" "C1010"
 			(at 190.5 130.8162 0)
 			(effects
 				(font
@@ -4583,12 +4473,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "C910")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "C1010")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "C910")
 					(unit 1)
 				)
 			)
@@ -4604,7 +4494,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4dcaef9-272c-4c14-922d-87f849aee3ae")
-		(property "Reference" "C911"
+		(property "Reference" "C1011"
 			(at 170.18 107.9562 0)
 			(effects
 				(font
@@ -4657,83 +4547,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "C911")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "C1011")
 					(unit 1)
 				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Antenna")
-		(at 210.82 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ccdc2ad2-59b3-4372-b01e-8fffb201f7d4")
-		(property "Reference" "AE1001"
-			(at 213.36 45.0849 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Antenna"
-			(at 213.36 47.6249 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "RF_Antenna:Texas_SWRA117D_2.4GHz_Left"
-			(at 210.82 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 210.82 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Antenna"
-			(at 210.82 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d64ecee0-0f04-48d7-8abb-cf9ed2e4f033")
-		)
-		(instances
-			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
-					(reference "AE1001")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "AE901")
+					(reference "C911")
 					(unit 1)
 				)
 			)
@@ -4749,7 +4568,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d1851ea5-8198-432b-a877-30fd56ae360e")
-		(property "Reference" "C908"
+		(property "Reference" "C1008"
 			(at 170.18 130.8162 0)
 			(effects
 				(font
@@ -4802,12 +4621,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "C908")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "C1008")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "C908")
 					(unit 1)
 				)
 			)
@@ -4823,7 +4642,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d296fdd3-6c0f-4768-87df-0253125f3d6e")
-		(property "Reference" "Y902"
+		(property "Reference" "Y1002"
 			(at 157.48 63.5 90)
 			(effects
 				(font
@@ -4889,12 +4708,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "Y902")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "Y1002")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "Y902")
 					(unit 1)
 				)
 			)
@@ -4910,7 +4729,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd592e72-973b-4206-a520-da03f0221368")
-		(property "Reference" "L901"
+		(property "Reference" "L1001"
 			(at 157.48 81.28 90)
 			(effects
 				(font
@@ -4961,12 +4780,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "L901")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "L1001")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "L901")
 					(unit 1)
 				)
 			)
@@ -4982,7 +4801,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd8ed7f9-6bd7-4abf-a1c2-267b3e8a04c0")
-		(property "Reference" "C909"
+		(property "Reference" "C1009"
 			(at 180.34 130.8162 0)
 			(effects
 				(font
@@ -5035,12 +4854,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "C909")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "C1009")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "C909")
 					(unit 1)
 				)
 			)
@@ -5056,7 +4875,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "df19e653-e6b0-4c3e-bf5c-3e895ba49251")
-		(property "Reference" "C907"
+		(property "Reference" "C1007"
 			(at 160.02 130.8162 0)
 			(effects
 				(font
@@ -5109,12 +4928,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "C907")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "C1007")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "C907")
 					(unit 1)
 				)
 			)
@@ -5130,7 +4949,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e1c3060f-ee2c-4d17-9ea5-f4f982e6f7dd")
-		(property "Reference" "#PWR0905"
+		(property "Reference" "#PWR01005"
 			(at 198.12 146.05 0)
 			(effects
 				(font
@@ -5179,12 +4998,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "#PWR0905")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "#PWR01005")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "#PWR0905")
 					(unit 1)
 				)
 			)
@@ -5200,7 +5019,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e41435bc-d51d-44ed-853a-662886f4887c")
-		(property "Reference" "#PWR0901"
+		(property "Reference" "#PWR01001"
 			(at 187.96 69.85 0)
 			(effects
 				(font
@@ -5249,12 +5068,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "#PWR0901")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "#PWR01001")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "#PWR0901")
 					(unit 1)
 				)
 			)
@@ -5270,7 +5089,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ef1036a4-26dc-48a6-abdb-10d7b589100c")
-		(property "Reference" "C914"
+		(property "Reference" "C1014"
 			(at 180.34 95.2562 0)
 			(effects
 				(font
@@ -5323,12 +5142,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "C914")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "C1014")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "C914")
 					(unit 1)
 				)
 			)
@@ -5343,7 +5162,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "faae5f68-651d-48ae-9366-ca76c8b9c2ae")
-		(property "Reference" "L905"
+		(property "Reference" "L1005"
 			(at 195.58 48.26 90)
 			(effects
 				(font
@@ -5394,12 +5213,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
-					(reference "L905")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/d174db9b-07f6-4c79-87e9-921db730cdfb"
 					(reference "L1005")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/bf97ba9d-665b-4380-a56f-118a3ac4ddf1"
+					(reference "L905")
 					(unit 1)
 				)
 			)

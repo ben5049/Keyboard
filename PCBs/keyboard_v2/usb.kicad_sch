@@ -4505,6 +4505,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 104.14) (xy 45.72 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ed8f2b1-fa41-4743-9a44-ffecbfc3d1c0")
+	)
+	(wire
+		(pts
 			(xy 142.24 144.78) (xy 142.24 147.32)
 		)
 		(stroke
@@ -4722,6 +4732,16 @@
 			(type default)
 		)
 		(uuid "43ce98d7-6eab-46fa-9033-a285b04a4c8a")
+	)
+	(wire
+		(pts
+			(xy 33.02 106.68) (xy 45.72 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44b715cb-174d-476d-847d-99ecbab70cba")
 	)
 	(wire
 		(pts
@@ -5774,6 +5794,17 @@
 		)
 		(uuid "517f0ba9-63cb-4ccb-ab50-c503ac68043b")
 	)
+	(label "SDA"
+		(at 33.02 104.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "579499c5-9ea3-4368-ae2b-a2683316ce0c")
+	)
 	(label "VBUS_DET"
 		(at 124.46 33.02 0)
 		(fields_autoplaced yes)
@@ -6048,6 +6079,17 @@
 			(justify left bottom)
 		)
 		(uuid "e119bb51-e1c4-49fa-9a30-46066135facc")
+	)
+	(label "SCL"
+		(at 33.02 106.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "edda9b12-2b4e-4540-9b5d-69b397e2712b")
 	)
 	(label "USB0_CC1"
 		(at 63.5 152.4 180)
@@ -6424,7 +6466,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0dc1316a-82c9-4173-b749-22697b386982")
-		(property "Reference" "C602"
+		(property "Reference" "C1502"
 			(at 104.14 116.2113 0)
 			(effects
 				(font
@@ -6477,12 +6519,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/2fa754a4-db8f-4839-bd38-632dd798fa1f"
-					(reference "C602")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/3f6891f6-a1b6-4bde-ae5f-d2abc12d04a0"
 					(reference "C1502")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/2fa754a4-db8f-4839-bd38-632dd798fa1f"
+					(reference "C602")
 					(unit 1)
 				)
 			)
@@ -10032,7 +10074,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d6ab4ef0-0039-4f69-a546-c2a290acb99c")
-		(property "Reference" "#PWR0613"
+		(property "Reference" "#PWR01513"
 			(at 91.44 113.03 0)
 			(effects
 				(font
@@ -10081,12 +10123,12 @@
 		)
 		(instances
 			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/2fa754a4-db8f-4839-bd38-632dd798fa1f"
-					(reference "#PWR0613")
-					(unit 1)
-				)
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/3f6891f6-a1b6-4bde-ae5f-d2abc12d04a0"
 					(reference "#PWR01513")
+					(unit 1)
+				)
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/2fa754a4-db8f-4839-bd38-632dd798fa1f"
+					(reference "#PWR0613")
 					(unit 1)
 				)
 			)

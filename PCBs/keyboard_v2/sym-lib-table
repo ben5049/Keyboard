@@ -14,4 +14,6 @@
   (lib (name "MAX9938TEBS+TG45")(type "KiCad")(uri "${KIPRJMOD}/../libraries/keyboard_symbols/MAX9938TEBS+TG45.kicad_sym")(options "")(descr ""))
   (lib (name "FH26W-27S-0_3SHW_60_")(type "KiCad")(uri "${KIPRJMOD}/../libraries/keyboard_symbols/FH26W-27S-0_3SHW_60_.kicad_sym")(options "")(descr ""))
   (lib (name "ADP5301ACBZ-2-R7")(type "KiCad")(uri "${KIPRJMOD}/../libraries/keyboard_symbols/ADP5301ACBZ-2-R7.kicad_sym")(options "")(descr ""))
+  (lib (name "DMN21D2UFB-7B")(type "KiCad")(uri "${KIPRJMOD}/../libraries/keyboard_symbols/DMN21D2UFB-7B.kicad_sym")(options "")(descr ""))
+  (lib (name "PCM12SMTBR")(type "KiCad")(uri "${KIPRJMOD}/../libraries/keyboard_symbols/PCM12SMTBR.kicad_sym")(options "")(descr ""))
 )
