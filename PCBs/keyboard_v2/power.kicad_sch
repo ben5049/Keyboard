@@ -5425,7 +5425,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f26d2e4-1164-4ecc-9433-233f3def4cf2")
-		(property "Reference" "#PWR0502"
+		(property "Reference" "#PWR01402"
 			(at 58.42 118.11 0)
 			(effects
 				(font
@@ -6408,7 +6408,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d121e343-a132-47ac-91a8-8a6fbd260f57")
-		(property "Reference" "SW502"
+		(property "Reference" "SW1402"
 			(at 53.34 86.36 0)
 			(effects
 				(font

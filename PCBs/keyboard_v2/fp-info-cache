@@ -1,4 +1,4 @@
-24278466837819580
+24278466842396838
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -98546,6 +98546,13 @@ choc-v1-hotswap
 2
 2
 keyboard_footprints
+debug_header
+
+
+0
+15
+15
+keyboard_footprints
 gateron-ks27-choc-v1-hotswap
 
 
@@ -99168,13 +99175,6 @@ XTAL_HC_49_TH
 0
 2
 2
-keyboard_parts
-debug_header
-
-
-0
-15
-15
 keyboard_parts
 tmk2016
 

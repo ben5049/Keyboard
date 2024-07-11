@@ -2369,7 +2369,7 @@
 				)
 			)
 		)
-		(property "Footprint" "keyboard_parts:debug_header"
+		(property "Footprint" "keyboard_footprints:debug_header"
 			(at 116.84 33.02 0)
 			(effects
 				(font
