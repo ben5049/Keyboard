@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>v1_left_keyboard_firmware</name>
+	<name>keyboard_right_firmware</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -30,6 +30,36 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
 	<linkedResources>
+		<link>
+			<name>Application/Src/USB2533.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/keyboard_left_firmware/Application/Src/USB2533.c</locationURI>
+		</link>
+		<link>
+			<name>Application/Src/app_init.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/keyboard_left_firmware/Application/Src/app_init.c</locationURI>
+		</link>
+		<link>
+			<name>Application/Src/keys.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/keyboard_left_firmware/Application/Src/keys.c</locationURI>
+		</link>
+		<link>
+			<name>Application/Src/system_state.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/keyboard_left_firmware/Application/Src/system_state.c</locationURI>
+		</link>
+		<link>
+			<name>Application/Src/usb_init.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/keyboard_left_firmware/Application/Src/usb_init.c</locationURI>
+		</link>
+		<link>
+			<name>Application/Src/usb_thread.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/keyboard_left_firmware/Application/Src/usb_thread.c</locationURI>
+		</link>
 		<link>
 			<name>Drivers/STM32G0xx_HAL_Driver/stm32g0xx_hal.c</name>
 			<type>1</type>

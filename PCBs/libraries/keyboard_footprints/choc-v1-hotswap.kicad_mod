@@ -227,14 +227,14 @@
 		(uuid "f565cf54-67ba-4424-8d47-087433645499")
 	)
 	(pad "1" smd rect
-		(at -8.275 3.8)
-		(size 2.6 2.6)
+		(at -8.0375 3.8)
+		(size 2.125 2.6)
 		(layers "B.Cu" "B.Paste" "B.Mask")
 		(uuid "f4eb0267-179f-46c9-b516-9bfb06bac1ba")
 	)
 	(pad "2" smd rect
-		(at 3.275 5.9)
-		(size 2.6 2.6)
+		(at 3.0375 5.9)
+		(size 2.125 2.6)
 		(layers "B.Cu" "B.Paste" "B.Mask")
 		(uuid "99332785-d9f1-4363-9377-26ddc18e6d2c")
 	)

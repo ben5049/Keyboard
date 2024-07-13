@@ -4203,8 +4203,16 @@
 		(uuid "ef6754c3-07dc-41cd-aaad-34a1441e7cc7")
 	)
 	(no_connect
+		(at 88.9 91.44)
+		(uuid "21d1e3e8-35cb-494c-9fd6-a93e6b561904")
+	)
+	(no_connect
 		(at 198.12 121.92)
 		(uuid "42fc9ce1-02c3-4f86-8c8b-bfeabe8f1480")
+	)
+	(no_connect
+		(at 88.9 88.9)
+		(uuid "46775d72-5e11-423c-b486-16c187e47b53")
 	)
 	(no_connect
 		(at 198.12 124.46)
@@ -5012,6 +5020,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 83.82) (xy 43.18 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c9da8a1-c827-4945-b10c-f79992300bf8")
+	)
+	(wire
+		(pts
 			(xy 218.44 215.9) (xy 218.44 218.44)
 		)
 		(stroke
@@ -5059,6 +5077,16 @@
 			(type default)
 		)
 		(uuid "71d07bd1-0be0-4328-8e98-5cb0d198b486")
+	)
+	(wire
+		(pts
+			(xy 30.48 88.9) (xy 43.18 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7313c996-c6d3-4adb-b02e-021a8c698f3b")
 	)
 	(wire
 		(pts
@@ -5159,6 +5187,16 @@
 			(type default)
 		)
 		(uuid "7f1f9b77-4ff5-4600-9e94-0a897e09cc2e")
+	)
+	(wire
+		(pts
+			(xy 30.48 81.28) (xy 43.18 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f20f63d-bc41-444a-a852-dcee6defabc9")
 	)
 	(wire
 		(pts
@@ -5712,6 +5750,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 86.36) (xy 43.18 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4821f35-974d-43e8-beb6-6874bb881e32")
+	)
+	(wire
+		(pts
 			(xy 276.86 147.32) (xy 279.4 147.32)
 		)
 		(stroke
@@ -6089,6 +6137,16 @@
 			(type default)
 		)
 		(uuid "ebc0e521-6004-4eaf-a38d-9ec8fa3392c4")
+	)
+	(wire
+		(pts
+			(xy 30.48 116.84) (xy 43.18 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f05ac275-7546-4b3d-9aab-b145573737d7")
 	)
 	(wire
 		(pts
@@ -6610,13 +6668,13 @@
 	)
 	(hierarchical_label "SWCLK"
 		(shape input)
-		(at 345.44 106.68 0)
+		(at 30.48 88.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "13521992-b46d-457c-a11a-424becb3780c")
 	)
@@ -6730,13 +6788,13 @@
 	)
 	(hierarchical_label "USB_DP"
 		(shape bidirectional)
-		(at 345.44 91.44 0)
+		(at 30.48 83.82 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "4965ab18-efdd-4a98-9783-731e56526a2a")
 	)
@@ -6850,27 +6908,15 @@
 	)
 	(hierarchical_label "SWDIO"
 		(shape bidirectional)
-		(at 345.44 104.14 0)
+		(at 30.48 86.36 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "7bf48ed5-edd6-4e5f-a5c4-cc8e32588819")
-	)
-	(hierarchical_label "DSI_TE"
-		(shape input)
-		(at 345.44 99.06 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7d9fb766-260e-4e2c-b1d0-0658eb13415d")
 	)
 	(hierarchical_label "DSI_CKP"
 		(shape output)
@@ -7090,13 +7136,13 @@
 	)
 	(hierarchical_label "USB_DN"
 		(shape bidirectional)
-		(at 345.44 93.98 0)
+		(at 30.48 81.28 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "d0730f2e-cbd5-4f3d-a81a-551dd8b8786d")
 	)
@@ -7234,13 +7280,13 @@
 	)
 	(hierarchical_label "DSI_TE"
 		(shape input)
-		(at 345.44 134.62 0)
+		(at 30.48 116.84 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "f5af3369-c10a-4065-b012-030297d3dbb2")
 	)
@@ -7307,7 +7353,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 109.22 264.16 0)
 			(effects
 				(font
@@ -7618,6 +7664,75 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
+		(at 127 228.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1a584e42-6db8-4a03-a04c-5a8340887694")
+		(property "Reference" "C1305"
+			(at 129.54 227.9713 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 129.54 230.5113 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 127 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 127 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3fca98bb-a218-4b77-8a6d-bb26d1121c49")
+		)
+		(pin "2"
+			(uuid "68ccc858-3588-47ba-8284-5b3d8ad65fa4")
+		)
+		(instances
+			(project "keyboard_v2"
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
+					(reference "C1305")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
 		(at 66.04 228.6 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7643,7 +7758,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 66.04 228.6 0)
 			(effects
 				(font
@@ -7819,75 +7934,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 116.84 228.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "24d6b77d-6010-446d-8ca9-549e1957ecf2")
-		(property "Reference" "C1314"
-			(at 119.38 227.9713 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 119.38 230.5113 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 116.84 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 116.84 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 116.84 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7f9753b8-0069-4a12-b23f-b7570c3911c5")
-		)
-		(pin "2"
-			(uuid "817590fd-0c49-4809-8220-f994fc62305f")
-		)
-		(instances
-			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
-					(reference "C1314")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 101.6 271.78 0)
 		(unit 1)
@@ -7980,7 +8026,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 187.96 251.46 0)
 			(effects
 				(font
@@ -8115,7 +8161,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 86.36 228.6 0)
 			(effects
 				(font
@@ -8184,7 +8230,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 76.2 228.6 0)
 			(effects
 				(font
@@ -8287,75 +8333,6 @@
 			(project "keyboard_v2"
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
 					(reference "#PWR01318")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 149.86 193.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3c239de4-1973-43a5-8948-c907fd417a27")
-		(property "Reference" "C1320"
-			(at 152.4 192.4113 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 152.4 194.9513 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 149.86 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 149.86 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 149.86 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "140e163a-aac3-40b1-b710-40f047804150")
-		)
-		(pin "2"
-			(uuid "e02cef77-4197-4104-9f2c-cdd707683fec")
-		)
-		(instances
-			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
-					(reference "C1320")
 					(unit 1)
 				)
 			)
@@ -8488,6 +8465,75 @@
 			(project "keyboard_v2"
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
 					(reference "#PWR01305")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 66.04 193.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4aa240da-d194-4ec7-8f63-601d7e3a47ed")
+		(property "Reference" "C1314"
+			(at 68.58 192.4113 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 68.58 194.9513 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 66.04 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 66.04 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a3d6ec1d-f93a-44b8-b6dc-5018f7bdb4da")
+		)
+		(pin "2"
+			(uuid "8adf4fca-7b81-4118-b847-707d685beec3")
+		)
+		(instances
+			(project "keyboard_v2"
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
+					(reference "C1314")
 					(unit 1)
 				)
 			)
@@ -8629,6 +8675,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 137.16 228.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "52b81d5a-002d-405d-8345-26ba7d3a776e")
+		(property "Reference" "C1310"
+			(at 139.7 227.9713 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 139.7 230.5113 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 137.16 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 137.16 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c4ce6719-732a-4d28-a42a-aa767e4ece25")
+		)
+		(pin "2"
+			(uuid "14d6459d-e872-437d-a509-56ca81a21a97")
+		)
+		(instances
+			(project "keyboard_v2"
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
+					(reference "C1310")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 251.46 45.72 0)
 		(unit 1)
@@ -8693,75 +8808,6 @@
 			(project "keyboard_v2"
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
 					(reference "R1301")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 111.76 193.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "56e6fed8-a89d-4896-b013-85479d5ecf59")
-		(property "Reference" "C1313"
-			(at 114.3 192.4113 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 114.3 194.9513 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 111.76 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 111.76 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 111.76 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "76f6ece6-4990-4bd5-a333-6fa2dd3b47be")
-		)
-		(pin "2"
-			(uuid "dea0ec1c-c884-489f-9dfd-aecf053030d2")
-		)
-		(instances
-			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
-					(reference "C1313")
 					(unit 1)
 				)
 			)
@@ -9549,6 +9595,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 66.04 264.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "73157bf8-36bc-4afc-852e-cf7709d90d8e")
+		(property "Reference" "C1316"
+			(at 68.58 263.5313 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 68.58 266.0713 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 66.04 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 66.04 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7889c587-0e0f-43e0-80cd-fec95964c539")
+		)
+		(pin "2"
+			(uuid "e8c86a60-9279-4fc4-b15b-68766c0c4b98")
+		)
+		(instances
+			(project "keyboard_v2"
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
+					(reference "C1316")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 104.14 185.42 0)
 		(unit 1)
@@ -9609,6 +9724,75 @@
 			(project "keyboard_v2"
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
 					(reference "#PWR01306")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 116.84 228.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7882a235-fae2-49ee-9ba6-34302e6cff0a")
+		(property "Reference" "C1303"
+			(at 119.38 227.9713 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 119.38 230.5113 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 116.84 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 116.84 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2a858821-23f4-4a6e-b4cb-533592f7f8a1")
+		)
+		(pin "2"
+			(uuid "0053a0cb-c3b8-4840-a61b-ab9f98b1ee84")
+		)
+		(instances
+			(project "keyboard_v2"
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
+					(reference "C1303")
 					(unit 1)
 				)
 			)
@@ -9742,75 +9926,6 @@
 			(project "keyboard_v2"
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
 					(reference "#PWR01312")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 144.78 264.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "830635e3-890c-463a-9a4b-cc3d83bb067f")
-		(property "Reference" "C1318"
-			(at 147.32 263.5313 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 147.32 266.0713 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 144.78 264.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 144.78 264.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 144.78 264.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9318a150-b637-45c8-9263-39197e743bed")
-		)
-		(pin "2"
-			(uuid "e646fe61-db00-43e5-a8aa-0453ba175315")
-		)
-		(instances
-			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
-					(reference "C1318")
 					(unit 1)
 				)
 			)
@@ -10584,153 +10699,15 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 96.52 228.6 0)
+		(at 144.78 264.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ab9a36d6-9eac-4a11-bc92-896c818334af")
-		(property "Reference" "C1310"
-			(at 99.06 227.9713 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 99.06 230.5113 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 96.52 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 96.52 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 96.52 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ad1e47fa-6c37-4828-a58b-715b39962d39")
-		)
-		(pin "2"
-			(uuid "7126402d-7e9f-4d34-8285-4b78bcb4efeb")
-		)
-		(instances
-			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
-					(reference "C1310")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 66.04 193.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "af0c5bfa-d2dc-409a-ac99-0a78cacd6c55")
-		(property "Reference" "C1303"
-			(at 68.58 192.4113 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 68.58 194.9513 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 66.04 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 66.04 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 66.04 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "50ba08ed-c572-43b8-9058-67f894a2edfc")
-		)
-		(pin "2"
-			(uuid "9b416bb2-dbf8-493d-ad76-6e73c653fd6a")
-		)
-		(instances
-			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
-					(reference "C1303")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 137.16 228.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "afd93a89-372d-45ca-bac4-1e9afc7dfe16")
+		(uuid "a3ae3a5d-de9d-4241-ad38-f9ff72192140")
 		(property "Reference" "C1317"
-			(at 139.7 227.9713 0)
+			(at 147.32 263.5313 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10739,7 +10716,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 139.7 230.5113 0)
+			(at 147.32 266.0713 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10747,8 +10724,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 137.16 228.6 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 144.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10757,7 +10734,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 137.16 228.6 0)
+			(at 144.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10766,7 +10743,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 137.16 228.6 0)
+			(at 144.78 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10775,15 +10752,84 @@
 			)
 		)
 		(pin "1"
-			(uuid "f8962ab2-a5ec-44e6-87da-c84f1b4b6ed3")
+			(uuid "97382e01-043b-4c44-bf72-bc5f247df234")
 		)
 		(pin "2"
-			(uuid "74e0ca2c-b6bd-4acc-8e62-a479598d2973")
+			(uuid "dd7de33f-2ce8-4be0-b9de-e888ae9d3e25")
 		)
 		(instances
 			(project "keyboard_v2"
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
 					(reference "C1317")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 111.76 193.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ad16d164-ae8b-4eab-babd-fb9a0056044e")
+		(property "Reference" "C1313"
+			(at 114.3 192.4113 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 114.3 194.9513 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 111.76 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 111.76 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cd90ea3f-d209-40ca-b2cd-c37943cbaef9")
+		)
+		(pin "2"
+			(uuid "43b448a6-c2ae-4295-ac0b-826488385434")
+		)
+		(instances
+			(project "keyboard_v2"
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
+					(reference "C1313")
 					(unit 1)
 				)
 			)
@@ -10858,6 +10904,144 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 96.52 228.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b5264c54-4cc5-4dc9-aa6c-7397f745612f")
+		(property "Reference" "C1301"
+			(at 99.06 227.9713 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 99.06 230.5113 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 96.52 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 96.52 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f0218305-f3a7-49f3-aca5-638b4ce36467")
+		)
+		(pin "2"
+			(uuid "179718b2-333a-4b6e-b562-801234c7fb3b")
+		)
+		(instances
+			(project "keyboard_v2"
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
+					(reference "C1301")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 149.86 193.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b8b16f1b-59a5-4e60-b4d7-6c35d32494a3")
+		(property "Reference" "C1311"
+			(at 152.4 192.4113 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 152.4 194.9513 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 149.86 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.86 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 149.86 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d7aa8d7d-b642-4f65-b02f-27fa690efc23")
+		)
+		(pin "2"
+			(uuid "258622c9-be36-4344-a683-d370db8cc555")
+		)
+		(instances
+			(project "keyboard_v2"
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
+					(reference "C1311")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+1V8")
 		(at 58.42 256.54 0)
 		(unit 1)
@@ -10925,83 +11109,14 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 66.04 264.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bcff1488-a8b0-45b1-9a90-549457b6c2df")
-		(property "Reference" "C1305"
-			(at 68.58 263.5313 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 68.58 266.0713 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 66.04 264.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 66.04 264.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 66.04 264.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4dc80340-e59f-49f1-b571-6bef74076184")
-		)
-		(pin "2"
-			(uuid "781eff71-702f-4302-b18e-b84ed5447bed")
-		)
-		(instances
-			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
-					(reference "C1305")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
 		(at 106.68 228.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c1ea4df5-15d6-4c7c-87e4-aa88a5e78b1e")
-		(property "Reference" "C1311"
+		(uuid "bbfc4b2a-5a4e-4665-9354-cc746beac34e")
+		(property "Reference" "C1302"
 			(at 109.22 227.9713 0)
 			(effects
 				(font
@@ -11019,7 +11134,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 106.68 228.6 0)
 			(effects
 				(font
@@ -11047,15 +11162,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "7ef512b6-291e-44e2-8ff5-d61006947942")
+			(uuid "ee61abcc-3d35-44ef-ac9e-da54157e6380")
 		)
 		(pin "2"
-			(uuid "9f892976-9b3f-499f-9582-35be527fc9aa")
+			(uuid "cfec3601-8f22-4f15-af2d-79bf8671d7d3")
 		)
 		(instances
 			(project "keyboard_v2"
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
-					(reference "C1311")
+					(reference "C1302")
 					(unit 1)
 				)
 			)
@@ -11974,7 +12089,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 198.12 251.46 0)
 			(effects
 				(font
@@ -12147,75 +12262,6 @@
 			(project "keyboard_v2"
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
 					(reference "#PWR01316")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 127 228.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f8ad31cf-5b68-4a6d-ba0c-470daf30f360")
-		(property "Reference" "C1316"
-			(at 129.54 227.9713 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 129.54 230.5113 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 127 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 127 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 127 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5f582cc6-8129-4beb-8a22-44f631892ee1")
-		)
-		(pin "2"
-			(uuid "5a6a06c7-6806-4782-aeb7-8f9765a963fe")
-		)
-		(instances
-			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/da671bd4-cd3d-4d12-8289-05f535b8e6a4"
-					(reference "C1316")
 					(unit 1)
 				)
 			)
