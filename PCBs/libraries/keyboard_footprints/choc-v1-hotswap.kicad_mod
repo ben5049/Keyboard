@@ -7,6 +7,7 @@
 		(at 0.1 -8.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
+		(hide yes)
 		(uuid "4c9fdea7-ba0c-45cc-8f66-240980c37d5c")
 		(effects
 			(font
@@ -19,6 +20,7 @@
 		(at 0 8.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
+		(hide yes)
 		(uuid "c58960d9-4cac-4036-ad2e-1aef26946dae")
 		(effects
 			(font
@@ -238,15 +240,26 @@
 		(layers "B.Cu" "B.Paste" "B.Mask")
 		(uuid "99332785-d9f1-4363-9377-26ddc18e6d2c")
 	)
-	(model "C:/Users/bens1/OneDrive/Documents/Projects/Keyboard/PCBs/libraries/keyboard_models/Kailh Choc Low Profile Switch.step"
+	(model "${KIPRJMOD}/../libraries/keyboard_models/Kailh LP Choc Burnt Orange.STEP"
 		(offset
-			(xyz 0 0 2.1)
+			(xyz 0 0 2.5)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -90 0 90)
+		)
+	)
+	(model "${KIPRJMOD}/../libraries/keyboard_models/PG1350-socket.STEP"
+		(offset
+			(xyz 5 -3.7 -1.8)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
 		)
 	)
 )

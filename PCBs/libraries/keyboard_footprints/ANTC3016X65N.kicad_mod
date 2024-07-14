@@ -1,0 +1,199 @@
+(footprint "ANTC3016X65N"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "3216")
+	(tags "Antenna")
+	(property "Reference" "ANT**"
+		(at -0.2 3.8 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0c09043f-08f3-40e6-a991-20db827ccfcb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "ANTC3016X65N"
+		(at 0 3.8 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "8297d475-a47d-4bb6-810a-7724ba3a0573")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 3.1 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8fd28f1c-8aed-44bd-97f2-4eaa13ebe9f3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 3.1 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0a5e43fd-1818-4977-b908-0bc97d59cdc8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 3.1 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "17e2264d-5b16-45bd-9b15-659aa946db99")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.4 -1.3)
+		(end 2.4 -1.3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "49fc9302-13b2-44e2-acdb-3c2b06bda75a")
+	)
+	(fp_line
+		(start -2.4 1.3)
+		(end -2.4 -1.3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "679f97ca-0368-42d2-9e5c-f286e206f96b")
+	)
+	(fp_line
+		(start 2.4 -1.3)
+		(end 2.4 1.3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "08a0927c-463f-490c-9d11-eceb6de0f490")
+	)
+	(fp_line
+		(start 2.4 1.3)
+		(end -2.4 1.3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "fe32562a-d7fe-41ea-867c-67ed6a0a34c1")
+	)
+	(fp_line
+		(start -1.525 -0.775)
+		(end 1.525 -0.775)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fc56ac04-eeac-4c5f-845b-7363e69435e6")
+	)
+	(fp_line
+		(start -1.525 -0.325)
+		(end -1.075 -0.775)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4554c9b0-2074-4ecb-af4e-567915f2dddb")
+	)
+	(fp_line
+		(start -1.525 0.775)
+		(end -1.525 -0.775)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b2138719-d4a1-4613-ac6e-a065050205c5")
+	)
+	(fp_line
+		(start 1.525 -0.775)
+		(end 1.525 0.775)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "507d4e86-49cc-4505-86f6-a4635cfdd52f")
+	)
+	(fp_line
+		(start 1.525 0.775)
+		(end -1.525 0.775)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1449a1bf-5004-4080-b00f-9b99bf07355d")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 3.8 0)
+		(layer "F.Fab")
+		(uuid "ed4f8128-e575-4cae-9dbc-d0f4463a1f4e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.5 0.58)
+		(size 0.9 0.84)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "7e05dafe-fbf7-4d89-bbac-e14f71e1a827")
+	)
+	(pad "2" smd rect
+		(at -1.5 -0.53)
+		(size 0.9 0.84)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "c3544b91-a415-47f8-aa61-543fd5640159")
+	)
+	(pad "3" smd rect
+		(at 1.45 0.025)
+		(size 0.9 1.95)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "8bddd65c-a298-42ce-9e0e-cc547548a0b2")
+	)
+	(model "${KIPRJMOD}/../libraries/keyboard_models/ANT3216A063R2400A.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

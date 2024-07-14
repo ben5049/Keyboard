@@ -16,4 +16,6 @@
   (lib (name "ADP5301ACBZ-2-R7")(type "KiCad")(uri "${KIPRJMOD}/../libraries/keyboard_symbols/ADP5301ACBZ-2-R7.kicad_sym")(options "")(descr ""))
   (lib (name "DMN21D2UFB-7B")(type "KiCad")(uri "${KIPRJMOD}/../libraries/keyboard_symbols/DMN21D2UFB-7B.kicad_sym")(options "")(descr ""))
   (lib (name "PCM12SMTBR")(type "KiCad")(uri "${KIPRJMOD}/../libraries/keyboard_symbols/PCM12SMTBR.kicad_sym")(options "")(descr ""))
+  (lib (name "ANT1608LL14R2400A")(type "KiCad")(uri "${KIPRJMOD}/../libraries/keyboard_symbols/ANT1608LL14R2400A.kicad_sym")(options "")(descr ""))
+  (lib (name "ANT3216A063R2400A")(type "KiCad")(uri "${KIPRJMOD}/../libraries/keyboard_symbols/ANT3216A063R2400A.kicad_sym")(options "")(descr ""))
 )

@@ -5,6 +5,175 @@
 	(uuid "01316a6e-af9e-4ce0-a6ea-d7e03303ff1e")
 	(paper "A4")
 	(lib_symbols
+		(symbol "ANT3216A063R2400A:ANT3216A063R2400A"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "ANT"
+				(at 19.05 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "ANT3216A063R2400A"
+				(at 19.05 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "keyboard_footprints:ANTC3016X65N"
+				(at 19.05 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Yageo%20PDFs/ANT3216A063R2400A_Rev2014.pdf"
+				(at 19.05 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Antennas 1W, 2.45GHz, 3216"
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "0.65"
+				(at 19.05 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "603-ANT3216A063R2400"
+				(at 19.05 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Pulse-Electronics/ANT3216A063R2400A?qs=CqAAFKzD4h%252BYK9SO0hbvNw%3D%3D"
+				(at 19.05 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Pulse Electronics"
+				(at 19.05 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "ANT3216A063R2400A"
+				(at 19.05 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "ANT3216A063R2400A_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 17.78 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at 0 0 0)
+					(length 5.08)
+					(name "FEED1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "FEED2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector_Generic:Conn_01x15"
 			(pin_names
 				(offset 1.016) hide)
@@ -521,203 +690,6 @@
 				)
 			)
 		)
-		(symbol "Device:Antenna_Shield"
-			(pin_numbers hide)
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "AE"
-				(at -1.905 4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Value" "Antenna_Shield"
-				(at -1.905 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Antenna with extra pin for shielding"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "antenna"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Antenna_Shield_0_1"
-				(arc
-					(start -0.508 -1.143)
-					(mid -0.8429 -2.1194)
-					(end 0 -2.667)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -2.667)
-					(mid 0.7989 -2.1052)
-					(end 0.508 -1.143)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 5.08) (xy 0 -3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.905) (xy 2.54 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 5.08) (xy 0 0) (xy -1.27 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0.762 -1.905)
-					(radius 0.1778)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "Antenna_Shield_1_1"
-				(pin input line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "Shield"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:+1V8"
 			(power)
 			(pin_numbers hide)
@@ -1074,6 +1046,12 @@
 		(uuid "b2a35f08-b4a4-4fa5-ba6e-3fb2fbf6888a")
 	)
 	(junction
+		(at 58.42 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b8e162ab-7799-4220-a43d-e0f0ee302bf8")
+	)
+	(junction
 		(at 111.76 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1351,6 +1329,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 53.34) (xy 58.42 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b6d5ec8-bae5-44e9-940b-9f6b760972bf")
+	)
+	(wire
+		(pts
 			(xy 170.18 78.74) (xy 195.58 78.74)
 		)
 		(stroke
@@ -1421,16 +1409,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 48.26) (xy 68.58 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "569e704b-b996-41bc-9af2-2ffdfbd26ac7")
-	)
-	(wire
-		(pts
 			(xy 170.18 96.52) (xy 195.58 96.52)
 		)
 		(stroke
@@ -1448,6 +1426,16 @@
 			(type default)
 		)
 		(uuid "5da723f5-c8f0-43ad-a4e2-fee755a132bc")
+	)
+	(wire
+		(pts
+			(xy 55.88 48.26) (xy 68.58 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f062ada-c246-4d5e-a567-eb7574940242")
 	)
 	(wire
 		(pts
@@ -1561,13 +1549,13 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 45.72) (xy 66.04 48.26)
+			(xy 55.88 50.8) (xy 58.42 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "900510f8-9e13-45f7-b970-e1afe1b9a1a2")
+		(uuid "8e8c4b4e-3960-48eb-9453-1dc978b15369")
 	)
 	(wire
 		(pts
@@ -1831,6 +1819,16 @@
 	)
 	(wire
 		(pts
+			(xy 55.88 53.34) (xy 58.42 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3f521bc-892b-47f2-ad1d-288719accca3")
+	)
+	(wire
+		(pts
 			(xy 93.98 114.3) (xy 144.78 114.3)
 		)
 		(stroke
@@ -1941,6 +1939,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 50.8) (xy 58.42 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecab14e1-d48d-4efc-8732-6d43802bebcf")
+	)
+	(wire
+		(pts
 			(xy 170.18 132.08) (xy 195.58 132.08)
 		)
 		(stroke
@@ -1978,16 +1986,6 @@
 			(type default)
 		)
 		(uuid "fa095474-5cac-4bd3-9e40-2dad4782e85b")
-	)
-	(wire
-		(pts
-			(xy 63.5 45.72) (xy 63.5 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd855acc-1744-4f57-a903-e63136f60757")
 	)
 	(wire
 		(pts
@@ -2117,35 +2115,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Antenna_Shield")
-		(at 66.04 40.64 0)
-		(mirror y)
+		(lib_id "power:GND")
+		(at 58.42 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "76b1bc4a-2719-45f6-885d-0cdfdb9e71cc")
-		(property "Reference" "AE302"
-			(at 62.23 38.7349 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Antenna_Shield"
-			(at 62.23 41.2749 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "RF_Antenna:Texas_SWRA117D_2.4GHz_Right"
-			(at 66.04 38.1 0)
+		(fields_autoplaced yes)
+		(uuid "5b54026a-c6c2-49f8-99ef-3c7b2e87acab")
+		(property "Reference" "#PWR0305"
+			(at 58.42 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2153,8 +2133,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 66.04 38.1 0)
+		(property "Value" "GND"
+			(at 58.42 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2162,8 +2150,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Antenna with extra pin for shielding"
-			(at 66.04 40.64 0)
+		(property "Datasheet" ""
+			(at 58.42 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 58.42 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2172,15 +2169,136 @@
 			)
 		)
 		(pin "1"
-			(uuid "f72b4d3f-d6e7-4ea7-8b82-1b2900f7ee8c")
-		)
-		(pin "2"
-			(uuid "b3482814-203e-433c-a2bc-ef7041c31d36")
+			(uuid "d73242ab-f59c-412f-995d-2422f25165af")
 		)
 		(instances
 			(project "keyboard_v2"
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60"
-					(reference "AE302")
+					(reference "#PWR0305")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ANT3216A063R2400A:ANT3216A063R2400A")
+		(at 55.88 48.26 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7848d586-25fc-470d-9d9f-a0c475a83dec")
+		(property "Reference" "ANT301"
+			(at 44.45 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ANT3216A063R2400A"
+			(at 44.45 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "keyboard_footprints:ANTC3016X65N"
+			(at 36.83 143.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Yageo%20PDFs/ANT3216A063R2400A_Rev2014.pdf"
+			(at 36.83 243.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Antennas 1W, 2.45GHz, 3216"
+			(at 55.88 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.65"
+			(at 36.83 443.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "603-ANT3216A063R2400"
+			(at 36.83 543.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Pulse-Electronics/ANT3216A063R2400A?qs=CqAAFKzD4h%252BYK9SO0hbvNw%3D%3D"
+			(at 36.83 643.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Pulse Electronics"
+			(at 36.83 743.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "ANT3216A063R2400A"
+			(at 36.83 843.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d6582c27-a482-45e0-8220-ada444b1852a")
+		)
+		(pin "2"
+			(uuid "6cbbcb50-0f4a-4dc1-a834-acc41d2edc24")
+		)
+		(pin "3"
+			(uuid "5805b8b1-e82e-4098-b438-0648215a2cf0")
+		)
+		(instances
+			(project "keyboard_v2"
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60"
+					(reference "ANT301")
 					(unit 1)
 				)
 			)
@@ -2450,72 +2568,6 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:GND")
-		(at 63.5 48.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e06fd60e-a0af-4e9a-8048-7df91dc6eb61")
-		(property "Reference" "#PWR0305"
-			(at 63.5 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 63.5 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 63.5 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "10d87eb9-6c2a-4f5b-b0f2-0d3aee9a48ab")
-		)
-		(instances
-			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60"
-					(reference "#PWR0305")
-					(unit 1)
-				)
-			)
-		)
-	)
 	(sheet
 		(at 68.58 71.12)
 		(size 25.4 25.4)
@@ -2537,7 +2589,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "usb.kicad_sch"
+		(property "Sheetfile" "usb_right.kicad_sch"
 			(at 68.58 97.1046 0)
 			(effects
 				(font
@@ -2636,7 +2688,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "71cccd57-3bdf-4b46-98ad-b3032f34eaad")
-		(property "Sheetname" "Keys Right"
+		(property "Sheetname" "Keys"
 			(at 195.58 39.9284 0)
 			(effects
 				(font
@@ -3308,7 +3360,7 @@
 			)
 			(uuid "ea434f81-f7fc-43d8-9bf3-82950d47f1b1")
 		)
-		(pin "ANT" output
+		(pin "ANT" bidirectional
 			(at 68.58 48.26 180)
 			(effects
 				(font
@@ -3316,7 +3368,7 @@
 				)
 				(justify left)
 			)
-			(uuid "e82e20b7-4b9e-47e6-ba91-98541d9c0b5e")
+			(uuid "cfad92b4-e18e-4d20-b79c-5838a12ce310")
 		)
 		(instances
 			(project "keyboard_v2"
@@ -3338,7 +3390,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "c45c2f49-4b68-419d-a43d-2f217736a467")
-		(property "Sheetname" "Main MCU Right"
+		(property "Sheetname" "Main MCU"
 			(at 144.78 39.9284 0)
 			(effects
 				(font

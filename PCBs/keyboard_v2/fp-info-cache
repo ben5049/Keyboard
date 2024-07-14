@@ -1,4 +1,4 @@
-24278467626481047
+24281909703351424
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -98412,6 +98412,20 @@ AMPHENOL_GSB12J21C1EU
 0
 8
 8
+keyboard_footprints
+ANT1608LL14R2400A
+ANT1608LL14R2400A-2
+Antenna
+0
+3
+3
+keyboard_footprints
+ANTC3016X65N
+3216
+Antenna
+0
+3
+3
 keyboard_footprints
 BGA4C50P2X2_70X98X33
 M24256X-FCU6T/VF*3

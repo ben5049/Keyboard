@@ -2058,7 +2058,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 53.34) (xy 208.28 53.34)
+			(xy 200.66 53.34) (xy 210.82 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2976,18 +2976,6 @@
 		)
 		(uuid "ec181d8f-d6c6-4a36-abaf-ad422adf61d7")
 	)
-	(hierarchical_label "ANT"
-		(shape output)
-		(at 208.28 53.34 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "047a5ce8-8c14-4077-a3c9-21d90ec896e2")
-	)
 	(hierarchical_label "UART_RX"
 		(shape input)
 		(at 55.88 91.44 180)
@@ -3011,6 +2999,18 @@
 			(justify right)
 		)
 		(uuid "1b765537-60e7-4f6d-ab6b-0fab52ad1597")
+	)
+	(hierarchical_label "ANT"
+		(shape bidirectional)
+		(at 210.82 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b9f9cba2-866b-4e2b-9437-ba26e85d6a14")
 	)
 	(hierarchical_label "UART_TX"
 		(shape output)
