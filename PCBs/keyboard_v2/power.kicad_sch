@@ -6525,7 +6525,7 @@
 			(uuid "eca0b2f0-49c3-4cbc-8f43-3fce4a9ff542")
 		)
 		(instances
-			(project ""
+			(project "keyboard_v2"
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/4d620f55-5374-460e-a3f0-45f826e2308d"
 					(reference "SW1402")
 					(unit 1)
@@ -7226,7 +7226,7 @@
 			(uuid "85e75613-ffa0-4689-91f4-466135103f57")
 		)
 		(instances
-			(project ""
+			(project "keyboard_v2"
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/4d620f55-5374-460e-a3f0-45f826e2308d"
 					(reference "TP1401")
 					(unit 1)

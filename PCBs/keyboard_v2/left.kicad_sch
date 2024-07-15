@@ -2189,7 +2189,7 @@
 			(uuid "f6770688-57e7-4187-b12f-5fa85945bbf6")
 		)
 		(instances
-			(project ""
+			(project "keyboard_v2"
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6"
 					(reference "ANT201")
 					(unit 1)
