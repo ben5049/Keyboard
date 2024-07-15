@@ -37,6 +37,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -49,6 +50,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -61,6 +63,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -277,45 +280,16 @@
 		(layer "F.SilkS")
 		(uuid "18e4180a-715e-4fb8-9fa3-e5b04603fc45")
 	)
-	(fp_line
-		(start -5.8 -2.85)
-		(end 5.8 -2.85)
+	(fp_rect
+		(start -5.4 -2.4)
+		(end 5.3 2.4)
 		(stroke
-			(width 0.1)
-			(type solid)
+			(width 0.05)
+			(type default)
 		)
+		(fill none)
 		(layer "F.CrtYd")
-		(uuid "82ecb955-7dc0-4a09-8d46-df512c0de174")
-	)
-	(fp_line
-		(start -5.8 2.85)
-		(end -5.8 -2.85)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "09afbe86-7daf-4ef6-af22-156b6f3998be")
-	)
-	(fp_line
-		(start 5.8 -2.85)
-		(end 5.8 2.85)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "7861470c-d08e-441f-8120-0b7008252405")
-	)
-	(fp_line
-		(start 5.8 2.85)
-		(end -5.8 2.85)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "1cc089cf-8d78-4341-9f84-c7c3bb68efab")
+		(uuid "809c08a8-efa4-4191-ba97-a24a3894111d")
 	)
 	(fp_line
 		(start -4.8 -1.65)
