@@ -4565,16 +4565,6 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 91.44) (xy 137.16 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1920c399-f7bb-4dad-8b3d-76fff49c22e7")
-	)
-	(wire
-		(pts
 			(xy 205.74 142.24) (xy 223.52 142.24)
 		)
 		(stroke
@@ -4752,6 +4742,16 @@
 			(type default)
 		)
 		(uuid "405d0158-4b20-4b36-93dd-7b297c3aace4")
+	)
+	(wire
+		(pts
+			(xy 5.08 88.9) (xy 17.78 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41c2c882-0f3a-422e-aca4-3a485295bf90")
 	)
 	(wire
 		(pts
@@ -5202,6 +5202,16 @@
 			(type default)
 		)
 		(uuid "8521f535-3174-4155-8241-a8654f7c1da1")
+	)
+	(wire
+		(pts
+			(xy 124.46 91.44) (xy 137.16 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "882748f2-6ad7-4db6-9a59-dcf28311d61f")
 	)
 	(wire
 		(pts
@@ -5705,16 +5715,6 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 88.9) (xy 132.08 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e318450c-b6a0-441b-aa1e-bdf50c105457")
-	)
-	(wire
-		(pts
 			(xy 231.14 132.08) (xy 231.14 134.62)
 		)
 		(stroke
@@ -6005,6 +6005,17 @@
 		)
 		(uuid "3e9a13da-a4e4-4e81-a749-321c49be676f")
 	)
+	(label "USB_RST"
+		(at 124.46 91.44 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "43ee6788-0567-48d6-8bf8-b64706fb751e")
+	)
 	(label "USB3_DP"
 		(at 152.4 152.4 180)
 		(fields_autoplaced yes)
@@ -6114,6 +6125,17 @@
 			(justify right bottom)
 		)
 		(uuid "6383b024-471a-43d5-8007-9e578e10fef5")
+	)
+	(label "USB_RST"
+		(at 5.08 88.9 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6c8f6714-ae1d-4ed7-a8c8-cfab55391dcb")
 	)
 	(label "USB1_CC2"
 		(at 205.74 142.24 0)
@@ -10801,72 +10823,6 @@
 			(project "keyboard_v2"
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/3f6891f6-a1b6-4bde-ae5f-d2abc12d04a0"
 					(reference "#PWR01501")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 132.08 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ec5d0d87-e6ef-4d59-b751-46ea4035ad24")
-		(property "Reference" "#PWR01522"
-			(at 132.08 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 132.08 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 132.08 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 132.08 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 132.08 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4eb0b65d-b302-47c8-a7e7-c0132d6c2a32")
-		)
-		(instances
-			(project "keyboard_v2"
-				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/3f6891f6-a1b6-4bde-ae5f-d2abc12d04a0"
-					(reference "#PWR01522")
 					(unit 1)
 				)
 			)
