@@ -4260,6 +4260,16 @@
 	)
 	(wire
 		(pts
+			(xy 325.12 144.78) (xy 337.82 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04239aa9-6b18-41cd-aa92-53b3f353701c")
+	)
+	(wire
+		(pts
 			(xy 147.32 233.68) (xy 147.32 231.14)
 		)
 		(stroke
@@ -6170,6 +6180,16 @@
 	)
 	(wire
 		(pts
+			(xy 325.12 147.32) (xy 337.82 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f44e65c4-e0ed-4739-b3b4-ed9ac5eacf13")
+	)
+	(wire
+		(pts
 			(xy 66.04 233.68) (xy 66.04 231.14)
 		)
 		(stroke
@@ -6485,6 +6505,17 @@
 		)
 		(uuid "01d42dad-5c36-49b2-8450-a4bff6700bd6")
 	)
+	(label "SCL"
+		(at 330.2 144.78 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3144f2a5-6be3-43c0-bfce-94b9e35a692f")
+	)
 	(label "OSC_IN"
 		(at 210.82 53.34 180)
 		(fields_autoplaced yes)
@@ -6584,6 +6615,17 @@
 		)
 		(uuid "c40eac59-62ea-42d2-8faa-f15ff7467968")
 	)
+	(label "SDA"
+		(at 330.2 147.32 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c837c27e-b499-4d1a-8cf1-acf50c973ea5")
+	)
 	(label "VREF+"
 		(at 276.86 205.74 180)
 		(fields_autoplaced yes)
@@ -6632,13 +6674,13 @@
 	)
 	(hierarchical_label "PWR_SDA"
 		(shape bidirectional)
-		(at 345.44 86.36 0)
+		(at 325.12 147.32 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "0f5038a2-7ba1-4fb2-a04e-dfd925e2f027")
 	)
@@ -6798,6 +6840,18 @@
 		)
 		(uuid "4965ab18-efdd-4a98-9783-731e56526a2a")
 	)
+	(hierarchical_label "SCL_TP"
+		(shape output)
+		(at 353.06 149.86 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "499d2534-c3dd-4d0d-9ff8-d90bc0ad4091")
+	)
 	(hierarchical_label "KEY_A6"
 		(shape input)
 		(at 375.92 81.28 0)
@@ -6944,13 +6998,13 @@
 	)
 	(hierarchical_label "PWR_SCL"
 		(shape output)
-		(at 345.44 83.82 0)
+		(at 325.12 144.78 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "8e4e6f24-a544-4375-ac0b-9eeaf81fa02f")
 	)
@@ -7064,15 +7118,15 @@
 	)
 	(hierarchical_label "SDA_TP"
 		(shape bidirectional)
-		(at 345.44 147.32 0)
+		(at 353.06 152.4 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "c3ec1be8-7a7e-4263-ad15-3b855d01aca4")
+		(uuid "b8e01383-68ba-47b5-b38e-628e31d45c27")
 	)
 	(hierarchical_label "KEY_A1"
 		(shape input)
@@ -7205,18 +7259,6 @@
 			(justify left)
 		)
 		(uuid "e17fc531-7b05-4951-8532-ce8a26af7c4d")
-	)
-	(hierarchical_label "SCL_TP"
-		(shape output)
-		(at 345.44 144.78 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e2d9967d-79b8-4712-ab65-a24461eca7da")
 	)
 	(hierarchical_label "KEY_D1"
 		(shape input)
