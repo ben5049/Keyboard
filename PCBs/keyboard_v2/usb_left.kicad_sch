@@ -4535,6 +4535,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 60.96) (xy 48.26 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10f3f30b-c406-41a4-a68e-b5d99bfadd13")
+	)
+	(wire
+		(pts
 			(xy 165.1 175.26) (xy 165.1 177.8)
 		)
 		(stroke
@@ -4692,6 +4702,16 @@
 			(type default)
 		)
 		(uuid "380e7b55-c5a9-4414-aa28-c1902f4e2c02")
+	)
+	(wire
+		(pts
+			(xy 45.72 48.26) (xy 45.72 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39997883-aeba-4096-b63f-a2371f04d80b")
 	)
 	(wire
 		(pts
@@ -7884,6 +7904,72 @@
 			(project "keyboard_v2"
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/3f6891f6-a1b6-4bde-ae5f-d2abc12d04a0"
 					(reference "#PWR01534")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 45.72 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "42d339e8-b7e2-4b04-9a65-00f5ffe405ec")
+		(property "Reference" "#PWR01522"
+			(at 45.72 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 45.72 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 45.72 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "64dd0b0e-458a-4493-a89a-ce0487d44058")
+		)
+		(instances
+			(project "keyboard_v2"
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/8d5749a2-4d36-4f17-8c57-9c8b87d773d6/3f6891f6-a1b6-4bde-ae5f-d2abc12d04a0"
+					(reference "#PWR01522")
 					(unit 1)
 				)
 			)

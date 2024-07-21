@@ -4495,6 +4495,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 55.88) (xy 83.82 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04f9a792-08ac-4931-a0e6-97bd81f9aac7")
+	)
+	(wire
+		(pts
 			(xy 205.74 45.72) (xy 203.2 45.72)
 		)
 		(stroke
@@ -4512,6 +4522,16 @@
 			(type default)
 		)
 		(uuid "0d0c581c-1dd1-4e47-aa10-7a510daead89")
+	)
+	(wire
+		(pts
+			(xy 99.06 58.42) (xy 83.82 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0db24b35-7bae-4886-9ab8-93221f7e864e")
 	)
 	(wire
 		(pts
@@ -5255,6 +5275,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 60.96) (xy 48.26 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "880dcd9a-a095-40b5-ba35-8590e63c61cc")
+	)
+	(wire
+		(pts
 			(xy 205.74 43.18) (xy 205.74 45.72)
 		)
 		(stroke
@@ -5552,6 +5582,16 @@
 			(type default)
 		)
 		(uuid "bf23af5e-9450-41b3-95ee-ce16d6e2db17")
+	)
+	(wire
+		(pts
+			(xy 45.72 48.26) (xy 45.72 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf2fc569-899b-4d25-bad1-82f23bec9d5f")
 	)
 	(wire
 		(pts
@@ -6560,13 +6600,13 @@
 	)
 	(hierarchical_label "UART_TX"
 		(shape output)
-		(at 35.56 104.14 180)
+		(at 99.06 55.88 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "7198096e-4d21-4a1b-b10a-5d91dfe37457")
 	)
@@ -6596,13 +6636,13 @@
 	)
 	(hierarchical_label "UART_RX"
 		(shape input)
-		(at 35.56 106.68 180)
+		(at 99.06 58.42 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "f2ca6025-fa69-4e84-9347-adf997bf34d2")
 	)
@@ -8950,6 +8990,72 @@
 			(project "keyboard_v2"
 				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/2fa754a4-db8f-4839-bd38-632dd798fa1f"
 					(reference "R603")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 45.72 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d7d10ab-3e67-4f84-9bae-5fcf2a14e912")
+		(property "Reference" "#PWR0622"
+			(at 45.72 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 45.72 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 45.72 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b1ce749-69d3-449c-8551-732a7afb8d78")
+		)
+		(instances
+			(project "keyboard_v2"
+				(path "/e2360b7f-be71-48d9-b398-9f8cd45479d6/b599252a-0e44-4760-9c79-385d4380db60/2fa754a4-db8f-4839-bd38-632dd798fa1f"
+					(reference "#PWR0622")
 					(unit 1)
 				)
 			)

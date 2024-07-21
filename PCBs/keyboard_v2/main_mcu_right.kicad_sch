@@ -4384,6 +4384,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 68.58) (xy 43.18 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16ed898f-01b2-485d-9da5-94580ea7bfc3")
+	)
+	(wire
+		(pts
 			(xy 205.74 226.06) (xy 205.74 228.6)
 		)
 		(stroke
@@ -4481,6 +4491,16 @@
 			(type default)
 		)
 		(uuid "22f21168-60c7-4d60-ad28-ff5c40d27d5d")
+	)
+	(wire
+		(pts
+			(xy 27.94 101.6) (xy 43.18 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23425846-72b6-4add-9662-32ddd6f6ee30")
 	)
 	(wire
 		(pts
@@ -6344,6 +6364,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 119.38) (xy 149.86 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa022ede-dc14-4acf-9337-f22cc9ba3762")
+	)
+	(wire
+		(pts
 			(xy 256.54 228.6) (xy 254 228.6)
 		)
 		(stroke
@@ -6361,6 +6391,16 @@
 			(type default)
 		)
 		(uuid "fc644251-28a8-4eb3-9903-5ce636009fe1")
+	)
+	(wire
+		(pts
+			(xy 139.7 116.84) (xy 149.86 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fedd8b4d-c7d7-4405-ba63-504690ee222d")
 	)
 	(wire
 		(pts
@@ -6764,18 +6804,6 @@
 		)
 		(uuid "02f67fb2-bd61-483b-a0b8-fe687510a103")
 	)
-	(hierarchical_label "USB_UART_RX"
-		(shape input)
-		(at 312.42 81.28 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "05c55281-c2e0-438f-af9d-935bc44143a4")
-	)
 	(hierarchical_label "NEOPIXEL"
 		(shape output)
 		(at 27.94 137.16 180)
@@ -6919,6 +6947,18 @@
 			(justify right)
 		)
 		(uuid "2b350657-a5db-40c2-9b2b-2d0f051ff748")
+	)
+	(hierarchical_label "USB_UART_RX"
+		(shape input)
+		(at 139.7 119.38 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2f1e9fdc-a8b0-493c-858b-67487c8cd6ea")
 	)
 	(hierarchical_label "KEY_E6"
 		(shape input)
@@ -7078,13 +7118,13 @@
 	)
 	(hierarchical_label "USB_RST"
 		(shape output)
-		(at 312.42 86.36 0)
+		(at 27.94 68.58 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "79a69bc3-8fc4-421d-826c-ab1bc25a3a2a")
 	)
@@ -7390,13 +7430,13 @@
 	)
 	(hierarchical_label "USB_UART_TX"
 		(shape output)
-		(at 312.42 83.82 0)
+		(at 139.7 116.84 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "dc647fd3-ad4f-4115-8c8b-a0ee25f6f9d7")
 	)
@@ -7438,13 +7478,13 @@
 	)
 	(hierarchical_label "BLE_RST"
 		(shape output)
-		(at 312.42 71.12 0)
+		(at 27.94 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "f16761a7-9875-4ac4-bb2f-ea8a9dd96bf2")
 	)
