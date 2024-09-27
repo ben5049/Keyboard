@@ -24,7 +24,7 @@
 #include "usbpd_vdm_user.h"
 #include "usbpd_dpm_user.h"
 /* USER CODE BEGIN Includes */
-
+#include "system_state.h"
 /* USER CODE END Includes */
 
 /** @addtogroup STM32_USBPD_APPLICATION
@@ -451,6 +451,9 @@ static void USBPD_VDM_SendUVDM(uint8_t PortNum, USBPD_UVDMHeader_TypeDef *pUVDM_
 static USBPD_StatusTypeDef USBPD_VDM_ReceiveUVDM(uint8_t PortNum, USBPD_UVDMHeader_TypeDef UVDM_Header, uint8_t *pNbData, uint32_t *pVDO)
 {
 /* USER CODE BEGIN USBPD_VDM_ReceiveUVDM */
+	uint8_t tmp = pVDO[0] & 0xFF;
+	system_layer_change(tmp, false);
+
   return USBPD_ERROR;
 /* USER CODE END USBPD_VDM_ReceiveUVDM */
 }

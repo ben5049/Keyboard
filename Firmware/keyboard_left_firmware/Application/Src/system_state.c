@@ -7,6 +7,7 @@
 
 #include "system_state.h"
 #include "tx_api.h"
+#include "usbpd.h"
 
 
 /* PFP */

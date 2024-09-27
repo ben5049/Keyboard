@@ -46,23 +46,23 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := keyboard_right_firmware
+BUILD_ARTIFACT_NAME := v1_right_keyboard_firmware
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-keyboard_right_firmware.elf \
+v1_right_keyboard_firmware.elf \
 
 MAP_FILES += \
-keyboard_right_firmware.map \
+v1_right_keyboard_firmware.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-keyboard_right_firmware.list \
+v1_right_keyboard_firmware.list \
 
 
 # All Target
@@ -70,11 +70,11 @@ all:
 	+@$(MAKE) --no-print-directory pre-build && $(MAKE) --no-print-directory main-build
 
 # Main-build Target
-main-build: keyboard_right_firmware.elf secondary-outputs
+main-build: v1_right_keyboard_firmware.elf secondary-outputs
 
 # Tool invocations
-keyboard_right_firmware.elf keyboard_right_firmware.map: $(OBJS) $(USER_OBJS) C:\Users\bens1\Documents\Other\Projects\Keyboard\Firmware\keyboard_right_firmware\STM32G0C1CEUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "keyboard_right_firmware.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\bens1\Documents\Other\Projects\Keyboard\Firmware\keyboard_right_firmware\STM32G0C1CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="keyboard_right_firmware.map" -Wl,--gc-sections -static -LC:/Users/bens1/STM32Cube/Repository/STM32Cube_FW_G0_V1.6.2/Middlewares/ST/STM32_USBPD_Library/Core/lib --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+v1_right_keyboard_firmware.elf v1_right_keyboard_firmware.map: $(OBJS) $(USER_OBJS) C:\Users\bens1\Documents\Other\Projects\Keyboard\Firmware\keyboard_right_firmware\STM32G0C1CEUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "v1_right_keyboard_firmware.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\bens1\Documents\Other\Projects\Keyboard\Firmware\keyboard_right_firmware\STM32G0C1CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="v1_right_keyboard_firmware.map" -Wl,--gc-sections -static -LC:/Users/bens1/STM32Cube/Repository/STM32Cube_FW_G0_V1.6.2/Middlewares/ST/STM32_USBPD_Library/Core/lib --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -83,14 +83,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-keyboard_right_firmware.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "keyboard_right_firmware.list"
+v1_right_keyboard_firmware.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "v1_right_keyboard_firmware.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) default.size.stdout keyboard_right_firmware.elf keyboard_right_firmware.list keyboard_right_firmware.map
+	-$(RM) default.size.stdout v1_right_keyboard_firmware.elf v1_right_keyboard_firmware.list v1_right_keyboard_firmware.map
 	-@echo ' '
 
 pre-build:

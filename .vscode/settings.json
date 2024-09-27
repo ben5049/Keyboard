@@ -8,6 +8,7 @@
         "app_azure_rtos.h": "c",
         "*.user_code": "c",
         "i2c.h": "c",
-        "usb2533.h": "c"
+        "usb2533.h": "c",
+        "usbpd_vdm_user.h": "c"
     }
 }
