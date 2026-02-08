@@ -10,3 +10,6 @@
 [submodule "Examples/stm32-usbx-examples"]
 	path = Examples/stm32-usbx-examples
 	url = https://github.com/STMicroelectronics/stm32-usbx-examples
+[submodule "PCBs/keyboard-v3/component-library"]
+	path = PCBs/keyboard-v3/component-library
+	url = https://www.github.com/ben5049/component-library
