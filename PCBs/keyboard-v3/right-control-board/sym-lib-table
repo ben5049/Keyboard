@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "USB-CONN")(type "KiCad")(uri "${KIPRJMOD}/../component-library/project_symbols/USB-CONN.kicad_sym")(options "")(descr ""))
+  (lib (name "USB-INTF")(type "KiCad")(uri "${KIPRJMOD}/../component-library/project_symbols/USB-INTF.kicad_sym")(options "")(descr ""))
+  (lib (name "STM32")(type "KiCad")(uri "${KIPRJMOD}/../component-library/project_symbols/STM32.kicad_sym")(options "")(descr ""))
+)
