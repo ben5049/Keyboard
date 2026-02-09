@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>keyboard_right_firmware</name>
+	<name>v1_right_keyboard_firmware</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -44,11 +44,6 @@
 			<name>Application/Src/keys.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/keyboard_left_firmware/Application/Src/keys.c</locationURI>
-		</link>
-		<link>
-			<name>Application/Src/system_state.c</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/keyboard_left_firmware/Application/Src/system_state.c</locationURI>
 		</link>
 		<link>
 			<name>Application/Src/usb_init.c</name>
