@@ -560,12 +560,144 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Height",
+          "name": "Height",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Frequency",
+          "name": "Frequency",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "ISAT,10% (A)",
+          "name": "ISAT,10% (A)",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Match Code",
+          "name": "Match Code",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mounting Technology",
+          "name": "Mounting Technology",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "ISAT,30% (A)",
+          "name": "ISAT,30% (A)",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "L (µH)",
+          "name": "L (µH)",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Part Number",
+          "name": "Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Published Date",
+          "name": "Published Date",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "RDC max. (mΩ)",
+          "name": "RDC max. (mΩ)",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Size",
+          "name": "Size",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "fres (MHz)",
+          "name": "fres (MHz)",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Critical Parameter",
+          "name": "Critical Parameter",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer URL",
+          "name": "Manufacturer URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "IRP,40K (A)",
+          "name": "IRP,40K (A)",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -613,6 +745,34 @@
     [
       "982f1c46-f6d6-42a2-bf2a-9fb0e913f11f",
       "Root"
+    ],
+    [
+      "550affba-2d1b-4003-9291-dd582a27e02e",
+      "USB Connectors"
+    ],
+    [
+      "1dc4cbde-e7d2-4692-ba1b-6116c7e8f369",
+      "SD Card"
+    ],
+    [
+      "a8cedd16-275b-435b-a1f3-f83ccf5a22eb",
+      "MCU"
+    ],
+    [
+      "fb75d6dd-111a-4d67-8d10-324a6dc46848",
+      "Debug Connector"
+    ],
+    [
+      "5e632e5a-5283-4d2d-96d4-75c4ba68d1b5",
+      "Daughter Board Connectors"
+    ],
+    [
+      "5a733dd0-c576-43d4-95ef-2f5480128f2d",
+      "Power"
+    ],
+    [
+      "9e40c337-fa3a-418a-a06f-f29c5aeab638",
+      "USB Hub"
     ]
   ],
   "text_variables": {}

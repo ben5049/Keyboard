@@ -1,0 +1,8 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "STM32")(type "KiCad")(uri "${KIPRJMOD}/../component-library/project_symbols/STM32.kicad_sym")(options "")(descr ""))
+  (lib (name "CONN-FPC")(type "KiCad")(uri "${KIPRJMOD}/../component-library/project_symbols/CONN-FPC.kicad_sym")(options "")(descr ""))
+  (lib (name "DEV")(type "KiCad")(uri "${KIPRJMOD}/../component-library/project_symbols/DEV.kicad_sym")(options "")(descr ""))
+  (lib (name "LED")(type "KiCad")(uri "${KIPRJMOD}/../component-library/project_symbols/LED.kicad_sym")(options "")(descr ""))
+  (lib (name "MOTOR")(type "KiCad")(uri "${KIPRJMOD}/../component-library/project_symbols/MOTOR.kicad_sym")(options "")(descr ""))
+)
