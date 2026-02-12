@@ -2,9 +2,303 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid b3650411-80d8-4885-8b8e-9727427c52f9)
+	(uuid "b3650411-80d8-4885-8b8e-9727427c52f9")
 	(paper "A4")
 	(lib_symbols)
+	(bus
+		(pts
+			(xy 139.7 86.36) (xy 165.1 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0280cbe5-fefb-4a2c-a4bb-d37714160f3b")
+	)
+	(bus
+		(pts
+			(xy 139.7 83.82) (xy 165.1 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0626060e-c9dc-4cd5-9b6d-4578246db80a")
+	)
+	(bus
+		(pts
+			(xy 139.7 78.74) (xy 165.1 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d795c2e-2c55-4e04-bff0-662a30512db9")
+	)
+	(bus
+		(pts
+			(xy 139.7 91.44) (xy 165.1 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "808b34f4-adfe-44e5-a074-0bcd1e976450")
+	)
+	(wire
+		(pts
+			(xy 139.7 96.52) (xy 165.1 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a088497e-1fa4-45e7-ab7e-59363dee2171")
+	)
+	(bus
+		(pts
+			(xy 139.7 88.9) (xy 165.1 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba5dde17-45de-4a2b-9393-c1b84209a7ea")
+	)
+	(bus
+		(pts
+			(xy 139.7 81.28) (xy 165.1 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f02c7b47-e9f9-4f56-bbe9-01ab05c7a200")
+	)
+	(sheet
+		(at 114.3 76.2)
+		(size 25.4 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "275c43c9-42fc-40f0-aa9b-a98c3850219b")
+		(property "Sheetname" "MCU"
+			(at 114.3 75.4884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu.kicad_sch"
+			(at 114.3 99.6446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "KEY_G[1..4]" input
+			(at 139.7 78.74 0)
+			(uuid "f60e677c-74f2-483c-b5be-28638c098411")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "KEY_H[1..4]" input
+			(at 139.7 81.28 0)
+			(uuid "b36dd03a-b144-4eee-97fd-eb7517cf9df3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "KEY_I[1..4]" input
+			(at 139.7 83.82 0)
+			(uuid "95c10d94-cd0c-4a3d-ad8d-fe4aa2d1916d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "KEY_J[1..4]" input
+			(at 139.7 86.36 0)
+			(uuid "96d95b22-9758-4795-94b8-526be32e724c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "KEY_K[1..4]" input
+			(at 139.7 88.9 0)
+			(uuid "5f3b1612-66e9-4950-86e0-a12ef9746636")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "KEY_L[1..4]" input
+			(at 139.7 91.44 0)
+			(uuid "bad420b2-797b-4738-8463-f97ced16dc3e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "NEOPIXEL" output
+			(at 139.7 96.52 0)
+			(uuid "e45908ee-418d-45e7-aeff-a1c34fc8614e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "right-key-board"
+				(path "/b3650411-80d8-4885-8b8e-9727427c52f9"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 165.1 76.2)
+		(size 25.4 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ba7dae41-a9ec-475c-8b66-e19e85f89a7e")
+		(property "Sheetname" "Keys"
+			(at 165.1 75.4884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "keys.kicad_sch"
+			(at 165.1 99.6446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "KEY_G[1..4]" output
+			(at 165.1 78.74 180)
+			(uuid "f2a2882f-e705-471c-a027-0f107ed58af5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "KEY_H[1..4]" output
+			(at 165.1 81.28 180)
+			(uuid "820b07d3-cfc6-4bdc-846c-2f21e7f4e3ea")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "KEY_I[1..4]" output
+			(at 165.1 83.82 180)
+			(uuid "cab42bdf-2c43-452e-ac3a-d3dc93c16ff3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "KEY_J[1..4]" output
+			(at 165.1 86.36 180)
+			(uuid "013d4e70-b7e8-4fe5-997f-7dc03cb61220")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "KEY_K[1..4]" output
+			(at 165.1 88.9 180)
+			(uuid "e69292d4-afcf-46a3-895c-fd3c1162fe6c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "KEY_L[1..4]" output
+			(at 165.1 91.44 180)
+			(uuid "b691cd0f-408c-46dd-b4dc-b62447a14cf5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NEOPIXEL" input
+			(at 165.1 96.52 180)
+			(uuid "830e2aaa-d6b7-4874-bec6-7e45a7705793")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "right-key-board"
+				(path "/b3650411-80d8-4885-8b8e-9727427c52f9"
+					(page "2")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
