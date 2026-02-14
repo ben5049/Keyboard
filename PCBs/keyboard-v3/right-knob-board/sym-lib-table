@@ -5,4 +5,6 @@
   (lib (name "DEV")(type "KiCad")(uri "${KIPRJMOD}/../component-library/project_symbols/DEV.kicad_sym")(options "")(descr ""))
   (lib (name "LED")(type "KiCad")(uri "${KIPRJMOD}/../component-library/project_symbols/LED.kicad_sym")(options "")(descr ""))
   (lib (name "MOTOR")(type "KiCad")(uri "${KIPRJMOD}/../component-library/project_symbols/MOTOR.kicad_sym")(options "")(descr ""))
+  (lib (name "MOTOR-DRIVER")(type "KiCad")(uri "${KIPRJMOD}/../component-library/project_symbols/MOTOR-DRIVER.kicad_sym")(options "")(descr ""))
+  (lib (name "MOSFET")(type "KiCad")(uri "${KIPRJMOD}/../component-library/project_symbols/MOSFET.kicad_sym")(options "")(descr ""))
 )
