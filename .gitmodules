@@ -10,3 +10,9 @@
 [submodule "PCBs/keyboard-v3/component-library"]
 	path = PCBs/keyboard-v3/component-library
 	url = https://www.github.com/ben5049/component-library
+[submodule "firmware/firmware-v3/control-board/zmk"]
+	path = firmware/firmware-v3/control-board/zmk
+	url = https://github.com/zmkfirmware/zmk
+[submodule "firmware/firmware-v3/control-board/zmk-keyboard-v3"]
+	path = firmware/firmware-v3/control-board/zmk-keyboard-v3
+	url = https://github.com/ben5049/zmk-keyboard-v3

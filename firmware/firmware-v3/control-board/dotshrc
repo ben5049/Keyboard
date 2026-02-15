@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+
+SKIP=false
+
+# Parse arguments
+for arg in "$@"; do
+  case "$arg" in
+    --skip)
+      SKIP=true
+      ;;
+  esac
+done
+
+# Get the directory of this script
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Change to that directory
+cd "$SCRIPT_DIR" || exit 1
+cd zmk
+
+# Now you're inside the script's directory
+echo "Current directory: $(pwd)"
+
+source ~/.venv/zmk/bin/activate
+
+python -m pip install west
+
+if [ ! -d ".west" ]; then
+    west init -l app/
+fi
+
+if [ "$SKIP" = false ]; then
+  west update
+  west zephyr-export
+  west packages pip --install
+  west sdk install
+fi
+
+cd app
+
+echo
+echo Setup complete, build the firmware with the following commands:
+echo
+echo """    west build -b keyboard_v3_right -- -DZMK_EXTRA_MODULES="$(realpath ../../zmk-keyboard-v3)""""
+echo
+echo """    west build -b keyboard_v3_left -- -DZMK_EXTRA_MODULES="$(realpath ../../zmk-keyboard-v3)""""
+echo
