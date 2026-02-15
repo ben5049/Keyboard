@@ -21,8 +21,12 @@ cd zmk
 # Now you're inside the script's directory
 echo "Current directory: $(pwd)"
 
+deactivate
+if [ ! -d "~/.venv/zmk" ]; then
+    # sudo apt install python3-venv
+    python3 -m venv ~/.venv/zmk
+fi
 source ~/.venv/zmk/bin/activate
-
 python -m pip install west
 
 if [ ! -d ".west" ]; then
@@ -41,7 +45,7 @@ cd app
 echo
 echo Setup complete, build the firmware with the following commands:
 echo
-echo """    west build -b keyboard_v3_right -- -DZMK_EXTRA_MODULES="$(realpath ../../zmk-keyboard-v3)""""
+echo """    west build -p -b keyboard_v3_right -- -DZMK_EXTRA_MODULES="$(realpath ../../zmk-keyboard-v3)""""
 echo
-echo """    west build -b keyboard_v3_left -- -DZMK_EXTRA_MODULES="$(realpath ../../zmk-keyboard-v3)""""
+echo """    west build -p -b keyboard_v3_left -- -DZMK_EXTRA_MODULES="$(realpath ../../zmk-keyboard-v3)""""
 echo
