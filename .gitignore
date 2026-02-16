@@ -172,5 +172,6 @@ backups
 panelizer.log
 ordering_instructions.txtf
 
-production/*
-outputs/*
+**/production/*
+**/outputs/*
+**/gerbers/*

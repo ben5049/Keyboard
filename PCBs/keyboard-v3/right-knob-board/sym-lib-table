@@ -7,4 +7,5 @@
   (lib (name "MOTOR")(type "KiCad")(uri "${KIPRJMOD}/../component-library/project_symbols/MOTOR.kicad_sym")(options "")(descr ""))
   (lib (name "MOTOR-DRIVER")(type "KiCad")(uri "${KIPRJMOD}/../component-library/project_symbols/MOTOR-DRIVER.kicad_sym")(options "")(descr ""))
   (lib (name "MOSFET")(type "KiCad")(uri "${KIPRJMOD}/../component-library/project_symbols/MOSFET.kicad_sym")(options "")(descr ""))
+  (lib (name "ENC")(type "KiCad")(uri "C:/Users/bens1/Documents/projects/Keyboard/PCBs/keyboard-v3/component-library/project_symbols/ENC.kicad_sym")(options "")(descr ""))
 )
