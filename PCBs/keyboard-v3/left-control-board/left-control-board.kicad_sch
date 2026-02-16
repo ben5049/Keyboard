@@ -334,7 +334,7 @@
 			)
 		)
 		(instances
-			(project "right-control-board"
+			(project "left-control-board"
 				(path "/982f1c46-f6d6-42a2-bf2a-9fb0e913f11f"
 					(page "3")
 				)
@@ -406,7 +406,7 @@
 			)
 		)
 		(instances
-			(project "right-control-board"
+			(project "left-control-board"
 				(path "/982f1c46-f6d6-42a2-bf2a-9fb0e913f11f"
 					(page "2")
 				)
@@ -448,7 +448,7 @@
 			)
 		)
 		(instances
-			(project "right-control-board"
+			(project "left-control-board"
 				(path "/982f1c46-f6d6-42a2-bf2a-9fb0e913f11f"
 					(page "7")
 				)
@@ -550,7 +550,7 @@
 			)
 		)
 		(instances
-			(project "right-control-board"
+			(project "left-control-board"
 				(path "/982f1c46-f6d6-42a2-bf2a-9fb0e913f11f"
 					(page "6")
 				)
@@ -662,7 +662,7 @@
 			)
 		)
 		(instances
-			(project "right-control-board"
+			(project "left-control-board"
 				(path "/982f1c46-f6d6-42a2-bf2a-9fb0e913f11f"
 					(page "8")
 				)
@@ -774,7 +774,7 @@
 			)
 		)
 		(instances
-			(project "right-control-board"
+			(project "left-control-board"
 				(path "/982f1c46-f6d6-42a2-bf2a-9fb0e913f11f"
 					(page "4")
 				)
@@ -866,7 +866,7 @@
 			)
 		)
 		(instances
-			(project "right-control-board"
+			(project "left-control-board"
 				(path "/982f1c46-f6d6-42a2-bf2a-9fb0e913f11f"
 					(page "5")
 				)
