@@ -5,7 +5,7 @@
 	(uuid "3ea80525-cf4a-40ec-8610-7a28fb59ed3f")
 	(paper "A4")
 	(lib_symbols
-		(symbol "CONN-FPC:F31Z1A7H111008"
+		(symbol "CONN-FPC:F31Z-1A7H1-11008"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -17,7 +17,7 @@
 					)
 				)
 			)
-			(property "Value" "F31Z1A7H111008"
+			(property "Value" "F31Z-1A7H1-11008"
 				(at 0 2.54 0)
 				(effects
 					(font
@@ -61,10 +61,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "F31Z1A7H111008_1_1"
+			(symbol "F31Z-1A7H1-11008_1_1"
 				(rectangle
-					(start -7.62 0)
-					(end 7.62 -22.86)
+					(start -5.08 0)
+					(end 5.08 -22.86)
 					(stroke
 						(width 0)
 						(type solid)
@@ -74,7 +74,7 @@
 					)
 				)
 				(pin passive line
-					(at -12.7 -2.54 0)
+					(at -10.16 -2.54 0)
 					(length 5.08)
 					(name "1"
 						(effects
@@ -92,7 +92,7 @@
 					)
 				)
 				(pin passive line
-					(at -12.7 -5.08 0)
+					(at -10.16 -5.08 0)
 					(length 5.08)
 					(name "2"
 						(effects
@@ -110,7 +110,7 @@
 					)
 				)
 				(pin passive line
-					(at -12.7 -7.62 0)
+					(at -10.16 -7.62 0)
 					(length 5.08)
 					(name "3"
 						(effects
@@ -128,7 +128,7 @@
 					)
 				)
 				(pin passive line
-					(at -12.7 -10.16 0)
+					(at -10.16 -10.16 0)
 					(length 5.08)
 					(name "4"
 						(effects
@@ -146,7 +146,7 @@
 					)
 				)
 				(pin passive line
-					(at -12.7 -12.7 0)
+					(at -10.16 -12.7 0)
 					(length 5.08)
 					(name "5"
 						(effects
@@ -164,7 +164,7 @@
 					)
 				)
 				(pin passive line
-					(at -12.7 -15.24 0)
+					(at -10.16 -15.24 0)
 					(length 5.08)
 					(name "6"
 						(effects
@@ -182,7 +182,7 @@
 					)
 				)
 				(pin passive line
-					(at -12.7 -17.78 0)
+					(at -10.16 -17.78 0)
 					(length 5.08)
 					(name "7"
 						(effects
@@ -200,7 +200,7 @@
 					)
 				)
 				(pin passive line
-					(at -12.7 -20.32 0)
+					(at -10.16 -20.32 0)
 					(length 5.08)
 					(name "8"
 						(effects
@@ -218,7 +218,7 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 -20.32 180)
+					(at 10.16 -20.32 180)
 					(length 5.08)
 					(hide yes)
 					(name "MP"
@@ -237,7 +237,7 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 -20.32 180)
+					(at 10.16 -20.32 180)
 					(length 5.08)
 					(hide yes)
 					(name "MP"
@@ -256,7 +256,7 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 -20.32 180)
+					(at 10.16 -20.32 180)
 					(length 5.08)
 					(hide yes)
 					(name "MP"
@@ -275,7 +275,7 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 -20.32 180)
+					(at 10.16 -20.32 180)
 					(length 5.08)
 					(name "MP"
 						(effects
@@ -1372,7 +1372,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 58.42) (xy 218.44 60.96)
+			(xy 213.36 58.42) (xy 213.36 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1482,7 +1482,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 58.42) (xy 218.44 58.42)
+			(xy 210.82 58.42) (xy 213.36 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1722,7 +1722,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 132.08) (xy 218.44 132.08)
+			(xy 210.82 132.08) (xy 213.36 132.08)
 		)
 		(stroke
 			(width 0)
@@ -1832,7 +1832,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 134.62) (xy 218.44 132.08)
+			(xy 213.36 134.62) (xy 213.36 132.08)
 		)
 		(stroke
 			(width 0)
@@ -2762,7 +2762,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 218.44 60.96 0)
+		(at 213.36 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2771,7 +2771,7 @@
 		(fields_autoplaced yes)
 		(uuid "4aa49d6c-b0c5-41c6-87b4-1a09184f50a6")
 		(property "Reference" "#PWR0603"
-			(at 218.44 67.31 0)
+			(at 213.36 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2780,7 +2780,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 218.44 66.04 0)
+			(at 213.36 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2788,7 +2788,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 218.44 60.96 0)
+			(at 213.36 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2797,7 +2797,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 218.44 60.96 0)
+			(at 213.36 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2806,7 +2806,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 218.44 60.96 0)
+			(at 213.36 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2894,8 +2894,8 @@
 		)
 	)
 	(symbol
-		(lib_id "CONN-FPC:F31Z1A7H111008")
-		(at 203.2 78.74 0)
+		(lib_id "CONN-FPC:F31Z-1A7H1-11008")
+		(at 200.66 78.74 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2904,7 +2904,7 @@
 		(dnp no)
 		(uuid "7ad3bdd7-cd06-450e-be72-acc565c49c7c")
 		(property "Reference" "J601"
-			(at 203.2 50.8 0)
+			(at 200.66 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2912,7 +2912,7 @@
 			)
 		)
 		(property "Value" "F31Z1A7H111008"
-			(at 203.2 53.34 0)
+			(at 200.66 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2920,7 +2920,7 @@
 			)
 		)
 		(property "Footprint" "project_footprints:F31Z1A7H111008"
-			(at 203.2 50.8 0)
+			(at 200.66 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2929,7 +2929,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/f31z-f31w.pdf"
-			(at 203.2 48.26 0)
+			(at 200.66 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2938,7 +2938,7 @@
 			)
 		)
 		(property "Description" "Flex Connector, 0.50mm Pitch, Height 4.25mm, Vertical, Slider type, ZIF, 8 position, With MYLAR"
-			(at 203.2 53.34 0)
+			(at 200.66 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2947,7 +2947,7 @@
 			)
 		)
 		(property "Height" "4.45"
-			(at 203.2 45.72 0)
+			(at 200.66 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3610,8 +3610,8 @@
 		)
 	)
 	(symbol
-		(lib_id "CONN-FPC:F31Z1A7H111008")
-		(at 203.2 152.4 0)
+		(lib_id "CONN-FPC:F31Z-1A7H1-11008")
+		(at 200.66 152.4 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3620,7 +3620,7 @@
 		(dnp no)
 		(uuid "dc890cab-015c-4dd3-8cf1-489fff3f0d74")
 		(property "Reference" "J602"
-			(at 203.2 124.46 0)
+			(at 200.66 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3628,7 +3628,7 @@
 			)
 		)
 		(property "Value" "F31Z1A7H111008"
-			(at 203.2 127 0)
+			(at 200.66 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3636,7 +3636,7 @@
 			)
 		)
 		(property "Footprint" "project_footprints:F31Z1A7H111008"
-			(at 203.2 124.46 0)
+			(at 200.66 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3645,7 +3645,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/f31z-f31w.pdf"
-			(at 203.2 121.92 0)
+			(at 200.66 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3654,7 +3654,7 @@
 			)
 		)
 		(property "Description" "Flex Connector, 0.50mm Pitch, Height 4.25mm, Vertical, Slider type, ZIF, 8 position, With MYLAR"
-			(at 203.2 127 0)
+			(at 200.66 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3663,7 +3663,7 @@
 			)
 		)
 		(property "Height" "4.45"
-			(at 203.2 119.38 0)
+			(at 200.66 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3856,7 +3856,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 218.44 134.62 0)
+		(at 213.36 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3865,7 +3865,7 @@
 		(fields_autoplaced yes)
 		(uuid "e5606f3b-6459-4d49-8144-702089096a51")
 		(property "Reference" "#PWR0602"
-			(at 218.44 140.97 0)
+			(at 213.36 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3874,7 +3874,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 218.44 139.7 0)
+			(at 213.36 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3882,7 +3882,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 218.44 134.62 0)
+			(at 213.36 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3891,7 +3891,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 218.44 134.62 0)
+			(at 213.36 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3900,7 +3900,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 218.44 134.62 0)
+			(at 213.36 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)

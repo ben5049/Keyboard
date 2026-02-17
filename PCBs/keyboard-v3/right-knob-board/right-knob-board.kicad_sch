@@ -4769,16 +4769,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 172.72) (xy 48.26 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27cbec41-508a-400f-ac64-0d9aaac8a8a8")
-	)
-	(wire
-		(pts
 			(xy 88.9 55.88) (xy 76.2 55.88)
 		)
 		(stroke
@@ -5019,16 +5009,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 177.8) (xy 48.26 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "458dbc99-13e6-416e-9220-a52eb06fb3ed")
-	)
-	(wire
-		(pts
 			(xy 139.7 106.68) (xy 139.7 116.84)
 		)
 		(stroke
@@ -5126,6 +5106,16 @@
 			(type default)
 		)
 		(uuid "4e6c3a9d-69b5-4fca-92c7-8cd249da90f8")
+	)
+	(wire
+		(pts
+			(xy 35.56 172.72) (xy 48.26 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5357b268-c146-4f49-b4ea-11c945260111")
 	)
 	(wire
 		(pts
@@ -5959,6 +5949,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 177.8) (xy 48.26 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7d4b5b2-67e4-4cab-bbd3-d7174698cee7")
+	)
+	(wire
+		(pts
 			(xy 93.98 165.1) (xy 96.52 165.1)
 		)
 		(stroke
@@ -6537,6 +6537,16 @@
 		)
 		(uuid "5e5ef427-39e7-4280-b201-363098edb5fb")
 	)
+	(label "DIAG"
+		(at 35.56 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "615a2a9e-afb6-4d21-bbfa-cd8e0388690e")
+	)
 	(label "STANDBY"
 		(at 167.64 147.32 0)
 		(effects
@@ -6596,6 +6606,16 @@
 			(justify right bottom)
 		)
 		(uuid "8c7c695d-a19e-4765-94cb-1c57152a52d7")
+	)
+	(label "STANDBY"
+		(at 35.56 172.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8e964dca-05bf-41f2-986e-857499e8247f")
 	)
 	(label "LED2"
 		(at 203.2 45.72 0)
@@ -6707,16 +6727,6 @@
 		)
 		(uuid "c6a0732b-b854-489b-82e1-41ea850a7a79")
 	)
-	(label "STANDBY"
-		(at 35.56 177.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c9865ebd-22dd-4ff7-992c-efc4b70ac394")
-	)
 	(label "DIAG"
 		(at 190.5 134.62 0)
 		(effects
@@ -6786,16 +6796,6 @@
 			(justify left bottom)
 		)
 		(uuid "eca0d276-04fc-4243-b0cd-4355d50d98d8")
-	)
-	(label "DIAG"
-		(at 35.56 172.72 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ed0ffbe8-9f80-4490-9dc8-34ea01d0c35a")
 	)
 	(label "TX"
 		(at 35.56 170.18 0)
@@ -10373,6 +10373,7 @@
 		)
 		(pin "25"
 			(uuid "628bd9a3-75f2-48ac-88f4-8bc1b5423c39")
+			(alternate "TIM1_BKIN")
 		)
 		(pin "38"
 			(uuid "3251eefa-f0d7-4e7a-b35b-1f97256464dc")

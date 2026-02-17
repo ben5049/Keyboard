@@ -1338,22 +1338,22 @@
 		(uuid "0de04363-496e-44cf-8763-8452aa8fde5d")
 	)
 	(label "CTRL.SWDIO"
-		(at 175.26 91.44 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0dfeadf1-161e-41e0-822d-b257bac91da9")
-	)
-	(label "KEYS.SWCLK"
-		(at 127 101.6 0)
+		(at 127 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
+		)
+		(uuid "0dfeadf1-161e-41e0-822d-b257bac91da9")
+	)
+	(label "KEYS.SWCLK"
+		(at 175.26 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
 		)
 		(uuid "36c6ef81-e42b-477e-a5ce-f73f356dcd33")
 	)
@@ -1378,22 +1378,22 @@
 		(uuid "7420016f-d2c9-4e6b-b344-53efa3890df7")
 	)
 	(label "CTRL.SWCLK"
-		(at 127 91.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "836f113f-dd7b-4b7a-8e5f-52c484564ebf")
-	)
-	(label "KNOB.SWDIO"
-		(at 175.26 96.52 180)
+		(at 175.26 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
+		)
+		(uuid "836f113f-dd7b-4b7a-8e5f-52c484564ebf")
+	)
+	(label "KNOB.SWDIO"
+		(at 127 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
 		)
 		(uuid "8485b703-cda4-4828-a85e-90d226fd7811")
 	)
@@ -1418,22 +1418,22 @@
 		(uuid "dbd31e28-be30-490c-86c6-747d7ffa2881")
 	)
 	(label "KNOB.SWCLK"
-		(at 127 96.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "dd6669df-a936-419e-a398-68b859d4e731")
-	)
-	(label "KEYS.SWDIO"
-		(at 175.26 101.6 180)
+		(at 175.26 96.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
+		)
+		(uuid "dd6669df-a936-419e-a398-68b859d4e731")
+	)
+	(label "KEYS.SWDIO"
+		(at 127 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
 		)
 		(uuid "e377a125-d678-4653-8577-b7d1b9f6c95b")
 	)

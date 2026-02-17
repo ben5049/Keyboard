@@ -2789,7 +2789,7 @@
 		(uuid "15c1d200-e341-4f2e-bdcf-ed79364c3137")
 	)
 	(label "USB2.DP"
-		(at 226.06 129.54 180)
+		(at 226.06 132.08 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2849,7 +2849,7 @@
 		(uuid "38dbd90f-b766-4dac-b255-52a7f3823f66")
 	)
 	(label "USB2.DN"
-		(at 226.06 132.08 180)
+		(at 226.06 129.54 180)
 		(effects
 			(font
 				(size 1.27 1.27)

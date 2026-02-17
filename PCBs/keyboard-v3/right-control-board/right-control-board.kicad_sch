@@ -107,14 +107,6 @@
 		(color 0 0 0 0)
 		(uuid "85c12d11-472d-486c-afdd-2e897c129a9f")
 	)
-	(no_connect
-		(at 213.36 60.96)
-		(uuid "4189fbbc-0fb5-4d6a-b2e4-45a31a5bd79b")
-	)
-	(no_connect
-		(at 213.36 63.5)
-		(uuid "fcefd490-6157-4394-b231-58a1155ead69")
-	)
 	(bus
 		(pts
 			(xy 190.5 81.28) (xy 215.9 81.28)
@@ -124,16 +116,6 @@
 			(type default)
 		)
 		(uuid "0c39b614-6432-4d0d-9ebe-5bbec5d70f54")
-	)
-	(wire
-		(pts
-			(xy 213.36 63.5) (xy 215.9 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c548a6e-4a4a-4ff4-b751-174f7ce3ba97")
 	)
 	(bus
 		(pts
@@ -187,6 +169,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 127) (xy 215.9 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4562df4f-124b-452f-abac-dbd0d22c1966")
+	)
+	(wire
+		(pts
 			(xy 154.94 106.68) (xy 213.36 106.68)
 		)
 		(stroke
@@ -204,6 +196,16 @@
 			(type default)
 		)
 		(uuid "6d7ba89b-c51c-4216-9115-2010edb936d9")
+	)
+	(wire
+		(pts
+			(xy 88.9 129.54) (xy 215.9 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7292749c-f2a6-4c93-af0d-6ce6aba595c6")
 	)
 	(wire
 		(pts
@@ -314,16 +316,6 @@
 			(type default)
 		)
 		(uuid "b6e053c9-12cf-44f9-afe5-fd7368c27acc")
-	)
-	(wire
-		(pts
-			(xy 213.36 60.96) (xy 215.9 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf6cc9ad-b14b-4e08-9db4-b16c3906201d")
 	)
 	(wire
 		(pts
@@ -681,26 +673,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "CHG_STAT1" output
-			(at 215.9 60.96 180)
-			(uuid "62da4910-f7b8-4a88-b89d-cc0473724710")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "CHG_STAT2" output
-			(at 215.9 63.5 180)
-			(uuid "2c7f7c34-b40d-49b6-94a2-14fd4471f8ad")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(instances
@@ -1184,6 +1156,26 @@
 		(pin "~{RST}" output
 			(at 88.9 106.68 0)
 			(uuid "48f2ed4f-8415-4eeb-b986-861ab689c0d4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "KEYS.RX" input
+			(at 88.9 127 0)
+			(uuid "c1aaec67-7079-466d-890c-a78c83db4485")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "KNOB.RX" input
+			(at 88.9 129.54 0)
+			(uuid "7ec4671c-f40c-450d-bda5-e02a1f86c7c2")
 			(effects
 				(font
 					(size 1.27 1.27)
