@@ -119,7 +119,7 @@
 	)
 	(bus
 		(pts
-			(xy 88.9 121.92) (xy 215.9 121.92)
+			(xy 88.9 116.84) (xy 215.9 116.84)
 		)
 		(stroke
 			(width 0)
@@ -169,7 +169,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 127) (xy 215.9 127)
+			(xy 88.9 121.92) (xy 215.9 121.92)
 		)
 		(stroke
 			(width 0)
@@ -199,7 +199,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 129.54) (xy 215.9 129.54)
+			(xy 88.9 124.46) (xy 215.9 124.46)
 		)
 		(stroke
 			(width 0)
@@ -229,7 +229,7 @@
 	)
 	(bus
 		(pts
-			(xy 88.9 119.38) (xy 215.9 119.38)
+			(xy 88.9 114.3) (xy 215.9 114.3)
 		)
 		(stroke
 			(width 0)
@@ -279,7 +279,7 @@
 	)
 	(bus
 		(pts
-			(xy 152.4 114.3) (xy 152.4 93.98)
+			(xy 152.4 111.76) (xy 152.4 93.98)
 		)
 		(stroke
 			(width 0)
@@ -359,7 +359,7 @@
 	)
 	(bus
 		(pts
-			(xy 88.9 114.3) (xy 152.4 114.3)
+			(xy 88.9 111.76) (xy 152.4 111.76)
 		)
 		(stroke
 			(width 0)
@@ -685,7 +685,7 @@
 	)
 	(sheet
 		(at 215.9 76.2)
-		(size 25.4 55.88)
+		(size 25.4 50.8)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -709,7 +709,7 @@
 			)
 		)
 		(property "Sheetfile" "daughter-board-connectors.kicad_sch"
-			(at 215.9 132.6646 0)
+			(at 215.9 127.5846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -718,7 +718,7 @@
 			)
 		)
 		(pin "KEYS{SWD}" bidirectional
-			(at 215.9 119.38 180)
+			(at 215.9 114.3 180)
 			(uuid "b030c2ce-df0b-4de1-b5dc-c0cbe018fb7d")
 			(effects
 				(font
@@ -738,7 +738,7 @@
 			)
 		)
 		(pin "KNOB{SWD}" bidirectional
-			(at 215.9 121.92 180)
+			(at 215.9 116.84 180)
 			(uuid "34c2b637-9bc8-48ae-b2c8-87a23bb67b9a")
 			(effects
 				(font
@@ -818,7 +818,7 @@
 			)
 		)
 		(pin "KEYS.RX" output
-			(at 215.9 127 180)
+			(at 215.9 121.92 180)
 			(uuid "33f7ea5d-ad2b-4e50-badc-43e09794db99")
 			(effects
 				(font
@@ -828,7 +828,7 @@
 			)
 		)
 		(pin "KNOB.RX" output
-			(at 215.9 129.54 180)
+			(at 215.9 124.46 180)
 			(uuid "965661e7-8db7-44c6-bf9b-52cc871c627a")
 			(effects
 				(font
@@ -1091,7 +1091,7 @@
 	)
 	(sheet
 		(at 63.5 104.14)
-		(size 25.4 27.94)
+		(size 25.4 22.86)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1115,7 +1115,7 @@
 			)
 		)
 		(property "Sheetfile" "debug-connector.kicad_sch"
-			(at 63.5 132.6646 0)
+			(at 63.5 127.5846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1124,7 +1124,7 @@
 			)
 		)
 		(pin "CTRL{SWD}" bidirectional
-			(at 88.9 114.3 0)
+			(at 88.9 111.76 0)
 			(uuid "9fabe68f-1cd4-47d6-84c3-d71aaa8a2b3c")
 			(effects
 				(font
@@ -1134,7 +1134,7 @@
 			)
 		)
 		(pin "KEYS{SWD}" bidirectional
-			(at 88.9 119.38 0)
+			(at 88.9 114.3 0)
 			(uuid "060b4b04-388b-48a2-847f-e4b91db04e41")
 			(effects
 				(font
@@ -1144,7 +1144,7 @@
 			)
 		)
 		(pin "KNOB{SWD}" bidirectional
-			(at 88.9 121.92 0)
+			(at 88.9 116.84 0)
 			(uuid "ca70bbe1-4b40-49f0-8630-f15e4fb57241")
 			(effects
 				(font
@@ -1164,7 +1164,7 @@
 			)
 		)
 		(pin "KEYS.RX" input
-			(at 88.9 127 0)
+			(at 88.9 121.92 0)
 			(uuid "c1aaec67-7079-466d-890c-a78c83db4485")
 			(effects
 				(font
@@ -1174,7 +1174,7 @@
 			)
 		)
 		(pin "KNOB.RX" input
-			(at 88.9 129.54 0)
+			(at 88.9 124.46 0)
 			(uuid "7ec4671c-f40c-450d-bda5-e02a1f86c7c2")
 			(effects
 				(font
