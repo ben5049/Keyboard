@@ -2819,7 +2819,7 @@
 		(uuid "2140e6bd-a527-4321-b955-288ae92781eb")
 	)
 	(label "USB1.DP"
-		(at 144.78 132.08 180)
+		(at 144.78 137.16 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2829,7 +2829,7 @@
 		(uuid "2340fe23-0ca1-4634-869b-1de65d2c9347")
 	)
 	(label "USB0.DP"
-		(at 144.78 137.16 180)
+		(at 144.78 132.08 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2839,7 +2839,7 @@
 		(uuid "332efce1-c8d3-411d-80f5-6702f0fc5de1")
 	)
 	(label "USB0.DN"
-		(at 144.78 129.54 180)
+		(at 144.78 134.62 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2889,7 +2889,7 @@
 		(uuid "89a6d2ad-05e9-4c3e-b6a2-a475abea32c4")
 	)
 	(label "USB1.DN"
-		(at 144.78 134.62 180)
+		(at 144.78 129.54 180)
 		(effects
 			(font
 				(size 1.27 1.27)
