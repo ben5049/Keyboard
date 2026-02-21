@@ -5044,7 +5044,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "00e72def-5204-4f61-9c24-baacbef944ee")
-		(property "Reference" "#PWR0216"
+		(property "Reference" "#PWR0221"
 			(at 185.42 158.75 0)
 			(effects
 				(font
@@ -5094,7 +5094,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "#PWR0216")
+					(reference "#PWR0221")
 					(unit 1)
 				)
 			)
@@ -5110,7 +5110,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "011e97f1-c4ef-4e0e-9a77-b89ba96b4d89")
-		(property "Reference" "#PWR0212"
+		(property "Reference" "#PWR0204"
 			(at 149.86 85.09 0)
 			(effects
 				(font
@@ -5160,7 +5160,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "#PWR0212")
+					(reference "#PWR0204")
 					(unit 1)
 				)
 			)
@@ -5246,7 +5246,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "02a6d7cb-84f3-4edc-9809-cfab24942afe")
-		(property "Reference" "SW223"
+		(property "Reference" "SW218"
 			(at 246.38 55.88 0)
 			(effects
 				(font
@@ -5298,7 +5298,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "SW223")
+					(reference "SW218")
 					(unit 1)
 				)
 			)
@@ -5314,7 +5314,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "06258733-28ec-4c86-b8ea-d5084570b9fa")
-		(property "Reference" "SW207"
+		(property "Reference" "SW214"
 			(at 73.66 55.88 0)
 			(effects
 				(font
@@ -5366,7 +5366,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "SW207")
+					(reference "SW214")
 					(unit 1)
 				)
 			)
@@ -5522,7 +5522,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "152dd253-d96c-496b-9744-b21e81733710")
-		(property "Reference" "SW219"
+		(property "Reference" "SW217"
 			(at 203.2 55.88 0)
 			(effects
 				(font
@@ -5574,7 +5574,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "SW219")
+					(reference "SW217")
 					(unit 1)
 				)
 			)
@@ -5590,7 +5590,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "170dbd40-9510-4ec7-b833-bf2455aa4941")
-		(property "Reference" "#PWR0208"
+		(property "Reference" "#PWR0218"
 			(at 101.6 158.75 0)
 			(effects
 				(font
@@ -5640,7 +5640,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "#PWR0208")
+					(reference "#PWR0218")
 					(unit 1)
 				)
 			)
@@ -5656,7 +5656,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19ad498d-0379-412f-855c-1eb36691c10c")
-		(property "Reference" "D205"
+		(property "Reference" "D202"
 			(at 142.24 91.44 0)
 			(effects
 				(font
@@ -5835,7 +5835,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "D205")
+					(reference "D202")
 					(unit 1)
 				)
 			)
@@ -5851,7 +5851,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b7d95f9-805b-4ba6-9404-d00aa3dd8361")
-		(property "Reference" "#PWR0230"
+		(property "Reference" "#PWR0216"
 			(at 30.48 138.43 0)
 			(effects
 				(font
@@ -5901,7 +5901,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "#PWR0230")
+					(reference "#PWR0216")
 					(unit 1)
 				)
 			)
@@ -5917,7 +5917,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2806b461-9ec7-4bf7-a821-7fc239b2c393")
-		(property "Reference" "SW210"
+		(property "Reference" "SW209"
 			(at 116.84 43.18 0)
 			(effects
 				(font
@@ -5969,7 +5969,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "SW210")
+					(reference "SW209")
 					(unit 1)
 				)
 			)
@@ -5985,7 +5985,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2b57daf4-5aa2-470e-8109-d314f8c31102")
-		(property "Reference" "SW214"
+		(property "Reference" "SW210"
 			(at 160.02 43.18 0)
 			(effects
 				(font
@@ -6037,7 +6037,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "SW214")
+					(reference "SW210")
 					(unit 1)
 				)
 			)
@@ -6248,7 +6248,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3077b4a8-3e3d-412f-a09c-9eed88302017")
-		(property "Reference" "#PWR0227"
+		(property "Reference" "#PWR0211"
 			(at 210.82 100.33 0)
 			(effects
 				(font
@@ -6298,7 +6298,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "#PWR0227")
+					(reference "#PWR0211")
 					(unit 1)
 				)
 			)
@@ -6314,7 +6314,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3497e199-1b22-4aab-86df-aab1528a4e71")
-		(property "Reference" "#PWR0226"
+		(property "Reference" "#PWR0207"
 			(at 71.12 95.25 0)
 			(effects
 				(font
@@ -6364,7 +6364,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "#PWR0226")
+					(reference "#PWR0207")
 					(unit 1)
 				)
 			)
@@ -6380,7 +6380,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "390658b7-de8c-46dc-8ac7-edf253da4a0f")
-		(property "Reference" "SW216"
+		(property "Reference" "SW222"
 			(at 160.02 68.58 0)
 			(effects
 				(font
@@ -6432,7 +6432,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "SW216")
+					(reference "SW222")
 					(unit 1)
 				)
 			)
@@ -6448,7 +6448,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a4b0b18-dfb8-47cc-be47-f6e3b78b019b")
-		(property "Reference" "#PWR0209"
+		(property "Reference" "#PWR0203"
 			(at 106.68 85.09 0)
 			(effects
 				(font
@@ -6498,7 +6498,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "#PWR0209")
+					(reference "#PWR0203")
 					(unit 1)
 				)
 			)
@@ -6639,7 +6639,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3af3b4c4-6f9d-479c-b7c3-6b1d838aa399")
-		(property "Reference" "SW203"
+		(property "Reference" "SW213"
 			(at 30.48 55.88 0)
 			(effects
 				(font
@@ -6691,7 +6691,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "SW203")
+					(reference "SW213")
 					(unit 1)
 				)
 			)
@@ -6707,7 +6707,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d2d991b-8ab9-4fd9-af9e-f234702ba8c4")
-		(property "Reference" "D221"
+		(property "Reference" "D206"
 			(at 254 91.44 0)
 			(effects
 				(font
@@ -6886,7 +6886,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "D221")
+					(reference "D206")
 					(unit 1)
 				)
 			)
@@ -6902,7 +6902,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d82431b-40aa-47aa-ad0a-e90cedf542c5")
-		(property "Reference" "R201"
+		(property "Reference" "R203"
 			(at 43.18 115.5699 0)
 			(effects
 				(font
@@ -6956,7 +6956,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "R201")
+					(reference "R203")
 					(unit 1)
 				)
 			)
@@ -6972,7 +6972,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3f9c0fd9-0a72-4dfc-9dad-617c4bd53931")
-		(property "Reference" "#PWR0228"
+		(property "Reference" "#PWR0210"
 			(at 182.88 100.33 0)
 			(effects
 				(font
@@ -7022,7 +7022,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "#PWR0228")
+					(reference "#PWR0210")
 					(unit 1)
 				)
 			)
@@ -7038,7 +7038,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4a58a6a8-2371-4826-b9b7-92cb460ccc5e")
-		(property "Reference" "SW206"
+		(property "Reference" "SW208"
 			(at 73.66 43.18 0)
 			(effects
 				(font
@@ -7090,7 +7090,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "SW206")
+					(reference "SW208")
 					(unit 1)
 				)
 			)
@@ -7106,7 +7106,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "501daacf-21cd-493e-823b-3da5813d7feb")
-		(property "Reference" "D223"
+		(property "Reference" "D218"
 			(at 254 121.92 0)
 			(effects
 				(font
@@ -7285,7 +7285,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "D223")
+					(reference "D218")
 					(unit 1)
 				)
 			)
@@ -7301,7 +7301,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "579e4723-b0dc-458a-b5d9-30c5d279fd34")
-		(property "Reference" "SW209"
+		(property "Reference" "SW203"
 			(at 116.84 30.48 0)
 			(effects
 				(font
@@ -7353,7 +7353,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "SW209")
+					(reference "SW203")
 					(unit 1)
 				)
 			)
@@ -7369,7 +7369,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58eb2bce-5ce8-42ef-834f-f60a8cf6e3d3")
-		(property "Reference" "SW221"
+		(property "Reference" "SW206"
 			(at 246.38 30.48 0)
 			(effects
 				(font
@@ -7421,7 +7421,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "SW221")
+					(reference "SW206")
 					(unit 1)
 				)
 			)
@@ -7505,7 +7505,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "638234b3-35d8-47bc-aecd-b21f92fe4079")
-		(property "Reference" "#PWR0224"
+		(property "Reference" "#PWR0212"
 			(at 238.76 100.33 0)
 			(effects
 				(font
@@ -7555,7 +7555,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "#PWR0224")
+					(reference "#PWR0212")
 					(unit 1)
 				)
 			)
@@ -7571,7 +7571,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "654d254a-0fde-40c8-b0c8-0f89feb29ede")
-		(property "Reference" "D208"
+		(property "Reference" "D220"
 			(at 142.24 137.16 0)
 			(effects
 				(font
@@ -7750,7 +7750,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "D208")
+					(reference "D220")
 					(unit 1)
 				)
 			)
@@ -7766,7 +7766,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6871fd27-a061-43c9-9c41-3330cf9c887e")
-		(property "Reference" "SW215"
+		(property "Reference" "SW216"
 			(at 160.02 55.88 0)
 			(effects
 				(font
@@ -7818,7 +7818,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "SW215")
+					(reference "SW216")
 					(unit 1)
 				)
 			)
@@ -7902,7 +7902,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6d1adc6f-afdb-4bc4-9bf0-fde20e190062")
-		(property "Reference" "D210"
+		(property "Reference" "D209"
 			(at 170.18 106.68 0)
 			(effects
 				(font
@@ -8081,7 +8081,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "D210")
+					(reference "D209")
 					(unit 1)
 				)
 			)
@@ -8097,7 +8097,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "70626cf0-ebe0-48a4-b9ba-d85dec5d7d0d")
-		(property "Reference" "D218"
+		(property "Reference" "D211"
 			(at 226.06 106.68 0)
 			(effects
 				(font
@@ -8276,7 +8276,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "D218")
+					(reference "D211")
 					(unit 1)
 				)
 			)
@@ -8292,7 +8292,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "71e70846-3e49-4f52-9cc8-47bbfe39801c")
-		(property "Reference" "D207"
+		(property "Reference" "D214"
 			(at 142.24 121.92 0)
 			(effects
 				(font
@@ -8471,7 +8471,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "D207")
+					(reference "D214")
 					(unit 1)
 				)
 			)
@@ -8557,7 +8557,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e0ebfca-4fbc-4b19-ad39-a42f1e7a1272")
-		(property "Reference" "#PWR0217"
+		(property "Reference" "#PWR0205"
 			(at 193.04 85.09 0)
 			(effects
 				(font
@@ -8607,7 +8607,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "#PWR0217")
+					(reference "#PWR0205")
 					(unit 1)
 				)
 			)
@@ -8623,7 +8623,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "83eae225-c3e1-412e-8ae3-f0a044804798")
-		(property "Reference" "D216"
+		(property "Reference" "D222"
 			(at 198.12 137.16 0)
 			(effects
 				(font
@@ -8802,7 +8802,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "D216")
+					(reference "D222")
 					(unit 1)
 				)
 			)
@@ -8818,7 +8818,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8418b332-cadd-4585-93b8-1f50dbefe2aa")
-		(property "Reference" "D217"
+		(property "Reference" "D205"
 			(at 226.06 91.44 0)
 			(effects
 				(font
@@ -8997,7 +8997,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "D217")
+					(reference "D205")
 					(unit 1)
 				)
 			)
@@ -9013,7 +9013,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "858e8c04-d96d-4f19-9db2-905b18d5be46")
-		(property "Reference" "SW222"
+		(property "Reference" "SW212"
 			(at 246.38 43.18 0)
 			(effects
 				(font
@@ -9065,7 +9065,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "SW222")
+					(reference "SW212")
 					(unit 1)
 				)
 			)
@@ -9081,7 +9081,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "868dabd6-b4d2-42d3-bfba-907e77c3dd00")
-		(property "Reference" "D212"
+		(property "Reference" "D221"
 			(at 170.18 137.16 0)
 			(effects
 				(font
@@ -9260,7 +9260,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "D212")
+					(reference "D221")
 					(unit 1)
 				)
 			)
@@ -9276,7 +9276,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8e742c34-1430-4be2-b9b0-8c1b035c2827")
-		(property "Reference" "#PWR0225"
+		(property "Reference" "#PWR0213"
 			(at 266.7 100.33 0)
 			(effects
 				(font
@@ -9326,7 +9326,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "#PWR0225")
+					(reference "#PWR0213")
 					(unit 1)
 				)
 			)
@@ -9412,7 +9412,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "952eecd0-0601-481b-becf-b61c25bfc708")
-		(property "Reference" "#PWR0222"
+		(property "Reference" "#PWR0223"
 			(at 241.3 158.75 0)
 			(effects
 				(font
@@ -9462,7 +9462,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "#PWR0222")
+					(reference "#PWR0223")
 					(unit 1)
 				)
 			)
@@ -9478,7 +9478,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "961020fa-7ed7-431a-95aa-0de8112f042e")
-		(property "Reference" "SW217"
+		(property "Reference" "SW205"
 			(at 203.2 30.48 0)
 			(effects
 				(font
@@ -9530,7 +9530,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "SW217")
+					(reference "SW205")
 					(unit 1)
 				)
 			)
@@ -9546,7 +9546,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "97bb439e-241d-44fd-90ef-01511bb9f105")
-		(property "Reference" "D209"
+		(property "Reference" "D203"
 			(at 170.18 91.44 0)
 			(effects
 				(font
@@ -9725,7 +9725,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "D209")
+					(reference "D203")
 					(unit 1)
 				)
 			)
@@ -9741,7 +9741,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "991756fd-dc4e-4b30-a4af-4737fe85feed")
-		(property "Reference" "#PWR0220"
+		(property "Reference" "#PWR0206"
 			(at 236.22 85.09 0)
 			(effects
 				(font
@@ -9791,7 +9791,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "#PWR0220")
+					(reference "#PWR0206")
 					(unit 1)
 				)
 			)
@@ -10070,7 +10070,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ac966554-add2-48e7-b760-e58827eee049")
-		(property "Reference" "SW204"
+		(property "Reference" "SW219"
 			(at 30.48 68.58 0)
 			(effects
 				(font
@@ -10122,7 +10122,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "SW204")
+					(reference "SW219")
 					(unit 1)
 				)
 			)
@@ -10138,7 +10138,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b49ecd82-26f9-4aae-8b5f-816cabdea90a")
-		(property "Reference" "D202"
+		(property "Reference" "D207"
 			(at 114.3 106.68 0)
 			(effects
 				(font
@@ -10317,7 +10317,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "D202")
+					(reference "D207")
 					(unit 1)
 				)
 			)
@@ -10333,7 +10333,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b4a261c2-9126-4632-b2dd-92ec64593281")
-		(property "Reference" "D220"
+		(property "Reference" "D223"
 			(at 226.06 137.16 0)
 			(effects
 				(font
@@ -10512,7 +10512,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "D220")
+					(reference "D223")
 					(unit 1)
 				)
 			)
@@ -10528,7 +10528,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b5a1dccb-ee7f-4f03-9a57-bb484fede7c2")
-		(property "Reference" "SW220"
+		(property "Reference" "SW223"
 			(at 203.2 68.58 0)
 			(effects
 				(font
@@ -10580,7 +10580,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "SW220")
+					(reference "SW223")
 					(unit 1)
 				)
 			)
@@ -10596,7 +10596,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b64e3a25-11bf-4c2a-ad38-2ef631bdddd4")
-		(property "Reference" "D206"
+		(property "Reference" "D208"
 			(at 142.24 106.68 0)
 			(effects
 				(font
@@ -10775,7 +10775,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "D206")
+					(reference "D208")
 					(unit 1)
 				)
 			)
@@ -10791,7 +10791,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b6879fcf-f582-40cb-8426-438ab2d2d7ca")
-		(property "Reference" "#PWR0207"
+		(property "Reference" "#PWR0214"
 			(at 71.12 125.73 0)
 			(effects
 				(font
@@ -10841,7 +10841,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "#PWR0207")
+					(reference "#PWR0214")
 					(unit 1)
 				)
 			)
@@ -10857,7 +10857,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b8a742ca-5d84-410e-86a5-d9908984482e")
-		(property "Reference" "SW202"
+		(property "Reference" "SW207"
 			(at 30.48 43.18 0)
 			(effects
 				(font
@@ -10909,7 +10909,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "SW202")
+					(reference "SW207")
 					(unit 1)
 				)
 			)
@@ -10925,7 +10925,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c27b1e7b-f0bc-4275-a886-2dcd5afe4f47")
-		(property "Reference" "SW211"
+		(property "Reference" "SW215"
 			(at 116.84 55.88 0)
 			(effects
 				(font
@@ -10977,7 +10977,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "SW211")
+					(reference "SW215")
 					(unit 1)
 				)
 			)
@@ -10993,7 +10993,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4bfecd0-8116-48cb-a8f0-7552e88018a4")
-		(property "Reference" "R203"
+		(property "Reference" "R201"
 			(at 73.66 95.2499 0)
 			(effects
 				(font
@@ -11047,7 +11047,7 @@
 		(instances
 			(project ""
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "R203")
+					(reference "R201")
 					(unit 1)
 				)
 			)
@@ -11063,7 +11063,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c6753bd7-fc65-40cb-a528-e18a9407ec64")
-		(property "Reference" "#PWR0203"
+		(property "Reference" "#PWR0217"
 			(at 30.48 156.21 0)
 			(effects
 				(font
@@ -11113,7 +11113,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "#PWR0203")
+					(reference "#PWR0217")
 					(unit 1)
 				)
 			)
@@ -11129,7 +11129,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c7caf213-1d05-4378-bf1e-8a35431c36de")
-		(property "Reference" "SW213"
+		(property "Reference" "SW204"
 			(at 160.02 30.48 0)
 			(effects
 				(font
@@ -11181,7 +11181,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "SW213")
+					(reference "SW204")
 					(unit 1)
 				)
 			)
@@ -11197,7 +11197,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c9559b29-fd95-4bd6-b046-409ed5d95a7f")
-		(property "Reference" "#PWR0204"
+		(property "Reference" "#PWR0215"
 			(at 40.64 128.27 0)
 			(effects
 				(font
@@ -11247,7 +11247,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "#PWR0204")
+					(reference "#PWR0215")
 					(unit 1)
 				)
 			)
@@ -11263,7 +11263,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca9f14dc-517d-4980-afee-f1d191ae6538")
-		(property "Reference" "SW218"
+		(property "Reference" "SW211"
 			(at 203.2 43.18 0)
 			(effects
 				(font
@@ -11315,7 +11315,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "SW218")
+					(reference "SW211")
 					(unit 1)
 				)
 			)
@@ -11331,7 +11331,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cdc91691-d621-413e-aac6-0822e6338d06")
-		(property "Reference" "D203"
+		(property "Reference" "D213"
 			(at 114.3 121.92 0)
 			(effects
 				(font
@@ -11510,7 +11510,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "D203")
+					(reference "D213")
 					(unit 1)
 				)
 			)
@@ -11526,7 +11526,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cdd9795f-6300-44f4-9a25-b913b2be0340")
-		(property "Reference" "SW212"
+		(property "Reference" "SW221"
 			(at 116.84 68.58 0)
 			(effects
 				(font
@@ -11578,7 +11578,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "SW212")
+					(reference "SW221")
 					(unit 1)
 				)
 			)
@@ -11594,7 +11594,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cef55428-8d58-4c80-b61a-ee80588eda3a")
-		(property "Reference" "#PWR0214"
+		(property "Reference" "#PWR0220"
 			(at 157.48 158.75 0)
 			(effects
 				(font
@@ -11644,7 +11644,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "#PWR0214")
+					(reference "#PWR0220")
 					(unit 1)
 				)
 			)
@@ -11660,7 +11660,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d0a96180-142f-4cb8-9a59-f9136acdb357")
-		(property "Reference" "SW205"
+		(property "Reference" "SW202"
 			(at 73.66 30.48 0)
 			(effects
 				(font
@@ -11712,7 +11712,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "SW205")
+					(reference "SW202")
 					(unit 1)
 				)
 			)
@@ -11728,7 +11728,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d0c45ef4-20ba-46ed-bb38-d3089c2ea782")
-		(property "Reference" "#PWR0219"
+		(property "Reference" "#PWR0222"
 			(at 213.36 158.75 0)
 			(effects
 				(font
@@ -11778,7 +11778,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "#PWR0219")
+					(reference "#PWR0222")
 					(unit 1)
 				)
 			)
@@ -11794,7 +11794,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d16201e3-acc1-4efc-ba2f-444abe3faf8d")
-		(property "Reference" "#PWR0231"
+		(property "Reference" "#PWR0208"
 			(at 127 100.33 0)
 			(effects
 				(font
@@ -11844,7 +11844,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "#PWR0231")
+					(reference "#PWR0208")
 					(unit 1)
 				)
 			)
@@ -11860,7 +11860,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d37a56b6-8fd5-4884-840f-ba78377edf18")
-		(property "Reference" "D219"
+		(property "Reference" "D217"
 			(at 226.06 121.92 0)
 			(effects
 				(font
@@ -12039,7 +12039,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "D219")
+					(reference "D217")
 					(unit 1)
 				)
 			)
@@ -12055,7 +12055,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d5f48c3d-0514-4a51-aece-cdbce3b41001")
-		(property "Reference" "D222"
+		(property "Reference" "D212"
 			(at 254 106.68 0)
 			(effects
 				(font
@@ -12234,7 +12234,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "D222")
+					(reference "D212")
 					(unit 1)
 				)
 			)
@@ -12250,7 +12250,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d748a6c2-8b03-4ebb-bb10-61c0872f23c5")
-		(property "Reference" "#PWR0229"
+		(property "Reference" "#PWR0209"
 			(at 154.94 100.33 0)
 			(effects
 				(font
@@ -12300,7 +12300,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "#PWR0229")
+					(reference "#PWR0209")
 					(unit 1)
 				)
 			)
@@ -12452,7 +12452,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e6da009b-a0af-4248-b189-5fa3fcbf4c3f")
-		(property "Reference" "#PWR0205"
+		(property "Reference" "#PWR0202"
 			(at 63.5 85.09 0)
 			(effects
 				(font
@@ -12502,7 +12502,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "#PWR0205")
+					(reference "#PWR0202")
 					(unit 1)
 				)
 			)
@@ -12518,7 +12518,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eba79552-18af-4662-a27a-a854a84a5d02")
-		(property "Reference" "D214"
+		(property "Reference" "D210"
 			(at 198.12 106.68 0)
 			(effects
 				(font
@@ -12697,7 +12697,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "D214")
+					(reference "D210")
 					(unit 1)
 				)
 			)
@@ -12713,7 +12713,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3b89216-212c-4369-9231-070644ed1be7")
-		(property "Reference" "D213"
+		(property "Reference" "D204"
 			(at 198.12 91.44 0)
 			(effects
 				(font
@@ -12892,7 +12892,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "D213")
+					(reference "D204")
 					(unit 1)
 				)
 			)
@@ -12908,7 +12908,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f5032ea3-3903-4817-be76-c272214fc1bb")
-		(property "Reference" "D211"
+		(property "Reference" "D215"
 			(at 170.18 121.92 0)
 			(effects
 				(font
@@ -13087,7 +13087,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "D211")
+					(reference "D215")
 					(unit 1)
 				)
 			)
@@ -13103,7 +13103,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f79a3405-2baa-4275-8f53-eb0bdb2a2242")
-		(property "Reference" "D215"
+		(property "Reference" "D216"
 			(at 198.12 121.92 0)
 			(effects
 				(font
@@ -13282,7 +13282,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "D215")
+					(reference "D216")
 					(unit 1)
 				)
 			)
@@ -13298,7 +13298,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f8b617fd-f63d-4774-80c4-0b9dc08d9979")
-		(property "Reference" "D204"
+		(property "Reference" "D219"
 			(at 114.3 137.16 0)
 			(effects
 				(font
@@ -13477,7 +13477,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "D204")
+					(reference "D219")
 					(unit 1)
 				)
 			)
@@ -13493,7 +13493,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fb0dd3c3-b3fd-47f1-bc6c-73c39e099406")
-		(property "Reference" "#PWR0211"
+		(property "Reference" "#PWR0219"
 			(at 129.54 158.75 0)
 			(effects
 				(font
@@ -13543,7 +13543,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "#PWR0211")
+					(reference "#PWR0219")
 					(unit 1)
 				)
 			)
@@ -13559,7 +13559,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ff935e80-d82a-45d8-bcc4-23d8faf6d855")
-		(property "Reference" "SW208"
+		(property "Reference" "SW220"
 			(at 73.66 68.58 0)
 			(effects
 				(font
@@ -13611,7 +13611,7 @@
 		(instances
 			(project "right-key-board"
 				(path "/b3650411-80d8-4885-8b8e-9727427c52f9/ba7dae41-a9ec-475c-8b66-e19e85f89a7e"
-					(reference "SW208")
+					(reference "SW220")
 					(unit 1)
 				)
 			)
