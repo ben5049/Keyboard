@@ -58,7 +58,36 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|175755000|80545000|20dee502-630f-490f-b6ce-5811250b97ba|47869b1b-b8f3-4b6a-9872-002d00b53d4e",
+          ""
+        ],
+        [
+          "silk_over_copper|164641704|72780001|6316a849-1636-4ec5-a906-2ee8d8592fd6|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|175156706|78101740|d1df63af-3cc1-4fc1-bee7-8ddb8a2efd46|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_overlap|196025000|75750000|11cf0fa0-265d-499b-8696-269007d26b60|3634648c-4f5c-45fa-aca3-019ce9e6469b",
+          ""
+        ],
+        [
+          "silk_overlap|196025000|75750000|11cf0fa0-265d-499b-8696-269007d26b60|98d4c4fd-cc06-425b-b959-50f71379a6c6",
+          ""
+        ],
+        [
+          "silk_overlap|196050000|75824000|3634648c-4f5c-45fa-aca3-019ce9e6469b|f825ee2f-ae92-4b3e-a892-dd02655dd2e0",
+          ""
+        ],
+        [
+          "silk_overlap|196050000|75824000|98d4c4fd-cc06-425b-b959-50f71379a6c6|f825ee2f-ae92-4b3e-a892-dd02655dd2e0",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -471,7 +500,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "right-key-board.kicad_pro",
+    "filename": "left-key-board.kicad_pro",
     "version": 3
   },
   "net_settings": {

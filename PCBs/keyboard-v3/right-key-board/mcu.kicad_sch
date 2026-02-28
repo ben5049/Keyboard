@@ -2154,6 +2154,26 @@
 		)
 		(uuid "499be760-633f-4851-9e6b-17595f4a3f1d")
 	)
+	(text_box "PB5:\nLOW = Left\nHIGH = Right\n\nPB6:\nLOW = Knob\nHIGH = Keys\n\n(Internal pullups)"
+		(exclude_from_sim no)
+		(at 58.42 111.76 0)
+		(size 20.32 20.32)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5732ad15-2e4e-4de5-ad53-183c022ddec1")
+	)
 	(junction
 		(at 203.2 132.08)
 		(diameter 0)
@@ -2277,6 +2297,10 @@
 		(uuid "0671b689-3254-4f6b-86c0-f2e5032f00d0")
 	)
 	(no_connect
+		(at 99.06 111.76)
+		(uuid "1047e395-58d7-4742-823e-2a00ade7725a")
+	)
+	(no_connect
 		(at 99.06 119.38)
 		(uuid "9ebfab71-2ea1-4361-9f31-4237d60d45d4")
 	)
@@ -2285,12 +2309,8 @@
 		(uuid "ba47cf0c-f229-4021-a742-68c3c528edb6")
 	)
 	(no_connect
-		(at 99.06 111.76)
-		(uuid "bf792372-9620-42f4-809b-033c1b6ad1c0")
-	)
-	(no_connect
 		(at 99.06 109.22)
-		(uuid "c793fb99-8b23-4406-9a93-9af0d838ee5b")
+		(uuid "ced06205-887b-4c99-b4e3-a37568544c81")
 	)
 	(bus_entry
 		(at 254 83.82)
@@ -5313,6 +5333,7 @@
 		)
 		(pin "10"
 			(uuid "2a5b6800-cfae-44ae-96b7-dc198aea5d7a")
+			(alternate "ADC1_IN4")
 		)
 		(pin "41"
 			(uuid "6a40d995-521c-4faf-9f74-b5d6feb381b4")
