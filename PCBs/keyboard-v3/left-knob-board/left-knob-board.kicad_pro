@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.15
+          "min_clearance": 0.2
         }
       },
       "diff_pair_dimensions": [
@@ -58,7 +58,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|156609380|83594268|f2d04fe1-a1cc-4ac5-982c-ba1045f215b2|f7d0149f-f815-431a-a76b-57393097a834",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -66,9 +71,9 @@
         "annular_width": "error",
         "clearance": "error",
         "connection_width": "warning",
-        "copper_edge_clearance": "ignore",
+        "copper_edge_clearance": "error",
         "copper_sliver": "warning",
-        "courtyards_overlap": "ignore",
+        "courtyards_overlap": "error",
         "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
@@ -100,7 +105,7 @@
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "ignore",
+        "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
@@ -123,12 +128,12 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.15,
-        "min_connection": 0.15,
+        "min_clearance": 0.2,
+        "min_connection": 0.2,
         "min_copper_edge_clearance": 0.2,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.2,
-        "min_hole_to_hole": 0.2,
+        "min_hole_clearance": 0.25,
+        "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
@@ -136,7 +141,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.15,
+        "min_track_width": 0.2,
         "min_via_annular_width": 0.075,
         "min_via_diameter": 0.4,
         "solder_mask_to_copper_clearance": 0.0,
@@ -471,17 +476,17 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "left-control-board.kicad_pro",
+    "filename": "left-knob-board.kicad_pro",
     "version": 3
   },
   "net_settings": {
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.15,
-        "diff_pair_gap": 0.15,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.15,
+        "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -489,7 +494,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.15,
+        "track_width": 0.2,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
@@ -507,10 +512,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../../../../../Downloads/right-control-board.step",
+      "step": "../../../../../../Downloads/left-knob-board.step",
       "svg": "",
       "vrml": ""
     },
@@ -583,14 +588,44 @@
         },
         {
           "group_by": false,
+          "label": "Check_prices",
+          "name": "Check_prices",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description_1",
+          "name": "Description_1",
+          "show": false
+        },
+        {
+          "group_by": false,
           "label": "Height",
           "name": "Height",
           "show": false
         },
         {
           "group_by": false,
-          "label": "Manufacturer",
-          "name": "Manufacturer",
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MF",
+          "name": "MF",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MP",
+          "name": "MP",
           "show": false
         },
         {
@@ -619,8 +654,38 @@
         },
         {
           "group_by": false,
-          "label": "Frequency",
-          "name": "Frequency",
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Price",
+          "name": "Price",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SnapEDA_Link",
+          "name": "SnapEDA_Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Availability",
+          "name": "Availability",
           "show": false
         },
         {
@@ -633,84 +698,6 @@
           "group_by": false,
           "label": "#",
           "name": "${ITEM_NUMBER}",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "ISAT,10% (A)",
-          "name": "ISAT,10% (A)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Match Code",
-          "name": "Match Code",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Mounting Technology",
-          "name": "Mounting Technology",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "ISAT,30% (A)",
-          "name": "ISAT,30% (A)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "L (µH)",
-          "name": "L (µH)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Part Number",
-          "name": "Part Number",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Published Date",
-          "name": "Published Date",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "RDC max. (mΩ)",
-          "name": "RDC max. (mΩ)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Size",
-          "name": "Size",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "fres (MHz)",
-          "name": "fres (MHz)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Critical Parameter",
-          "name": "Critical Parameter",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer URL",
-          "name": "Manufacturer URL",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "IRP,40K (A)",
-          "name": "IRP,40K (A)",
           "show": false
         }
       ],
@@ -763,36 +750,8 @@
   },
   "sheets": [
     [
-      "982f1c46-f6d6-42a2-bf2a-9fb0e913f11f",
+      "89772559-61ca-49db-9489-b2e4426f8f55",
       "Root"
-    ],
-    [
-      "550affba-2d1b-4003-9291-dd582a27e02e",
-      "USB Connectors"
-    ],
-    [
-      "a8cedd16-275b-435b-a1f3-f83ccf5a22eb",
-      "MCU"
-    ],
-    [
-      "fb75d6dd-111a-4d67-8d10-324a6dc46848",
-      "Debug Connector"
-    ],
-    [
-      "5e632e5a-5283-4d2d-96d4-75c4ba68d1b5",
-      "Daughter Board Connectors"
-    ],
-    [
-      "5a733dd0-c576-43d4-95ef-2f5480128f2d",
-      "Power"
-    ],
-    [
-      "1f10322d-0a27-4fa3-b9cd-9beba2862beb",
-      "SD Card"
-    ],
-    [
-      "9e40c337-fa3a-418a-a06f-f29c5aeab638",
-      "USB Hub"
     ]
   ],
   "text_variables": {}
