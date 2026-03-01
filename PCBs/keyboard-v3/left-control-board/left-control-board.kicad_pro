@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.15
+          "min_clearance": 0.2
         }
       },
       "diff_pair_dimensions": [
@@ -58,7 +58,16 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "silk_over_copper|163479999|93290001|81b85f29-9de4-4c07-b1cd-be83409af28e|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "starved_thermal|159149999|90650000|0367f354-03d4-4fce-bfac-0d01f2f957e0|0a7ccc49-a9bc-480a-b794-2aa1e05b30b9|F.Cu",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },

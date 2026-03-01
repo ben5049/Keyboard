@@ -2136,7 +2136,7 @@
 	)
 	(text_box "PB5:\nLOW = Left\nHIGH = Right\n\nPB6:\nLOW = Knob\nHIGH = Keys\n\n(Internal pullups)"
 		(exclude_from_sim no)
-		(at 55.88 104.14 0)
+		(at 53.34 104.14 0)
 		(size 20.32 20.32)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2156,7 +2156,7 @@
 	)
 	(text_box "An interrupt can be sent to the control board via PA15. The firmware must check no debugger is connected first."
 		(exclude_from_sim no)
-		(at 58.42 78.74 0)
+		(at 53.34 78.74 0)
 		(size 22.86 12.7)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
