@@ -58,7 +58,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|105505000|82054999|3bf2a55d-3c76-455d-828b-62319b389b37|5e392367-8861-485a-9fa6-55baf2952b28",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -507,10 +512,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../../../../../Downloads/right-key-board.step",
+      "step": "right-key-board.step",
       "svg": "",
       "vrml": ""
     },
@@ -732,7 +737,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "./",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",

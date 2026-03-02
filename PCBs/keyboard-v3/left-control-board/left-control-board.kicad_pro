@@ -58,16 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "silk_over_copper|163479999|93290001|81b85f29-9de4-4c07-b1cd-be83409af28e|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "starved_thermal|159149999|90650000|0367f354-03d4-4fce-bfac-0d01f2f957e0|0a7ccc49-a9bc-480a-b794-2aa1e05b30b9|F.Cu",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -516,10 +507,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../../../../../Downloads/right-control-board.step",
+      "step": "left-control-board.step",
       "svg": "",
       "vrml": ""
     },

@@ -515,7 +515,7 @@
       "plot": "gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../../../../../Downloads/left-knob-board.step",
+      "step": "left-knob-board.step",
       "svg": "",
       "vrml": ""
     },

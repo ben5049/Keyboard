@@ -507,10 +507,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../../../../../Downloads/right-control-board.step",
+      "step": "right-control-board.step",
       "svg": "",
       "vrml": ""
     },

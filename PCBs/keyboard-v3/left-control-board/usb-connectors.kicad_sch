@@ -2542,7 +2542,7 @@
 		)
 		(uuid "ef65f47a-6045-4398-9c09-d320ccd89c71")
 	)
-	(label "USB1.DP"
+	(label "USB2.DP"
 		(at 175.26 60.96 0)
 		(effects
 			(font
@@ -2550,7 +2550,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "102ada6f-2888-4b61-a10e-9f850b3264e8")
+		(uuid "131706e2-70bd-47a3-81e6-c24ecd5c9b6c")
 	)
 	(label "USB3.DP"
 		(at 81.28 132.08 0)
@@ -2572,7 +2572,7 @@
 		)
 		(uuid "1e651efa-11ee-473b-a6fa-145fc7c828f1")
 	)
-	(label "USB1.DP"
+	(label "USB2.DP"
 		(at 162.56 137.16 180)
 		(effects
 			(font
@@ -2581,16 +2581,6 @@
 			(justify right bottom)
 		)
 		(uuid "2340fe23-0ca1-4634-869b-1de65d2c9347")
-	)
-	(label "USB1.DN"
-		(at 175.26 63.5 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3ef15a90-7ebc-4b0f-a34a-29ea22b00c99")
 	)
 	(label "USB0.DN"
 		(at 243.84 132.08 180)
@@ -2612,7 +2602,17 @@
 		)
 		(uuid "7dd0a7e2-62de-46b6-864d-aee4e1361856")
 	)
-	(label "USB1_CC2"
+	(label "USB2.DN"
+		(at 175.26 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8427eac6-fe33-426b-b904-33f05518f62a")
+	)
+	(label "USB2_CC2"
 		(at 175.26 71.12 0)
 		(effects
 			(font
@@ -2622,7 +2622,7 @@
 		)
 		(uuid "89a6d2ad-05e9-4c3e-b6a2-a475abea32c4")
 	)
-	(label "USB1.DN"
+	(label "USB2.DN"
 		(at 162.56 134.62 180)
 		(effects
 			(font
@@ -2662,7 +2662,7 @@
 		)
 		(uuid "ca48304c-bb8d-4c2a-9de4-186108ab120d")
 	)
-	(label "USB1_CC1"
+	(label "USB2_CC1"
 		(at 175.26 68.58 0)
 		(effects
 			(font
@@ -2724,7 +2724,7 @@
 		)
 		(uuid "5739be80-b153-4931-a200-ccae630a2c67")
 	)
-	(hierarchical_label "USB1{USB}"
+	(hierarchical_label "USB2{USB}"
 		(shape bidirectional)
 		(at 193.04 58.42 0)
 		(effects

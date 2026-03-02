@@ -139,12 +139,12 @@
 			(hidednponfab no)
 			(sketchdnponfab yes)
 			(crossoutdnponfab yes)
-			(subtractmaskfromsilk no)
+			(subtractmaskfromsilk yes)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "gerbers/")
 		)
 	)
 	(net 0 "")
@@ -18614,6 +18614,64 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "fbaa0de9-324a-4ec2-949f-9378b1162580")
+	)
+	(gr_text "-"
+		(at 146.3 107.4 0)
+		(layer "F.SilkS")
+		(uuid "4a0636eb-dc70-422f-822b-6a27e753f112")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(gr_text "+"
+		(at 146.3 109.5 0)
+		(layer "F.SilkS")
+		(uuid "e017e1b0-6b6c-45aa-86cc-f346c91bb165")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(gr_text "Off"
+		(at 206 80 90)
+		(layer "B.SilkS")
+		(uuid "2432e220-2b37-49bc-ad51-a32b70d4adda")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "Keyboard v3\nRight Control Board\nBen Smith 2026"
+		(at 119.9 109.3 0)
+		(layer "B.SilkS")
+		(uuid "46a4ba08-8585-497f-841f-f404bb5f1cd3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "On"
+		(at 206 86 90)
+		(layer "B.SilkS")
+		(uuid "84fdbd04-8244-428d-9391-4eee2adfa408")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify mirror)
+		)
 	)
 	(dimension
 		(type orthogonal)

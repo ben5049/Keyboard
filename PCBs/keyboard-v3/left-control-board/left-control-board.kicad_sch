@@ -259,7 +259,7 @@
 	)
 	(bus
 		(pts
-			(xy 88.9 63.5) (xy 114.3 63.5)
+			(xy 88.9 66.04) (xy 114.3 66.04)
 		)
 		(stroke
 			(width 0)
@@ -655,8 +655,8 @@
 				(justify right)
 			)
 		)
-		(pin "USB1{USB}" bidirectional
-			(at 88.9 63.5 0)
+		(pin "USB2{USB}" bidirectional
+			(at 88.9 66.04 0)
 			(uuid "fbd25e36-2198-4640-8c0b-4efe81ae7fb5")
 			(effects
 				(font
@@ -972,7 +972,7 @@
 			)
 		)
 		(pin "USB2{USB}" bidirectional
-			(at 114.3 63.5 180)
+			(at 114.3 66.04 180)
 			(uuid "86225180-9b89-4380-b2b2-fa1b8bf2c174")
 			(effects
 				(font
