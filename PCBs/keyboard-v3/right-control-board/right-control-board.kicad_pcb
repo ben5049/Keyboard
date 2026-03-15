@@ -1883,14 +1883,14 @@
 			)
 		)
 	)
-	(footprint "project_footprints:L_Wurth_WE-MAIA-1610"
+	(footprint "project_footprints:L_Wurth_WE-MAPI-1610"
 		(layer "F.Cu")
 		(uuid "0cf4c180-4374-4a05-bcb9-68cb42389cb1")
 		(at 104.5 105 180)
-		(descr "Single Coil Power Inductor, body 1.6x1.6x1mm, https://www.we-online.com/en/components/products/WE-MAIA#/articles/WE_MAIA_SIZE_1610")
+		(descr "Shielded Power Inductor, body 1.6x1.6mm, https://www.we-online.com/catalog/en/WE-MAPI#/articles/WE-MAPI-1610")
 		(tags "SMT")
 		(property "Reference" "L701"
-			(at 0 -2.15 180)
+			(at 0 -1.8 180)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -1902,11 +1902,10 @@
 				)
 			)
 		)
-		(property "Value" "78438313015"
-			(at 0 2.15 180)
+		(property "Value" "74438313015"
+			(at 0 1.9 180)
 			(unlocked yes)
 			(layer "F.Fab")
-			(hide yes)
 			(uuid "f32b0d88-031d-4c7c-ae19-a891bfaf18f0")
 			(effects
 				(font
@@ -1915,8 +1914,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.we-online.com/catalog/datasheet/78438313015.pdf?ki"
-			(at 0 0 0)
+		(property "Datasheet" "https://www.we-online.com/catalog/datasheet/74438313015.pdf?ki"
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "196a9cbd-ba7e-496c-a1da-d7517098aebd")
@@ -1927,8 +1926,8 @@
 				)
 			)
 		)
-		(property "Description" "Single Coil Power Inductor"
-			(at 0 0 0)
+		(property "Description" "Shielded Power Inductor"
+			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cfcf33db-9729-442c-a628-e9fc20a4df33")
@@ -1944,7 +1943,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "89d7c8be-a9d6-4d68-9e21-d165c5ba3a64")
+			(uuid "7e01bd38-0d3b-486e-ba17-bc78f1ec7625")
 			(effects
 				(font
 					(size 1 1)
@@ -1957,7 +1956,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4ab65566-3501-45e5-a2ff-17699ec3916d")
+			(uuid "967e2c28-7882-4546-a950-c54c232e01a3")
 			(effects
 				(font
 					(size 1 1)
@@ -1965,12 +1964,12 @@
 				)
 			)
 		)
-		(property "Published Date" "20250429"
+		(property "Published Date" "20250320"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ea642a8f-6d43-404a-ac70-83d3882395f2")
+			(uuid "8b3d7741-390d-4c96-8785-67fcbda324cf")
 			(effects
 				(font
 					(size 1 1)
@@ -1978,12 +1977,12 @@
 				)
 			)
 		)
-		(property "Match Code" "WE-MAIA"
+		(property "Match Code" "WE-MAPI"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "89caa2f7-c202-4bc0-99d2-e48c75f35c8e")
+			(uuid "ee0be757-a2ed-412f-bd3f-d60949f5ab9d")
 			(effects
 				(font
 					(size 1 1)
@@ -1991,12 +1990,12 @@
 				)
 			)
 		)
-		(property "Part Number" "78438313015"
+		(property "Part Number" "74438313015"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "379dd3f6-72bf-4cb1-b952-7aa036d760c2")
+			(uuid "ba596477-0a40-46e0-a172-5cc04ba384ff")
 			(effects
 				(font
 					(size 1 1)
@@ -2009,7 +2008,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "94ec8b28-dbef-4514-a755-b3482be83908")
+			(uuid "99bfb877-058c-4a4a-af1b-ff9a90e7bc48")
 			(effects
 				(font
 					(size 1 1)
@@ -2022,7 +2021,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8bc67035-92db-48f3-9d35-3c8f8e32fdfb")
+			(uuid "d8a0e92e-9626-4bd1-b298-dca37366e3d9")
 			(effects
 				(font
 					(size 1 1)
@@ -2035,7 +2034,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "62876be0-5037-4885-9867-21da96ab09c3")
+			(uuid "a330632f-aa82-4441-b35b-724f88c28228")
 			(effects
 				(font
 					(size 1 1)
@@ -2048,7 +2047,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "498e323d-ca77-4064-abee-0d6b6afb92ab")
+			(uuid "7b3ecf8a-708d-493c-976d-435a861b3482")
 			(effects
 				(font
 					(size 1 1)
@@ -2061,7 +2060,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a8c29e02-04ce-494f-a0d4-dde248a664b7")
+			(uuid "ebdbf0ee-de5c-4238-af48-3d074c8de1fd")
 			(effects
 				(font
 					(size 1 1)
@@ -2074,7 +2073,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "654c627a-b50e-495f-865e-d99a7dbdaca5")
+			(uuid "6d5786cf-0704-47d3-bb1b-e61f47f5e8fe")
 			(effects
 				(font
 					(size 1 1)
@@ -2087,7 +2086,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c5b8ec66-b5a3-44a9-a1b5-6d4751efd12d")
+			(uuid "8ff4b6a0-7cef-4e12-aaa5-9af8a63032c9")
 			(effects
 				(font
 					(size 1 1)
@@ -2100,7 +2099,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6722f5a9-cc16-4548-a8d6-b427dcfcbaaf")
+			(uuid "d9fbc599-09c2-4a50-a01c-a8cf8e5053b5")
 			(effects
 				(font
 					(size 1 1)
@@ -2113,7 +2112,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "71013bd4-aef3-43fa-bc16-6a138b0dfa7b")
+			(uuid "faf6b5d0-b744-476e-8266-4d6f3cd934e7")
 			(effects
 				(font
 					(size 1 1)
@@ -2121,7 +2120,33 @@
 				)
 			)
 		)
-		(property ki_fp_filters "*WE-MAIA*1610*")
+		(property "RDC typ. (mΩ)" "189.0"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f9be07c8-428b-4353-9dcf-7cdcd44d4ac2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "VOP (V)" "80"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "afac86e6-8101-4e44-977a-9ccfa4569f31")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "*WE-MAPI*1610*")
 		(path "/5a733dd0-c576-43d4-95ef-2f5480128f2d/186efe55-5e3e-41e6-8e60-0458bec035cc")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
@@ -2134,7 +2159,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "0fab9b96-c4d2-41ca-8074-b8eca1f1ee17")
+			(uuid "c49e1645-c7ca-4084-8f7f-d55f9a32fa38")
 		)
 		(fp_line
 			(start -0.8 -1.16)
@@ -2144,7 +2169,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "85ae52b0-358f-4a59-8f06-d590f98c1bdc")
+			(uuid "0052b959-4d91-47b8-8a03-8f2d04bc88bd")
 		)
 		(fp_rect
 			(start -1.15 -1.15)
@@ -2155,18 +2180,59 @@
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "0184861b-270a-48b1-a05e-e745e177e6fc")
+			(uuid "1313b9ba-25eb-4b82-8782-83817fedb64c")
 		)
-		(fp_rect
-			(start -0.8 -0.8)
+		(fp_line
+			(start 0.8 -0.8)
 			(end 0.8 0.8)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
-			(fill no)
 			(layer "F.Fab")
-			(uuid "106ada76-5cf9-467a-b2f9-4edbc43c723a")
+			(uuid "b222114c-8825-4bcf-8c90-9b1ab0ef3217")
+		)
+		(fp_line
+			(start -0.8 0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "da38d179-6ba9-432c-8325-61fc62385a19")
+		)
+		(fp_line
+			(start -0.8 0.8)
+			(end -0.8 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "9b71445e-a202-4dc9-99a5-f55ca68c8ac8")
+		)
+		(fp_line
+			(start -0.8 -0.8)
+			(end 0.8 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "fba15b39-4906-48c4-8434-b7e0b32d7bbb")
+		)
+		(fp_text user "Solder Resist"
+			(at 0 -1 180)
+			(unlocked yes)
+			(layer "Cmts.User")
+			(uuid "f6076bc7-8cc5-46f6-a7b9-2db0803fd12d")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+			)
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 180)
@@ -2203,8 +2269,8 @@
 		(zone
 			(net 0)
 			(net_name "")
-			(layer "F.Cu")
-			(uuid "e985b22e-ce88-4b46-9e07-cc3a173df287")
+			(layers "F.Cu" "Dwgs.User")
+			(uuid "9a5cf25c-0fc6-44f6-8299-4ff1dac39346")
 			(name "Solder Resist")
 			(hatch full 0.1)
 			(connect_pads
@@ -2229,13 +2295,12 @@
 			)
 			(polygon
 				(pts
-					(xy 104.7 105.85) (xy 104.7 104.15) (xy 104.65 104.1) (xy 104.35 104.1) (xy 104.3 104.15) (xy 104.3 105.85)
-					(xy 104.35 105.9) (xy 104.65 105.9)
+					(xy 104.7 106.15) (xy 104.7 103.85) (xy 104.3 103.85) (xy 104.3 106.15)
 				)
 			)
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../component-library/project_models/L_Wurth_WE-MAIA-1610.step"
+		(model "${KIPRJMOD}/../component-library/project_models/L_Wurth_WE-MAPI-1610.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3664,7 +3729,7 @@
 			(at 0 -3.15 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "41ae154b-a757-474f-8797-60651883e96f")
+			(uuid "4674dbeb-05bc-4981-bf12-12475eb276c3")
 			(effects
 				(font
 					(size 1 1)
@@ -3675,7 +3740,7 @@
 		(property "Value" "MountingHole"
 			(at 0 3.15 0)
 			(layer "F.Fab")
-			(uuid "91f4b20d-0a3b-403f-9d34-4118eaa6d0bc")
+			(uuid "c11c3a16-78ac-493e-86df-6e92dfd039e9")
 			(effects
 				(font
 					(size 1 1)
@@ -3687,7 +3752,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0f773531-4c25-40f2-9466-b437efca675d")
+			(uuid "03dfe453-ff85-49e5-8a43-c2afc826e264")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3699,7 +3764,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2eb4deae-bee1-47e0-8aca-1a9c8a9d6a3b")
+			(uuid "a1f412b8-7d33-4070-9ca2-6445b8917302")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8805,7 +8870,7 @@
 			(at 0 -3.15 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "e141b98e-e5f9-44f8-a5ee-4c97b75484f1")
+			(uuid "895f4fcb-5ef8-4389-b604-fd309b786788")
 			(effects
 				(font
 					(size 1 1)
@@ -8816,7 +8881,7 @@
 		(property "Value" "MountingHole"
 			(at 0 3.15 0)
 			(layer "F.Fab")
-			(uuid "9d0c71db-5085-4761-b065-9a14f5739fb1")
+			(uuid "bc2d66a3-fd47-4131-a6eb-d4397cefe540")
 			(effects
 				(font
 					(size 1 1)
@@ -8828,7 +8893,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "278e629f-4b11-4097-b75d-ff17d20b39bc")
+			(uuid "a49f4f12-cf07-4168-a5ae-e290a4aabffb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8840,7 +8905,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ff87c91e-b78f-4b30-a4ce-e02e08f9879f")
+			(uuid "8cf2fe4e-9a35-46f8-89c0-f117be0fc195")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14189,7 +14254,7 @@
 			(at 0 0.15 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "8599e577-6626-47a9-8a46-07965790910e")
+			(uuid "96f96ec4-8d34-420c-b81a-63edef3660af")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14201,7 +14266,7 @@
 			(at 0 0.15 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "ad20ee2d-e408-4e0e-963e-e97336a12b11")
+			(uuid "5e28b67a-6a19-49da-89a5-dde54f5e17ef")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14213,7 +14278,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b3e7494b-4020-44eb-9622-3a4fda537cf9")
+			(uuid "d944d434-e276-4b84-88a5-1a459a542d2c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14225,7 +14290,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f7bad678-97cf-41f1-9087-48dcea0cca50")
+			(uuid "77742630-b80e-4ccd-a7a7-8a8a46bd4c1d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16836,7 +16901,7 @@
 			(at 0 -3.15 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "28c507fd-c51d-4e17-9be0-8481664b877d")
+			(uuid "397bbf5e-020e-413d-a0ff-06de20dab59b")
 			(effects
 				(font
 					(size 1 1)
@@ -16847,7 +16912,7 @@
 		(property "Value" "MountingHole"
 			(at 0 3.15 0)
 			(layer "F.Fab")
-			(uuid "fd1790ab-dd6f-40f5-bfca-18d6df82caa9")
+			(uuid "ed566407-48b8-4b8e-8b89-93722dbefc47")
 			(effects
 				(font
 					(size 1 1)
@@ -16859,7 +16924,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "bc1c8d02-9b7b-4b12-b055-c09ff13bc730")
+			(uuid "c9630a9e-aa4e-4014-bcb5-522c7e66b2df")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16871,7 +16936,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "69c01e2c-4cc6-4029-97ba-1d6321471fc8")
+			(uuid "136d556b-c972-49a4-a2af-01c47251eefa")
 			(effects
 				(font
 					(size 1.27 1.27)
